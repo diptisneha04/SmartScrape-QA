@@ -1,18 +1,25 @@
 import streamlit as st
 from main import get_quesans_chain, timed_chain_query, summarize_if_requested
 
-# Initialize chatbot chain
+# Initialize chain
 if 'chain' not in st.session_state:
     st.session_state.chain = get_quesans_chain()
 
-# Initialize memory
+# Initialize memory (question-answer pairs)
 if 'memory' not in st.session_state:
     st.session_state.memory = []
 
-# Set page layout
-st.set_page_config(page_title="Question-Answer Chatbot", layout="wide")
+# Track last interaction state
+if 'last_qa' not in st.session_state:
+    st.session_state.last_qa = None
+if 'show_answer' not in st.session_state:
+    st.session_state.show_answer = False
+if 'feedback' not in st.session_state:
+    st.session_state.feedback = None
 
-# Custom CSS for dark-themed UI
+# UI setup
+st.set_page_config(page_title="SmartScrape QA Assistant", layout="wide")
+
 st.markdown("""
 <style>
 body {
@@ -56,15 +63,17 @@ label {
 </style>
 """, unsafe_allow_html=True)
 
-# Split screen layout
+# Layout
 col1, col2 = st.columns([1, 2])
 
 # MEMORY SECTION
 with col1:
     st.markdown("<div class='memory-box'><h3>MEMORY</h3>", unsafe_allow_html=True)
-    for i, q in enumerate(st.session_state.memory[-6:][::-1], 1):
-        st.markdown(f"{i}. {q}")
+    for i, qa in enumerate(st.session_state.memory[-6:][::-1], 1):
+        with st.expander(f"{i}. Q: {qa['question']}"):
+            st.markdown(f"**A:** {qa['answer']}")
     st.markdown("</div>", unsafe_allow_html=True)
+
 
 # CHATBOT SECTION
 with col2:
@@ -76,27 +85,31 @@ with col2:
     if st.button("Get Answer"):
         if question.strip():
             chain = st.session_state.chain
-            st.session_state.memory.append(question)
             result = timed_chain_query(chain, question)
             answer = summarize_if_requested(result["result"], question)
-            st.session_state.last_answer = answer
+
+            # Save to memory as Q&A pair
+            st.session_state.memory.append({"question": question, "answer": answer})
+            st.session_state.last_qa = {"question": question, "answer": answer}
+            st.session_state.show_answer = True
+            st.session_state.feedback = None  # reset feedback
         else:
             st.warning("Please enter a valid question.")
 
-    if 'last_answer' in st.session_state:
-        st.text_area("Answer:", value=st.session_state.last_answer, height=150)
+    if st.session_state.show_answer and st.session_state.last_qa:
+        st.text_area("Answer:", value=st.session_state.last_qa["answer"], height=150)
 
         st.markdown("**Was this answer helpful?**")
-        feedback = st.radio("Feedback", ["Yes", "No"], horizontal=True)
+        feedback = st.radio("Feedback", ["Yes", "No"], horizontal=True, index=None, key="feedback_radio")
 
         if feedback == "Yes":
             st.success("Thank you! I'm glad it helped. You can ask me anything else.")
         elif feedback == "No":
             st.markdown("""
-            <   div class="warning-box">
-                    ⚠️ Sorry, I’ll try to improve next time.
-                    <br>Please let me know how I can help better.
-                </>
+            <div class="warning-box">
+                ⚠️ Sorry, I’ll try to improve next time.
+                <br>Please let me know how I can help better.
+            </div>
             """, unsafe_allow_html=True)
 
     st.markdown("</div>", unsafe_allow_html=True)
