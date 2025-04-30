@@ -1,0 +1,13 @@
+
+
+
+
+document.getElementById('searchbox').style.display = "block"
+
+©2004-2025 Leonard Richardson.
+      
+      |
+      Powered bySphinx 7.2.6&Alabaster 0.7.16|Page source
+Sphinx 7.2.6
+Alabaster 0.7.16
+Page source

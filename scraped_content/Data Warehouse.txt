@@ -1,0 +1,544 @@
+Data Warehouse Tutorial: What It is, Definition, Concepts - Tpoint Tech
+Tutorials
+×
+Python
+Python Tutorial
+Django Tutorial
+Numpy Tutorial
+Pandas Tutorial
+Tkinter Tutorial
+Pytorch Tutorial
+Flask Tutorial
+OpenCV Tutorial
+Java
+Java Tutorial
+Servlet Tutorial
+JSP Tutorial
+Spring Boot Tutorial
+Spring Framework Tutorial
+Hibernate Tutorial
+JavaFX Tutorial
+Java Web Services Tutorial
+.Net Framework
+.Net Framework Tutorial
+C# Tutorial
+ASP.Net Tutorial
+ADO.Net Tutorial
+WPF Tutorial
+AI, ML and Data Science
+Artificial Intelligence Tutorial
+Machine Learning Tutorial
+Data Science Tutorial
+Deep Learning Tutorial
+TensorFlow Tutorial
+Artificial Neural Network Tutorial
+Matplotlib Tutorial
+Python Scipy Tutorial
+Cloud Technology
+Cloud Computing Tutorial
+AWS Tutorial
+Microsoft Azure Tutorial
+Salesforce Tutorial
+GCP Tutorial
+B.Tech and MCA
+DBMS Tutorial
+Data Structures Tutorial
+Operating System Tutorial
+Computer Network Tutorial
+DAA Tutorial
+Computer Organization Tutorial
+Software Engineering Tutorial
+Data Mining Tutorial
+Web Technology
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+Jquery Tutorial
+Angular 8 Tutorial
+React Tutorial
+React Native Tutorial
+Node.js Tutorial
+PHP
+PHP Tutorial
+MySQL Tutorial
+Laravel Tutorial
+WordPress Tutorial
+CodeIgniter Tutorial
+Software Testing
+Software Testing Tutorial
+Selenium Tutorial
+JIRA Tutorial
+JMeter Tutorial
+Postman Tutorial
+TestNG Tutorial
+SoapUI Tutorial
+Cucumber Tutorial
+Interview
+×
+Technical Interview
+Python Interview Questions
+Java Interview Questions
+.Net Interview Questions
+C++ Interview Questions
+React Interview Questions
+Node.js Interview Questions
+Angular Interview Questions
+SQL Interview Questions
+HR Interview Questions
+Java Interview
+Spring Boot Interview Questions
+Spring Interview Questions
+Hibernate Interview Questions
+JDBC Interview Questions
+Servlet Interview Questions
+Maven Interview Questions
+Jenkins Interview Questions
+Python
+Django Interview Questions
+Pandas Interview Questions
+Express.js Interview Questions
+Python Coding Interview Questions
+Python Interview Questions for 5 Years
+Web Interview
+HTML Interview Questions
+CSS Interview Questions
+JavaScript Interview Questions
+Jquery Interview Questions
+PHP Interview Questions
+Laravel Interview Questions
+AJAX Interview Questions
+Front-End Developer Interview Questions
+jQuery Interview Questions
+Database Interview
+DBMS Interview Questions
+SQL Interview Questions
+PL/SQL Interview Questions
+Oracle Interview Questions
+MySQL Interview Questions
+MongoDB Interview Questions
+Redis Interview Questions
+B.Tech / MCA
+DBMS Interview Questions
+Operating System Interview Questions
+OOPs Interview Questions
+DSA Interview Questions
+Computer Networks Interview Questions
+Important Interview
+C Interview Questions
+Power BI Interview Questions
+C# Interview Questions
+Excel Interview Questions
+C# Interview Questions
+Machine Learning Interview Questions
+AWS Interview Questions
+Microservices Interview Questions
+MySQL Interview Questions
+Software Testing Interview
+Manual Testing Interview Questions
+Selenium Interview Questions
+API Testing Interview Questions
+ETL Testing Interview Questions
+Mobile Testing Interview Questions
+Company Interviews
+IBM Interview Questions
+Adobe Interview Questions
+Microsoft Interview Questions
+Amazon Interview Questions
+TCS Interview Questions
+Wipro Interview Questions
+Accenture Interview Questions
+Compiler
+×
+Online Compilers
+Python Online Compiler
+Java Online Compiler
+PHP Online Compiler
+C Online Compiler
+C++ Online Compiler
+HTML Online Compiler
+JavaScript Online Compiler
+TypeScript Online Compiler
+R Online Compiler
+Swift Online Compiler
+Kotlin Online Compiler
+Go Online Compiler
+C# Online Compiler
+Perl Online Compiler
+Groovy Online Compiler
+HTML, CSS & JavaScript Online Editor
+Multiple Choice Questions
+Python MCQ
+Java MCQ
+PHP MCQ
+C Programming MCQ
+C++ MCQ
+HTML mcq
+JavaScript MCQ
+SQL MCQ
+Operating System MCQ
+Computer Fundamental MCQ
+Computer Network MCQ
+DBMS MCQ
+Data Structure MCQ
+Software Engineering MCQ
+Cloud Computing MCQ
+Artificial Intelligence MCQ
+Python
+Java
+JavaScript
+SQL
+C
+C++
+HTML
+CSS
+React
+Node.js
+Spring Boot
+C#
+PHP
+MySQL
+MongoDB
+AI
+ML
+DSA
+DBMS
+OS
+Aptitude
+Reasoning
+Data Warehouse
+Data Warehouse Tutorial
+Data Warehouse Components
+Operational Database Vs Data Warehouse
+Data Warehouse Architecture
+Three-Tier Data Warehouse Architecture
+Operational Data Stores
+What is ETL
+ETL vs ELT
+Types of Data Warehouses
+Data Warehouse Modeling
+Data Warehouse Design
+Data Warehouse Implementation
+What is Meta Data
+What is Data Mart
+Delivery Process
+OLAP Technology
+What is OLAP
+Characteristics of OLAP
+OLTP vs OLAP
+OLAP Operations
+Types of OLAP
+ROLAP vs MOLAP vs HOLAP
+Dimensional Modeling
+What is Dimensional Modeling?
+What is Multi-Dimensional Data Model?
+What is Data Cube?
+Schemas
+What is Star Schema?
+What is Snowflake Schema?
+Star vs Snowflake Schemas
+Fact Constellation Schema
+Process Architecture
+Types of Database Parallelism
+Data Warehouse Tools
+Misc.
+Data Analysis Software for Research
+Data Analysis Techniques for Fraud Detection
+Data Analytics in Business Intelligence
+Data Dictionary Tools
+ETL Data Flow Diagram
+Modern Data Integration
+Kimball Approach to Data Warehousing
+next →
+Data Warehouse Tutorial: What It is, Definition, Concepts
+7 Apr 2025
+|
+7 min read
+Data Warehouse is a relational database management system (RDBMS) construct to meet the requirement of transaction processing systems. It can be loosely described as any centralized data repository which can be queried for business benefits. It is a database that stores information oriented to satisfy decision-making requests. It is a group of decision support technologies, targets to enabling the knowledge worker (executive, manager, and analyst) to make superior and higher decisions. So, Data Warehousing support architectures and tool for business executives to systematically organize, understand and use their information to make strategic decisions.
+Data Warehouse environment contains an extraction, transportation, and loading (ETL) solution, an online analytical processing (OLAP) engine, customer analysis tools, and other applications that handle the process of gathering information and delivering it to business users.
+What is a Data Warehouse?
+A Data Warehouse (DW) is a relational database that is designed for query and analysis rather than transaction processing. It includes historical data derived from transaction data from single and multiple sources.
+A Data Warehouse provides integrated, enterprise-wide, historical data and focuses on providing support for decision-makers for data modeling and analysis.
+A Data Warehouse is a group of data specific to the entire organization, not only to a particular group of users.
+It is not used for daily operations and transaction processing but used for making decisions.
+A Data Warehouse can be viewed as a data system with the following attributes:
+It is a database designed for investigative tasks, using data from various applications.
+It supports a relatively small number of clients with relatively long interactions.
+It includes current and historical data to provide a historical perspective of information.
+Its usage is read-intensive.
+It contains a few large tables.
+"Data Warehouse is a subject-oriented, integrated, and time-variant store of information in support of management's decisions."
+Characteristics of Data Warehouse
+Subject-Oriented
+A data warehouse target on the modeling and analysis of data for decision-makers. Therefore, data warehouses typically provide a concise and straightforward view around a particular subject, such as customer, product, or sales, instead of the global organization's ongoing operations. This is done by excluding data that are not useful concerning the subject and including all data needed by the users to understand the subject.
+Integrated
+A data warehouse integrates various heterogeneous data sources like RDBMS, flat files, and online transaction records. It requires performing data cleaning and integration during data warehousing to ensure consistency in naming conventions, attributes types, etc., among different data sources.
+Time-Variant
+Historical information is kept in a data warehouse. For example, one can retrieve files from 3 months, 6 months, 12 months, or even previous data from a data warehouse. These variations with a transactions system, where often only the most current file is kept.
+Non-Volatile
+The data warehouse is a physically separate data storage, which is transformed from the source operational RDBMS. The operational updates of data do not occur in the data warehouse, i.e., update, insert, and delete operations are not performed. It usually requires only two procedures in data accessing: Initial loading of data and access to data. Therefore, the DW does not require transaction processing, recovery, and concurrency capabilities, which allows for substantial speedup of data retrieval. Non-Volatile defines that once entered into the warehouse, and data should not change.
+History of Data Warehouse
+The idea of data warehousing came to the late 1980's when IBM researchers Barry Devlin and Paul Murphy established the "Business Data Warehouse."
+In essence, the data warehousing idea was planned to support an architectural model for the flow of information from the operational system to decisional support environments. The concept attempt to address the various problems associated with the flow, mainly the high costs associated with it.
+In the absence of data warehousing architecture, a vast amount of space was required to support multiple decision support environments. In large corporations, it was ordinary for various decision support environments to operate independently.
+Goals of Data Warehousing
+To help reporting as well as analysis
+Maintain the organization's historical information
+Be the foundation for decision making.
+Data Mart:
+A datamart is a subset of a main data warehouse that is segmented to serve business needs, typically with a focus on a particular purpose.
+For Example: If we assume an hons college as data warehouse then,
+Geography Dept
+History Dept.
+English Dept.
+Bengali Dept.
+CSE Dept.
+These are all departments.And each department is a data mart of a data warehouse.
+There may be distinct data marts for finance, sales, production, or marketing. Departments comprise the software, hardware, programs, and data related to a particular department inside the firm.
+Although each of these data marts is unique, they may all be coordinated.
+The data marts of several departments differ from one another.
+A departmentally planned tiny warehouse is called a data mart.
+Difference between Data warehouse and Data mart:
+Data Warehouse
+Data Mart
+It gives enterprise wide view of data.
+It gives departmental view of data.
+Union of all marts
+Subset of data warehouse or single business process
+Takes longer time to implement (months to years)
+Takes less time to implement (weeks to month)
+It size is more than 100 TB.
+It size is less than 10 TB.
+Slower Response
+Faster Response
+Meta Data
+Your data warehouse's contents are listed in a directory called Meta Data.
+Forms of meta data
+Three main types may be found in meta data in a data warehouse:
+Operational metadata
+Extraction and transformation metadata
+End user meta data
+1. Operational Metadata
+Data for the data warehouse originates from several operational systems inside the organization, since operational metadata encompasses all relevant information about the operational data sources.
+2. Metadata Extraction and Transformation
+It includes details on every data transformation that has ever occurred.
+3. End-User Metadata (Index)
+The data warehouse's navigational map is the end user information. It makes it possible for the end user to locate data warehouse information.
+Special Significance of Metadata
+Initially, it serves as the link or glue between each component of the data warehouse.
+It then gives the developer information about the structure's content.
+In the end, it makes the material recognized and lets the user in.
+The answers to the queries on the data in a data ware house are found in the metadata.
+Data WareHouse Architecture
+Back-End Tools and Utilities
+They are employed to feed data from operational databases or other external sources into the data warehouse (bottom layer).
+These tools and utilities carry out load and refresh operations to update the data warehouse in addition to data extraction, cleansing, and transformation (e.g., merging comparable data from several sources into unified format).
+Bottom Tier
+Relational database systems are mostly often found on the warehouse database server.
+A data warehouse was created by connecting many datamart.
+Additionally, this layer has a metadata repository that houses data on the content of the data warehouse.
+Additionally, there are integrators and monitors on this layer, which constantly combine data.
+The Middle Tier
+An OLAP server is the intermediate tier.
+Typically, MOLAP or ROLAP are used to implement it.
+ROLAP
+is the name of the server that manages relational databases.
+MOLAP
+is a unique kind of server that is specifically designed for multidimensional data and operations.
+The Top Tier
+It is a front-end client layer that includes data mining, analysis, and query and reporting capabilities.
+Need for Data Warehouse
+Data Warehouse is needed for the following reasons:
+Business User:
+Business users require a data warehouse to view summarized data from the past. Since these people are non-technical, the data may be presented to them in an elementary form.
+Store historical data:
+Data Warehouse is required to store the time variable data from the past. This input is made to be used for various purposes.
+Make strategic decisions:
+Some strategies may be depending upon the data in the data warehouse. So, data warehouse contributes to making strategic decisions.
+For data consistency and quality:
+Bringing the data from different sources at a commonplace, the user can effectively undertake to bring the uniformity and consistency in data.
+High response time:
+Data warehouse has to be ready for somewhat unexpected loads and types of queries, which demands a significant degree of flexibility and quick response time.
+Benefits of Data Warehouse
+Understand business trends and make better forecasting decisions.
+Data Warehouses are designed to perform well enormous amounts of data.
+The structure of data warehouses is more accessible for end-users to navigate, understand, and query.
+Queries that would be complex in many normalized databases could be easier to build and maintain in data warehouses.
+Data warehousing is an efficient method to manage demand for lots of information from lots of users.
+Data warehousing provide the capabilities to analyze a large amount of historical data.
+Prerequisites
+Before learning about Data Warehouse, you must have the fundamental knowledge of basic database concepts such as schema, ER model, structured query language, etc.
+Audience
+This tutorial will help computer science students to understand the basic-to-advanced concepts associated with data warehousing.
+Problems
+We assure that you will not find any problem with this Data Warehouse Tutorial. But if there is any mistake, please post the problem in the contact form.
+Some important MCQs:
+1. OLAP stands for
+Online Analytical Processing
+Offline Analytical Process
+Online Android Phone
+Offline Analogical Process
+Show Answer
+Workspace
+Ans: a
+Explanation:
+Online analytical processing is the acronym for OLAP.
+2. OLTP stands for
+Online Transaction Phone
+Online Transaction Processing
+Offline Typing Process
+Online Typing Process
+Show Answer
+Workspace
+Ans: b
+Explanation:
+Online Transaction Processing is the acronym for OLTP.
+3. Meta data is
+Data about anything
+Different types of DB
+Data about data
+Raw Data
+Show Answer
+Workspace
+Ans: c
+Explanation:
+Data about data or information is basically meta data.
+4. Types of meta data is basically
+2 type
+1 type
+4 type
+3 type
+Show Answer
+Workspace
+Ans: d
+Explanation:
+There are 3 types of meta data in data warehousing.
+5. ROLAP stands for
+Relational Online Analytical Processing
+Round Online Analytical Processing
+Random Online Analytical Processing
+Relational Offline Analytical Processing
+Show Answer
+Workspace
+Ans: a
+Explanation:
+Relational Online Analytical Processing is the acronym for ROLAP.
+Next Topic
+Data Warehouse Components
+next →
+Related Posts
+Operational Data Stores
+What is ? An ODS has been described by Inmon and Imhoff (1996) as a subject-oriented, integrated, volatile, current valued data store, containing only detailed corporate data. A data warehouse is a documenting database that includes associatively recent as well as historical information and may also include...
+3 min read
+What is Meta Data
+? Metadata is data about the data or documentation about the information which is required by the users. In data warehousing, metadata is one of the essential aspects. Metadata includes the following: The location and descriptions of warehouse systems and components. Names, definitions, structures, and content of data-warehouse and end-users...
+5 min read
+Three-Tier Data Warehouse Architecture
+Data Warehouses usually have a three-level (tier) architecture that includes: Bottom Tier (Data Warehouse Server) Middle Tier (OLAP Server) Top Tier (Front end Tools). A bottom-tier that consists of the Data Warehouse server, which is almost always an RDBMS. It may include several specialized data marts and a metadata repository. Data...
+2 min read
+Delivery Process
+Data Warehouse Now we discuss the delivery process of the data warehouse. Main steps used in data warehouse delivery process which are as follows: IT Strategy: DWH project must contain IT strategy for procuring and retaining funding. Business Case Analysis: After the IT strategy has been designed, the...
+4 min read
+ETL vs ELT
+Difference between ETL and ELT ETL (Extract, Transform, and Load) Extract, Transform and Load is the technique of extracting the record from sources (which is present outside or on-premises, etc.) to a staging area, then transforming or reformatting with business manipulation performed on it in order to fit...
+4 min read
+Data Warehouse Components
+Components or Building Blocks of Data Warehouse Architecture is the proper arrangement of the elements. We build a data warehouse with software and hardware components. To suit the requirements of our organizations, we arrange these building we may want to boost up another part with extra tools...
+5 min read
+Data Warehouse Design
+A data warehouse is a single data repository where a record from multiple data sources is integrated for online business analytical processing (OLAP). This implies a data warehouse needs to meet the requirements from all the business stages within the entire organization. Thus, data warehouse design...
+3 min read
+What is Data Mart
+? A Data Mart is a subset of a directorial information store, generally oriented to a specific purpose or primary data subject which may be distributed to provide business needs. Data Marts are analytical record stores designed to focus on particular business functions for a specific community...
+4 min read
+Data Warehouse Architecture
+Introduction: We will know about but before that, we must know about Data Warehouse. A Data warehouse is a complementary Database that is specifically designed for queries and survey. A data warehouse, a heterogeneous collection of data from different sources, doesn't focus on transaction processing. IBM...
+8 min read
+Data Warehouse Implementation
+There are various implementation in data warehouses which are as follows 1. Requirements analysis and capacity planning: The first process in data warehousing involves defining enterprise needs, defining architectures, carrying out capacity planning, and selecting the hardware and software tools. This step will contain be consulting senior...
+3 min read
+Subscribe to Tpoint Tech
+We request you to subscribe our newsletter for upcoming updates.
+Subscribe
+Learn Important Tutorial
+Python
+Java
+Javascript
+HTML
+Database
+PHP
+C++
+React
+B.Tech / MCA
+DBMS
+Data Structures
+DAA
+Operating System
+Computer Network
+Compiler Design
+Computer Organization
+Discrete Mathematics
+Ethical Hacking
+Computer Graphics
+Web Technology
+Software Engineering
+Cyber Security
+Automata
+C Programming
+C++
+Java
+.Net
+Python
+Programs
+Control System
+Data Warehouse
+Preparation
+Aptitude
+Reasoning
+Verbal Ability
+Interview Questions
+Company Questions
+We provides tutorials and interview questions of all technology like java tutorial, android, java frameworks
+Contact info
+G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India
+hr@tpointtech.com
++91-9599086977
+Follow us
+Tutorials
+Java
+Data Structures
+C Programming
+C++ Tutorial
+C# Tutorial
+PHP Tutorial
+HTML Tutorial
+JavaScript Tutorial
+jQuery Tutorial
+Spring Tutorial
+Interview Questions
+Microsoft
+Amazon
+Adobe
+Intuit
+Accenture
+Cognizant
+Capgemini
+Wipro
+Tcs
+Infosys
+Online Compiler
+C
+R
+C++
+Php
+Java
+Html
+Swift
+Python
+JavaScript
+TypeScript
+Latest Post
+|
+Tutorials List
+|
+Privacy Policy
+© Copyright 2011 - 2025 TpointTech.com. All Rights Reserved.

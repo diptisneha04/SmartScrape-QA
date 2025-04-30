@@ -1,0 +1,429 @@
+Table of Contents
+Beautiful Soup DocumentationGetting helpAPI documentationQuick StartInstalling Beautiful SoupInstalling a parserMaking the soupKinds of objectsTagTag.nameTag.attrsNavigableStringSpecial stringsCommentFor HTML documentsStylesheetScriptTemplateFor XML documentsDeclarationDoctypeCDataProcessingInstructionNavigating the treeGoing downNavigating using tag names.contentsand.children.descendants.string.stringsandstripped_stringsGoing up.parent.parents.self_and_parentsGoing sideways.next_siblingand.previous_sibling.next_siblingsand.previous_siblingsGoing back and forth.next_elementand.previous_element.next_elementsand.previous_elementsSearching the treeKinds of filtersA stringA regular expressionTrueA functionA listfind_all()ThenameargumentThe keyword argumentsSearching by CSS classThestringargumentThelimitargumentTherecursiveargumentCalling a tag is like callingfind_all()find()find_parents()andfind_parent()find_next_siblings()andfind_next_sibling()find_previous_siblings()andfind_previous_sibling()find_all_next()andfind_next()find_all_previous()andfind_previous()CSS selectors through the.csspropertyAdvanced Soup Sieve featuresNamespaces in CSS selectorsHistory of CSS selector supportModifying the treeChanging tag names and attributesModifying.stringappend()extend()NavigableString()and.new_tag()insert()insert_before()andinsert_after()clear()extract()decompose()replace_with()wrap()unwrap()smooth()OutputPretty-printingNon-pretty printingOutput formattersFormatter objectsHTMLFormatterXMLFormatterWriting your own formatterget_text()Specifying the parser to useDifferences between parsersEncodingsOutput encodingUnicode, DammitSmart quotesInconsistent encodingsLine numbersComparing objects for equalityCopying Beautiful Soup objectsLow-level search interfaceCustom element filteringElementFilterCustom element iterationElementFilter.filter()Advanced parser customizationParsing only part of a documentSoupStrainerCustomizing multi-valued attributesHandling duplicate attributesInstantiating custom subclassesTroubleshootingdiagnose()Errors when parsing a documentVersion mismatch problemsParsing XMLOther parser problemsMiscellaneousImproving PerformanceTranslating this documentationBeautiful Soup 3Porting code to BS4You need a parserProperty namesGeneratorsXMLEntitiesMiscellaneous
+Beautiful Soup DocumentationGetting helpAPI documentation
+Beautiful Soup Documentation
+Getting helpAPI documentation
+Getting helpAPI documentation
+Getting help
+API documentation
+API documentation
+API documentation
+Quick Start
+Quick Start
+Installing Beautiful SoupInstalling a parser
+Installing Beautiful Soup
+Installing a parser
+Installing a parser
+Installing a parser
+Making the soup
+Making the soup
+Kinds of objectsTagTag.nameTag.attrsNavigableStringSpecial stringsCommentFor HTML documentsStylesheetScriptTemplateFor XML documentsDeclarationDoctypeCDataProcessingInstruction
+Kinds of objects
+TagTag.nameTag.attrsNavigableStringSpecial stringsCommentFor HTML documentsStylesheetScriptTemplateFor XML documentsDeclarationDoctypeCDataProcessingInstruction
+TagTag.nameTag.attrs
+Tag
+Tag
+Tag
+Tag.nameTag.attrs
+Tag.name
+Tag.name
+Tag.name
+Tag.name
+Tag.attrs
+Tag.attrs
+Tag.attrs
+Tag.attrs
+NavigableString
+NavigableString
+NavigableString
+NavigableString
+Special stringsCommentFor HTML documentsStylesheetScriptTemplateFor XML documentsDeclarationDoctypeCDataProcessingInstruction
+Special strings
+CommentFor HTML documentsStylesheetScriptTemplateFor XML documentsDeclarationDoctypeCDataProcessingInstruction
+Comment
+Comment
+Comment
+Comment
+For HTML documentsStylesheetScriptTemplate
+For HTML documents
+StylesheetScriptTemplate
+Stylesheet
+Stylesheet
+Stylesheet
+Stylesheet
+Script
+Script
+Script
+Script
+Template
+Template
+Template
+Template
+For XML documentsDeclarationDoctypeCDataProcessingInstruction
+For XML documents
+DeclarationDoctypeCDataProcessingInstruction
+Declaration
+Declaration
+Declaration
+Declaration
+Doctype
+Doctype
+Doctype
+Doctype
+CData
+CData
+CData
+CData
+ProcessingInstruction
+ProcessingInstruction
+ProcessingInstruction
+ProcessingInstruction
+Navigating the treeGoing downNavigating using tag names.contentsand.children.descendants.string.stringsandstripped_stringsGoing up.parent.parents.self_and_parentsGoing sideways.next_siblingand.previous_sibling.next_siblingsand.previous_siblingsGoing back and forth.next_elementand.previous_element.next_elementsand.previous_elements
+Navigating the tree
+Going downNavigating using tag names.contentsand.children.descendants.string.stringsandstripped_stringsGoing up.parent.parents.self_and_parentsGoing sideways.next_siblingand.previous_sibling.next_siblingsand.previous_siblingsGoing back and forth.next_elementand.previous_element.next_elementsand.previous_elements
+Going downNavigating using tag names.contentsand.children.descendants.string.stringsandstripped_strings
+Going down
+Navigating using tag names.contentsand.children.descendants.string.stringsandstripped_strings
+Navigating using tag names
+Navigating using tag names
+.contentsand.children
+.contentsand.children
+.contents
+.contents
+.children
+.children
+.descendants
+.descendants
+.descendants
+.descendants
+.string
+.string
+.string
+.string
+.stringsandstripped_strings
+.stringsandstripped_strings
+.strings
+.strings
+stripped_strings
+stripped_strings
+Going up.parent.parents.self_and_parents
+Going up
+.parent.parents.self_and_parents
+.parent
+.parent
+.parent
+.parent
+.parents
+.parents
+.parents
+.parents
+.self_and_parents
+.self_and_parents
+.self_and_parents
+.self_and_parents
+Going sideways.next_siblingand.previous_sibling.next_siblingsand.previous_siblings
+Going sideways
+.next_siblingand.previous_sibling.next_siblingsand.previous_siblings
+.next_siblingand.previous_sibling
+.next_siblingand.previous_sibling
+.next_sibling
+.next_sibling
+.previous_sibling
+.previous_sibling
+.next_siblingsand.previous_siblings
+.next_siblingsand.previous_siblings
+.next_siblings
+.next_siblings
+.previous_siblings
+.previous_siblings
+Going back and forth.next_elementand.previous_element.next_elementsand.previous_elements
+Going back and forth
+.next_elementand.previous_element.next_elementsand.previous_elements
+.next_elementand.previous_element
+.next_elementand.previous_element
+.next_element
+.next_element
+.previous_element
+.previous_element
+.next_elementsand.previous_elements
+.next_elementsand.previous_elements
+.next_elements
+.next_elements
+.previous_elements
+.previous_elements
+Searching the treeKinds of filtersA stringA regular expressionTrueA functionA listfind_all()ThenameargumentThe keyword argumentsSearching by CSS classThestringargumentThelimitargumentTherecursiveargumentCalling a tag is like callingfind_all()find()find_parents()andfind_parent()find_next_siblings()andfind_next_sibling()find_previous_siblings()andfind_previous_sibling()find_all_next()andfind_next()find_all_previous()andfind_previous()CSS selectors through the.csspropertyAdvanced Soup Sieve featuresNamespaces in CSS selectorsHistory of CSS selector support
+Searching the tree
+Kinds of filtersA stringA regular expressionTrueA functionA listfind_all()ThenameargumentThe keyword argumentsSearching by CSS classThestringargumentThelimitargumentTherecursiveargumentCalling a tag is like callingfind_all()find()find_parents()andfind_parent()find_next_siblings()andfind_next_sibling()find_previous_siblings()andfind_previous_sibling()find_all_next()andfind_next()find_all_previous()andfind_previous()CSS selectors through the.csspropertyAdvanced Soup Sieve featuresNamespaces in CSS selectorsHistory of CSS selector support
+Kinds of filtersA stringA regular expressionTrueA functionA list
+Kinds of filters
+A stringA regular expressionTrueA functionA list
+A string
+A string
+A regular expression
+A regular expression
+True
+True
+True
+True
+A function
+A function
+A list
+A list
+find_all()ThenameargumentThe keyword argumentsSearching by CSS classThestringargumentThelimitargumentTherecursiveargument
+find_all()
+find_all()
+find_all()
+ThenameargumentThe keyword argumentsSearching by CSS classThestringargumentThelimitargumentTherecursiveargument
+Thenameargument
+Thenameargument
+name
+name
+The keyword arguments
+The keyword arguments
+Searching by CSS class
+Searching by CSS class
+Thestringargument
+Thestringargument
+string
+string
+Thelimitargument
+Thelimitargument
+limit
+limit
+Therecursiveargument
+Therecursiveargument
+recursive
+recursive
+Calling a tag is like callingfind_all()
+Calling a tag is like callingfind_all()
+find_all()
+find_all()
+find()
+find()
+find()
+find()
+find_parents()andfind_parent()
+find_parents()andfind_parent()
+find_parents()
+find_parents()
+find_parent()
+find_parent()
+find_next_siblings()andfind_next_sibling()
+find_next_siblings()andfind_next_sibling()
+find_next_siblings()
+find_next_siblings()
+find_next_sibling()
+find_next_sibling()
+find_previous_siblings()andfind_previous_sibling()
+find_previous_siblings()andfind_previous_sibling()
+find_previous_siblings()
+find_previous_siblings()
+find_previous_sibling()
+find_previous_sibling()
+find_all_next()andfind_next()
+find_all_next()andfind_next()
+find_all_next()
+find_all_next()
+find_next()
+find_next()
+find_all_previous()andfind_previous()
+find_all_previous()andfind_previous()
+find_all_previous()
+find_all_previous()
+find_previous()
+find_previous()
+CSS selectors through the.csspropertyAdvanced Soup Sieve featuresNamespaces in CSS selectorsHistory of CSS selector support
+CSS selectors through the.cssproperty
+.css
+.css
+Advanced Soup Sieve featuresNamespaces in CSS selectorsHistory of CSS selector support
+Advanced Soup Sieve features
+Advanced Soup Sieve features
+Namespaces in CSS selectors
+Namespaces in CSS selectors
+History of CSS selector support
+History of CSS selector support
+Modifying the treeChanging tag names and attributesModifying.stringappend()extend()NavigableString()and.new_tag()insert()insert_before()andinsert_after()clear()extract()decompose()replace_with()wrap()unwrap()smooth()
+Modifying the tree
+Changing tag names and attributesModifying.stringappend()extend()NavigableString()and.new_tag()insert()insert_before()andinsert_after()clear()extract()decompose()replace_with()wrap()unwrap()smooth()
+Changing tag names and attributes
+Changing tag names and attributes
+Modifying.string
+Modifying.string
+.string
+.string
+append()
+append()
+append()
+append()
+extend()
+extend()
+extend()
+extend()
+NavigableString()and.new_tag()
+NavigableString()and.new_tag()
+NavigableString()
+NavigableString()
+.new_tag()
+.new_tag()
+insert()
+insert()
+insert()
+insert()
+insert_before()andinsert_after()
+insert_before()andinsert_after()
+insert_before()
+insert_before()
+insert_after()
+insert_after()
+clear()
+clear()
+clear()
+clear()
+extract()
+extract()
+extract()
+extract()
+decompose()
+decompose()
+decompose()
+decompose()
+replace_with()
+replace_with()
+replace_with()
+replace_with()
+wrap()
+wrap()
+wrap()
+wrap()
+unwrap()
+unwrap()
+unwrap()
+unwrap()
+smooth()
+smooth()
+smooth()
+smooth()
+OutputPretty-printingNon-pretty printingOutput formattersFormatter objectsHTMLFormatterXMLFormatterWriting your own formatterget_text()
+Output
+Pretty-printingNon-pretty printingOutput formattersFormatter objectsHTMLFormatterXMLFormatterWriting your own formatterget_text()
+Pretty-printing
+Pretty-printing
+Non-pretty printing
+Non-pretty printing
+Output formattersFormatter objectsHTMLFormatterXMLFormatterWriting your own formatter
+Output formatters
+Formatter objectsHTMLFormatterXMLFormatterWriting your own formatter
+Formatter objectsHTMLFormatterXMLFormatter
+Formatter objects
+HTMLFormatterXMLFormatter
+HTMLFormatter
+HTMLFormatter
+HTMLFormatter
+HTMLFormatter
+XMLFormatter
+XMLFormatter
+XMLFormatter
+XMLFormatter
+Writing your own formatter
+Writing your own formatter
+get_text()
+get_text()
+get_text()
+get_text()
+Specifying the parser to useDifferences between parsers
+Specifying the parser to use
+Differences between parsers
+Differences between parsers
+Differences between parsers
+EncodingsOutput encodingUnicode, DammitSmart quotesInconsistent encodings
+Encodings
+Output encodingUnicode, DammitSmart quotesInconsistent encodings
+Output encoding
+Output encoding
+Unicode, DammitSmart quotesInconsistent encodings
+Unicode, Dammit
+Smart quotesInconsistent encodings
+Smart quotes
+Smart quotes
+Inconsistent encodings
+Inconsistent encodings
+Line numbers
+Line numbers
+Comparing objects for equality
+Comparing objects for equality
+Copying Beautiful Soup objects
+Copying Beautiful Soup objects
+Low-level search interfaceCustom element filteringElementFilterCustom element iterationElementFilter.filter()
+Low-level search interface
+Custom element filteringElementFilterCustom element iterationElementFilter.filter()
+Custom element filteringElementFilterCustom element iterationElementFilter.filter()
+Custom element filtering
+ElementFilterCustom element iterationElementFilter.filter()
+ElementFilter
+ElementFilter
+ElementFilter
+ElementFilter
+Custom element iterationElementFilter.filter()
+Custom element iteration
+ElementFilter.filter()
+ElementFilter.filter()
+ElementFilter.filter()
+ElementFilter.filter()
+ElementFilter.filter()
+Advanced parser customizationParsing only part of a documentSoupStrainerCustomizing multi-valued attributesHandling duplicate attributesInstantiating custom subclasses
+Advanced parser customization
+Parsing only part of a documentSoupStrainerCustomizing multi-valued attributesHandling duplicate attributesInstantiating custom subclasses
+Parsing only part of a documentSoupStrainer
+Parsing only part of a document
+SoupStrainer
+SoupStrainer
+SoupStrainer
+SoupStrainer
+SoupStrainer
+Customizing multi-valued attributes
+Customizing multi-valued attributes
+Handling duplicate attributes
+Handling duplicate attributes
+Instantiating custom subclasses
+Instantiating custom subclasses
+Troubleshootingdiagnose()Errors when parsing a documentVersion mismatch problemsParsing XMLOther parser problemsMiscellaneousImproving Performance
+Troubleshooting
+diagnose()Errors when parsing a documentVersion mismatch problemsParsing XMLOther parser problemsMiscellaneousImproving Performance
+diagnose()
+diagnose()
+diagnose()
+diagnose()
+Errors when parsing a document
+Errors when parsing a document
+Version mismatch problems
+Version mismatch problems
+Parsing XML
+Parsing XML
+Other parser problems
+Other parser problems
+Miscellaneous
+Miscellaneous
+Improving Performance
+Improving Performance
+Translating this documentation
+Translating this documentation
+Beautiful Soup 3Porting code to BS4You need a parserProperty namesGeneratorsXMLEntitiesMiscellaneous
+Beautiful Soup 3
+Porting code to BS4You need a parserProperty namesGeneratorsXMLEntitiesMiscellaneous
+Porting code to BS4You need a parserProperty namesGeneratorsXMLEntitiesMiscellaneous
+Porting code to BS4
+You need a parserProperty namesGeneratorsXMLEntitiesMiscellaneous
+You need a parser
+You need a parser
+Property names
+Property names
+Generators
+Generators
+XML
+XML
+Entities
+Entities
+Miscellaneous
+Miscellaneous
+Quick search

@@ -1,0 +1,46 @@
+True
+True
+¶
+The valueTruematches every tag it can. This code findsallthe tags in the document, but none of the text strings:
+True
+True
+all
+fortaginsoup.find_all(True):print(tag.name)# html# head# title# body# p# b# p# a# a# a# p
+fortaginsoup.find_all(True):print(tag.name)# html# head# title# body# p# b# p# a# a# a# p
+fortaginsoup.find_all(True):print(tag.name)# html# head# title# body# p# b# p# a# a# a# p
+
+for
+tag
+in
+soup
+.
+find_all
+(
+True
+):
+print
+(
+tag
+.
+name
+)
+# html
+# head
+# title
+# body
+# p
+# b
+# p
+# a
+# a
+# a
+# p
+A function¶If none of the other matches work for you, define a function that
+takes an element as its only argument. The function should returnTrueif the argument matches, andFalseotherwise.Here's a function that returnsTrueif a tag defines the "class"
+attribute but doesn't define the "id" attribute:defhas_class_but_no_id(tag):returntag.has_attr('class')andnottag.has_attr('id')Pass this function intofind_all()and you'll pick up all the <p>
+tags:soup.find_all(has_class_but_no_id)# [<p class="title"><b>The Dormouse's story</b></p>,#  <p class="story">Once upon a time there were…bottom of a well.</p>,#  <p class="story">...</p>]This function picks up only the <p> tags. It doesn't pick up the <a>
+tags, because those tags define both "class" and "id". It doesn't pick
+up tags like <html> and <title>, because those tags don't define
+"class".The function can be as complicated as you need it to be. Here's a
+function that returnsTrueif a tag is surrounded by string
+objects:frombs4importNavigableStringdefsurrounded_by_strings(tag):return(isinstance(tag.next_element,NavigableString)andisinstance(tag.previous_element,NavigableString))fortaginsoup.find_all(surrounded_by_strings):print(tag.name)# body# p# a# a# a# p

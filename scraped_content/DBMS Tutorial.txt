@@ -1,0 +1,769 @@
+DBMS Tutorial - Learn Database Management System - Tpoint Tech
+Tutorials
+×
+Python
+Python Tutorial
+Django Tutorial
+Numpy Tutorial
+Pandas Tutorial
+Tkinter Tutorial
+Pytorch Tutorial
+Flask Tutorial
+OpenCV Tutorial
+Java
+Java Tutorial
+Servlet Tutorial
+JSP Tutorial
+Spring Boot Tutorial
+Spring Framework Tutorial
+Hibernate Tutorial
+JavaFX Tutorial
+Java Web Services Tutorial
+.Net Framework
+.Net Framework Tutorial
+C# Tutorial
+ASP.Net Tutorial
+ADO.Net Tutorial
+WPF Tutorial
+AI, ML and Data Science
+Artificial Intelligence Tutorial
+Machine Learning Tutorial
+Data Science Tutorial
+Deep Learning Tutorial
+TensorFlow Tutorial
+Artificial Neural Network Tutorial
+Matplotlib Tutorial
+Python Scipy Tutorial
+Cloud Technology
+Cloud Computing Tutorial
+AWS Tutorial
+Microsoft Azure Tutorial
+Salesforce Tutorial
+GCP Tutorial
+B.Tech and MCA
+DBMS Tutorial
+Data Structures Tutorial
+Operating System Tutorial
+Computer Network Tutorial
+DAA Tutorial
+Computer Organization Tutorial
+Software Engineering Tutorial
+Data Mining Tutorial
+Web Technology
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+Jquery Tutorial
+Angular 8 Tutorial
+React Tutorial
+React Native Tutorial
+Node.js Tutorial
+PHP
+PHP Tutorial
+MySQL Tutorial
+Laravel Tutorial
+WordPress Tutorial
+CodeIgniter Tutorial
+Software Testing
+Software Testing Tutorial
+Selenium Tutorial
+JIRA Tutorial
+JMeter Tutorial
+Postman Tutorial
+TestNG Tutorial
+SoapUI Tutorial
+Cucumber Tutorial
+Interview
+×
+Technical Interview
+Python Interview Questions
+Java Interview Questions
+.Net Interview Questions
+C++ Interview Questions
+React Interview Questions
+Node.js Interview Questions
+Angular Interview Questions
+SQL Interview Questions
+HR Interview Questions
+Java Interview
+Spring Boot Interview Questions
+Spring Interview Questions
+Hibernate Interview Questions
+JDBC Interview Questions
+Servlet Interview Questions
+Maven Interview Questions
+Jenkins Interview Questions
+Python
+Django Interview Questions
+Pandas Interview Questions
+Express.js Interview Questions
+Python Coding Interview Questions
+Python Interview Questions for 5 Years
+Web Interview
+HTML Interview Questions
+CSS Interview Questions
+JavaScript Interview Questions
+Jquery Interview Questions
+PHP Interview Questions
+Laravel Interview Questions
+AJAX Interview Questions
+Front-End Developer Interview Questions
+jQuery Interview Questions
+Database Interview
+DBMS Interview Questions
+SQL Interview Questions
+PL/SQL Interview Questions
+Oracle Interview Questions
+MySQL Interview Questions
+MongoDB Interview Questions
+Redis Interview Questions
+B.Tech / MCA
+DBMS Interview Questions
+Operating System Interview Questions
+OOPs Interview Questions
+DSA Interview Questions
+Computer Networks Interview Questions
+Important Interview
+C Interview Questions
+Power BI Interview Questions
+C# Interview Questions
+Excel Interview Questions
+C# Interview Questions
+Machine Learning Interview Questions
+AWS Interview Questions
+Microservices Interview Questions
+MySQL Interview Questions
+Software Testing Interview
+Manual Testing Interview Questions
+Selenium Interview Questions
+API Testing Interview Questions
+ETL Testing Interview Questions
+Mobile Testing Interview Questions
+Company Interviews
+IBM Interview Questions
+Adobe Interview Questions
+Microsoft Interview Questions
+Amazon Interview Questions
+TCS Interview Questions
+Wipro Interview Questions
+Accenture Interview Questions
+Compiler
+×
+Online Compilers
+Python Online Compiler
+Java Online Compiler
+PHP Online Compiler
+C Online Compiler
+C++ Online Compiler
+HTML Online Compiler
+JavaScript Online Compiler
+TypeScript Online Compiler
+R Online Compiler
+Swift Online Compiler
+Kotlin Online Compiler
+Go Online Compiler
+C# Online Compiler
+Perl Online Compiler
+Groovy Online Compiler
+HTML, CSS & JavaScript Online Editor
+Multiple Choice Questions
+Python MCQ
+Java MCQ
+PHP MCQ
+C Programming MCQ
+C++ MCQ
+HTML mcq
+JavaScript MCQ
+SQL MCQ
+Operating System MCQ
+Computer Fundamental MCQ
+Computer Network MCQ
+DBMS MCQ
+Data Structure MCQ
+Software Engineering MCQ
+Cloud Computing MCQ
+Artificial Intelligence MCQ
+Python
+Java
+JavaScript
+SQL
+C
+C++
+HTML
+CSS
+React
+Node.js
+Spring Boot
+C#
+PHP
+MySQL
+MongoDB
+AI
+ML
+DSA
+DBMS
+OS
+Aptitude
+Reasoning
+DBMS Tutorial
+DBMS Tutorial
+What is a Database? Definition, Types, Examples
+Types of Databases
+What is RDBMS
+Difference between DBMS and RDBMS
+Difference between File System and DBMS
+DBMS Architecture
+DBMS Three schema Architecture
+Data Models in DBMS
+Data model schema
+DBMS Data Independence
+DBMS Language
+ACID Properties in DBMS
+Data modeling
+DBMS ER model concept
+Notation for ER diagram
+ER Design Issues
+Mapping constraints
+Keys in DBMS
+DBMS Generalization
+DBMS Specialization
+DBMS Aggregation
+Convert ER into table
+Relationship of Higher Degree
+Relational data Model
+Relational Model concept
+DBMS Relational Algebra
+Join Operation
+DBMS Integrity Constraints
+DBMS Relational Calculus
+Normalization
+DBMS Functional Dependency
+Inference Rule
+Normalization in DBMS
+DBMS 1NF
+DBMS 2NF
+DBMS 3NF
+DBMS BCNF
+DBMS 4NF
+DBMS 5NF
+Relational Decomposition
+Multivalued Dependency
+Join Dependency
+Inclusion Dependence
+Canonical Cover
+Transaction Processing
+Transaction
+Transaction Property
+States of Transaction
+DBMS Schedule
+Testing of Serializability
+Conflict schedule
+View Serializability
+Recoverability of Schedule
+Failure Classification
+Log-Based Recovery
+DBMS Checkpoint
+Deadlock in DBMS
+Concurrency Control
+DBMS Concurrency Control
+Lock based Protocol
+Time stamping Protocol
+Validation based Protocol
+Thomas Write Rule
+Multiple Granularity
+Recovery Concurrent Transaction
+File organization
+File organization
+Sequential File Organization
+DBMS Heap File Organization
+Hash File Organization
+B+ File Organization
+DBMS ISAM
+Cluster File Organization
+Indexing and B+ Tree
+Indexing in DBMS
+B+ Tree
+Hashing
+Hashing
+Static Hashing
+Dynamic Hashing
+RAID
+RAID
+Misc
+Decomposition Algorithms
+Storage System in DBMS
+Data Dictionary Storage
+File Organization Storage
+Selection of RAID Levels
+Bitmap Indexing
+Buffer Replacement Strategies
+Database Buffer
+Estimating Query Cost
+Query Processing in DBMS
+Evaluation of Expressions
+External Sort-Merge Algorithm
+Hash Join Algorithm
+Materialization in Query Processing
+Merge Join Algorithm
+Nested-Loop Join Algorithm
+Selection Operation in Query Processing
+Double-Pipelined Join Algorithm
+Implementation of Pipelining
+Pipelining in Query Processing
+Advanced Query Optimization
+Transforming Relational Expressions
+Candidate Key
+Closure of an Attribute
+QUESTIONS ON BOYCE CODD NORMAL FORM
+QUESTIONS ON NORMALIZATION
+QUESTIONS ON THIRD NORMAL FORM
+EQUIVALENCE OF FUNCTIONAL DEPENDENCY
+Referential Integrity constraint
+Questions on Lossy and Lossless Decomposition
+LOSSY OR LOSSLESS DECOMPOSITION (second method)
+QUESTIONS TO IDENTIFY NORMAL FORM
+Types of Relationship in Database Table
+Candidate Key in DBMS
+Primary Key in DBMS
+Super Key in DBMS
+Alternate Key in DBMS
+Composite Key in DBMS
+Foreign Key in DBMS
+Surrogate Key in DBMS
+Unique Key in DBMS
+Purpose of Normalization
+COMMIT vs ROLLBACK in SQL
+DDL vs DML
+Denormalization in Databases
+ER Model vs Relational Model
+Database Security
+Problems with ER Model
+Advantages of DBMS
+Advantages and Disadvantages of DBMS
+COMMIT Protocol in DBMS
+Anomalies in DBMS
+Functions of DBMS
+DBMS Examples
+Entity in DBMS
+Characteristics of DBMS
+Components of DBMS
+Disadvantages of DBMS
+Instance and Schema in DBMS
+Data Abstraction in DBMS
+Database Applications
+Redundancy in DBMS
+Advantages of DBMS over File System
+Attributes in DBMS
+Difficulties of Implementing Data Warehouses
+Economic Factors (Choice of DBMS)
+Enhanced ER Model
+How to Find Candidate Key from Functional Dependencies
+How to Store a Password in Database
+Introduction to TimeStamp and Deadlock Prevention Schemes in DBMS
+Minimization of ER Diagrams
+Number of Possible Super Keys in DBMS
+Personnel Involved in Database Management System
+Role of Keys in Cassandra
+Transactions in DBMS
+Tuple in DBMS
+Serializability in DBMS
+1 Tier Architecture in DBMS
+2 Tier Architecture in DBMS
+Centralized and Client Server Architecture for DBMS
+Data Query Language
+Difference Between Page Table and Inverted Page Table
+Distributed Database Architecture in DBMS
+SQL queries on Clustered and Non-Clustered Indexes
+Strategies for Migrating from SQL to NoSQL Database
+What are Different Transaction Isolation Levels in DBMS
+ER Diagram for Company Database
+ER Diagram for Employee Management System
+Transaction Isolation Levels in DBMS
+Transitive Dependency in DBMS
+Evolution of Big Data and its Impact on Database Management Systems
+Future of Database Management System: Predictions and Trends
+Mobile Databases in DBMS
+Spatial Database in DBMS
+Time Series Database
+Why Should You Learn C++ for Game Development
+Challenges of database security
+Definition and overview of ODBMS
+Data Management Issues in Mobile Database
+Distributed Locking in Database
+Main Difference Between Timestamp Protocol and Thomas Write Rule in DBMS
+Recursive Relationship in ER Diagrams
+Structure of DBMS
+Consistency in DBMS
+Dependency in DBMS
+Distributed Database System in DBMS
+Federated Database Management System Issues
+Isolation in DBMS
+Recovery and Atomicity in DBMS
+Difference between Centralized, Decentralized and Distributed Systems in DBMS
+Types of Sources of Data in Data Mining in DBMS
+Why is recovery needed in DBMS
+Dirty Read in SQL in DBMS
+ER Diagram for Student Management System
+ER Diagram for the Airline Reservation System
+ER Diagram for the University Management System
+Functions of Distributed Database System in DBMS
+Starvation in DBMS
+Implementation of Atomicity and Durability in DBMS
+Fully-Functional Dependency in DBMS
+Partial Dependency in DBMS
+Characteristics of Database approach in DBMS
+Strategies for Migrating from SQL to NoSQL Database
+What are Different Transaction Isolation Levels in DBMS
+DBMS and RDBMS
+ER Diagram for Company Database
+ER Diagram for Employee Management System
+Transaction Isolation Levels in DBMS
+Transitive Dependency in DBMS
+Advantages and Disadvantages of Distributed System
+Data management issues in mobile database
+Advantages and Disadvantages of ER Model
+What is the difference between OODBMS AND ORDBMS
+How to Create and Call a Stored Procedure in SQL
+Introduction to Temporal database
+Semantic Heterogeneity
+Why is a candidate key called a minimal super key
+Three-Tier Application Architecture
+What is 3-2-1 Backup Strategy
+Differential Backup
+Information Retrieval in DBMS
+Database Automation
+Advantages of Relational Databases
+Ambiguous Column Name in DBMS
+Ambiguous Column Name in Snowflake
+Differences between the Relational model and the Document Model
+Difference between row-oriented and column-oriented data stores dbms
+Null and not null in SQL
+Unique and Distinct Differences in SQL
+Difference between Exist and Not-Exist Operator
+Inner join vs outer join
+Difference between In and Between Operator
+Minimum relations satisfying 1NF
+Why Recovery is Needed in DBMS
+Difficulties of Implementing Data Warehouses
+How to find the Highest Normal Form of a Relation
+Difference between Inverted Index and Forward Index
+Capturing Insert Timestamps in Table to SQL Server
+Cassandra vs DynamoDB
+Characteristics of Biological Data (Genome Data Management)
+convert varchar to int in oracle
+convert varchar to number in oracle
+Difference between Hadoop and RDBMS
+ER diagram of Bank Management System
+How to Reset Identity Column Values in SQL
+Join Operation Vs Nested Query
+SQL Query to Display Last 5 Records employee Table
+Thomas Write Rule in Database Management Systems (DBMS)
+Web Information Retrieval | Vector Space Model
+CHAR vs VARCHAR in SQL
+Difference between Database and DBMS
+Difference between Natural Join and Inner Join in SQL
+How DBMS Stores Data
+How do Keys Contribute to Referential Integrity
+What is Query Rewriting Techniques in DBMS
+What is Record-at-a-Time in DBMS
+What is Scalability in DBMS and How to achieve it
+What is user authentication in DBMS
+Blind Write in DBMS
+Differences between Super Key and Candidate Key
+How do Keys Assist in Indexing Strategies
+How to draw an ER diagram in DBMS
+What is Transparent DBMS
+What is RDBMS Kernel
+What is Temporal Query Language (TQL)
+What are Stand-Alone Procedures
+What is Lock Escalation
+How DBMS Performance is Improved
+Multivalued Dependency and Fourth Normal Form
+What is the relationship between ODBC, OLE DB, and ADO
+Difference between UNIQUE and UNIQUE All
+What is a Record in DBMS
+Difference between Super key and Candidate key
+Hierarchical Data Model
+Limitations of File System Approach
+Network Database Model
+Types of Database Servers
+What is Disaster Recovery Planning in DBMS
+Multiversion Concurrency Control Techniques
+Graph Based or TREE Locking Protocol
+Data integrity rules
+Converting ER Model into Relations
+Characterizing schedules on the basis of Recoverability in DBMS
+Caching of Disk Blocks
+SQL Introduction
+SQL Introduction
+Characteristics of SQL
+Advantage of SQL
+SQl Datatype
+SQL Commands
+SQL Operator
+SQL Table
+SQL SELECT Statement
+SQL INSERT Statement
+SQL Update Statement
+SQL DELETE Statement
+SQL View
+DBMS SQL Index
+SQL Sub Queries
+SQL Clauses
+DBMS SQL Aggregate Function
+SQL JOIN
+DBMS SQL Set Operation
+DBMS SQL Cursors
+DBMS MCQ
+DBMS MCQ
+Interview Questions
+DBMS Interview
+SQL Interview
+next →
+DBMS Tutorial - Learn Database Management System
+27 Mar 2025
+|
+5 min read
+DBMS Tutorial provides basic and advanced concepts of
+Database
+. Our DBMS Tutorial is designed for beginners and professionals both.
+Database management system is software that is used to manage the database.
+Our
+DBMS
+Tutorial includes all topics of DBMS such as introduction, ER model, keys, relational model, join operation,
+SQL
+, functional dependency, transaction, concurrency control, etc.
+What is Database
+The database is a collection of inter-related data which is used to retrieve, insert and delete the data efficiently. It is also used to organize the data in the form of a table, schema, views, and reports, etc.
+For example:
+The college Database organizes the data about the admin, staff, students and faculty etc.
+Using the database, you can easily retrieve, insert, and delete the information.
+Database Management System
+Database management system is a software which is used to manage the database. For example:
+MySQL
+,
+Oracle
+, etc are a very popular commercial database which is used in different applications.
+DBMS provides an interface to perform various operations like database creation, storing data in it, updating data, creating a table in the database and a lot more.
+It provides protection and security to the database. In the case of multiple users, it also maintains data consistency.
+DBMS allows users the following tasks:
+Data Definition:
+It is used for creation, modification, and removal of definition that defines the organization of data in the database.
+Data Updation:
+It is used for the insertion, modification, and deletion of the actual data in the database.
+Data Retrieval:
+It is used to retrieve the data from the database which can be used by applications for various purposes.
+User Administration:
+It is used for registering and monitoring users, maintain data integrity, enforcing data security, dealing with concurrency control, monitoring performance and recovering information corrupted by unexpected failure.
+Characteristics of DBMS
+It uses a digital repository established on a server to store and manage the information.
+It can provide a clear and logical view of the process that manipulates data.
+DBMS contains automatic backup and recovery procedures.
+It contains ACID properties which maintain data in a healthy state in case of failure.
+It can reduce the complex relationship between data.
+It is used to support manipulation and processing of data.
+It is used to provide security of data.
+It can view the database from different viewpoints according to the requirements of the user.
+Advantages of DBMS
+Controls database redundancy:
+It can control data redundancy because it stores all the data in one single database file and that recorded data is placed in the database.
+Data sharing:
+In DBMS, the authorized users of an organization can share the data among multiple users.
+Easily Maintenance:
+It can be easily maintainable due to the centralized nature of the database system.
+Reduce time:
+It reduces development time and maintenance need.
+Backup:
+It provides backup and recovery subsystems which create automatic backup of data from
+hardware
+and
+software
+failures and restores the data if required.
+multiple user interface:
+It provides different types of user interfaces like graphical user interfaces, application program interfaces
+Disadvantages of DBMS
+Cost of Hardware and Software:
+It requires a high speed of data processor and large memory size to run DBMS software.
+Size:
+It occupies a large space of disks and large memory to run them efficiently.
+Complexity:
+Database system creates additional complexity and requirements.
+Higher impact of failure:
+Failure is highly impacted the database because in most of the organization, all the data stored in a single database and if the database is damaged due to electric failure or database corruption then the data may be lost forever.
+Prerequisite
+Before learning DBMS Tutorial, you must have the basic knowledge of Basic Database.
+Audience
+Our DBMS Tutorial is designed to help beginners and professionals.
+Problem
+We assure that you will not find any problem with this DBMS Tutorial. But if there is any mistake, please post the problem in the contact form.
+DBMS MCQs
+1. Which of the following is a characteristic of a distributed database system?
+Data is stored in a centralized location
+Data can be accessed and processed from multiple locations
+There is no need for a network to connect databases
+It does not support transaction management
+Show Answer
+Workspace
+Answer: B
+Explanation:
+A distributed database system is characterized by having its data spread across different locations, which can be accessed and processed from these various locations. This setup typically requires a network for communication between the distributed sites and supports transaction management to ensure data consistency and integrity across the system.
+2. In SQL, what does the command GRANT SELECT ON students TO user123; do?
+It revokes the SELECT permission on the 'students' table from 'user123'.
+It grants the INSERT permission on the 'students' table to 'user123'.
+It grants the SELECT permission on the 'students' table to 'user123'.
+It revokes all permissions on the 'students' table from 'user123'.
+Show Answer
+Workspace
+Answer: C
+Explanation:
+The GRANT statement in SQL is used to provide specific permissions to users. In this case, GRANT SELECT ON students TO user123; gives the user 'user123' permission to perform SELECT operations on the 'students' table.
+3. Which of the following scenarios is an example of a non-repeatable read?
+A transaction reads the same row twice, and the row is updated by another transaction in between reads.
+A transaction reads the same row twice, and the row is deleted by another transaction in between reads.
+A transaction reads all rows that satisfy a condition, and another transaction inserts a new row that satisfies the condition before the first transaction completes.
+A transaction reads a row, and another transaction inserts a new row before the first transaction completes.
+Show Answer
+Workspace
+Answer: A
+Explanation:
+A non-repeatable read occurs when a transaction reads the same row twice and finds different values each time due to an update by another transaction. It is one of the phenomena prevented by the isolation level known as repeatable read.
+4. In an E-R diagram, which of the following symbols is used to represent a weak entity set?
+Rectangle
+Ellipse
+Double rectangle
+Diamond
+Show Answer
+Workspace
+Answer: C
+Explanation:
+In an Entity-Relationship (E-R) diagram, a weak entity set is represented by a double rectangle. Weak entities are those that do not have a primary key and rely on a strong entity (with a primary key) for their existence. The relationship between the weak and strong entities is represented with a double diamond.
+5. Which of the following statements about B-trees is FALSE?
+B-trees are balanced tree data structures.
+All leaf nodes of a B-tree are at the same level.
+B-trees provide efficient insertion, deletion, and search operations.
+B-trees do not maintain sorted order of elements.
+Show Answer
+Workspace
+Answer: D
+Explanation:
+B-trees are balanced tree data structures that maintain their elements in sorted order. They provide efficient insertion, deletion, and search operations, and all leaf nodes are at the same level, ensuring balanced access times. Therefore, the statement that B-trees do not maintain sorted order is false.
+Next Topic
+What is Database
+next →
+Related Posts
+Types of Databases
+There are various types of databases used for storing different varieties of data: 1) Centralized Database It is the type of database that stores data at a centralized database system. It comforts the users to access the stored data from different locations through several applications. These applications...
+5 min read
+What is a Database? Definition, Types, Examples
+What is Data? Data is a collection of a distinct small unit of information. It can be used in a variety of forms like text, numbers, media, bytes, etc. it can be stored in pieces of paper or electronic memory, etc. Word &#39;Data&#39; is originated from the...
+6 min read
+DBMS Architecture
+The DBMS design depends upon its architecture. The basic client/server architecture is used to deal with a large number of PCs, web servers, database servers and other components that are connected with networks. The client/server architecture consists of many PCs and a workstation which are connected via...
+5 min read
+Data model schema
+Data model Schema and Instance Valid and reliable data is the most valuable part of an organization for effective decision making. Therefore, when designing a database, the planning of the database as well as the actual data to be stored in the database is of utmost...
+2 min read
+Difference between File System and DBMS
+File System Approach File based systems were an early attempt to computerize the manual system. It is also called a traditional based approach in which a decentralized approach was taken where each department stored and controlled its own data with the help of a data processing...
+3 min read
+ACID Properties in DBMS
+DBMS is the management of data that should remain integrated when any changes are done in it. It is because if the integrity of the data is affected, whole data will get disturbed and corrupted. Therefore, to maintain the integrity of the data, there are four...
+5 min read
+Difference between DBMS and RDBMS
+In this concept, we will understand the difference between DBMS and RDBMS in detail. First we understand the concept of DBMS and RDBMS and after that we will learn the difference between them. DBMS: DBMS stands for Database Management system. It is a collection of programs...
+3 min read
+Data Models in DBMS
+Before designing a database, we create its data model. This is the first step in designing a database. It acts as a bridge between objects in the real world and the database that resides in the computer. Introduction: Data Model is the modeling of the data description,...
+5 min read
+DBMS Language
+Database Languages in DBMS A DBMS has appropriate languages and interfaces to express database queries and updates. Database languages can be used to read, store and update the data in the database. Types of Database Languages 1. Data Definition Language (DDL) DDL stands for Data Definition Language. It is used...
+2 min read
+DBMS Three schema Architecture
+Three schema Architecture The three schema architecture is also called ANSI/SPARC architecture or three-level architecture. This framework is used to describe the structure of a specific database system. The three schema architecture is also used to separate the user applications and physical database. The three schema architecture contains...
+5 min read
+Subscribe to Tpoint Tech
+We request you to subscribe our newsletter for upcoming updates.
+Subscribe
+Learn Important Tutorial
+Python
+Java
+Javascript
+HTML
+Database
+PHP
+C++
+React
+B.Tech / MCA
+DBMS
+Data Structures
+DAA
+Operating System
+Computer Network
+Compiler Design
+Computer Organization
+Discrete Mathematics
+Ethical Hacking
+Computer Graphics
+Web Technology
+Software Engineering
+Cyber Security
+Automata
+C Programming
+C++
+Java
+.Net
+Python
+Programs
+Control System
+Data Warehouse
+Preparation
+Aptitude
+Reasoning
+Verbal Ability
+Interview Questions
+Company Questions
+We provides tutorials and interview questions of all technology like java tutorial, android, java frameworks
+Contact info
+G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India
+hr@tpointtech.com
++91-9599086977
+Follow us
+Tutorials
+Java
+Data Structures
+C Programming
+C++ Tutorial
+C# Tutorial
+PHP Tutorial
+HTML Tutorial
+JavaScript Tutorial
+jQuery Tutorial
+Spring Tutorial
+Interview Questions
+Microsoft
+Amazon
+Adobe
+Intuit
+Accenture
+Cognizant
+Capgemini
+Wipro
+Tcs
+Infosys
+Online Compiler
+C
+R
+C++
+Php
+Java
+Html
+Swift
+Python
+JavaScript
+TypeScript
+Latest Post
+|
+Tutorials List
+|
+Privacy Policy
+© Copyright 2011 - 2025 TpointTech.com. All Rights Reserved.

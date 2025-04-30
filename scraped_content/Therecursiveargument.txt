@@ -1,0 +1,1071 @@
+recursive
+recursive
+¶
+By default,mytag.find_all()will examine all the descendants ofmytag:
+its children, its children's children, and so on. To consider only direct
+children, you can pass inrecursive=False. See the difference here:
+mytag.find_all()
+mytag.find_all()
+mytag
+mytag
+recursive=False
+recursive=False
+soup.html.find_all("title")# [<title>The Dormouse's story</title>]soup.html.find_all("title",recursive=False)# []
+soup.html.find_all("title")# [<title>The Dormouse's story</title>]soup.html.find_all("title",recursive=False)# []
+soup.html.find_all("title")# [<title>The Dormouse's story</title>]soup.html.find_all("title",recursive=False)# []
+
+soup
+.
+html
+.
+find_all
+(
+"title"
+)
+# [<title>The Dormouse's story</title>]
+soup
+.
+html
+.
+find_all
+(
+"title"
+,
+recursive
+=
+False
+)
+# []
+Here's that part of the document:
+<html><head><title>TheDormouse's story</title></head>...
+<html><head><title>TheDormouse's story</title></head>...
+<html><head><title>TheDormouse's story</title></head>...
+
+<
+html
+>
+<
+head
+>
+<
+title
+>
+The
+Dormouse
+'s story
+</
+title
+>
+</
+head
+>
+...
+The <title> tag is beneath the <html> tag, but it's notdirectlybeneath the <html> tag: the <head> tag is in the way. Beautiful Soup
+finds the <title> tag when it's allowed to look at all descendants of
+the <html> tag, but whenrecursive=Falserestricts it to the
+<html> tag's immediate children, it finds nothing.
+directly
+recursive=False
+recursive=False
+Beautiful Soup offers a lot of tree-searching methods (covered below),
+and they mostly take the same arguments asfind_all():name,attrs,string,limit, and attribute keyword arguments. But therecursiveargument is specific to thefind_all()andfind()methods.
+Passingrecursive=Falseinto a method likefind_parents()wouldn't be
+very useful.
+find_all()
+find_all()
+name
+name
+attrs
+attrs
+string
+string
+limit
+limit
+recursive
+recursive
+find_all()
+find_all()
+find()
+find()
+recursive=False
+recursive=False
+find_parents()
+find_parents()
+Calling a tag is like callingfind_all()¶For convenience, calling aBeautifulSoupobject orTagobject as a function is equivalent to callingfind_all()(if no built-in method has the name of the tag you're
+looking for). These two lines of code are equivalent:soup.find_all("a")soup("a")These two lines are also equivalent:soup.title.find_all(string=True)soup.title(string=True)
+Calling a tag is like callingfind_all()¶
+find_all()
+find_all()
+¶
+For convenience, calling aBeautifulSoupobject orTagobject as a function is equivalent to callingfind_all()(if no built-in method has the name of the tag you're
+looking for). These two lines of code are equivalent:
+BeautifulSoup
+BeautifulSoup
+Tag
+Tag
+Tag
+find_all()
+find_all()
+soup.find_all("a")soup("a")
+soup.find_all("a")soup("a")
+soup.find_all("a")soup("a")
+
+soup
+.
+find_all
+(
+"a"
+)
+soup
+(
+"a"
+)
+These two lines are also equivalent:
+soup.title.find_all(string=True)soup.title(string=True)
+soup.title.find_all(string=True)soup.title(string=True)
+soup.title.find_all(string=True)soup.title(string=True)
+
+soup
+.
+title
+.
+find_all
+(
+string
+=
+True
+)
+soup
+.
+title
+(
+string
+=
+True
+)
+find()¶Method signature: find(name,attrs,recursive,string,**kwargs)Thefind_all()method scans the entire document looking for
+results, but sometimes you only want to find one result. If you know a
+document has only one <body> tag, it's a waste of time to scan the
+entire document looking for more. Rather than passing inlimit=1every time you callfind_all, you can use thefind()method. These two lines of code arenearlyequivalent:soup.find_all('title',limit=1)# [<title>The Dormouse's story</title>]soup.find('title')# <title>The Dormouse's story</title>The only difference is thatfind_all()returns a list containing
+the single result, andfind()just returns the result.Iffind_all()can't find anything, it returns an empty list. Iffind()can't find anything, it returnsNone:print(soup.find("nosuchtag"))# NoneRemember thesoup.head.titletrick fromNavigating using tag
+names? That trick works by repeatedly callingfind():soup.head.title# <title>The Dormouse's story</title>soup.find("head").find("title")# <title>The Dormouse's story</title>
+find()¶
+find()
+find()
+¶
+Method signature: find(name,attrs,recursive,string,**kwargs)
+name
+name
+attrs
+attrs
+recursive
+recursive
+string
+string
+**kwargs
+**kwargs
+Thefind_all()method scans the entire document looking for
+results, but sometimes you only want to find one result. If you know a
+document has only one <body> tag, it's a waste of time to scan the
+entire document looking for more. Rather than passing inlimit=1every time you callfind_all, you can use thefind()method. These two lines of code arenearlyequivalent:
+find_all()
+find_all()
+limit=1
+limit=1
+find_all
+find_all
+find()
+find()
+nearly
+soup.find_all('title',limit=1)# [<title>The Dormouse's story</title>]soup.find('title')# <title>The Dormouse's story</title>
+soup.find_all('title',limit=1)# [<title>The Dormouse's story</title>]soup.find('title')# <title>The Dormouse's story</title>
+soup.find_all('title',limit=1)# [<title>The Dormouse's story</title>]soup.find('title')# <title>The Dormouse's story</title>
+
+soup
+.
+find_all
+(
+'title'
+,
+limit
+=
+1
+)
+# [<title>The Dormouse's story</title>]
+soup
+.
+find
+(
+'title'
+)
+# <title>The Dormouse's story</title>
+The only difference is thatfind_all()returns a list containing
+the single result, andfind()just returns the result.
+find_all()
+find_all()
+find()
+find()
+Iffind_all()can't find anything, it returns an empty list. Iffind()can't find anything, it returnsNone:
+find_all()
+find_all()
+find()
+find()
+None
+None
+print(soup.find("nosuchtag"))# None
+print(soup.find("nosuchtag"))# None
+print(soup.find("nosuchtag"))# None
+
+print
+(
+soup
+.
+find
+(
+"nosuchtag"
+))
+# None
+Remember thesoup.head.titletrick fromNavigating using tag
+names? That trick works by repeatedly callingfind():
+soup.head.title
+soup.head.title
+Navigating using tag
+names
+find()
+find()
+soup.head.title# <title>The Dormouse's story</title>soup.find("head").find("title")# <title>The Dormouse's story</title>
+soup.head.title# <title>The Dormouse's story</title>soup.find("head").find("title")# <title>The Dormouse's story</title>
+soup.head.title# <title>The Dormouse's story</title>soup.find("head").find("title")# <title>The Dormouse's story</title>
+
+soup
+.
+head
+.
+title
+# <title>The Dormouse's story</title>
+soup
+.
+find
+(
+"head"
+)
+.
+find
+(
+"title"
+)
+# <title>The Dormouse's story</title>
+find_parents()andfind_parent()¶Method signature: find_parents(name,attrs,string,limit,**kwargs)Method signature: find_parent(name,attrs,string,**kwargs)I spent a lot of time above coveringfind_all()andfind(). The Beautiful Soup API defines ten other methods for
+searching the tree, but don't be afraid. Five of these methods are
+basically the same asfind_all(), and the other five are basically
+the same asfind(). The only differences are in how they move from
+one part of the tree to another.First let's considerfind_parents()andfind_parent(). Remember thatfind_all()andfind()work
+their way down the tree, looking at tag's descendants. These methods
+do the opposite: they work their wayupthe tree, looking at a tag's
+(or a string's) parents. Let's try them out, starting from a string
+buried deep in the "three daughters" document:a_string=soup.find(string="Lacie")a_string# 'Lacie'a_string.find_parents("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]a_string.find_parent("p")# <p class="story">Once upon a time there were three little sisters; and their names were#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;#  and they lived at the bottom of a well.</p>a_string.find_parents("p",class_="title")# []One of the three <a> tags is the direct parent of the string in
+question, so our search finds it. One of the three <p> tags is an
+indirect parent (ancestor) of the string, and our search finds that as
+well. There's a <p> tag with the CSS class "title"somewherein the
+document, but it's not one of this string's parents, so we can't find
+it withfind_parents().You may have noticed a similarity betweenfind_parent()andfind_parents(), and the.parentand.parentsattributes
+mentioned earlier. These search methods actually use the.parentsattribute to iterate through all parents (unfiltered), checking each one
+against the provided filter to see if it matches.
+find_parents()andfind_parent()¶
+find_parents()
+find_parents()
+find_parent()
+find_parent()
+¶
+Method signature: find_parents(name,attrs,string,limit,**kwargs)
+name
+name
+attrs
+attrs
+string
+string
+limit
+limit
+**kwargs
+**kwargs
+Method signature: find_parent(name,attrs,string,**kwargs)
+name
+name
+attrs
+attrs
+string
+string
+**kwargs
+**kwargs
+I spent a lot of time above coveringfind_all()andfind(). The Beautiful Soup API defines ten other methods for
+searching the tree, but don't be afraid. Five of these methods are
+basically the same asfind_all(), and the other five are basically
+the same asfind(). The only differences are in how they move from
+one part of the tree to another.
+find_all()
+find_all()
+find()
+find()
+find_all()
+find_all()
+find()
+find()
+First let's considerfind_parents()andfind_parent(). Remember thatfind_all()andfind()work
+their way down the tree, looking at tag's descendants. These methods
+do the opposite: they work their wayupthe tree, looking at a tag's
+(or a string's) parents. Let's try them out, starting from a string
+buried deep in the "three daughters" document:
+find_parents()
+find_parents()
+find_parent()
+find_parent()
+find_all()
+find_all()
+find()
+find()
+up
+a_string=soup.find(string="Lacie")a_string# 'Lacie'a_string.find_parents("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]a_string.find_parent("p")# <p class="story">Once upon a time there were three little sisters; and their names were#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;#  and they lived at the bottom of a well.</p>a_string.find_parents("p",class_="title")# []
+a_string=soup.find(string="Lacie")a_string# 'Lacie'a_string.find_parents("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]a_string.find_parent("p")# <p class="story">Once upon a time there were three little sisters; and their names were#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;#  and they lived at the bottom of a well.</p>a_string.find_parents("p",class_="title")# []
+a_string=soup.find(string="Lacie")a_string# 'Lacie'a_string.find_parents("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]a_string.find_parent("p")# <p class="story">Once upon a time there were three little sisters; and their names were#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;#  and they lived at the bottom of a well.</p>a_string.find_parents("p",class_="title")# []
+
+a_string
+=
+soup
+.
+find
+(
+string
+=
+"Lacie"
+)
+a_string
+# 'Lacie'
+a_string
+.
+find_parents
+(
+"a"
+)
+# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+a_string
+.
+find_parent
+(
+"p"
+)
+# <p class="story">Once upon a time there were three little sisters; and their names were
+#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;
+#  and they lived at the bottom of a well.</p>
+a_string
+.
+find_parents
+(
+"p"
+,
+class_
+=
+"title"
+)
+# []
+One of the three <a> tags is the direct parent of the string in
+question, so our search finds it. One of the three <p> tags is an
+indirect parent (ancestor) of the string, and our search finds that as
+well. There's a <p> tag with the CSS class "title"somewherein the
+document, but it's not one of this string's parents, so we can't find
+it withfind_parents().
+ancestor
+somewhere
+find_parents()
+find_parents()
+You may have noticed a similarity betweenfind_parent()andfind_parents(), and the.parentand.parentsattributes
+mentioned earlier. These search methods actually use the.parentsattribute to iterate through all parents (unfiltered), checking each one
+against the provided filter to see if it matches.
+find_parent()
+find_parent()
+find_parents()
+find_parents()
+.parent
+.parents
+.parents
+.parents
+find_next_siblings()andfind_next_sibling()¶Method signature: find_next_siblings(name,attrs,string,limit,**kwargs)Method signature: find_next_sibling(name,attrs,string,**kwargs)These methods use.next_siblingsto
+iterate over the rest of an element's siblings in the tree. Thefind_next_siblings()method returns all the siblings that match,
+andfind_next_sibling()returns only the first one:first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_next_siblings("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]first_story_paragraph=soup.find("p","story")first_story_paragraph.find_next_sibling("p")# <p class="story">...</p>
+find_next_siblings()andfind_next_sibling()¶
+find_next_siblings()
+find_next_siblings()
+find_next_sibling()
+find_next_sibling()
+¶
+Method signature: find_next_siblings(name,attrs,string,limit,**kwargs)
+name
+name
+attrs
+attrs
+string
+string
+limit
+limit
+**kwargs
+**kwargs
+Method signature: find_next_sibling(name,attrs,string,**kwargs)
+name
+name
+attrs
+attrs
+string
+string
+**kwargs
+**kwargs
+These methods use.next_siblingsto
+iterate over the rest of an element's siblings in the tree. Thefind_next_siblings()method returns all the siblings that match,
+andfind_next_sibling()returns only the first one:
+.next_siblings
+.next_siblings
+find_next_siblings()
+find_next_siblings()
+find_next_sibling()
+find_next_sibling()
+first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_next_siblings("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]first_story_paragraph=soup.find("p","story")first_story_paragraph.find_next_sibling("p")# <p class="story">...</p>
+first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_next_siblings("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]first_story_paragraph=soup.find("p","story")first_story_paragraph.find_next_sibling("p")# <p class="story">...</p>
+first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_next_siblings("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]first_story_paragraph=soup.find("p","story")first_story_paragraph.find_next_sibling("p")# <p class="story">...</p>
+
+first_link
+=
+soup
+.
+a
+first_link
+# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+first_link
+.
+find_next_siblings
+(
+"a"
+)
+# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+first_story_paragraph
+=
+soup
+.
+find
+(
+"p"
+,
+"story"
+)
+first_story_paragraph
+.
+find_next_sibling
+(
+"p"
+)
+# <p class="story">...</p>
+find_previous_siblings()andfind_previous_sibling()¶Method signature: find_previous_siblings(name,attrs,string,limit,**kwargs)Method signature: find_previous_sibling(name,attrs,string,**kwargs)These methods use.previous_siblingsto iterate over an element's
+siblings that precede it in the tree. Thefind_previous_siblings()method returns all the siblings that match, andfind_previous_sibling()returns only the first one:last_link=soup.find("a",id="link3")last_link# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>last_link.find_previous_siblings("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]first_story_paragraph=soup.find("p","story")first_story_paragraph.find_previous_sibling("p")# <p class="title"><b>The Dormouse's story</b></p>
+find_previous_siblings()andfind_previous_sibling()¶
+find_previous_siblings()
+find_previous_siblings()
+find_previous_sibling()
+find_previous_sibling()
+¶
+Method signature: find_previous_siblings(name,attrs,string,limit,**kwargs)
+name
+name
+attrs
+attrs
+string
+string
+limit
+limit
+**kwargs
+**kwargs
+Method signature: find_previous_sibling(name,attrs,string,**kwargs)
+name
+name
+attrs
+attrs
+string
+string
+**kwargs
+**kwargs
+These methods use.previous_siblingsto iterate over an element's
+siblings that precede it in the tree. Thefind_previous_siblings()method returns all the siblings that match, andfind_previous_sibling()returns only the first one:
+.previous_siblings
+.previous_siblings
+find_previous_siblings()
+find_previous_siblings()
+find_previous_sibling()
+find_previous_sibling()
+last_link=soup.find("a",id="link3")last_link# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>last_link.find_previous_siblings("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]first_story_paragraph=soup.find("p","story")first_story_paragraph.find_previous_sibling("p")# <p class="title"><b>The Dormouse's story</b></p>
+last_link=soup.find("a",id="link3")last_link# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>last_link.find_previous_siblings("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]first_story_paragraph=soup.find("p","story")first_story_paragraph.find_previous_sibling("p")# <p class="title"><b>The Dormouse's story</b></p>
+last_link=soup.find("a",id="link3")last_link# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>last_link.find_previous_siblings("a")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]first_story_paragraph=soup.find("p","story")first_story_paragraph.find_previous_sibling("p")# <p class="title"><b>The Dormouse's story</b></p>
+
+last_link
+=
+soup
+.
+find
+(
+"a"
+,
+id
+=
+"link3"
+)
+last_link
+# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
+last_link
+.
+find_previous_siblings
+(
+"a"
+)
+# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]
+first_story_paragraph
+=
+soup
+.
+find
+(
+"p"
+,
+"story"
+)
+first_story_paragraph
+.
+find_previous_sibling
+(
+"p"
+)
+# <p class="title"><b>The Dormouse's story</b></p>
+find_all_next()andfind_next()¶Method signature: find_all_next(name,attrs,string,limit,**kwargs)Method signature: find_next(name,attrs,string,**kwargs)These methods use.next_elementsto
+iterate over whatever tags and strings that come after it in the
+document. Thefind_all_next()method returns all matches, andfind_next()returns only the first match:first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_all_next(string=True)# ['Elsie', ',\n', 'Lacie', ' and\n', 'Tillie',#  ';\nand they lived at the bottom of a well.', '\n', '...', '\n']first_link.find_next("p")# <p class="story">...</p>In the first example, the string "Elsie" showed up, even though it was
+contained within the <a> tag we started from. In the second example,
+the last <p> tag in the document showed up, even though it's not in
+the same part of the tree as the <a> tag we started from. For these
+methods, all that matters is that an element matches the filter and
+it shows up later in the document indocument order.
+find_all_next()andfind_next()¶
+find_all_next()
+find_all_next()
+find_next()
+find_next()
+¶
+Method signature: find_all_next(name,attrs,string,limit,**kwargs)
+name
+name
+attrs
+attrs
+string
+string
+limit
+limit
+**kwargs
+**kwargs
+Method signature: find_next(name,attrs,string,**kwargs)
+name
+name
+attrs
+attrs
+string
+string
+**kwargs
+**kwargs
+These methods use.next_elementsto
+iterate over whatever tags and strings that come after it in the
+document. Thefind_all_next()method returns all matches, andfind_next()returns only the first match:
+.next_elements
+.next_elements
+find_all_next()
+find_all_next()
+find_next()
+find_next()
+first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_all_next(string=True)# ['Elsie', ',\n', 'Lacie', ' and\n', 'Tillie',#  ';\nand they lived at the bottom of a well.', '\n', '...', '\n']first_link.find_next("p")# <p class="story">...</p>
+first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_all_next(string=True)# ['Elsie', ',\n', 'Lacie', ' and\n', 'Tillie',#  ';\nand they lived at the bottom of a well.', '\n', '...', '\n']first_link.find_next("p")# <p class="story">...</p>
+first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_all_next(string=True)# ['Elsie', ',\n', 'Lacie', ' and\n', 'Tillie',#  ';\nand they lived at the bottom of a well.', '\n', '...', '\n']first_link.find_next("p")# <p class="story">...</p>
+
+first_link
+=
+soup
+.
+a
+first_link
+# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+first_link
+.
+find_all_next
+(
+string
+=
+True
+)
+# ['Elsie', ',\n', 'Lacie', ' and\n', 'Tillie',
+#  ';\nand they lived at the bottom of a well.', '\n', '...', '\n']
+first_link
+.
+find_next
+(
+"p"
+)
+# <p class="story">...</p>
+In the first example, the string "Elsie" showed up, even though it was
+contained within the <a> tag we started from. In the second example,
+the last <p> tag in the document showed up, even though it's not in
+the same part of the tree as the <a> tag we started from. For these
+methods, all that matters is that an element matches the filter and
+it shows up later in the document indocument order.
+document order
+document order
+find_all_previous()andfind_previous()¶Method signature: find_all_previous(name,attrs,string,limit,**kwargs)Method signature: find_previous(name,attrs,string,**kwargs)These methods use.previous_elementsto
+iterate over the tags and strings that came before it in the
+document. Thefind_all_previous()method returns all matches, andfind_previous()only returns the first match:first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_all_previous("p")# [<p class="story">Once upon a time there were three little sisters; ...</p>,#  <p class="title"><b>The Dormouse's story</b></p>]first_link.find_previous("title")# <title>The Dormouse's story</title>The call tofind_all_previous("p")found the first paragraph in
+the document (the one with class="title"), but it also finds the
+second paragraph, the <p> tag that contains the <a> tag we started
+with. This shouldn't be too surprising: we're looking at all the tags
+that show up earlier in the document indocument orderthan the one we started with. A
+<p> tag that contains an <a> tag must have shown up before the <a>
+tag it contains.
+find_all_previous()andfind_previous()¶
+find_all_previous()
+find_all_previous()
+find_previous()
+find_previous()
+¶
+Method signature: find_all_previous(name,attrs,string,limit,**kwargs)
+name
+name
+attrs
+attrs
+string
+string
+limit
+limit
+**kwargs
+**kwargs
+Method signature: find_previous(name,attrs,string,**kwargs)
+name
+name
+attrs
+attrs
+string
+string
+**kwargs
+**kwargs
+These methods use.previous_elementsto
+iterate over the tags and strings that came before it in the
+document. Thefind_all_previous()method returns all matches, andfind_previous()only returns the first match:
+.previous_elements
+.previous_elements
+find_all_previous()
+find_all_previous()
+find_previous()
+find_previous()
+first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_all_previous("p")# [<p class="story">Once upon a time there were three little sisters; ...</p>,#  <p class="title"><b>The Dormouse's story</b></p>]first_link.find_previous("title")# <title>The Dormouse's story</title>
+first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_all_previous("p")# [<p class="story">Once upon a time there were three little sisters; ...</p>,#  <p class="title"><b>The Dormouse's story</b></p>]first_link.find_previous("title")# <title>The Dormouse's story</title>
+first_link=soup.afirst_link# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>first_link.find_all_previous("p")# [<p class="story">Once upon a time there were three little sisters; ...</p>,#  <p class="title"><b>The Dormouse's story</b></p>]first_link.find_previous("title")# <title>The Dormouse's story</title>
+
+first_link
+=
+soup
+.
+a
+first_link
+# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+first_link
+.
+find_all_previous
+(
+"p"
+)
+# [<p class="story">Once upon a time there were three little sisters; ...</p>,
+#  <p class="title"><b>The Dormouse's story</b></p>]
+first_link
+.
+find_previous
+(
+"title"
+)
+# <title>The Dormouse's story</title>
+The call tofind_all_previous("p")found the first paragraph in
+the document (the one with class="title"), but it also finds the
+second paragraph, the <p> tag that contains the <a> tag we started
+with. This shouldn't be too surprising: we're looking at all the tags
+that show up earlier in the document indocument orderthan the one we started with. A
+<p> tag that contains an <a> tag must have shown up before the <a>
+tag it contains.
+find_all_previous("p")
+find_all_previous("p")
+document order
+document order
+CSS selectors through the.cssproperty¶BeautifulSoupandTagobjects support CSS selectors through
+their.cssproperty. The actual selector implementation is handled
+by theSoup Sievepackage, available on PyPI assoupsieve. If you installed
+Beautiful Soup throughpip, Soup Sieve was installed at the same
+time, so you don't have to do anything extra.The Soup Sieve documentation listsall the currently supported CSS
+selectors, but
+here are some of the basics. You can find tags by name:soup.css.select("title")# [<title>The Dormouse's story</title>]soup.css.select("p:nth-of-type(3)")# [<p class="story">...</p>]Find tags by ID:soup.css.select("#link1")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]soup.css.select("a#link2")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]Find tags contained anywhere within other tags:soup.css.select("body a")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("html head title")# [<title>The Dormouse's story</title>]Find tagsdirectlywithin other tags:soup.css.select("head > title")# [<title>The Dormouse's story</title>]soup.css.select("p > a")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("p > a:nth-of-type(2)")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]soup.css.select("body > a")# []Find all matching next siblings of tags:soup.css.select("#link1 ~ .sister")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie"  id="link3">Tillie</a>]Find the next sibling tag (but only if it matches):soup.css.select("#link1 + .sister")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]Find tags by CSS class:soup.css.select(".sister")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("[class~=sister]")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]Find tags that match any selector from a list of selectors:soup.css.select("#link1,#link2")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]Test for the existence of an attribute:soup.css.select('a[href]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]Find tags by attribute value:soup.css.select('a[href="http://example.com/elsie"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]soup.css.select('a[href^="http://example.com/"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select('a[href$="tillie"]')# [<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select('a[href*=".com/el"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]There's also a method calledselect_one(), which finds only the
+first tag that matches a selector:soup.css.select_one(".sister")# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>As a convenience, you can callselect()andselect_one()can
+directly on theBeautifulSouporTagobject, omitting the.cssproperty:soup.select('a[href$="tillie"]')# [<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.select_one(".sister")# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>CSS selector support is a convenience for people who already know the
+CSS selector syntax. You can do all of this with the Beautiful Soup
+API. If CSS selectors are all you need, you should skip Beautiful Soup
+altogether and parse the document withlxml: it's a lot
+faster. But Soup Sieve lets youcombineCSS selectors with the
+Beautiful Soup API.Advanced Soup Sieve features¶Soup Sieve offers a substantial API beyond theselect()andselect_one()methods, and you can access most of that API through
+the.cssattribute ofTagorBeautifulSoup. What follows
+is just a list of the supported methods; seethe Soup Sieve
+documentationfor full
+documentation.Theiselect()method works the same asselect(), but it
+returns a generator instead of a list:[tag['id']fortaginsoup.css.iselect(".sister")]# ['link1', 'link2', 'link3']Theclosest()method returns the nearest parent of a givenTagthat matches a CSS selector, similar to Beautiful Soup'sfind_parent()method:elsie=soup.css.select_one(".sister")elsie.css.closest("p.story")# <p class="story">Once upon a time there were three little sisters; and their names were#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;#  and they lived at the bottom of a well.</p>Thematch()method returns a Boolean depending on whether or not a
+specificTagmatches a selector:# elsie.css.match("#link1")True# elsie.css.match("#link2")FalseThefilter()method returns the subset of a tag's direct children
+that match a selector:[tag.stringfortaginsoup.find('p','story').css.filter('a')]# ['Elsie', 'Lacie', 'Tillie']Theescape()method escapes CSS identifiers that would otherwise
+be invalid:soup.css.escape("1-strange-identifier")# '\\31 -strange-identifier'Namespaces in CSS selectors¶If you've parsed XML that defines namespaces, you can use them in CSS
+selectors.:frombs4importBeautifulSoupxml="""<tag xmlns:ns1="http://namespace1/" xmlns:ns2="http://namespace2/"><ns1:child>I'm in namespace 1</ns1:child><ns2:child>I'm in namespace 2</ns2:child></tag> """namespace_soup=BeautifulSoup(xml,"xml")namespace_soup.css.select("child")# [<ns1:child>I'm in namespace 1</ns1:child>, <ns2:child>I'm in namespace 2</ns2:child>]namespace_soup.css.select("ns1|child")# [<ns1:child>I'm in namespace 1</ns1:child>]Beautiful Soup tries to use namespace prefixes that make sense based
+on what it saw while parsing the document, but you can always provide
+your own dictionary of abbreviations:namespaces=dict(first="http://namespace1/",second="http://namespace2/")namespace_soup.css.select("second|child",namespaces=namespaces)# [<ns1:child>I'm in namespace 2</ns1:child>]History of CSS selector support¶The.cssproperty was added in Beautiful Soup 4.12.0. Prior to this,
+only the.select()and.select_one()convenience methods were
+supported.The Soup Sieve integration was added in Beautiful Soup 4.7.0. Earlier
+versions had the.select()method, but only the most commonly-used
+CSS selectors were supported.
+
+CSS selectors through the.cssproperty¶
+.css
+.css
+¶
+BeautifulSoupandTagobjects support CSS selectors through
+their.cssproperty. The actual selector implementation is handled
+by theSoup Sievepackage, available on PyPI assoupsieve. If you installed
+Beautiful Soup throughpip, Soup Sieve was installed at the same
+time, so you don't have to do anything extra.
+BeautifulSoup
+BeautifulSoup
+Tag
+Tag
+Tag
+.css
+.css
+Soup Sieve
+soupsieve
+soupsieve
+pip
+pip
+The Soup Sieve documentation listsall the currently supported CSS
+selectors, but
+here are some of the basics. You can find tags by name:
+all the currently supported CSS
+selectors
+soup.css.select("title")# [<title>The Dormouse's story</title>]soup.css.select("p:nth-of-type(3)")# [<p class="story">...</p>]
+soup.css.select("title")# [<title>The Dormouse's story</title>]soup.css.select("p:nth-of-type(3)")# [<p class="story">...</p>]
+soup.css.select("title")# [<title>The Dormouse's story</title>]soup.css.select("p:nth-of-type(3)")# [<p class="story">...</p>]
+
+soup
+.
+css
+.
+select
+(
+"title"
+)
+# [<title>The Dormouse's story</title>]
+soup
+.
+css
+.
+select
+(
+"p:nth-of-type(3)"
+)
+# [<p class="story">...</p>]
+Find tags by ID:
+soup.css.select("#link1")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]soup.css.select("a#link2")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+soup.css.select("#link1")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]soup.css.select("a#link2")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+soup.css.select("#link1")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]soup.css.select("a#link2")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+
+soup
+.
+css
+.
+select
+(
+"#link1"
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]
+soup
+.
+css
+.
+select
+(
+"a#link2"
+)
+# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+Find tags contained anywhere within other tags:
+soup.css.select("body a")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("html head title")# [<title>The Dormouse's story</title>]
+soup.css.select("body a")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("html head title")# [<title>The Dormouse's story</title>]
+soup.css.select("body a")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("html head title")# [<title>The Dormouse's story</title>]
+
+soup
+.
+css
+.
+select
+(
+"body a"
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+soup
+.
+css
+.
+select
+(
+"html head title"
+)
+# [<title>The Dormouse's story</title>]
+Find tagsdirectlywithin other tags:
+directly
+soup.css.select("head > title")# [<title>The Dormouse's story</title>]soup.css.select("p > a")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("p > a:nth-of-type(2)")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]soup.css.select("body > a")# []
+soup.css.select("head > title")# [<title>The Dormouse's story</title>]soup.css.select("p > a")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("p > a:nth-of-type(2)")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]soup.css.select("body > a")# []
+soup.css.select("head > title")# [<title>The Dormouse's story</title>]soup.css.select("p > a")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("p > a:nth-of-type(2)")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]soup.css.select("body > a")# []
+
+soup
+.
+css
+.
+select
+(
+"head > title"
+)
+# [<title>The Dormouse's story</title>]
+soup
+.
+css
+.
+select
+(
+"p > a"
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie"  id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+soup
+.
+css
+.
+select
+(
+"p > a:nth-of-type(2)"
+)
+# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+soup
+.
+css
+.
+select
+(
+"body > a"
+)
+# []
+Find all matching next siblings of tags:
+soup.css.select("#link1 ~ .sister")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie"  id="link3">Tillie</a>]
+soup.css.select("#link1 ~ .sister")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie"  id="link3">Tillie</a>]
+soup.css.select("#link1 ~ .sister")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie"  id="link3">Tillie</a>]
+
+soup
+.
+css
+.
+select
+(
+"#link1 ~ .sister"
+)
+# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/tillie"  id="link3">Tillie</a>]
+Find the next sibling tag (but only if it matches):
+soup.css.select("#link1 + .sister")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+soup.css.select("#link1 + .sister")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+soup.css.select("#link1 + .sister")# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+
+soup
+.
+css
+.
+select
+(
+"#link1 + .sister"
+)
+# [<a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+Find tags by CSS class:
+soup.css.select(".sister")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("[class~=sister]")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+soup.css.select(".sister")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("[class~=sister]")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+soup.css.select(".sister")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select("[class~=sister]")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+
+soup
+.
+css
+.
+select
+(
+".sister"
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+soup
+.
+css
+.
+select
+(
+"[class~=sister]"
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+Find tags that match any selector from a list of selectors:
+soup.css.select("#link1,#link2")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+soup.css.select("#link1,#link2")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+soup.css.select("#link1,#link2")# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+
+soup
+.
+css
+.
+select
+(
+"#link1,#link2"
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+Test for the existence of an attribute:
+soup.css.select('a[href]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+soup.css.select('a[href]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+soup.css.select('a[href]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+
+soup
+.
+css
+.
+select
+(
+'a[href]'
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+Find tags by attribute value:
+soup.css.select('a[href="http://example.com/elsie"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]soup.css.select('a[href^="http://example.com/"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select('a[href$="tillie"]')# [<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select('a[href*=".com/el"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]
+soup.css.select('a[href="http://example.com/elsie"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]soup.css.select('a[href^="http://example.com/"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select('a[href$="tillie"]')# [<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select('a[href*=".com/el"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]
+soup.css.select('a[href="http://example.com/elsie"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]soup.css.select('a[href^="http://example.com/"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select('a[href$="tillie"]')# [<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.css.select('a[href*=".com/el"]')# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]
+
+soup
+.
+css
+.
+select
+(
+'a[href="http://example.com/elsie"]'
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]
+soup
+.
+css
+.
+select
+(
+'a[href^="http://example.com/"]'
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+soup
+.
+css
+.
+select
+(
+'a[href$="tillie"]'
+)
+# [<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+soup
+.
+css
+.
+select
+(
+'a[href*=".com/el"]'
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>]
+There's also a method calledselect_one(), which finds only the
+first tag that matches a selector:
+select_one()
+select_one()
+soup.css.select_one(".sister")# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+soup.css.select_one(".sister")# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+soup.css.select_one(".sister")# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+
+soup
+.
+css
+.
+select_one
+(
+".sister"
+)
+# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+As a convenience, you can callselect()andselect_one()can
+directly on theBeautifulSouporTagobject, omitting the.cssproperty:
+select()
+select()
+select_one()
+select_one()
+BeautifulSoup
+BeautifulSoup
+Tag
+Tag
+Tag
+.css
+.css
+soup.select('a[href$="tillie"]')# [<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.select_one(".sister")# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+soup.select('a[href$="tillie"]')# [<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.select_one(".sister")# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+soup.select('a[href$="tillie"]')# [<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]soup.select_one(".sister")# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+
+soup
+.
+select
+(
+'a[href$="tillie"]'
+)
+# [<a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]
+soup
+.
+select_one
+(
+".sister"
+)
+# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+CSS selector support is a convenience for people who already know the
+CSS selector syntax. You can do all of this with the Beautiful Soup
+API. If CSS selectors are all you need, you should skip Beautiful Soup
+altogether and parse the document withlxml: it's a lot
+faster. But Soup Sieve lets youcombineCSS selectors with the
+Beautiful Soup API.
+lxml
+lxml
+combine
+Advanced Soup Sieve features¶Soup Sieve offers a substantial API beyond theselect()andselect_one()methods, and you can access most of that API through
+the.cssattribute ofTagorBeautifulSoup. What follows
+is just a list of the supported methods; seethe Soup Sieve
+documentationfor full
+documentation.Theiselect()method works the same asselect(), but it
+returns a generator instead of a list:[tag['id']fortaginsoup.css.iselect(".sister")]# ['link1', 'link2', 'link3']Theclosest()method returns the nearest parent of a givenTagthat matches a CSS selector, similar to Beautiful Soup'sfind_parent()method:elsie=soup.css.select_one(".sister")elsie.css.closest("p.story")# <p class="story">Once upon a time there were three little sisters; and their names were#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;#  and they lived at the bottom of a well.</p>Thematch()method returns a Boolean depending on whether or not a
+specificTagmatches a selector:# elsie.css.match("#link1")True# elsie.css.match("#link2")FalseThefilter()method returns the subset of a tag's direct children
+that match a selector:[tag.stringfortaginsoup.find('p','story').css.filter('a')]# ['Elsie', 'Lacie', 'Tillie']Theescape()method escapes CSS identifiers that would otherwise
+be invalid:soup.css.escape("1-strange-identifier")# '\\31 -strange-identifier'

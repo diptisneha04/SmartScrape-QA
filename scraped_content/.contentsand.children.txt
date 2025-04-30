@@ -1,0 +1,117 @@
+.contents
+.contents
+.children
+.children
+¶
+A tag's children are available in a list called.contents:
+.contents
+.contents
+head_tag=soup.headhead_tag# <head><title>The Dormouse's story</title></head>head_tag.contents# [<title>The Dormouse's story</title>]title_tag=head_tag.contents[0]title_tag# <title>The Dormouse's story</title>title_tag.contents# ['The Dormouse's story']
+head_tag=soup.headhead_tag# <head><title>The Dormouse's story</title></head>head_tag.contents# [<title>The Dormouse's story</title>]title_tag=head_tag.contents[0]title_tag# <title>The Dormouse's story</title>title_tag.contents# ['The Dormouse's story']
+head_tag=soup.headhead_tag# <head><title>The Dormouse's story</title></head>head_tag.contents# [<title>The Dormouse's story</title>]title_tag=head_tag.contents[0]title_tag# <title>The Dormouse's story</title>title_tag.contents# ['The Dormouse's story']
+
+head_tag
+=
+soup
+.
+head
+head_tag
+# <head><title>The Dormouse's story</title></head>
+head_tag
+.
+contents
+# [<title>The Dormouse's story</title>]
+title_tag
+=
+head_tag
+.
+contents
+[
+0
+]
+title_tag
+# <title>The Dormouse's story</title>
+title_tag
+.
+contents
+# ['The Dormouse's story']
+TheBeautifulSoupobject itself has children. In this case, the
+<html> tag is the child of theBeautifulSoupobject.:
+BeautifulSoup
+BeautifulSoup
+BeautifulSoup
+BeautifulSoup
+len(soup.contents)# 1soup.contents[0].name# 'html'
+len(soup.contents)# 1soup.contents[0].name# 'html'
+len(soup.contents)# 1soup.contents[0].name# 'html'
+
+len
+(
+soup
+.
+contents
+)
+# 1
+soup
+.
+contents
+[
+0
+]
+.
+name
+# 'html'
+A string does not have.contents, because it can't contain
+anything:
+.contents
+.contents
+text=title_tag.contents[0]text.contents# AttributeError: 'NavigableString' object has no attribute 'contents'
+text=title_tag.contents[0]text.contents# AttributeError: 'NavigableString' object has no attribute 'contents'
+text=title_tag.contents[0]text.contents# AttributeError: 'NavigableString' object has no attribute 'contents'
+
+text
+=
+title_tag
+.
+contents
+[
+0
+]
+text
+.
+contents
+# AttributeError: 'NavigableString' object has no attribute 'contents'
+Instead of getting them as a list, you can iterate over a tag's
+children using the.childrengenerator:
+.children
+.children
+forchildintitle_tag.children:print(child)# The Dormouse's story
+forchildintitle_tag.children:print(child)# The Dormouse's story
+forchildintitle_tag.children:print(child)# The Dormouse's story
+
+for
+child
+in
+title_tag
+.
+children
+:
+print
+(
+child
+)
+# The Dormouse's story
+If you want to modify a tag's children, use the methods described inModifying the tree. Don't modify the the.contentslist
+directly: that can lead to problems that are subtle and difficult to
+spot.
+Modifying the tree
+.contents
+.contents
+.descendants¶The.contentsand.childrenattributes consider only a tag'sdirectchildren. For instance, the <head> tag has a single direct
+child—the <title> tag:head_tag.contents# [<title>The Dormouse's story</title>]But the <title> tag itself has a child: the string "The Dormouse's
+story". There's a sense in which that string is also a child of the
+<head> tag. The.descendantsattribute lets you iterate overallof a tag's children, recursively: its direct children, the children of
+its direct children, and so on:forchildinhead_tag.descendants:print(child)# <title>The Dormouse's story</title># The Dormouse's storyThe <head> tag has only one child, but it has two descendants: the
+<title> tag and the <title> tag's child. TheBeautifulSoupobject
+only has one direct child (the <html> tag), but it has a whole lot of
+descendants:len(list(soup.children))# 1len(list(soup.descendants))# 26

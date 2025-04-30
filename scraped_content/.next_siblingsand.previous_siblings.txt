@@ -1,0 +1,109 @@
+.next_siblings
+.next_siblings
+.previous_siblings
+.previous_siblings
+¶
+You can iterate over a tag's siblings with.next_siblingsor.previous_siblings:
+.next_siblings
+.next_siblings
+.previous_siblings
+.previous_siblings
+forsiblinginsoup.a.next_siblings:print(repr(sibling))# ',\n'# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a># ' and\n'# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a># '; and they lived at the bottom of a well.'forsiblinginsoup.find(id="link3").previous_siblings:print(repr(sibling))# ' and\n'# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a># ',\n'# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a># 'Once upon a time there were three little sisters; and their names were\n'
+forsiblinginsoup.a.next_siblings:print(repr(sibling))# ',\n'# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a># ' and\n'# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a># '; and they lived at the bottom of a well.'forsiblinginsoup.find(id="link3").previous_siblings:print(repr(sibling))# ' and\n'# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a># ',\n'# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a># 'Once upon a time there were three little sisters; and their names were\n'
+forsiblinginsoup.a.next_siblings:print(repr(sibling))# ',\n'# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a># ' and\n'# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a># '; and they lived at the bottom of a well.'forsiblinginsoup.find(id="link3").previous_siblings:print(repr(sibling))# ' and\n'# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a># ',\n'# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a># 'Once upon a time there were three little sisters; and their names were\n'
+
+for
+sibling
+in
+soup
+.
+a
+.
+next_siblings
+:
+print
+(
+repr
+(
+sibling
+))
+# ',\n'
+# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+# ' and\n'
+# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
+# '; and they lived at the bottom of a well.'
+for
+sibling
+in
+soup
+.
+find
+(
+id
+=
+"link3"
+)
+.
+previous_siblings
+:
+print
+(
+repr
+(
+sibling
+))
+# ' and\n'
+# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+# ',\n'
+# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+# 'Once upon a time there were three little sisters; and their names were\n'
+(If the argument syntax to find tags by their attribute value is unfamiliar,
+don't worry; this is covered later inThe keyword arguments.)
+The keyword arguments
+The keyword arguments
+Going back and forth¶Take a look at the beginning of the "three sisters" document:# <html><head><title>The Dormouse's story</title></head># <p class="title"><b>The Dormouse's story</b></p>An HTML parser takes this string of characters and turns it into a
+series of events: "open an <html> tag", "open a <head> tag", "open a
+<title> tag", "add a string", "close the <title> tag", "open a <p>
+tag", and so on. The order in which the opening tags and strings are
+encountered is calleddocument order. Beautiful Soup offers tools for
+searching a document's elements in document order..next_elementand.previous_element¶The.next_elementattribute of a string or tag points to whatever
+was parsed immediately after the opening of the current tag or after
+the current string. It might be the same as.next_sibling, but it's
+usually drastically different.Here's the final <a> tag in the "three sisters" document. Its.next_siblingis a string: the conclusion of the sentence that was
+interrupted by the start of the <a> tag:last_a_tag=soup.find("a",id="link3")last_a_tag# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>last_a_tag.next_sibling# ';\nand they lived at the bottom of a well.'But the.next_elementof that <a> tag, the thing that was parsed
+immediately after the <a> tag, isnotthe rest of that sentence:
+it's the string "Tillie" inside it:last_a_tag.next_element# 'Tillie'That's because in the original markup, the word "Tillie" appeared
+before that semicolon. The parser encountered an <a> tag, then the
+word "Tillie", then the closing </a> tag, then the semicolon and rest of
+the sentence. The semicolon is on the same level as the <a> tag, but the
+word "Tillie" was encountered first.The.previous_elementattribute is the exact opposite of.next_element. It points to the opening tag or string that was
+parsed immediately before this one:last_a_tag.previous_element# ' and\n'last_a_tag.previous_element.next_element# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>.next_elementsand.previous_elements¶You should get the idea by now. You can use these iterators to move
+forward or backward in the document as it was parsed:forelementinlast_a_tag.next_elements:print(repr(element))# 'Tillie'# ';\nand they lived at the bottom of a well.'# '\n'# <p class="story">...</p># '...'# '\n'
+Going back and forth¶
+¶
+Take a look at the beginning of the "three sisters" document:
+# <html><head><title>The Dormouse's story</title></head># <p class="title"><b>The Dormouse's story</b></p>
+# <html><head><title>The Dormouse's story</title></head># <p class="title"><b>The Dormouse's story</b></p>
+# <html><head><title>The Dormouse's story</title></head># <p class="title"><b>The Dormouse's story</b></p>
+
+# <html><head><title>The Dormouse's story</title></head>
+# <p class="title"><b>The Dormouse's story</b></p>
+An HTML parser takes this string of characters and turns it into a
+series of events: "open an <html> tag", "open a <head> tag", "open a
+<title> tag", "add a string", "close the <title> tag", "open a <p>
+tag", and so on. The order in which the opening tags and strings are
+encountered is calleddocument order. Beautiful Soup offers tools for
+searching a document's elements in document order.
+document order
+.next_elementand.previous_element¶The.next_elementattribute of a string or tag points to whatever
+was parsed immediately after the opening of the current tag or after
+the current string. It might be the same as.next_sibling, but it's
+usually drastically different.Here's the final <a> tag in the "three sisters" document. Its.next_siblingis a string: the conclusion of the sentence that was
+interrupted by the start of the <a> tag:last_a_tag=soup.find("a",id="link3")last_a_tag# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>last_a_tag.next_sibling# ';\nand they lived at the bottom of a well.'But the.next_elementof that <a> tag, the thing that was parsed
+immediately after the <a> tag, isnotthe rest of that sentence:
+it's the string "Tillie" inside it:last_a_tag.next_element# 'Tillie'That's because in the original markup, the word "Tillie" appeared
+before that semicolon. The parser encountered an <a> tag, then the
+word "Tillie", then the closing </a> tag, then the semicolon and rest of
+the sentence. The semicolon is on the same level as the <a> tag, but the
+word "Tillie" was encountered first.The.previous_elementattribute is the exact opposite of.next_element. It points to the opening tag or string that was
+parsed immediately before this one:last_a_tag.previous_element# ' and\n'last_a_tag.previous_element.next_element# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>

@@ -1,0 +1,29 @@
+¶
+I renamed three attributes to avoid using words that have special
+meaning to Python. Unlike my changes to method names (which you'll see
+in the form of deprecation warnings), these changesdid not
+preserve backwards compatibility.If you used these attributes in
+BS3, your code will break in BS4 until you change them.
+did not
+preserve backwards compatibility.
+UnicodeDammit.unicode->UnicodeDammit.unicode_markupTag.next->Tag.next_elementTag.previous->Tag.previous_element
+UnicodeDammit.unicode->UnicodeDammit.unicode_markup
+UnicodeDammit.unicode->UnicodeDammit.unicode_markup
+UnicodeDammit.unicode
+UnicodeDammit.unicode
+UnicodeDammit.unicode_markup
+UnicodeDammit.unicode_markup
+Tag.next->Tag.next_element
+Tag.next->Tag.next_element
+Tag.next
+Tag.next
+Tag.next_element
+Tag.next_element
+Tag.previous->Tag.previous_element
+Tag.previous->Tag.previous_element
+Tag.previous
+Tag.previous
+Tag.previous_element
+Tag.previous_element
+Generators¶Some of the generators used to yieldNoneafter they were done, and
+then stop. That was a bug. Now the generators just stop.

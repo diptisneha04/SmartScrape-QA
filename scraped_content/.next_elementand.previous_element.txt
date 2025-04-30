@@ -1,0 +1,80 @@
+.next_element
+.next_element
+.previous_element
+.previous_element
+¶
+The.next_elementattribute of a string or tag points to whatever
+was parsed immediately after the opening of the current tag or after
+the current string. It might be the same as.next_sibling, but it's
+usually drastically different.
+.next_element
+.next_element
+.next_sibling
+.next_sibling
+Here's the final <a> tag in the "three sisters" document. Its.next_siblingis a string: the conclusion of the sentence that was
+interrupted by the start of the <a> tag:
+.next_sibling
+.next_sibling
+last_a_tag=soup.find("a",id="link3")last_a_tag# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>last_a_tag.next_sibling# ';\nand they lived at the bottom of a well.'
+last_a_tag=soup.find("a",id="link3")last_a_tag# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>last_a_tag.next_sibling# ';\nand they lived at the bottom of a well.'
+last_a_tag=soup.find("a",id="link3")last_a_tag# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>last_a_tag.next_sibling# ';\nand they lived at the bottom of a well.'
+
+last_a_tag
+=
+soup
+.
+find
+(
+"a"
+,
+id
+=
+"link3"
+)
+last_a_tag
+# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
+last_a_tag
+.
+next_sibling
+# ';\nand they lived at the bottom of a well.'
+But the.next_elementof that <a> tag, the thing that was parsed
+immediately after the <a> tag, isnotthe rest of that sentence:
+it's the string "Tillie" inside it:
+.next_element
+.next_element
+not
+last_a_tag.next_element# 'Tillie'
+last_a_tag.next_element# 'Tillie'
+last_a_tag.next_element# 'Tillie'
+
+last_a_tag
+.
+next_element
+# 'Tillie'
+That's because in the original markup, the word "Tillie" appeared
+before that semicolon. The parser encountered an <a> tag, then the
+word "Tillie", then the closing </a> tag, then the semicolon and rest of
+the sentence. The semicolon is on the same level as the <a> tag, but the
+word "Tillie" was encountered first.
+The.previous_elementattribute is the exact opposite of.next_element. It points to the opening tag or string that was
+parsed immediately before this one:
+.previous_element
+.previous_element
+.next_element
+.next_element
+last_a_tag.previous_element# ' and\n'last_a_tag.previous_element.next_element# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
+last_a_tag.previous_element# ' and\n'last_a_tag.previous_element.next_element# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
+last_a_tag.previous_element# ' and\n'last_a_tag.previous_element.next_element# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
+
+last_a_tag
+.
+previous_element
+# ' and\n'
+last_a_tag
+.
+previous_element
+.
+next_element
+# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>
+.next_elementsand.previous_elements¶You should get the idea by now. You can use these iterators to move
+forward or backward in the document as it was parsed:forelementinlast_a_tag.next_elements:print(repr(element))# 'Tillie'# ';\nand they lived at the bottom of a well.'# '\n'# <p class="story">...</p># '...'# '\n'

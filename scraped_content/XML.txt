@@ -1,0 +1,29 @@
+¶
+There is no longer aBeautifulStoneSoupclass for parsing XML. To
+parse XML you pass in "xml" as the second argument to theBeautifulSoupconstructor. For the same reason, theBeautifulSoupconstructor no longer recognizes theisHTMLargument.
+BeautifulStoneSoup
+BeautifulStoneSoup
+BeautifulSoup
+BeautifulSoup
+BeautifulSoup
+BeautifulSoup
+isHTML
+isHTML
+Beautiful Soup's handling of empty-element XML tags has been
+improved. Previously when you parsed XML you had to explicitly say
+which tags were considered empty-element tags. TheselfClosingTagsargument to the constructor is no longer recognized. Instead,
+Beautiful Soup considers any empty tag to be an empty-element tag. If
+you add a child to an empty-element tag, it stops being an
+empty-element tag.
+selfClosingTags
+selfClosingTags
+Entities¶An incoming HTML or XML entity is always converted into the
+corresponding Unicode character. Beautiful Soup 3 had a number of
+overlapping ways of dealing with entities, which have been
+removed. TheBeautifulSoupconstructor no longer recognizes thesmartQuotesToorconvertEntitiesarguments. (Unicode,
+Dammitstill hassmart_quotes_to, but its default is now to turn
+smart quotes into Unicode.) The constantsHTML_ENTITIES,XML_ENTITIES, andXHTML_ENTITIEShave been removed, since they
+configure a feature (transforming some but not all entities into
+Unicode characters) that no longer exists.If you want to turn Unicode characters back into HTML entities on
+output, rather than turning them into UTF-8 characters, you need to
+use anoutput formatter.

@@ -1,0 +1,40 @@
+limit
+limit
+¶
+find_all()returns all the tags and strings that match your
+filters. This can take a while if the document is large. If you don't
+needallthe results, you can pass in a number forlimit. This
+works just like the LIMIT keyword in SQL. It tells Beautiful Soup to
+stop gathering results after it's found a certain number.
+find_all()
+find_all()
+all
+limit
+limit
+There are three links in the "three sisters" document, but this code
+only finds the first two:
+soup.find_all("a",limit=2)# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+soup.find_all("a",limit=2)# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+soup.find_all("a",limit=2)# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+
+soup
+.
+find_all
+(
+"a"
+,
+limit
+=
+2
+)
+# [<a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>]
+Therecursiveargument¶By default,mytag.find_all()will examine all the descendants ofmytag:
+its children, its children's children, and so on. To consider only direct
+children, you can pass inrecursive=False. See the difference here:soup.html.find_all("title")# [<title>The Dormouse's story</title>]soup.html.find_all("title",recursive=False)# []Here's that part of the document:<html><head><title>TheDormouse's story</title></head>...The <title> tag is beneath the <html> tag, but it's notdirectlybeneath the <html> tag: the <head> tag is in the way. Beautiful Soup
+finds the <title> tag when it's allowed to look at all descendants of
+the <html> tag, but whenrecursive=Falserestricts it to the
+<html> tag's immediate children, it finds nothing.Beautiful Soup offers a lot of tree-searching methods (covered below),
+and they mostly take the same arguments asfind_all():name,attrs,string,limit, and attribute keyword arguments. But therecursiveargument is specific to thefind_all()andfind()methods.
+Passingrecursive=Falseinto a method likefind_parents()wouldn't be
+very useful.

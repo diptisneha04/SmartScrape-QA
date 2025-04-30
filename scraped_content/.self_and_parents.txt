@@ -1,0 +1,88 @@
+.self_and_parents
+.self_and_parents
+¶
+The.self_and_parentsgenerator is a variant of.parentswhich
+gives you the entire ancestry of an element, including the element
+itself:
+.self_and_parents
+.self_and_parents
+.parents
+.parents
+forparentinlink.parents:print(parent.name)# link# p# body# html# [document]
+forparentinlink.parents:print(parent.name)# link# p# body# html# [document]
+forparentinlink.parents:print(parent.name)# link# p# body# html# [document]
+
+for
+parent
+in
+link
+.
+parents
+:
+print
+(
+parent
+.
+name
+)
+# link
+# p
+# body
+# html
+# [document]
+Going sideways¶Consider a simple document like this:sibling_soup=BeautifulSoup("<a><b>text1</b><c>text2</c></a>",'html.parser')print(sibling_soup.prettify())#   <a>#    <b>#     text1#    </b>#    <c>#     text2#    </c>#   </a>The <b> tag and the <c> tag are at the same level: they're both direct
+children of the same tag. We call themsiblings. When a document is
+pretty-printed, siblings show up at the same indentation level. You
+can also use this relationship in the code you write..next_siblingand.previous_sibling¶You can use.next_siblingand.previous_siblingto navigate
+between page elements that are on the same level of the parse tree:sibling_soup.b.next_sibling# <c>text2</c>sibling_soup.c.previous_sibling# <b>text1</b>The <b> tag has a.next_sibling, but no.previous_sibling,
+because there's nothing before the <b> tagon the same level of the
+tree. For the same reason, the <c> tag has a.previous_siblingbut no.next_sibling:print(sibling_soup.b.previous_sibling)# Noneprint(sibling_soup.c.next_sibling)# NoneThe strings "text1" and "text2" arenotsiblings, because they don't
+have the same parent:sibling_soup.b.string# 'text1'print(sibling_soup.b.string.next_sibling)# NoneIn real documents, the.next_siblingor.previous_siblingof a
+tag will usually be a string containing whitespace. Going back to the
+"three sisters" document:# <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,# <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and# <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;You might think that the.next_siblingof the first <a> tag would
+be the second <a> tag. But actually, it's a string: the comma and
+newline that separate the first <a> tag from the second:link=soup.alink# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>link.next_sibling# ',\n 'The second <a> tag is then the.next_siblingof the comma string:link.next_sibling.next_sibling# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>.next_siblingsand.previous_siblings¶You can iterate over a tag's siblings with.next_siblingsor.previous_siblings:forsiblinginsoup.a.next_siblings:print(repr(sibling))# ',\n'# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a># ' and\n'# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a># '; and they lived at the bottom of a well.'forsiblinginsoup.find(id="link3").previous_siblings:print(repr(sibling))# ' and\n'# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a># ',\n'# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a># 'Once upon a time there were three little sisters; and their names were\n'(If the argument syntax to find tags by their attribute value is unfamiliar,
+don't worry; this is covered later inThe keyword arguments.)
+Going sideways¶
+¶
+Consider a simple document like this:
+sibling_soup=BeautifulSoup("<a><b>text1</b><c>text2</c></a>",'html.parser')print(sibling_soup.prettify())#   <a>#    <b>#     text1#    </b>#    <c>#     text2#    </c>#   </a>
+sibling_soup=BeautifulSoup("<a><b>text1</b><c>text2</c></a>",'html.parser')print(sibling_soup.prettify())#   <a>#    <b>#     text1#    </b>#    <c>#     text2#    </c>#   </a>
+sibling_soup=BeautifulSoup("<a><b>text1</b><c>text2</c></a>",'html.parser')print(sibling_soup.prettify())#   <a>#    <b>#     text1#    </b>#    <c>#     text2#    </c>#   </a>
+
+sibling_soup
+=
+BeautifulSoup
+(
+"<a><b>text1</b><c>text2</c></a>"
+,
+'html.parser'
+)
+print
+(
+sibling_soup
+.
+prettify
+())
+#   <a>
+#    <b>
+#     text1
+#    </b>
+#    <c>
+#     text2
+#    </c>
+#   </a>
+The <b> tag and the <c> tag are at the same level: they're both direct
+children of the same tag. We call themsiblings. When a document is
+pretty-printed, siblings show up at the same indentation level. You
+can also use this relationship in the code you write.
+siblings
+.next_siblingand.previous_sibling¶You can use.next_siblingand.previous_siblingto navigate
+between page elements that are on the same level of the parse tree:sibling_soup.b.next_sibling# <c>text2</c>sibling_soup.c.previous_sibling# <b>text1</b>The <b> tag has a.next_sibling, but no.previous_sibling,
+because there's nothing before the <b> tagon the same level of the
+tree. For the same reason, the <c> tag has a.previous_siblingbut no.next_sibling:print(sibling_soup.b.previous_sibling)# Noneprint(sibling_soup.c.next_sibling)# NoneThe strings "text1" and "text2" arenotsiblings, because they don't
+have the same parent:sibling_soup.b.string# 'text1'print(sibling_soup.b.string.next_sibling)# NoneIn real documents, the.next_siblingor.previous_siblingof a
+tag will usually be a string containing whitespace. Going back to the
+"three sisters" document:# <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,# <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and# <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;You might think that the.next_siblingof the first <a> tag would
+be the second <a> tag. But actually, it's a string: the comma and
+newline that separate the first <a> tag from the second:link=soup.alink# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>link.next_sibling# ',\n 'The second <a> tag is then the.next_siblingof the comma string:link.next_sibling.next_sibling# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>

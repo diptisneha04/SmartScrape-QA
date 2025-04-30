@@ -1,0 +1,492 @@
+Compiler Tutorial - Tpoint Tech
+Tutorials
+×
+Python
+Python Tutorial
+Django Tutorial
+Numpy Tutorial
+Pandas Tutorial
+Tkinter Tutorial
+Pytorch Tutorial
+Flask Tutorial
+OpenCV Tutorial
+Java
+Java Tutorial
+Servlet Tutorial
+JSP Tutorial
+Spring Boot Tutorial
+Spring Framework Tutorial
+Hibernate Tutorial
+JavaFX Tutorial
+Java Web Services Tutorial
+.Net Framework
+.Net Framework Tutorial
+C# Tutorial
+ASP.Net Tutorial
+ADO.Net Tutorial
+WPF Tutorial
+AI, ML and Data Science
+Artificial Intelligence Tutorial
+Machine Learning Tutorial
+Data Science Tutorial
+Deep Learning Tutorial
+TensorFlow Tutorial
+Artificial Neural Network Tutorial
+Matplotlib Tutorial
+Python Scipy Tutorial
+Cloud Technology
+Cloud Computing Tutorial
+AWS Tutorial
+Microsoft Azure Tutorial
+Salesforce Tutorial
+GCP Tutorial
+B.Tech and MCA
+DBMS Tutorial
+Data Structures Tutorial
+Operating System Tutorial
+Computer Network Tutorial
+DAA Tutorial
+Computer Organization Tutorial
+Software Engineering Tutorial
+Data Mining Tutorial
+Web Technology
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+Jquery Tutorial
+Angular 8 Tutorial
+React Tutorial
+React Native Tutorial
+Node.js Tutorial
+PHP
+PHP Tutorial
+MySQL Tutorial
+Laravel Tutorial
+WordPress Tutorial
+CodeIgniter Tutorial
+Software Testing
+Software Testing Tutorial
+Selenium Tutorial
+JIRA Tutorial
+JMeter Tutorial
+Postman Tutorial
+TestNG Tutorial
+SoapUI Tutorial
+Cucumber Tutorial
+Interview
+×
+Technical Interview
+Python Interview Questions
+Java Interview Questions
+.Net Interview Questions
+C++ Interview Questions
+React Interview Questions
+Node.js Interview Questions
+Angular Interview Questions
+SQL Interview Questions
+HR Interview Questions
+Java Interview
+Spring Boot Interview Questions
+Spring Interview Questions
+Hibernate Interview Questions
+JDBC Interview Questions
+Servlet Interview Questions
+Maven Interview Questions
+Jenkins Interview Questions
+Python
+Django Interview Questions
+Pandas Interview Questions
+Express.js Interview Questions
+Python Coding Interview Questions
+Python Interview Questions for 5 Years
+Web Interview
+HTML Interview Questions
+CSS Interview Questions
+JavaScript Interview Questions
+Jquery Interview Questions
+PHP Interview Questions
+Laravel Interview Questions
+AJAX Interview Questions
+Front-End Developer Interview Questions
+jQuery Interview Questions
+Database Interview
+DBMS Interview Questions
+SQL Interview Questions
+PL/SQL Interview Questions
+Oracle Interview Questions
+MySQL Interview Questions
+MongoDB Interview Questions
+Redis Interview Questions
+B.Tech / MCA
+DBMS Interview Questions
+Operating System Interview Questions
+OOPs Interview Questions
+DSA Interview Questions
+Computer Networks Interview Questions
+Important Interview
+C Interview Questions
+Power BI Interview Questions
+C# Interview Questions
+Excel Interview Questions
+C# Interview Questions
+Machine Learning Interview Questions
+AWS Interview Questions
+Microservices Interview Questions
+MySQL Interview Questions
+Software Testing Interview
+Manual Testing Interview Questions
+Selenium Interview Questions
+API Testing Interview Questions
+ETL Testing Interview Questions
+Mobile Testing Interview Questions
+Company Interviews
+IBM Interview Questions
+Adobe Interview Questions
+Microsoft Interview Questions
+Amazon Interview Questions
+TCS Interview Questions
+Wipro Interview Questions
+Accenture Interview Questions
+Compiler
+×
+Online Compilers
+Python Online Compiler
+Java Online Compiler
+PHP Online Compiler
+C Online Compiler
+C++ Online Compiler
+HTML Online Compiler
+JavaScript Online Compiler
+TypeScript Online Compiler
+R Online Compiler
+Swift Online Compiler
+Kotlin Online Compiler
+Go Online Compiler
+C# Online Compiler
+Perl Online Compiler
+Groovy Online Compiler
+HTML, CSS & JavaScript Online Editor
+Multiple Choice Questions
+Python MCQ
+Java MCQ
+PHP MCQ
+C Programming MCQ
+C++ MCQ
+HTML mcq
+JavaScript MCQ
+SQL MCQ
+Operating System MCQ
+Computer Fundamental MCQ
+Computer Network MCQ
+DBMS MCQ
+Data Structure MCQ
+Software Engineering MCQ
+Cloud Computing MCQ
+Artificial Intelligence MCQ
+Python
+Java
+JavaScript
+SQL
+C
+C++
+HTML
+CSS
+React
+Node.js
+Spring Boot
+C#
+PHP
+MySQL
+MongoDB
+AI
+ML
+DSA
+DBMS
+OS
+Aptitude
+Reasoning
+Compiler Tutorial
+Compiler Tutorial
+Compiler Introduction
+Compiler Phases
+Compiler Passes
+Bootstrapping
+Finite State machine
+Regular expression
+Optimization of DFA
+LEX
+Formal Grammar
+BNF Notation
+YACC
+Context free Grammars
+Capabilities of CFG
+Derivation
+Parse Tree
+Ambiguity
+Array references in arithmetic expressions
+Statements that alter the flow of control
+Triples
+Three address code
+Boolean expressions
+Case Statements
+Declarations
+Intermediate code
+Parse tree and Syntax tree
+Postfix Notation
+Postfix Translation
+Procedures call
+Quadruples
+Translation of Assignment Statements
+Basic Parsing
+Parser
+Shift Reduce Parsing
+Operator Precedence
+Predictive Parsers
+LR parser
+LR(0) Items
+SLR(1) Parsing
+CLR(1) Parsing
+LALR(1) Parsing
+Parser Generator
+SDT
+Syntax Directed Translation
+SDT Translation scheme
+SDT Implementation
+Symbol Tables
+Symbol Table
+DS for symbols tables
+Scope Information
+Administration
+Storage Organization
+Activation Record
+Storage Allocation
+Error Detection
+Lexical Error
+Syntax Error
+Semantic Error
+Code Generation
+Code Generation
+Design Issues
+Target Machine
+Run Time Storage
+Basic Block
+Flow Graph
+Block Optimization
+Code Generator
+Code Optimization
+Machine Independent
+Loop optimization
+DAG Representation
+Data-Flow Analysis
+The Phases of a compiler-Lexical Analysis
+Eliminating Ambiguity of a Context-Free Grammar
+Compiler Design MCQ
+Compiler Design MCQ
+next →
+Compiler Design Tutorial
+17 Mar 2025
+|
+2 min read
+Compiler Design Tutorial provides basic and advanced concepts of Compiler. Our Compiler Tutorial is designed for beginners and professionals both.
+Compiler is a translator that converts the high-level language into the machine language.
+Our Compiler Tutorial includes all topics of Compiler such as introduction, grammar, parsing, syntax directed translation, symbol table, code optimization, code generation etc.
+Compiler Design Index
+Compiler Tutorial
+Compiler Tutorial
+Compiler Introduction
+Compiler Phases
+Compiler Passes
+Bootstrapping
+Finite State machine
+Regular expression
+Optimization of DFA
+LEX
+Formal Grammar
+BNF Notation
+YACC
+Context free Grammars
+Capabilities of CFG
+Derivation
+Parse Tree
+Ambiguity
+Basic Parsing
+Parser
+Shift Reduce Parsing
+Operator Precedence
+Predictive Parsers
+LR parser
+LR(0) Items
+SLR(1) Parsing
+CLR(1) Parsing
+LALR(1) Parsing
+Parser Generator
+SDT
+Syntax Directed Translation
+SDT Translation scheme
+SDT Implementation
+Intermediate Code
+Postfix Notation
+Parse and syntax trees
+Three address code
+Quadruples
+Triples
+Assignment statements
+Boolean expressions
+Flow altering statements
+Postfix translation
+Array references
+Procedures call
+Declarations
+Case Statements
+Symbol Tables
+Symbol Table
+DS for symbols tables
+Scope Information
+Administration
+Storage Organization
+Activation Record
+Storage Allocation
+Error Detection
+Lexical Error
+Syntax Error
+Semantic Error
+Code Generation
+Code Generation
+Design Issues
+Target Machine
+Run Time Storage
+Basic Block
+Flow Graph
+Block Optimization
+Code Generator
+Code Optimization
+Machine Independent
+Loop optimization
+DAG Representation
+Data-Flow Analysis
+Prerequisite
+Before learning Compiler Tutorial, you must have the basic knowledge of Basic Compiler.
+Audience
+Our Compiler Tutorial is designed to help beginners and professionals.
+Problem
+We assure that you will not find any problem in this Compiler Tutorial. But if there is any mistake, please post the problem in contact form.
+Next Topic
+Compiler Introduction
+next →
+Related Posts
+Boolean expressions
+have two primary purposes. They are used for computing the logical values. They are also used as conditional expression using if-then-else or while-do. Consider the grammar E E OR E E E AND E E NOT E E ...
+2 min read
+Declarations
+When we encounter declarations, we need to lay out storage for the declared variables. For every local name in a procedure, we create a ST(Symbol Table) entry containing: The type of the name How much storage the name requires The production: D integer, id ...
+1 min read
+Formal Grammar
+Formal grammar Formal grammar is a set of rules. It is used to identify correct or incorrect strings of tokens in a language. The formal grammar is represented as G. Formal grammar is used to generate all possible strings over the alphabet that is syntactically correct in the...
+1 min read
+Optimization of DFA
+To optimize the DFA you have to follow the various steps. These are as follows: Step 1: Remove all the states that are unreachable from the initial state via any set of the transition of DFA. Step 2: Draw the transition table for all pair of states. Step...
+2 min read
+Postfix Translation
+In a production A &alpha;, the translation rule of A.CODE consists of the concatenation of the CODE translations of the non-terminals in &alpha; in the same order as the non-terminals appear in &alpha;. Production can be factored to achieve postfix form. Postfix translation of while statement The...
+1 min read
+Compiler Phases
+The compilation process contains the sequence of various phases. Each phase takes source program in one representation and produces output in another representation. Each phase takes input from its ious stage. There are the various phases of compiler: Fig: phases of compiler Lexical Analysis: Lexical analyzer phase is the first...
+2 min read
+LEX
+Lex is a program that generates lexical analyzer. It is used with YACC parser generator. The lexical analyzer is a program that transforms an input stream into a sequence of tokens. It reads the input stream and produces the source code as output through implementing the lexical...
+1 min read
+Parse tree and Syntax tree
+When you create a parse tree then it contains more details than actually needed. So, it is very difficult to compiler to parse the parse tree. Take the following parse tree as an example: In the parse tree, most of the leaf nodes are single child...
+1 min read
+Ambiguity
+A grammar is said to be ambiguous if there exists more than one leftmost derivation or more than one rightmost derivative or more than one parse tree for the given input string. If the grammar is not ambiguous then it is called unambiguous. Example: S = aSb |...
+1 min read
+Statements that alter the flow of control
+The goto statement alters the flow of control. If we implement goto statements then we need to define a LABEL for a statement. A production can be added for this purpose: S LABEL : S LABEL ...
+2 min read
+Subscribe to Tpoint Tech
+We request you to subscribe our newsletter for upcoming updates.
+Subscribe
+Learn Important Tutorial
+Python
+Java
+Javascript
+HTML
+Database
+PHP
+C++
+React
+B.Tech / MCA
+DBMS
+Data Structures
+DAA
+Operating System
+Computer Network
+Compiler Design
+Computer Organization
+Discrete Mathematics
+Ethical Hacking
+Computer Graphics
+Web Technology
+Software Engineering
+Cyber Security
+Automata
+C Programming
+C++
+Java
+.Net
+Python
+Programs
+Control System
+Data Warehouse
+Preparation
+Aptitude
+Reasoning
+Verbal Ability
+Interview Questions
+Company Questions
+We provides tutorials and interview questions of all technology like java tutorial, android, java frameworks
+Contact info
+G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India
+hr@tpointtech.com
++91-9599086977
+Follow us
+Tutorials
+Java
+Data Structures
+C Programming
+C++ Tutorial
+C# Tutorial
+PHP Tutorial
+HTML Tutorial
+JavaScript Tutorial
+jQuery Tutorial
+Spring Tutorial
+Interview Questions
+Microsoft
+Amazon
+Adobe
+Intuit
+Accenture
+Cognizant
+Capgemini
+Wipro
+Tcs
+Infosys
+Online Compiler
+C
+R
+C++
+Php
+Java
+Html
+Swift
+Python
+JavaScript
+TypeScript
+Latest Post
+|
+Tutorials List
+|
+Privacy Policy
+© Copyright 2011 - 2025 TpointTech.com. All Rights Reserved.

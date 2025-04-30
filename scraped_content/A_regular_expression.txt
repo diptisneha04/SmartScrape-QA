@@ -1,0 +1,61 @@
+¶
+If you pass in a regular expression object, Beautiful Soup will filter
+against that regular expression using itssearch()method. This code
+finds all the tags whose names start with the letter "b"; in this
+case, the <body> tag and the <b> tag:
+search()
+search()
+importrefortaginsoup.find_all(re.compile("^b")):print(tag.name)# body# b
+importrefortaginsoup.find_all(re.compile("^b")):print(tag.name)# body# b
+importrefortaginsoup.find_all(re.compile("^b")):print(tag.name)# body# b
+
+import
+re
+for
+tag
+in
+soup
+.
+find_all
+(
+re
+.
+compile
+(
+"^b"
+)):
+print
+(
+tag
+.
+name
+)
+# body
+# b
+This code finds all the tags whose names contain the letter 't':
+fortaginsoup.find_all(re.compile("t")):print(tag.name)# html# title
+fortaginsoup.find_all(re.compile("t")):print(tag.name)# html# title
+fortaginsoup.find_all(re.compile("t")):print(tag.name)# html# title
+
+for
+tag
+in
+soup
+.
+find_all
+(
+re
+.
+compile
+(
+"t"
+)):
+print
+(
+tag
+.
+name
+)
+# html
+# title
+True¶The valueTruematches every tag it can. This code findsallthe tags in the document, but none of the text strings:fortaginsoup.find_all(True):print(tag.name)# html# head# title# body# p# b# p# a# a# a# p

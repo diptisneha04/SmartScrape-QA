@@ -1,0 +1,265 @@
+¶
+Almost everyone who uses Beautiful Soup to extract information from a
+document can get what they need using the methods described inSearching the tree. However, there's a lower-level interface that
+lets you define any matching behavior you want. Behind the scenes, the
+parts of the Beautiful Soup API that most people use--find_all()and the like—are actually using this low-level interface, and you
+can use it directly.
+Searching the tree
+find_all()
+find_all()
+(Access to the low-level search interface is a new feature in
+Beautiful Soup 4.13.0.)
+(Access to the low-level search interface is a new feature in
+Beautiful Soup 4.13.0.)
+Custom element filtering¶classElementFilter¶TheElementFilterclass is your entry point to the
+low-level interface. To use it, define a function that takes aPageElementobject (which could be either aTagor aNavigableString). The function must
+returnTrueif the element matches your custom criteria, andFalseif it doesn't.This example function looks for content-containing tags and strings,
+but skips whitespace-only strings:frombs4importTag,NavigableStringdefnon_whitespace_element_func(tag_or_string):"""return True for:* all Tag objects* NavigableString objects that contain non-whitespace text"""return(isinstance(tag_or_string,Tag)or(isinstance(tag_or_string,NavigableString)andtag_or_string.strip()!=""))Once you have a function, pass it into theElementFilterconstructor:frombs4.filterimportElementFilternon_whitespace_filter=ElementFilter(non_whitespace_element_func)You can then use thisElementFilterobject as the first
+argument to any of theSearching the treemethods. Whatever
+criteria you defined in your function will be used instead of the
+default Beautiful Soup match logic:frombs4importBeautifulSoupsmall_doc="""<p><b>bold</b><i>italic</i>and<u>underline</u></p>"""soup=BeautifulSoup(small_doc,'html.parser')soup.find('p').find_all(non_whitespace_filter,recursive=False)# [<b>bold</b>, <i>italic</i>, '\n  and\n  ', <u>underline</u>]soup.find("b").find_next(non_whitespace_filter)# 'bold'soup.find("i").find_next_siblings(non_whitespace_filter)# ['\n  and\n  ', <u>underline</u>]Every potential match will be run through your function, and the onlyPageElementobjects returned will be the ones where your
+function returnedTrue.To summarize the function-based matching behaviors,A function passed as the first argument to a search method
+(or equivalently, using thenameargument) considers onlyTagobjects.A function passed to a search method using thestringargument
+considers onlyNavigableStringobjects.A function passed to a search method using anElementFilterobject considers bothTagandNavigableStringobjects.Custom element iteration¶ElementFilter.filter()¶By passing anElementFilterinstance into Beautiful Soup's
+tree-searching methods, you can completely customize what it means for
+Beautiful Soup to match an element as it iterates over the parse
+tree. By using theElementFilter.filter()method, you can
+also completely customize what it means for Beautiful Soup to iterate
+over the parse tree in the first place.TheElementFilter.filter()method takes a generator that yields
+a stream ofPageElementobjects. There is no restriction
+on whichPageElementobjects show up, how many times they
+show up, or in which order. Theoretically, they don't even need to be
+from the sameBeautifulSoupdocument. You can do whatever
+makes sense for you.Here's a silly example: a generator that walks randomly back and forth
+through the parse tree:importrandomdefrandom_walk(starting_location):location=starting_locationwhilelocationisnotNone:yieldlocationifrandom.random()<0.5:location=location.next_elementelse:location=location.previous_elementiflocationisNone:returnPass this generator into the exampleElementFilter.filter()and Beautiful Soup will wander randomly around the parse tree,
+applying thenon_whitespace_filterfunction to every element it finds,
+and yielding all of the matches—potentially yielding a given object
+more than once:[xforxinnon_whitespace_filter.filter(random_walk(soup.b))]# [<b>bold</b>, 'bold', <b>bold</b>, <p><b>bold</b>...][xforxinnon_whitespace_filter.filter(random_walk(soup.b))]# [<b>bold</b>, <b>bold</b>, 'bold', <i>italic</i>, <i>italic</i>, ...](Note that unlike the other code examples in this documentation, this
+example can give different results every time you run it, thanks
+to the random element. It's very unlikely, but this function could
+wander around the parse tree forever andnevercomplete.)
+Custom element filtering¶
+¶
+classElementFilter¶
+classElementFilter¶
+class
+class
+
+ElementFilter
+ElementFilter
+¶
+
+TheElementFilterclass is your entry point to the
+low-level interface. To use it, define a function that takes aPageElementobject (which could be either aTagor aNavigableString). The function must
+returnTrueif the element matches your custom criteria, andFalseif it doesn't.
+ElementFilter
+ElementFilter
+ElementFilter
+PageElement
+PageElement
+Tag
+Tag
+Tag
+NavigableString
+NavigableString
+NavigableString
+True
+True
+False
+False
+This example function looks for content-containing tags and strings,
+but skips whitespace-only strings:
+frombs4importTag,NavigableStringdefnon_whitespace_element_func(tag_or_string):"""return True for:* all Tag objects* NavigableString objects that contain non-whitespace text"""return(isinstance(tag_or_string,Tag)or(isinstance(tag_or_string,NavigableString)andtag_or_string.strip()!=""))
+frombs4importTag,NavigableStringdefnon_whitespace_element_func(tag_or_string):"""return True for:* all Tag objects* NavigableString objects that contain non-whitespace text"""return(isinstance(tag_or_string,Tag)or(isinstance(tag_or_string,NavigableString)andtag_or_string.strip()!=""))
+frombs4importTag,NavigableStringdefnon_whitespace_element_func(tag_or_string):"""return True for:* all Tag objects* NavigableString objects that contain non-whitespace text"""return(isinstance(tag_or_string,Tag)or(isinstance(tag_or_string,NavigableString)andtag_or_string.strip()!=""))
+
+from
+bs4
+import
+Tag
+,
+NavigableString
+def
+non_whitespace_element_func
+(
+tag_or_string
+):
+
+"""
+return True for:
+* all Tag objects
+* NavigableString objects that contain non-whitespace text
+"""
+return
+(
+isinstance
+(
+tag_or_string
+,
+Tag
+)
+or
+(
+isinstance
+(
+tag_or_string
+,
+NavigableString
+)
+and
+tag_or_string
+.
+strip
+()
+!=
+""
+))
+Once you have a function, pass it into theElementFilterconstructor:
+ElementFilter
+ElementFilter
+ElementFilter
+frombs4.filterimportElementFilternon_whitespace_filter=ElementFilter(non_whitespace_element_func)
+frombs4.filterimportElementFilternon_whitespace_filter=ElementFilter(non_whitespace_element_func)
+frombs4.filterimportElementFilternon_whitespace_filter=ElementFilter(non_whitespace_element_func)
+
+from
+bs4.filter
+import
+ElementFilter
+non_whitespace_filter
+=
+ElementFilter
+(
+non_whitespace_element_func
+)
+You can then use thisElementFilterobject as the first
+argument to any of theSearching the treemethods. Whatever
+criteria you defined in your function will be used instead of the
+default Beautiful Soup match logic:
+ElementFilter
+ElementFilter
+ElementFilter
+Searching the tree
+frombs4importBeautifulSoupsmall_doc="""<p><b>bold</b><i>italic</i>and<u>underline</u></p>"""soup=BeautifulSoup(small_doc,'html.parser')soup.find('p').find_all(non_whitespace_filter,recursive=False)# [<b>bold</b>, <i>italic</i>, '\n  and\n  ', <u>underline</u>]soup.find("b").find_next(non_whitespace_filter)# 'bold'soup.find("i").find_next_siblings(non_whitespace_filter)# ['\n  and\n  ', <u>underline</u>]
+frombs4importBeautifulSoupsmall_doc="""<p><b>bold</b><i>italic</i>and<u>underline</u></p>"""soup=BeautifulSoup(small_doc,'html.parser')soup.find('p').find_all(non_whitespace_filter,recursive=False)# [<b>bold</b>, <i>italic</i>, '\n  and\n  ', <u>underline</u>]soup.find("b").find_next(non_whitespace_filter)# 'bold'soup.find("i").find_next_siblings(non_whitespace_filter)# ['\n  and\n  ', <u>underline</u>]
+frombs4importBeautifulSoupsmall_doc="""<p><b>bold</b><i>italic</i>and<u>underline</u></p>"""soup=BeautifulSoup(small_doc,'html.parser')soup.find('p').find_all(non_whitespace_filter,recursive=False)# [<b>bold</b>, <i>italic</i>, '\n  and\n  ', <u>underline</u>]soup.find("b").find_next(non_whitespace_filter)# 'bold'soup.find("i").find_next_siblings(non_whitespace_filter)# ['\n  and\n  ', <u>underline</u>]
+
+from
+bs4
+import
+BeautifulSoup
+small_doc
+=
+"""
+<p>
+<b>bold</b>
+<i>italic</i>
+and
+<u>underline</u>
+</p>
+"""
+soup
+=
+BeautifulSoup
+(
+small_doc
+,
+'html.parser'
+)
+soup
+.
+find
+(
+'p'
+)
+.
+find_all
+(
+non_whitespace_filter
+,
+recursive
+=
+False
+)
+# [<b>bold</b>, <i>italic</i>, '\n  and\n  ', <u>underline</u>]
+soup
+.
+find
+(
+"b"
+)
+.
+find_next
+(
+non_whitespace_filter
+)
+# 'bold'
+soup
+.
+find
+(
+"i"
+)
+.
+find_next_siblings
+(
+non_whitespace_filter
+)
+# ['\n  and\n  ', <u>underline</u>]
+Every potential match will be run through your function, and the onlyPageElementobjects returned will be the ones where your
+function returnedTrue.
+PageElement
+PageElement
+True
+True
+To summarize the function-based matching behaviors,
+A function passed as the first argument to a search method
+(or equivalently, using thenameargument) considers onlyTagobjects.A function passed to a search method using thestringargument
+considers onlyNavigableStringobjects.A function passed to a search method using anElementFilterobject considers bothTagandNavigableStringobjects.
+A function passed as the first argument to a search method
+(or equivalently, using thenameargument) considers onlyTagobjects.
+A function passed as the first argument to a search method
+(or equivalently, using thenameargument) considers onlyTagobjects.
+name
+name
+Tag
+Tag
+Tag
+A function passed to a search method using thestringargument
+considers onlyNavigableStringobjects.
+A function passed to a search method using thestringargument
+considers onlyNavigableStringobjects.
+string
+string
+NavigableString
+NavigableString
+NavigableString
+A function passed to a search method using anElementFilterobject considers bothTagandNavigableStringobjects.
+A function passed to a search method using anElementFilterobject considers bothTagandNavigableStringobjects.
+ElementFilter
+ElementFilter
+ElementFilter
+Tag
+Tag
+Tag
+NavigableString
+NavigableString
+NavigableString
+Custom element iteration¶ElementFilter.filter()¶By passing anElementFilterinstance into Beautiful Soup's
+tree-searching methods, you can completely customize what it means for
+Beautiful Soup to match an element as it iterates over the parse
+tree. By using theElementFilter.filter()method, you can
+also completely customize what it means for Beautiful Soup to iterate
+over the parse tree in the first place.TheElementFilter.filter()method takes a generator that yields
+a stream ofPageElementobjects. There is no restriction
+on whichPageElementobjects show up, how many times they
+show up, or in which order. Theoretically, they don't even need to be
+from the sameBeautifulSoupdocument. You can do whatever
+makes sense for you.Here's a silly example: a generator that walks randomly back and forth
+through the parse tree:importrandomdefrandom_walk(starting_location):location=starting_locationwhilelocationisnotNone:yieldlocationifrandom.random()<0.5:location=location.next_elementelse:location=location.previous_elementiflocationisNone:returnPass this generator into the exampleElementFilter.filter()and Beautiful Soup will wander randomly around the parse tree,
+applying thenon_whitespace_filterfunction to every element it finds,
+and yielding all of the matches—potentially yielding a given object
+more than once:[xforxinnon_whitespace_filter.filter(random_walk(soup.b))]# [<b>bold</b>, 'bold', <b>bold</b>, <p><b>bold</b>...][xforxinnon_whitespace_filter.filter(random_walk(soup.b))]# [<b>bold</b>, <b>bold</b>, 'bold', <i>italic</i>, <i>italic</i>, ...](Note that unlike the other code examples in this documentation, this
+example can give different results every time you run it, thanks
+to the random element. It's very unlikely, but this function could
+wander around the parse tree forever andnevercomplete.)

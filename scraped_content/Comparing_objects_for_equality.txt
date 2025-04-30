@@ -1,0 +1,73 @@
+¶
+Beautiful Soup says that twoNavigableStringorTagobjects
+are equal when they represent the same HTML or XML markup, even if their
+attributes are in a different order or they live in different parts of the
+object tree. In this example, the two <b> tags are treated as equal, because
+they both look like "<b>pizza</b>":
+NavigableString
+NavigableString
+NavigableString
+Tag
+Tag
+Tag
+markup="<p>I want <b>pizza</b> and more <b>pizza</b>!</p>"soup=BeautifulSoup(markup,'html.parser')first_b,second_b=soup.find_all('b')print(first_b==second_b)# Trueprint(first_b.previous_element==second_b.previous_element)# False
+markup="<p>I want <b>pizza</b> and more <b>pizza</b>!</p>"soup=BeautifulSoup(markup,'html.parser')first_b,second_b=soup.find_all('b')print(first_b==second_b)# Trueprint(first_b.previous_element==second_b.previous_element)# False
+markup="<p>I want <b>pizza</b> and more <b>pizza</b>!</p>"soup=BeautifulSoup(markup,'html.parser')first_b,second_b=soup.find_all('b')print(first_b==second_b)# Trueprint(first_b.previous_element==second_b.previous_element)# False
+
+markup
+=
+"<p>I want <b>pizza</b> and more <b>pizza</b>!</p>"
+soup
+=
+BeautifulSoup
+(
+markup
+,
+'html.parser'
+)
+first_b
+,
+second_b
+=
+soup
+.
+find_all
+(
+'b'
+)
+print
+(
+first_b
+==
+second_b
+)
+# True
+print
+(
+first_b
+.
+previous_element
+==
+second_b
+.
+previous_element
+)
+# False
+If you want to see whether two variables refer to exactly the same
+object, useis:
+is
+print(first_bissecond_b)# False
+print(first_bissecond_b)# False
+print(first_bissecond_b)# False
+
+print
+(
+first_b
+is
+second_b
+)
+# False
+Copying Beautiful Soup objects¶You can usecopy.copy()to create a copy of anyTagorNavigableString:importcopyp_copy=copy.copy(soup.p)print(p_copy)# <p>I want <b>pizza</b> and more <b>pizza</b>!</p>The copy is considered equal to the original, since it represents the
+same markup as the original, but it's not the same object:print(soup.p==p_copy)# Trueprint(soup.pisp_copy)# FalseThe only real difference is that the copy is completely detached from
+the original Beautiful Soup object tree, just as ifextract()had
+been called on it. This is because two differentTagobjects can't occupy the same space at the same time.print(p_copy.parent)# NoneYou can useTag.copy_self()to create a copy of aTagwithout copying its contents.original=BeautifulSoup('<a id="a_tag" class="link">the <i>link</i></a>','html.parser')print(original.a)# <a class="link" id="a_tag">the <i>link</a>print(original.a.copy_self())# <a class="link" id="a_tag"></a>(Tag.copy_self() is introduced in Beautiful Soup 4.13.0.)

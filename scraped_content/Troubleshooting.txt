@@ -1,0 +1,473 @@
+¶
+diagnose()¶If you're having trouble understanding what Beautiful Soup does to a
+document, pass the document into thediagnose()function. (This function is new in
+Beautiful Soup 4.2.0.) Beautiful Soup will print out a report showing
+you how different parsers handle the document, and tell you if you're
+missing a parser that Beautiful Soup could be using:frombs4.diagnoseimportdiagnosewithopen("bad.html")asfp:data=fp.read()diagnose(data)# Diagnostic running on Beautiful Soup 4.2.0# Python version 2.7.3 (default, Aug  1 2012, 05:16:07)# I noticed that html5lib is not installed. Installing it may help.# Found lxml version 2.3.2.0## Trying to parse your data with html.parser# Here's what html.parser did with the document:# ...Just looking at the output of diagnose() might show you how to solve the
+problem. Even if not, you can paste the output ofdiagnose()when
+asking for help.
+
+diagnose()¶
+diagnose()
+diagnose()
+¶
+If you're having trouble understanding what Beautiful Soup does to a
+document, pass the document into thediagnose()function. (This function is new in
+Beautiful Soup 4.2.0.) Beautiful Soup will print out a report showing
+you how different parsers handle the document, and tell you if you're
+missing a parser that Beautiful Soup could be using:
+diagnose()
+diagnose()
+frombs4.diagnoseimportdiagnosewithopen("bad.html")asfp:data=fp.read()diagnose(data)# Diagnostic running on Beautiful Soup 4.2.0# Python version 2.7.3 (default, Aug  1 2012, 05:16:07)# I noticed that html5lib is not installed. Installing it may help.# Found lxml version 2.3.2.0## Trying to parse your data with html.parser# Here's what html.parser did with the document:# ...
+frombs4.diagnoseimportdiagnosewithopen("bad.html")asfp:data=fp.read()diagnose(data)# Diagnostic running on Beautiful Soup 4.2.0# Python version 2.7.3 (default, Aug  1 2012, 05:16:07)# I noticed that html5lib is not installed. Installing it may help.# Found lxml version 2.3.2.0## Trying to parse your data with html.parser# Here's what html.parser did with the document:# ...
+frombs4.diagnoseimportdiagnosewithopen("bad.html")asfp:data=fp.read()diagnose(data)# Diagnostic running on Beautiful Soup 4.2.0# Python version 2.7.3 (default, Aug  1 2012, 05:16:07)# I noticed that html5lib is not installed. Installing it may help.# Found lxml version 2.3.2.0## Trying to parse your data with html.parser# Here's what html.parser did with the document:# ...
+
+from
+bs4.diagnose
+import
+diagnose
+with
+open
+(
+"bad.html"
+)
+as
+fp
+:
+data
+=
+fp
+.
+read
+()
+diagnose
+(
+data
+)
+# Diagnostic running on Beautiful Soup 4.2.0
+# Python version 2.7.3 (default, Aug  1 2012, 05:16:07)
+# I noticed that html5lib is not installed. Installing it may help.
+# Found lxml version 2.3.2.0
+#
+# Trying to parse your data with html.parser
+# Here's what html.parser did with the document:
+# ...
+Just looking at the output of diagnose() might show you how to solve the
+problem. Even if not, you can paste the output ofdiagnose()when
+asking for help.
+diagnose()
+diagnose()
+Errors when parsing a document¶There are two different kinds of parse errors. There are crashes,
+where you feed a document to Beautiful Soup and it raises an
+exception (usually anHTMLParser.HTMLParseError). And there is
+unexpected behavior, where a Beautiful Soup parse tree looks a lot
+different than the document used to create it.These problems are almost never problems with Beautiful Soup itself.
+This is not because Beautiful Soup is an amazingly well-written piece
+of software. It's because Beautiful Soup doesn't include any parsing
+code. Instead, it relies on external parsers. If one parser isn't
+working on a certain document, the best solution is to try a different
+parser. SeeInstalling a parserfor details and a parser
+comparison. If this doesn't help, you might need to inspect the
+document tree found inside theBeautifulSoupobject, to see where
+the markup you're looking for actually ended up.
+Errors when parsing a document¶
+¶
+There are two different kinds of parse errors. There are crashes,
+where you feed a document to Beautiful Soup and it raises an
+exception (usually anHTMLParser.HTMLParseError). And there is
+unexpected behavior, where a Beautiful Soup parse tree looks a lot
+different than the document used to create it.
+HTMLParser.HTMLParseError
+HTMLParser.HTMLParseError
+These problems are almost never problems with Beautiful Soup itself.
+This is not because Beautiful Soup is an amazingly well-written piece
+of software. It's because Beautiful Soup doesn't include any parsing
+code. Instead, it relies on external parsers. If one parser isn't
+working on a certain document, the best solution is to try a different
+parser. SeeInstalling a parserfor details and a parser
+comparison. If this doesn't help, you might need to inspect the
+document tree found inside theBeautifulSoupobject, to see where
+the markup you're looking for actually ended up.
+Installing a parser
+BeautifulSoup
+BeautifulSoup
+Version mismatch problems¶SyntaxError:Invalidsyntax(on the lineROOT_TAG_NAME='[document]'): Caused by running an old Python 2 version of
+Beautiful Soup under Python 3, without converting the code.ImportError:NomodulenamedHTMLParser- Caused by running an old
+Python 2 version of Beautiful Soup under Python 3.ImportError:Nomodulenamedhtml.parser- Caused by running the
+Python 3 version of Beautiful Soup under Python 2.ImportError:NomodulenamedBeautifulSoup- Caused by running
+Beautiful Soup 3 code in an environment that doesn't have BS3
+installed. Or, by writing Beautiful Soup 4 code without knowing that
+the package name has changed tobs4.ImportError:Nomodulenamedbs4- Caused by running Beautiful
+Soup 4 code in an environment that doesn't have BS4 installed.
+Version mismatch problems¶
+¶
+SyntaxError:Invalidsyntax(on the lineROOT_TAG_NAME='[document]'): Caused by running an old Python 2 version of
+Beautiful Soup under Python 3, without converting the code.ImportError:NomodulenamedHTMLParser- Caused by running an old
+Python 2 version of Beautiful Soup under Python 3.ImportError:Nomodulenamedhtml.parser- Caused by running the
+Python 3 version of Beautiful Soup under Python 2.ImportError:NomodulenamedBeautifulSoup- Caused by running
+Beautiful Soup 3 code in an environment that doesn't have BS3
+installed. Or, by writing Beautiful Soup 4 code without knowing that
+the package name has changed tobs4.ImportError:Nomodulenamedbs4- Caused by running Beautiful
+Soup 4 code in an environment that doesn't have BS4 installed.
+SyntaxError:Invalidsyntax(on the lineROOT_TAG_NAME='[document]'): Caused by running an old Python 2 version of
+Beautiful Soup under Python 3, without converting the code.
+SyntaxError:Invalidsyntax(on the lineROOT_TAG_NAME='[document]'): Caused by running an old Python 2 version of
+Beautiful Soup under Python 3, without converting the code.
+SyntaxError:Invalidsyntax
+SyntaxError:
+Invalid
+syntax
+ROOT_TAG_NAME='[document]'
+ROOT_TAG_NAME
+=
+'[document]'
+ImportError:NomodulenamedHTMLParser- Caused by running an old
+Python 2 version of Beautiful Soup under Python 3.
+ImportError:NomodulenamedHTMLParser- Caused by running an old
+Python 2 version of Beautiful Soup under Python 3.
+ImportError:NomodulenamedHTMLParser
+ImportError:
+No
+module
+named
+HTMLParser
+ImportError:Nomodulenamedhtml.parser- Caused by running the
+Python 3 version of Beautiful Soup under Python 2.
+ImportError:Nomodulenamedhtml.parser- Caused by running the
+Python 3 version of Beautiful Soup under Python 2.
+ImportError:Nomodulenamedhtml.parser
+ImportError:
+No
+module
+named
+html.parser
+ImportError:NomodulenamedBeautifulSoup- Caused by running
+Beautiful Soup 3 code in an environment that doesn't have BS3
+installed. Or, by writing Beautiful Soup 4 code without knowing that
+the package name has changed tobs4.
+ImportError:NomodulenamedBeautifulSoup- Caused by running
+Beautiful Soup 3 code in an environment that doesn't have BS3
+installed. Or, by writing Beautiful Soup 4 code without knowing that
+the package name has changed tobs4.
+ImportError:NomodulenamedBeautifulSoup
+ImportError:
+No
+module
+named
+BeautifulSoup
+bs4
+bs4
+ImportError:Nomodulenamedbs4- Caused by running Beautiful
+Soup 4 code in an environment that doesn't have BS4 installed.
+ImportError:Nomodulenamedbs4- Caused by running Beautiful
+Soup 4 code in an environment that doesn't have BS4 installed.
+ImportError:Nomodulenamedbs4
+ImportError:
+No
+module
+named
+bs4
+Parsing XML¶By default, Beautiful Soup parses documents as HTML. To parse a
+document as XML, pass in "xml" as the second argument to theBeautifulSoupconstructor:soup=BeautifulSoup(markup,"xml")You'll need tohave lxml installed.
+
+Parsing XML¶
+¶
+By default, Beautiful Soup parses documents as HTML. To parse a
+document as XML, pass in "xml" as the second argument to theBeautifulSoupconstructor:
+BeautifulSoup
+BeautifulSoup
+soup=BeautifulSoup(markup,"xml")
+soup=BeautifulSoup(markup,"xml")
+soup=BeautifulSoup(markup,"xml")
+
+soup
+=
+BeautifulSoup
+(
+markup
+,
+"xml"
+)
+You'll need tohave lxml installed.
+have lxml installed
+have lxml installed
+Other parser problems¶If your script works on one computer but not another, or in one
+virtual environment but not another, or outside the virtual
+environment but not inside, it's probably because the two
+environments have different parser libraries available. For example,
+you may have developed the script on a computer that has lxml
+installed, and then tried to run it on a computer that only has
+html5lib installed. SeeDifferences between parsersfor why this
+matters, and fix the problem by mentioning a specific parser library
+in theBeautifulSoupconstructor.BecauseHTML tags and attributes are case-insensitive, all three HTML
+parsers convert tag and attribute names to lowercase. That is, the
+markup <TAG></TAG> is converted to <tag></tag>. If you want to
+preserve mixed-case or uppercase tags and attributes, you'll need toparse the document as XML.
+Other parser problems¶
+¶
+If your script works on one computer but not another, or in one
+virtual environment but not another, or outside the virtual
+environment but not inside, it's probably because the two
+environments have different parser libraries available. For example,
+you may have developed the script on a computer that has lxml
+installed, and then tried to run it on a computer that only has
+html5lib installed. SeeDifferences between parsersfor why this
+matters, and fix the problem by mentioning a specific parser library
+in theBeautifulSoupconstructor.BecauseHTML tags and attributes are case-insensitive, all three HTML
+parsers convert tag and attribute names to lowercase. That is, the
+markup <TAG></TAG> is converted to <tag></tag>. If you want to
+preserve mixed-case or uppercase tags and attributes, you'll need toparse the document as XML.
+If your script works on one computer but not another, or in one
+virtual environment but not another, or outside the virtual
+environment but not inside, it's probably because the two
+environments have different parser libraries available. For example,
+you may have developed the script on a computer that has lxml
+installed, and then tried to run it on a computer that only has
+html5lib installed. SeeDifferences between parsersfor why this
+matters, and fix the problem by mentioning a specific parser library
+in theBeautifulSoupconstructor.
+If your script works on one computer but not another, or in one
+virtual environment but not another, or outside the virtual
+environment but not inside, it's probably because the two
+environments have different parser libraries available. For example,
+you may have developed the script on a computer that has lxml
+installed, and then tried to run it on a computer that only has
+html5lib installed. SeeDifferences between parsersfor why this
+matters, and fix the problem by mentioning a specific parser library
+in theBeautifulSoupconstructor.
+Differences between parsers
+BeautifulSoup
+BeautifulSoup
+BecauseHTML tags and attributes are case-insensitive, all three HTML
+parsers convert tag and attribute names to lowercase. That is, the
+markup <TAG></TAG> is converted to <tag></tag>. If you want to
+preserve mixed-case or uppercase tags and attributes, you'll need toparse the document as XML.
+BecauseHTML tags and attributes are case-insensitive, all three HTML
+parsers convert tag and attribute names to lowercase. That is, the
+markup <TAG></TAG> is converted to <tag></tag>. If you want to
+preserve mixed-case or uppercase tags and attributes, you'll need toparse the document as XML.
+HTML tags and attributes are case-insensitive
+parse the document as XML.
+parse the document as XML.
+Miscellaneous¶UnicodeEncodeError:'charmap'codeccan'tencodecharacter'\xfoo'inpositionbar(or just about any otherUnicodeEncodeError) - This problem shows up in two main
+situations. First, when you try to print a Unicode character that
+your console doesn't know how to display. (Seethis page on the
+Python wikifor help.)
+Second, when you're writing to a file and you pass in a Unicode
+character that's not supported by your default encoding. In this
+case, the simplest solution is to explicitly encode the Unicode
+string into UTF-8 withu.encode("utf8").KeyError:[attr]- Caused by accessingtag['attr']when the
+tag in question doesn't define theattrattribute. The most
+common errors areKeyError:'href'andKeyError:'class'.
+Usetag.get('attr')if you're not sureattris
+defined, just as you would with a Python dictionary.AttributeError:'ResultSet'objecthasnoattribute'foo'- This
+usually happens because you expectedfind_all()to return a
+single tag or string. Butfind_all()returns alistof tags
+and strings—aResultSetobject. You need to iterate over the
+list and look at the.fooof each one. Or, if you really only
+want one result, you need to usefind()instead offind_all().AttributeError:'NoneType'objecthasnoattribute'foo'- This
+usually happens because you calledfind()and then tried to
+access the.fooattribute of the result. But in your case,find()didn't find anything, so it returnedNone, instead of
+returning a tag or a string. You need to figure out why yourfind()call isn't returning anything.AttributeError:'NavigableString'objecthasnoattribute'foo'- This usually happens because you're treating a string as
+though it were a tag. You may be iterating over a list, expecting
+that it contains nothing but tags, when it actually contains both tags and
+strings.
+
+Miscellaneous¶
+¶
+UnicodeEncodeError:'charmap'codeccan'tencodecharacter'\xfoo'inpositionbar(or just about any otherUnicodeEncodeError) - This problem shows up in two main
+situations. First, when you try to print a Unicode character that
+your console doesn't know how to display. (Seethis page on the
+Python wikifor help.)
+Second, when you're writing to a file and you pass in a Unicode
+character that's not supported by your default encoding. In this
+case, the simplest solution is to explicitly encode the Unicode
+string into UTF-8 withu.encode("utf8").KeyError:[attr]- Caused by accessingtag['attr']when the
+tag in question doesn't define theattrattribute. The most
+common errors areKeyError:'href'andKeyError:'class'.
+Usetag.get('attr')if you're not sureattris
+defined, just as you would with a Python dictionary.AttributeError:'ResultSet'objecthasnoattribute'foo'- This
+usually happens because you expectedfind_all()to return a
+single tag or string. Butfind_all()returns alistof tags
+and strings—aResultSetobject. You need to iterate over the
+list and look at the.fooof each one. Or, if you really only
+want one result, you need to usefind()instead offind_all().AttributeError:'NoneType'objecthasnoattribute'foo'- This
+usually happens because you calledfind()and then tried to
+access the.fooattribute of the result. But in your case,find()didn't find anything, so it returnedNone, instead of
+returning a tag or a string. You need to figure out why yourfind()call isn't returning anything.AttributeError:'NavigableString'objecthasnoattribute'foo'- This usually happens because you're treating a string as
+though it were a tag. You may be iterating over a list, expecting
+that it contains nothing but tags, when it actually contains both tags and
+strings.
+UnicodeEncodeError:'charmap'codeccan'tencodecharacter'\xfoo'inpositionbar(or just about any otherUnicodeEncodeError) - This problem shows up in two main
+situations. First, when you try to print a Unicode character that
+your console doesn't know how to display. (Seethis page on the
+Python wikifor help.)
+Second, when you're writing to a file and you pass in a Unicode
+character that's not supported by your default encoding. In this
+case, the simplest solution is to explicitly encode the Unicode
+string into UTF-8 withu.encode("utf8").
+UnicodeEncodeError:'charmap'codeccan'tencodecharacter'\xfoo'inpositionbar(or just about any otherUnicodeEncodeError) - This problem shows up in two main
+situations. First, when you try to print a Unicode character that
+your console doesn't know how to display. (Seethis page on the
+Python wikifor help.)
+Second, when you're writing to a file and you pass in a Unicode
+character that's not supported by your default encoding. In this
+case, the simplest solution is to explicitly encode the Unicode
+string into UTF-8 withu.encode("utf8").
+UnicodeEncodeError:'charmap'codeccan'tencodecharacter'\xfoo'inpositionbar
+UnicodeEncodeError:
+'charmap'
+codec
+can't
+encode
+character
+'\xfoo'
+in
+position
+bar
+UnicodeEncodeError
+UnicodeEncodeError
+this page on the
+Python wiki
+u.encode("utf8")
+u.encode("utf8")
+KeyError:[attr]- Caused by accessingtag['attr']when the
+tag in question doesn't define theattrattribute. The most
+common errors areKeyError:'href'andKeyError:'class'.
+Usetag.get('attr')if you're not sureattris
+defined, just as you would with a Python dictionary.
+KeyError:[attr]- Caused by accessingtag['attr']when the
+tag in question doesn't define theattrattribute. The most
+common errors areKeyError:'href'andKeyError:'class'.
+Usetag.get('attr')if you're not sureattris
+defined, just as you would with a Python dictionary.
+KeyError:[attr]
+KeyError:
+[attr]
+tag['attr']
+tag['attr']
+attr
+attr
+KeyError:'href'
+KeyError:
+'href'
+KeyError:'class'
+KeyError:
+'class'
+tag.get('attr')
+tag.get('attr')
+attr
+attr
+AttributeError:'ResultSet'objecthasnoattribute'foo'- This
+usually happens because you expectedfind_all()to return a
+single tag or string. Butfind_all()returns alistof tags
+and strings—aResultSetobject. You need to iterate over the
+list and look at the.fooof each one. Or, if you really only
+want one result, you need to usefind()instead offind_all().
+AttributeError:'ResultSet'objecthasnoattribute'foo'- This
+usually happens because you expectedfind_all()to return a
+single tag or string. Butfind_all()returns alistof tags
+and strings—aResultSetobject. You need to iterate over the
+list and look at the.fooof each one. Or, if you really only
+want one result, you need to usefind()instead offind_all().
+AttributeError:'ResultSet'objecthasnoattribute'foo'
+AttributeError:
+'ResultSet'
+object
+has
+no
+attribute
+'foo'
+find_all()
+find_all()
+find_all()
+find_all()
+list
+ResultSet
+ResultSet
+.foo
+.foo
+find()
+find()
+find_all()
+find_all()
+AttributeError:'NoneType'objecthasnoattribute'foo'- This
+usually happens because you calledfind()and then tried to
+access the.fooattribute of the result. But in your case,find()didn't find anything, so it returnedNone, instead of
+returning a tag or a string. You need to figure out why yourfind()call isn't returning anything.
+AttributeError:'NoneType'objecthasnoattribute'foo'- This
+usually happens because you calledfind()and then tried to
+access the.fooattribute of the result. But in your case,find()didn't find anything, so it returnedNone, instead of
+returning a tag or a string. You need to figure out why yourfind()call isn't returning anything.
+AttributeError:'NoneType'objecthasnoattribute'foo'
+AttributeError:
+'NoneType'
+object
+has
+no
+attribute
+'foo'
+find()
+find()
+.foo
+.foo
+find()
+find()
+None
+None
+find()
+find()
+AttributeError:'NavigableString'objecthasnoattribute'foo'- This usually happens because you're treating a string as
+though it were a tag. You may be iterating over a list, expecting
+that it contains nothing but tags, when it actually contains both tags and
+strings.
+AttributeError:'NavigableString'objecthasnoattribute'foo'- This usually happens because you're treating a string as
+though it were a tag. You may be iterating over a list, expecting
+that it contains nothing but tags, when it actually contains both tags and
+strings.
+AttributeError:'NavigableString'objecthasnoattribute'foo'
+AttributeError:
+'NavigableString'
+object
+has
+no
+attribute
+'foo'
+Improving Performance¶Beautiful Soup will never be as fast as the parsers it sits on top
+of. If response time is critical, if you're paying for computer time
+by the hour, or if there's any other reason why computer time is more
+valuable than programmer time, you should forget about Beautiful Soup
+and work directly atoplxml.That said, there are things you can do to speed up Beautiful Soup. If
+you're not using lxml as the underlying parser, my advice is tostart. Beautiful Soup parses documents
+significantly faster using lxml than using html.parser or html5lib.You can speed up encoding detection significantly by installing thecchardetlibrary.Parsing only part of a documentwon't save you much time parsing
+the document, but it can save a lot of memory, and it'll makesearchingthe document much faster.
+Improving Performance¶
+¶
+Beautiful Soup will never be as fast as the parsers it sits on top
+of. If response time is critical, if you're paying for computer time
+by the hour, or if there's any other reason why computer time is more
+valuable than programmer time, you should forget about Beautiful Soup
+and work directly atoplxml.
+lxml
+That said, there are things you can do to speed up Beautiful Soup. If
+you're not using lxml as the underlying parser, my advice is tostart. Beautiful Soup parses documents
+significantly faster using lxml than using html.parser or html5lib.
+start
+start
+You can speed up encoding detection significantly by installing thecchardetlibrary.
+cchardet
+Parsing only part of a documentwon't save you much time parsing
+the document, but it can save a lot of memory, and it'll makesearchingthe document much faster.
+Parsing only part of a document
+searching
+Translating this documentation¶New translations of the Beautiful Soup documentation are greatly
+appreciated. Translations should be licensed under the MIT license,
+just like Beautiful Soup and its English documentation are.There are two ways of getting your translation into the main code base
+and onto the Beautiful Soup website:Create a branch of the Beautiful Soup repository, add your
+translation, and propose a merge with the main branch, the same
+as you would do with a proposed change to the source code.Send a message to the Beautiful Soup discussion group with a link to
+your translation, or attach your translation to the message.Use the Chinese or Brazilian Portuguese translations as your model. In
+particular, please translate the source filedoc/index.rst,
+rather than the HTML version of the documentation. This makes it
+possible to publish the documentation in a variety of formats, not
+just HTML.

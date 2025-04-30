@@ -1,0 +1,659 @@
+¶
+Beautiful Soup offers a number of ways to customize how the parser
+treats incoming HTML and XML. This section covers the most commonly
+used customization techniques.
+Parsing only part of a document¶Let's say you want to use Beautiful Soup to look at a document's <a>
+tags. It's a waste of time and memory to parse the entire document and
+then go over it again looking for <a> tags. It would be much faster to
+ignore everything that wasn't an <a> tag in the first place. TheSoupStrainerclass allows you to choose which parts of an incoming
+document are parsed. You just create aSoupStrainerand pass it in
+to theBeautifulSoupconstructor as theparse_onlyargument.(Note thatthis feature won't work if you're using the html5lib parser.
+If you use html5lib, the whole document will be parsed, no
+matter what. This is because html5lib constantly rearranges the parse
+tree as it works, and if some part of the document didn't actually
+make it into the parse tree, it'll crash. To avoid confusion, in the
+examples below I'll be forcing Beautiful Soup to use Python's
+built-in parser.)classSoupStrainer¶TheSoupStrainerclass takes the same arguments as a typical
+method fromSearching the tree:name,attrs,string, and**kwargs. Here are
+threeSoupStrainerobjects:frombs4importSoupStraineronly_a_tags=SoupStrainer("a")only_tags_with_id_link2=SoupStrainer(id="link2")defis_short_string(string):returnstringisnotNoneandlen(string)<10only_short_strings=SoupStrainer(string=is_short_string)I'm going to bring back the "three sisters" document one more time,
+and we'll see what the document looks like when it's parsed with these
+threeSoupStrainerobjects:html_doc="""<html><head><title>The Dormouse's story</title></head><body><p class="title"><b>The Dormouse's story</b></p><p class="story">Once upon a time there were three little sisters; and their names were<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;and they lived at the bottom of a well.</p><p class="story">...</p>"""print(BeautifulSoup(html_doc,"html.parser",parse_only=only_a_tags).prettify())# <a class="sister" href="http://example.com/elsie" id="link1">#  Elsie# </a># <a class="sister" href="http://example.com/lacie" id="link2">#  Lacie# </a># <a class="sister" href="http://example.com/tillie" id="link3">#  Tillie# </a>print(BeautifulSoup(html_doc,"html.parser",parse_only=only_tags_with_id_link2).prettify())# <a class="sister" href="http://example.com/lacie" id="link2">#  Lacie# </a>print(BeautifulSoup(html_doc,"html.parser",parse_only=only_short_strings).prettify())# Elsie# ,# Lacie# and# Tillie# ...#TheSoupStrainerbehavior is as follows:When a tag matches, it is kept (including all its contents, whether they also
+match or not).When a tag does not match, the tag itself is not kept, but parsing continues
+into its contents to look for other tags that do match.
+Parsing only part of a document¶
+¶
+Let's say you want to use Beautiful Soup to look at a document's <a>
+tags. It's a waste of time and memory to parse the entire document and
+then go over it again looking for <a> tags. It would be much faster to
+ignore everything that wasn't an <a> tag in the first place. TheSoupStrainerclass allows you to choose which parts of an incoming
+document are parsed. You just create aSoupStrainerand pass it in
+to theBeautifulSoupconstructor as theparse_onlyargument.
+SoupStrainer
+SoupStrainer
+SoupStrainer
+SoupStrainer
+SoupStrainer
+SoupStrainer
+BeautifulSoup
+BeautifulSoup
+parse_only
+parse_only
+(Note thatthis feature won't work if you're using the html5lib parser.
+If you use html5lib, the whole document will be parsed, no
+matter what. This is because html5lib constantly rearranges the parse
+tree as it works, and if some part of the document didn't actually
+make it into the parse tree, it'll crash. To avoid confusion, in the
+examples below I'll be forcing Beautiful Soup to use Python's
+built-in parser.)
+this feature won't work if you're using the html5lib parser
+classSoupStrainer¶
+classSoupStrainer¶
+class
+class
+
+SoupStrainer
+SoupStrainer
+¶
+
+TheSoupStrainerclass takes the same arguments as a typical
+method fromSearching the tree:name,attrs,string, and**kwargs. Here are
+threeSoupStrainerobjects:
+SoupStrainer
+SoupStrainer
+SoupStrainer
+Searching the tree
+name
+name
+attrs
+attrs
+string
+string
+**kwargs
+**kwargs
+SoupStrainer
+SoupStrainer
+SoupStrainer
+frombs4importSoupStraineronly_a_tags=SoupStrainer("a")only_tags_with_id_link2=SoupStrainer(id="link2")defis_short_string(string):returnstringisnotNoneandlen(string)<10only_short_strings=SoupStrainer(string=is_short_string)
+frombs4importSoupStraineronly_a_tags=SoupStrainer("a")only_tags_with_id_link2=SoupStrainer(id="link2")defis_short_string(string):returnstringisnotNoneandlen(string)<10only_short_strings=SoupStrainer(string=is_short_string)
+frombs4importSoupStraineronly_a_tags=SoupStrainer("a")only_tags_with_id_link2=SoupStrainer(id="link2")defis_short_string(string):returnstringisnotNoneandlen(string)<10only_short_strings=SoupStrainer(string=is_short_string)
+
+from
+bs4
+import
+SoupStrainer
+only_a_tags
+=
+SoupStrainer
+(
+"a"
+)
+only_tags_with_id_link2
+=
+SoupStrainer
+(
+id
+=
+"link2"
+)
+def
+is_short_string
+(
+string
+):
+return
+string
+is
+not
+None
+and
+len
+(
+string
+)
+<
+10
+only_short_strings
+=
+SoupStrainer
+(
+string
+=
+is_short_string
+)
+I'm going to bring back the "three sisters" document one more time,
+and we'll see what the document looks like when it's parsed with these
+threeSoupStrainerobjects:
+SoupStrainer
+SoupStrainer
+SoupStrainer
+html_doc="""<html><head><title>The Dormouse's story</title></head><body><p class="title"><b>The Dormouse's story</b></p><p class="story">Once upon a time there were three little sisters; and their names were<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;and they lived at the bottom of a well.</p><p class="story">...</p>"""print(BeautifulSoup(html_doc,"html.parser",parse_only=only_a_tags).prettify())# <a class="sister" href="http://example.com/elsie" id="link1">#  Elsie# </a># <a class="sister" href="http://example.com/lacie" id="link2">#  Lacie# </a># <a class="sister" href="http://example.com/tillie" id="link3">#  Tillie# </a>print(BeautifulSoup(html_doc,"html.parser",parse_only=only_tags_with_id_link2).prettify())# <a class="sister" href="http://example.com/lacie" id="link2">#  Lacie# </a>print(BeautifulSoup(html_doc,"html.parser",parse_only=only_short_strings).prettify())# Elsie# ,# Lacie# and# Tillie# ...#
+html_doc="""<html><head><title>The Dormouse's story</title></head><body><p class="title"><b>The Dormouse's story</b></p><p class="story">Once upon a time there were three little sisters; and their names were<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;and they lived at the bottom of a well.</p><p class="story">...</p>"""print(BeautifulSoup(html_doc,"html.parser",parse_only=only_a_tags).prettify())# <a class="sister" href="http://example.com/elsie" id="link1">#  Elsie# </a># <a class="sister" href="http://example.com/lacie" id="link2">#  Lacie# </a># <a class="sister" href="http://example.com/tillie" id="link3">#  Tillie# </a>print(BeautifulSoup(html_doc,"html.parser",parse_only=only_tags_with_id_link2).prettify())# <a class="sister" href="http://example.com/lacie" id="link2">#  Lacie# </a>print(BeautifulSoup(html_doc,"html.parser",parse_only=only_short_strings).prettify())# Elsie# ,# Lacie# and# Tillie# ...#
+html_doc="""<html><head><title>The Dormouse's story</title></head><body><p class="title"><b>The Dormouse's story</b></p><p class="story">Once upon a time there were three little sisters; and their names were<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;and they lived at the bottom of a well.</p><p class="story">...</p>"""print(BeautifulSoup(html_doc,"html.parser",parse_only=only_a_tags).prettify())# <a class="sister" href="http://example.com/elsie" id="link1">#  Elsie# </a># <a class="sister" href="http://example.com/lacie" id="link2">#  Lacie# </a># <a class="sister" href="http://example.com/tillie" id="link3">#  Tillie# </a>print(BeautifulSoup(html_doc,"html.parser",parse_only=only_tags_with_id_link2).prettify())# <a class="sister" href="http://example.com/lacie" id="link2">#  Lacie# </a>print(BeautifulSoup(html_doc,"html.parser",parse_only=only_short_strings).prettify())# Elsie# ,# Lacie# and# Tillie# ...#
+
+html_doc
+=
+"""<html><head><title>The Dormouse's story</title></head>
+<body>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters; and their names were
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+and they lived at the bottom of a well.</p>
+<p class="story">...</p>
+"""
+print
+(
+BeautifulSoup
+(
+html_doc
+,
+"html.parser"
+,
+parse_only
+=
+only_a_tags
+)
+.
+prettify
+())
+# <a class="sister" href="http://example.com/elsie" id="link1">
+#  Elsie
+# </a>
+# <a class="sister" href="http://example.com/lacie" id="link2">
+#  Lacie
+# </a>
+# <a class="sister" href="http://example.com/tillie" id="link3">
+#  Tillie
+# </a>
+print
+(
+BeautifulSoup
+(
+html_doc
+,
+"html.parser"
+,
+parse_only
+=
+only_tags_with_id_link2
+)
+.
+prettify
+())
+# <a class="sister" href="http://example.com/lacie" id="link2">
+#  Lacie
+# </a>
+print
+(
+BeautifulSoup
+(
+html_doc
+,
+"html.parser"
+,
+parse_only
+=
+only_short_strings
+)
+.
+prettify
+())
+# Elsie
+# ,
+# Lacie
+# and
+# Tillie
+# ...
+#
+TheSoupStrainerbehavior is as follows:
+SoupStrainer
+SoupStrainer
+SoupStrainer
+When a tag matches, it is kept (including all its contents, whether they also
+match or not).When a tag does not match, the tag itself is not kept, but parsing continues
+into its contents to look for other tags that do match.
+When a tag matches, it is kept (including all its contents, whether they also
+match or not).
+When a tag matches, it is kept (including all its contents, whether they also
+match or not).
+When a tag does not match, the tag itself is not kept, but parsing continues
+into its contents to look for other tags that do match.
+When a tag does not match, the tag itself is not kept, but parsing continues
+into its contents to look for other tags that do match.
+Customizing multi-valued attributes¶In an HTML document, an attribute likeclassis given a list of
+values, and an attribute likeidis given a single value, because
+the HTML specification treats those attributes differently:markup='<a class="cls1 cls2" id="id1 id2">'soup=BeautifulSoup(markup,'html.parser')soup.a['class']# ['cls1', 'cls2']soup.a['id']# 'id1 id2'You can turn this off by passing inmulti_valued_attributes=None. Than all attributes will be given a
+single value:soup=BeautifulSoup(markup,'html.parser',multi_valued_attributes=None)soup.a['class']# 'cls1 cls2'soup.a['id']# 'id1 id2'You can customize this behavior quite a bit by passing in a
+dictionary formulti_valued_attributes. If you need this, look atHTMLTreeBuilder.DEFAULT_CDATA_LIST_ATTRIBUTESto see the
+configuration Beautiful Soup uses by default, which is based on the
+HTML specification.(This is a new feature in Beautiful Soup 4.8.0.)
+Customizing multi-valued attributes¶
+¶
+In an HTML document, an attribute likeclassis given a list of
+values, and an attribute likeidis given a single value, because
+the HTML specification treats those attributes differently:
+class
+class
+id
+id
+markup='<a class="cls1 cls2" id="id1 id2">'soup=BeautifulSoup(markup,'html.parser')soup.a['class']# ['cls1', 'cls2']soup.a['id']# 'id1 id2'
+markup='<a class="cls1 cls2" id="id1 id2">'soup=BeautifulSoup(markup,'html.parser')soup.a['class']# ['cls1', 'cls2']soup.a['id']# 'id1 id2'
+markup='<a class="cls1 cls2" id="id1 id2">'soup=BeautifulSoup(markup,'html.parser')soup.a['class']# ['cls1', 'cls2']soup.a['id']# 'id1 id2'
+
+markup
+=
+'<a class="cls1 cls2" id="id1 id2">'
+soup
+=
+BeautifulSoup
+(
+markup
+,
+'html.parser'
+)
+soup
+.
+a
+[
+'class'
+]
+# ['cls1', 'cls2']
+soup
+.
+a
+[
+'id'
+]
+# 'id1 id2'
+You can turn this off by passing inmulti_valued_attributes=None. Than all attributes will be given a
+single value:
+multi_valued_attributes=None
+multi_valued_attributes=None
+soup=BeautifulSoup(markup,'html.parser',multi_valued_attributes=None)soup.a['class']# 'cls1 cls2'soup.a['id']# 'id1 id2'
+soup=BeautifulSoup(markup,'html.parser',multi_valued_attributes=None)soup.a['class']# 'cls1 cls2'soup.a['id']# 'id1 id2'
+soup=BeautifulSoup(markup,'html.parser',multi_valued_attributes=None)soup.a['class']# 'cls1 cls2'soup.a['id']# 'id1 id2'
+
+soup
+=
+BeautifulSoup
+(
+markup
+,
+'html.parser'
+,
+multi_valued_attributes
+=
+None
+)
+soup
+.
+a
+[
+'class'
+]
+# 'cls1 cls2'
+soup
+.
+a
+[
+'id'
+]
+# 'id1 id2'
+You can customize this behavior quite a bit by passing in a
+dictionary formulti_valued_attributes. If you need this, look atHTMLTreeBuilder.DEFAULT_CDATA_LIST_ATTRIBUTESto see the
+configuration Beautiful Soup uses by default, which is based on the
+HTML specification.
+multi_valued_attributes
+multi_valued_attributes
+HTMLTreeBuilder.DEFAULT_CDATA_LIST_ATTRIBUTES
+HTMLTreeBuilder.DEFAULT_CDATA_LIST_ATTRIBUTES
+(This is a new feature in Beautiful Soup 4.8.0.)
+(This is a new feature in Beautiful Soup 4.8.0.)
+Handling duplicate attributes¶When using thehtml.parserparser, you can use theon_duplicate_attributeconstructor argument to customize what
+Beautiful Soup does when it encounters a tag that defines the same
+attribute more than once:markup='<a href="http://url1/" href="http://url2/">'The default behavior is to use the last value found for the tag:soup=BeautifulSoup(markup,'html.parser')soup.a['href']# http://url2/soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute='replace')soup.a['href']# http://url2/Withon_duplicate_attribute='ignore'you can tell Beautiful Soup
+to use thefirstvalue found and ignore the rest:soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute='ignore')soup.a['href']# http://url1/(lxml and html5lib always do it this way; their behavior can't be
+configured from within Beautiful Soup.)If you need more control, you can pass in a function that's called on each
+duplicate value:defaccumulate(attributes_so_far,key,value):ifnotisinstance(attributes_so_far[key],list):attributes_so_far[key]=[attributes_so_far[key]]attributes_so_far[key].append(value)soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute=accumulate)soup.a['href']# ["http://url1/", "http://url2/"](This is a new feature in Beautiful Soup 4.9.1.)
+Handling duplicate attributes¶
+¶
+When using thehtml.parserparser, you can use theon_duplicate_attributeconstructor argument to customize what
+Beautiful Soup does when it encounters a tag that defines the same
+attribute more than once:
+html.parser
+html.parser
+on_duplicate_attribute
+on_duplicate_attribute
+markup='<a href="http://url1/" href="http://url2/">'
+markup='<a href="http://url1/" href="http://url2/">'
+markup='<a href="http://url1/" href="http://url2/">'
+
+markup
+=
+'<a href="http://url1/" href="http://url2/">'
+The default behavior is to use the last value found for the tag:
+soup=BeautifulSoup(markup,'html.parser')soup.a['href']# http://url2/soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute='replace')soup.a['href']# http://url2/
+soup=BeautifulSoup(markup,'html.parser')soup.a['href']# http://url2/soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute='replace')soup.a['href']# http://url2/
+soup=BeautifulSoup(markup,'html.parser')soup.a['href']# http://url2/soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute='replace')soup.a['href']# http://url2/
+
+soup
+=
+BeautifulSoup
+(
+markup
+,
+'html.parser'
+)
+soup
+.
+a
+[
+'href'
+]
+# http://url2/
+soup
+=
+BeautifulSoup
+(
+markup
+,
+'html.parser'
+,
+on_duplicate_attribute
+=
+'replace'
+)
+soup
+.
+a
+[
+'href'
+]
+# http://url2/
+Withon_duplicate_attribute='ignore'you can tell Beautiful Soup
+to use thefirstvalue found and ignore the rest:
+on_duplicate_attribute='ignore'
+on_duplicate_attribute='ignore'
+first
+soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute='ignore')soup.a['href']# http://url1/
+soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute='ignore')soup.a['href']# http://url1/
+soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute='ignore')soup.a['href']# http://url1/
+
+soup
+=
+BeautifulSoup
+(
+markup
+,
+'html.parser'
+,
+on_duplicate_attribute
+=
+'ignore'
+)
+soup
+.
+a
+[
+'href'
+]
+# http://url1/
+(lxml and html5lib always do it this way; their behavior can't be
+configured from within Beautiful Soup.)
+If you need more control, you can pass in a function that's called on each
+duplicate value:
+defaccumulate(attributes_so_far,key,value):ifnotisinstance(attributes_so_far[key],list):attributes_so_far[key]=[attributes_so_far[key]]attributes_so_far[key].append(value)soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute=accumulate)soup.a['href']# ["http://url1/", "http://url2/"]
+defaccumulate(attributes_so_far,key,value):ifnotisinstance(attributes_so_far[key],list):attributes_so_far[key]=[attributes_so_far[key]]attributes_so_far[key].append(value)soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute=accumulate)soup.a['href']# ["http://url1/", "http://url2/"]
+defaccumulate(attributes_so_far,key,value):ifnotisinstance(attributes_so_far[key],list):attributes_so_far[key]=[attributes_so_far[key]]attributes_so_far[key].append(value)soup=BeautifulSoup(markup,'html.parser',on_duplicate_attribute=accumulate)soup.a['href']# ["http://url1/", "http://url2/"]
+
+def
+accumulate
+(
+attributes_so_far
+,
+key
+,
+value
+):
+if
+not
+isinstance
+(
+attributes_so_far
+[
+key
+],
+list
+):
+attributes_so_far
+[
+key
+]
+=
+[
+attributes_so_far
+[
+key
+]]
+attributes_so_far
+[
+key
+]
+.
+append
+(
+value
+)
+soup
+=
+BeautifulSoup
+(
+markup
+,
+'html.parser'
+,
+on_duplicate_attribute
+=
+accumulate
+)
+soup
+.
+a
+[
+'href'
+]
+# ["http://url1/", "http://url2/"]
+(This is a new feature in Beautiful Soup 4.9.1.)
+(This is a new feature in Beautiful Soup 4.9.1.)
+Instantiating custom subclasses¶When a parser tells Beautiful Soup about a tag or a string, Beautiful
+Soup will instantiate aTagorNavigableStringobject to
+contain that information. Instead of that default behavior, you can
+tell Beautiful Soup to instantiatesubclassesofTagorNavigableString, subclasses you define with custom behavior:frombs4importTag,NavigableStringclassMyTag(Tag):passclassMyString(NavigableString):passmarkup="<div>some text</div>"soup=BeautifulSoup(markup,'html.parser')isinstance(soup.div,MyTag)# Falseisinstance(soup.div.string,MyString)# Falsemy_classes={Tag:MyTag,NavigableString:MyString}soup=BeautifulSoup(markup,'html.parser',element_classes=my_classes)isinstance(soup.div,MyTag)# Trueisinstance(soup.div.string,MyString)# TrueThis can be useful when incorporating Beautiful Soup into a test
+framework.(This is a new feature in Beautiful Soup 4.8.1.)
+Instantiating custom subclasses¶
+¶
+When a parser tells Beautiful Soup about a tag or a string, Beautiful
+Soup will instantiate aTagorNavigableStringobject to
+contain that information. Instead of that default behavior, you can
+tell Beautiful Soup to instantiatesubclassesofTagorNavigableString, subclasses you define with custom behavior:
+Tag
+Tag
+Tag
+NavigableString
+NavigableString
+NavigableString
+subclasses
+Tag
+Tag
+Tag
+NavigableString
+NavigableString
+NavigableString
+frombs4importTag,NavigableStringclassMyTag(Tag):passclassMyString(NavigableString):passmarkup="<div>some text</div>"soup=BeautifulSoup(markup,'html.parser')isinstance(soup.div,MyTag)# Falseisinstance(soup.div.string,MyString)# Falsemy_classes={Tag:MyTag,NavigableString:MyString}soup=BeautifulSoup(markup,'html.parser',element_classes=my_classes)isinstance(soup.div,MyTag)# Trueisinstance(soup.div.string,MyString)# True
+frombs4importTag,NavigableStringclassMyTag(Tag):passclassMyString(NavigableString):passmarkup="<div>some text</div>"soup=BeautifulSoup(markup,'html.parser')isinstance(soup.div,MyTag)# Falseisinstance(soup.div.string,MyString)# Falsemy_classes={Tag:MyTag,NavigableString:MyString}soup=BeautifulSoup(markup,'html.parser',element_classes=my_classes)isinstance(soup.div,MyTag)# Trueisinstance(soup.div.string,MyString)# True
+frombs4importTag,NavigableStringclassMyTag(Tag):passclassMyString(NavigableString):passmarkup="<div>some text</div>"soup=BeautifulSoup(markup,'html.parser')isinstance(soup.div,MyTag)# Falseisinstance(soup.div.string,MyString)# Falsemy_classes={Tag:MyTag,NavigableString:MyString}soup=BeautifulSoup(markup,'html.parser',element_classes=my_classes)isinstance(soup.div,MyTag)# Trueisinstance(soup.div.string,MyString)# True
+
+from
+bs4
+import
+Tag
+,
+NavigableString
+class
+MyTag
+(
+Tag
+):
+pass
+class
+MyString
+(
+NavigableString
+):
+pass
+markup
+=
+"<div>some text</div>"
+soup
+=
+BeautifulSoup
+(
+markup
+,
+'html.parser'
+)
+isinstance
+(
+soup
+.
+div
+,
+MyTag
+)
+# False
+isinstance
+(
+soup
+.
+div
+.
+string
+,
+MyString
+)
+# False
+my_classes
+=
+{
+Tag
+:
+MyTag
+,
+NavigableString
+:
+MyString
+}
+soup
+=
+BeautifulSoup
+(
+markup
+,
+'html.parser'
+,
+element_classes
+=
+my_classes
+)
+isinstance
+(
+soup
+.
+div
+,
+MyTag
+)
+# True
+isinstance
+(
+soup
+.
+div
+.
+string
+,
+MyString
+)
+# True
+This can be useful when incorporating Beautiful Soup into a test
+framework.
+(This is a new feature in Beautiful Soup 4.8.1.)
+(This is a new feature in Beautiful Soup 4.8.1.)
+Troubleshooting¶diagnose()¶If you're having trouble understanding what Beautiful Soup does to a
+document, pass the document into thediagnose()function. (This function is new in
+Beautiful Soup 4.2.0.) Beautiful Soup will print out a report showing
+you how different parsers handle the document, and tell you if you're
+missing a parser that Beautiful Soup could be using:frombs4.diagnoseimportdiagnosewithopen("bad.html")asfp:data=fp.read()diagnose(data)# Diagnostic running on Beautiful Soup 4.2.0# Python version 2.7.3 (default, Aug  1 2012, 05:16:07)# I noticed that html5lib is not installed. Installing it may help.# Found lxml version 2.3.2.0## Trying to parse your data with html.parser# Here's what html.parser did with the document:# ...Just looking at the output of diagnose() might show you how to solve the
+problem. Even if not, you can paste the output ofdiagnose()when
+asking for help.Errors when parsing a document¶There are two different kinds of parse errors. There are crashes,
+where you feed a document to Beautiful Soup and it raises an
+exception (usually anHTMLParser.HTMLParseError). And there is
+unexpected behavior, where a Beautiful Soup parse tree looks a lot
+different than the document used to create it.These problems are almost never problems with Beautiful Soup itself.
+This is not because Beautiful Soup is an amazingly well-written piece
+of software. It's because Beautiful Soup doesn't include any parsing
+code. Instead, it relies on external parsers. If one parser isn't
+working on a certain document, the best solution is to try a different
+parser. SeeInstalling a parserfor details and a parser
+comparison. If this doesn't help, you might need to inspect the
+document tree found inside theBeautifulSoupobject, to see where
+the markup you're looking for actually ended up.Version mismatch problems¶SyntaxError:Invalidsyntax(on the lineROOT_TAG_NAME='[document]'): Caused by running an old Python 2 version of
+Beautiful Soup under Python 3, without converting the code.ImportError:NomodulenamedHTMLParser- Caused by running an old
+Python 2 version of Beautiful Soup under Python 3.ImportError:Nomodulenamedhtml.parser- Caused by running the
+Python 3 version of Beautiful Soup under Python 2.ImportError:NomodulenamedBeautifulSoup- Caused by running
+Beautiful Soup 3 code in an environment that doesn't have BS3
+installed. Or, by writing Beautiful Soup 4 code without knowing that
+the package name has changed tobs4.ImportError:Nomodulenamedbs4- Caused by running Beautiful
+Soup 4 code in an environment that doesn't have BS4 installed.Parsing XML¶By default, Beautiful Soup parses documents as HTML. To parse a
+document as XML, pass in "xml" as the second argument to theBeautifulSoupconstructor:soup=BeautifulSoup(markup,"xml")You'll need tohave lxml installed.Other parser problems¶If your script works on one computer but not another, or in one
+virtual environment but not another, or outside the virtual
+environment but not inside, it's probably because the two
+environments have different parser libraries available. For example,
+you may have developed the script on a computer that has lxml
+installed, and then tried to run it on a computer that only has
+html5lib installed. SeeDifferences between parsersfor why this
+matters, and fix the problem by mentioning a specific parser library
+in theBeautifulSoupconstructor.BecauseHTML tags and attributes are case-insensitive, all three HTML
+parsers convert tag and attribute names to lowercase. That is, the
+markup <TAG></TAG> is converted to <tag></tag>. If you want to
+preserve mixed-case or uppercase tags and attributes, you'll need toparse the document as XML.Miscellaneous¶UnicodeEncodeError:'charmap'codeccan'tencodecharacter'\xfoo'inpositionbar(or just about any otherUnicodeEncodeError) - This problem shows up in two main
+situations. First, when you try to print a Unicode character that
+your console doesn't know how to display. (Seethis page on the
+Python wikifor help.)
+Second, when you're writing to a file and you pass in a Unicode
+character that's not supported by your default encoding. In this
+case, the simplest solution is to explicitly encode the Unicode
+string into UTF-8 withu.encode("utf8").KeyError:[attr]- Caused by accessingtag['attr']when the
+tag in question doesn't define theattrattribute. The most
+common errors areKeyError:'href'andKeyError:'class'.
+Usetag.get('attr')if you're not sureattris
+defined, just as you would with a Python dictionary.AttributeError:'ResultSet'objecthasnoattribute'foo'- This
+usually happens because you expectedfind_all()to return a
+single tag or string. Butfind_all()returns alistof tags
+and strings—aResultSetobject. You need to iterate over the
+list and look at the.fooof each one. Or, if you really only
+want one result, you need to usefind()instead offind_all().AttributeError:'NoneType'objecthasnoattribute'foo'- This
+usually happens because you calledfind()and then tried to
+access the.fooattribute of the result. But in your case,find()didn't find anything, so it returnedNone, instead of
+returning a tag or a string. You need to figure out why yourfind()call isn't returning anything.AttributeError:'NavigableString'objecthasnoattribute'foo'- This usually happens because you're treating a string as
+though it were a tag. You may be iterating over a list, expecting
+that it contains nothing but tags, when it actually contains both tags and
+strings.Improving Performance¶Beautiful Soup will never be as fast as the parsers it sits on top
+of. If response time is critical, if you're paying for computer time
+by the hour, or if there's any other reason why computer time is more
+valuable than programmer time, you should forget about Beautiful Soup
+and work directly atoplxml.That said, there are things you can do to speed up Beautiful Soup. If
+you're not using lxml as the underlying parser, my advice is tostart. Beautiful Soup parses documents
+significantly faster using lxml than using html.parser or html5lib.You can speed up encoding detection significantly by installing thecchardetlibrary.Parsing only part of a documentwon't save you much time parsing
+the document, but it can save a lot of memory, and it'll makesearchingthe document much faster.

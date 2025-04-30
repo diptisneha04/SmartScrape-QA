@@ -1,0 +1,21 @@
+¶
+The simplest filter is a string. Pass a string to a search method and
+Beautiful Soup will perform a tag-name match against that exact string.
+This code finds all the <b> tags in the document:
+soup.find_all('b')# [<b>The Dormouse's story</b>]
+soup.find_all('b')# [<b>The Dormouse's story</b>]
+soup.find_all('b')# [<b>The Dormouse's story</b>]
+
+soup
+.
+find_all
+(
+'b'
+)
+# [<b>The Dormouse's story</b>]
+If you pass in a byte string, Beautiful Soup will assume the string is
+encoded as UTF-8. You can avoid this by passing in a Unicode string instead.
+A regular expression¶If you pass in a regular expression object, Beautiful Soup will filter
+against that regular expression using itssearch()method. This code
+finds all the tags whose names start with the letter "b"; in this
+case, the <body> tag and the <b> tag:importrefortaginsoup.find_all(re.compile("^b")):print(tag.name)# body# bThis code finds all the tags whose names contain the letter 't':fortaginsoup.find_all(re.compile("t")):print(tag.name)# html# title

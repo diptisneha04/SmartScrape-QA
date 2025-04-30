@@ -1,0 +1,73 @@
+.parent
+.parent
+¶
+You can access an element's parent with the.parentattribute. In
+the example "three sisters" document, the <head> tag is the parent
+of the <title> tag:
+.parent
+.parent
+title_tag=soup.titletitle_tag# <title>The Dormouse's story</title>title_tag.parent# <head><title>The Dormouse's story</title></head>
+title_tag=soup.titletitle_tag# <title>The Dormouse's story</title>title_tag.parent# <head><title>The Dormouse's story</title></head>
+title_tag=soup.titletitle_tag# <title>The Dormouse's story</title>title_tag.parent# <head><title>The Dormouse's story</title></head>
+
+title_tag
+=
+soup
+.
+title
+title_tag
+# <title>The Dormouse's story</title>
+title_tag
+.
+parent
+# <head><title>The Dormouse's story</title></head>
+The title string itself has a parent: the <title> tag that contains
+it:
+title_tag.string.parent# <title>The Dormouse's story</title>
+title_tag.string.parent# <title>The Dormouse's story</title>
+title_tag.string.parent# <title>The Dormouse's story</title>
+
+title_tag
+.
+string
+.
+parent
+# <title>The Dormouse's story</title>
+The parent of a top-level tag like <html> is theBeautifulSoupobject
+itself:
+BeautifulSoup
+BeautifulSoup
+html_tag=soup.htmltype(html_tag.parent)# <class 'bs4.BeautifulSoup'>
+html_tag=soup.htmltype(html_tag.parent)# <class 'bs4.BeautifulSoup'>
+html_tag=soup.htmltype(html_tag.parent)# <class 'bs4.BeautifulSoup'>
+
+html_tag
+=
+soup
+.
+html
+type
+(
+html_tag
+.
+parent
+)
+# <class 'bs4.BeautifulSoup'>
+And the.parentof aBeautifulSoupobject is defined as None:
+.parent
+.parent
+BeautifulSoup
+BeautifulSoup
+print(soup.parent)# None
+print(soup.parent)# None
+print(soup.parent)# None
+
+print
+(
+soup
+.
+parent
+)
+# None
+.parents¶You can iterate over all of an element's parents with.parents. This example uses.parentsto travel from an <a> tag
+buried deep within the document, to the very top of the document:link=soup.alink# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>forparentinlink.parents:print(parent.name)# p# body# html# [document]

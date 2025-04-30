@@ -1,0 +1,2303 @@
+C++ Tutorial | Learn C++ Programming for Beginners - Tpoint Tech
+Tutorials
+×
+Python
+Python Tutorial
+Django Tutorial
+Numpy Tutorial
+Pandas Tutorial
+Tkinter Tutorial
+Pytorch Tutorial
+Flask Tutorial
+OpenCV Tutorial
+Java
+Java Tutorial
+Servlet Tutorial
+JSP Tutorial
+Spring Boot Tutorial
+Spring Framework Tutorial
+Hibernate Tutorial
+JavaFX Tutorial
+Java Web Services Tutorial
+.Net Framework
+.Net Framework Tutorial
+C# Tutorial
+ASP.Net Tutorial
+ADO.Net Tutorial
+WPF Tutorial
+AI, ML and Data Science
+Artificial Intelligence Tutorial
+Machine Learning Tutorial
+Data Science Tutorial
+Deep Learning Tutorial
+TensorFlow Tutorial
+Artificial Neural Network Tutorial
+Matplotlib Tutorial
+Python Scipy Tutorial
+Cloud Technology
+Cloud Computing Tutorial
+AWS Tutorial
+Microsoft Azure Tutorial
+Salesforce Tutorial
+GCP Tutorial
+B.Tech and MCA
+DBMS Tutorial
+Data Structures Tutorial
+Operating System Tutorial
+Computer Network Tutorial
+DAA Tutorial
+Computer Organization Tutorial
+Software Engineering Tutorial
+Data Mining Tutorial
+Web Technology
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+Jquery Tutorial
+Angular 8 Tutorial
+React Tutorial
+React Native Tutorial
+Node.js Tutorial
+PHP
+PHP Tutorial
+MySQL Tutorial
+Laravel Tutorial
+WordPress Tutorial
+CodeIgniter Tutorial
+Software Testing
+Software Testing Tutorial
+Selenium Tutorial
+JIRA Tutorial
+JMeter Tutorial
+Postman Tutorial
+TestNG Tutorial
+SoapUI Tutorial
+Cucumber Tutorial
+Interview
+×
+Technical Interview
+Python Interview Questions
+Java Interview Questions
+.Net Interview Questions
+C++ Interview Questions
+React Interview Questions
+Node.js Interview Questions
+Angular Interview Questions
+SQL Interview Questions
+HR Interview Questions
+Java Interview
+Spring Boot Interview Questions
+Spring Interview Questions
+Hibernate Interview Questions
+JDBC Interview Questions
+Servlet Interview Questions
+Maven Interview Questions
+Jenkins Interview Questions
+Python
+Django Interview Questions
+Pandas Interview Questions
+Express.js Interview Questions
+Python Coding Interview Questions
+Python Interview Questions for 5 Years
+Web Interview
+HTML Interview Questions
+CSS Interview Questions
+JavaScript Interview Questions
+Jquery Interview Questions
+PHP Interview Questions
+Laravel Interview Questions
+AJAX Interview Questions
+Front-End Developer Interview Questions
+jQuery Interview Questions
+Database Interview
+DBMS Interview Questions
+SQL Interview Questions
+PL/SQL Interview Questions
+Oracle Interview Questions
+MySQL Interview Questions
+MongoDB Interview Questions
+Redis Interview Questions
+B.Tech / MCA
+DBMS Interview Questions
+Operating System Interview Questions
+OOPs Interview Questions
+DSA Interview Questions
+Computer Networks Interview Questions
+Important Interview
+C Interview Questions
+Power BI Interview Questions
+C# Interview Questions
+Excel Interview Questions
+C# Interview Questions
+Machine Learning Interview Questions
+AWS Interview Questions
+Microservices Interview Questions
+MySQL Interview Questions
+Software Testing Interview
+Manual Testing Interview Questions
+Selenium Interview Questions
+API Testing Interview Questions
+ETL Testing Interview Questions
+Mobile Testing Interview Questions
+Company Interviews
+IBM Interview Questions
+Adobe Interview Questions
+Microsoft Interview Questions
+Amazon Interview Questions
+TCS Interview Questions
+Wipro Interview Questions
+Accenture Interview Questions
+Compiler
+×
+Online Compilers
+Python Online Compiler
+Java Online Compiler
+PHP Online Compiler
+C Online Compiler
+C++ Online Compiler
+HTML Online Compiler
+JavaScript Online Compiler
+TypeScript Online Compiler
+R Online Compiler
+Swift Online Compiler
+Kotlin Online Compiler
+Go Online Compiler
+C# Online Compiler
+Perl Online Compiler
+Groovy Online Compiler
+HTML, CSS & JavaScript Online Editor
+Multiple Choice Questions
+Python MCQ
+Java MCQ
+PHP MCQ
+C Programming MCQ
+C++ MCQ
+HTML mcq
+JavaScript MCQ
+SQL MCQ
+Operating System MCQ
+Computer Fundamental MCQ
+Computer Network MCQ
+DBMS MCQ
+Data Structure MCQ
+Software Engineering MCQ
+Cloud Computing MCQ
+Artificial Intelligence MCQ
+Python
+Java
+JavaScript
+SQL
+C
+C++
+HTML
+CSS
+React
+Node.js
+Spring Boot
+C#
+PHP
+MySQL
+MongoDB
+AI
+ML
+DSA
+DBMS
+OS
+Aptitude
+Reasoning
+C++ Tutorial
+C++ Tutorial
+Difference between C and C++
+C++ History
+C++ Features
+C++ Installation
+C++ Program
+C++ Basic Input and Output
+C++ #include iostream
+C++ Variable
+C++ Data types
+C++ Keywords
+C++ Operators
+C++ Identifiers
+C++ Expression
+C++ Control Statement
+C++ if-else
+C++ switch
+C++ For Loop
+C++ While Loop
+C++ Do-While Loop
+C++ Break Statement
+C++ Continue Statement
+C++ Goto Statement
+C++ Comments
+C++ Functions
+C++ Functions
+Call by value & reference
+Inline Functions in C++
+C++ Recursion
+Storage Classes in C++
+C++ Arrays
+C++ Arrays
+C++ Array to Function
+C++ Multidimensional Arrays
+C++ Strings
+C++ Strings
+C++ Pointers
+C++ Pointers
+sizeof() operator in C++
+C++ Array of Pointers
+C++ Void Pointer
+C++ References
+C++ Reference vs Pointer
+Function Pointer in C++
+C++ Memory Management
+malloc() vs new in C++
+free vs delete in C++
+C++ Object Class
+OOPs Concepts in C++
+C++ Classes and Objects
+C++ Constructor
+C++ Copy Constructor
+C++ Destructor
+C++ this Pointer
+C++ static
+C++ Structs
+C++ Enumeration
+Friend Function in C++
+C++ Math Functions
+C++ Inheritance
+Inheritance in C++
+C++ Aggregation
+C++ Polymorphism
+C++ Polymorphism
+Operator Overloading in C++
+Function Overloading in C++
+Function Overriding in C++
+Virtual Function in C++
+C++ Abstraction
+C++ Interfaces
+Data Abstraction in C++
+Abstract class in C++
+C++ Namespaces
+C++ Namespaces
+Acess Specifiers in C++
+C++ Templates
+C++ Templates
+Signal Handling
+C++ Signal Handling
+C++ Exceptions
+Exception Handling in C++
+C++ try/catch
+C++ User-Defined Exceptions
+C++ File & Stream
+C++ File & Stream
+C++ getline()
+C++ STL Tutorial
+C++ STL (Standard Template Library)
+C++ Vector
+C++ Deque
+C++ List
+C++ Set
+C++ Stack
+C++ Queue
+C++ Priority Queue
+C++ Map
+C++ Multimap
+C++ Bitset
+C++ Algorithm
+Interview Question
+Interview Question
+MCQ
+C++ MCQ
+C++ MCQ Part 2
+C++ Templates MCQ Exercise 1
+C++ Templates MCQ Exercise 2
+C++ Templates MCQ Exercise 3
+C++ Templates MCQ Exercise 4
+C++ Templates MCQ Exercise 5
+Friend function in C++ MCQ Exercise 1
+Friend function in C++ MCQ Exercise 2
+Friend function in C++ MCQ Exercise 3
+Friend function in C++ MCQ Exercise 4
+Friend function in C++ MCQ Exercise 5
+Overloading in C++ MCQ Exercise 1
+Overloading in C++ MCQ Exercise 2
+Overloading in C++ MCQ Exercise 3
+Overloading in C++ MCQ Exercise 4
+Overloading in C++ MCQ Exercise 5
+C++ Programs
+C++ Programs
+Fibonacci Series in C++
+Prime Number Program in C++
+Palindrome program in C++
+Factorial program in C++
+Armstrong Number in C++
+Sum of digits program in C++
+C++ Program to reverse number
+C++ Program to swap two numbers without third variable
+Matrix multiplication in C++
+C++ Program to convert Decimal to Binary
+C++ Program to Convert Number in Characters
+C++ Program to Print Alphabet Triangle
+C++ Program to print Number Triangle
+C++ Program to generate Fibonacci Triangle
+Char array to string in C++
+Calculator Program in C++
+Program to convert infix to postfix expression in C++ using the Stack Data Structure
+C++ program to merge two unsorted arrays
+C++ coin change program
+C++ program to add two complex numbers using class
+C++ program to find the GCD of two numbers
+C++ program to find greatest of four numbers
+Delete Operator in C++
+How to concatenate two strings in c++
+Upcasting and Downcasting in C++
+C++ Dijkstra Algorithm using the priority queue
+Constructor overloading in C++
+Default arguments in C++
+Dynamic binding in C++
+Dynamic memory allocation in C++
+Fast input and output in C++
+Hierarchical inheritance in C++
+Hybrid inheritance in C++
+Multiple Inheritance in C++
+C++ Bitwise XOR Operator
+Different Ways to Compare Strings in C++
+Reverse an Array in C++
+C++ date and time
+Copy elision in C++
+Array of sets in C++
+Smart pointers in C++
+Types of polymorphism in C++
+Implementing the sets without C++ STL containers
+Scope Resolution Operator in C++
+Static Member Function in C++
+Const keyword in C++
+Memset in C++
+Type Casting in C++
+Binary Operator Overloading in C++
+Binary Search in C++
+Inheritance in C++ vs JAVA
+Static Keyword in C++ and JAVA
+Exception Handling in C++ and JAVA
+Foreach in C++ and JAVA
+C++ Templates vs Java Generics
+Similarities and Differences in C++ and JAVA
+Default Virtual Behaviour in C++ and JAVA
+C++ hashing programme with chaining
+Largest subset whose all elements are Fibonacci numbers
+Opaque Pointer
+Pointers such as Dangling, Void, Null, and Wild
+When do we pass arguments by reference or pointer
+Find Member Function in Vector in C++
+Smart Pointer
+Currency Converter in C++
+Find max in Array Function C++
+Stopwatch in C++
+Student Data Management in C++
+Tic-Tac-Toe in C++
+Credit Card Validator in C++
+Hotel Management in C++
+Pacman Game in C++
+Billing Management System in C++
+4-Dimensional Array in C/C++
+accumulate() and partial_sum() in C++ STL : Numeric header
+Arrays of Vectors in C++ STL
+Catching Base and Derived Classes as Exceptions in C++ and Java
+Forward List in C++ Manipulating Functions
+Assertions in C/C++
+List back() function in C++ STL
+Type Inference in C++ (auto and decltype)
+Attributes in C++
+BigInt (Big Integers) in C++ with Examples
+2D Vector in C++ with User Defined Size
+Declare a C/C++ Function Returning Pointer to Array of Integer Pointers
+Jump Statements in C++
+Maximum Number of Edges to be Added to a Tree so that it stays a Bipartite Graph
+Modulus of two Float or Double Numbers
+Top 10 C++ Project Ideas for Beginners
+Member Function in C++
+C++ Program for Find k pairs with Smallest Sums in Two Arrays
+Check if bits in Range L to R of Two Numbers are Complement of Each other or Not
+University Management System in C++
+Advantage and Disadvantage Friend Function C++
+C++ Pre-processors
+Difference between Circular Queue and Priority Queue
+forward_list::cbefore_begin() in C++ STL
+Heap in C++ STL | make_heap(), push_heap(),pop_heap(), sort_heap(), is_heap, is_heap_until()
+How does 'void*' differ in C and C++
+Initialise an Array of objects with Parameterised Constructors in C++
+list::push_front() and list::push_back() in C++ STL
+Maximize the Cost of Repeated Removal of String P or its Reverse from the String S
+Canteen Management System in C++
+Declare a C/C++ Function Returning Pointer to Array of Integer Pointers
+Name Mangling and Extern C in C++
+Different Compilers for C++
+Diamond Problem in C++
+Function Prototype in C++
+Generic Programming in C++
+School Fee Enquiry System in C++
+Vector Pair in C++
+What is a Token in C++
+C++ 'Using' vs 'Typedef'
+Execute both if and else Statements in C/C++ Simultaneously
+How to Compile 32-bit Program on 64-bit GCC in C and C++
+How to Create and Use ''unique_ptr'' Instances
+Level Order Traversal in Spiral form
+Problem with scanf() when there is fgets()/gets()/scanf() After it
+BFS Code in C++
+Create Linked List In C++
+std::minmax() and std::minmax_element() in C++ STL
+multimap::emplace_hint() Function in C++ STL
+Multimap find() in C++ STL
+Multiple Comparisons in a C++ Priority Queue
+Name Mangling and Extern C in C++ Concept
+Parameterised Constructor in C++
+Remove Duplicates from Sorted Array in C++
+Returning Multiple Values from a Function using Tuple and Pair in C++
+Scope Resolution Operator vs this Pointer
+Set a variable without using Arithmetic, Relational or Conditional Operator
+C++ Program To Sort An Array In Descending Order
+Timsort Implementation Using C++
+What Happens When We Exceed Valid Range of Built-in Data Types in C++
+Naked Function Calls in C++
+Simple Car Racing Game Code in C++
+SJF CPU Scheduling Program in C++
+Virtual functions and runtime polymorphism
+Add in Vector C++ Language
+Default arguments and virtual function
+Private Inheritance in C++
+Socket Programming in C/C++
+Multithreading in C++ with Examples
+Static Object in C++
+What is runtime type information
+Add two Array in C++
+Calling Conventions in C++
+HASHSET IN C++
+How many Children does a Binary Tree have
+How to Create and use CComPtr and CComQIPtr Instances
+Naming Conventions in C++
+DYNAMIC ARRAY
+STRCMP() IN C++
+Add two Numbers using Class in C++
+Adding of Two Numbers in C++
+Adding Two Arrays in C++
+Adding Two Objects in C++
+Add two Numbers using Function in C++
+C++ class to prevent object copies
+Raw string literal in C++
+Add Two no in C++ program
+Binary Decision Tree
+Boolean to String in C++
+Stoi function in C++
+ToLOWER In C++
+UNORDERED_MAP IN C++
+C++ Books for Beginners
+Activity Selection Problem in C++
+Activity Selection Program in C++
+Actual Argument and Formal Argument in C++
+Actual Parameter and Formal Parameter in C++
+Adding Two Strings in C++
+Adding Vectors in C++
+How To Convert a Qstring to Hexadecimal in C++
+PAIR IN C++
+C++ Program to Count Positive and Negative Numbers in an Array
+Department Store Management System (DSMS) using C+
+Print all Substrings of a String that has equal number of vowels and consonants in C/C++
+Accumulator in C++
+Add Two Matrix in C++
+Add two Numbers in C++ program
+Add two Numbers Represented by Linked Lists in C++
+Associative Containers in C++
+C++ Books for Beginners
+Dynamic Initialization of Objects in C++
+Array sum in c++ stl
+The distinction between the C++ copy constructor and assignment operator
+Boost::split in c++ library
+Difference between Declaration of User Defined Function Inside main() and Outside of main()
+Isprint() in C++
+Std partition point in c++
+Opening and Closing a File in C in C++ Pdf
+Overriding Member Function in C++
+Password Validation in C++
+PID Controller C++
+Best C++ Online Course
+Unordered Set in C++
+Convert Camel Case String in Snake Case in C++
+C++ Program to Draw Histogram
+C++ DSA
+C++ Flow Control
+C++ program to group anagrams in the given stream of strings
+cstdlib in C++
+Everything You Need to Know About Conio.h Library Functions in C/C++
+Increment and Decrement Operators in C++
+How to generate random number between 1 to 10 in C++
+How to Manipulate cout Object using C++ IOS Library
+Sliding Window Algorithm in C++
+What is Bottom-up Approach in C++
+What is Top-Down Approach in C++
+Bitmask in C++
+Ordered Map C++
+Characteristics of Destructor in C++
+Factory Design Pattern C++
+REPL C++
+AVL Tree in C++
+Des in C++
+Boost Library in C++
+C++ 11 Lambda Expression
+Concurrency in C++
+C++ GUI
+Static Library Linking in C++
+Constexpr in C++
+Difference between break and continue in C++
+C++ Boolean
+Encapsulation in C++
+OpenGL C++
+Sequence Containers in C++
+Difference between C++ and rust
+Falcon C++
+Popcount C++
+Boost C++ | History, Purpose, Benefits of Boost in C++ Programming
+C++ Function Object
+Boost Library in C++
+C++ Concurrency
+What are Macros in C++
+Design Pattern in C++
+C++ Factory Pattern
+Functor in C++
+C++ GUI
+How to Create a New Thread in C++
+C++ Static Member
+C++ Static Variable
+C++ Template Specialization
+Difference between New and Delete operator in C++
+Differences between Vector and List in C++
+Dynamic Cast in C++
+Shell sort in C++
+Jagged Array in C++
+What is containership in C++
+Cerr in C++
+Make_shared in C++
+Rethrowing an Exception in C++
+Trigraphs in C++
+Cin.ignore() function in C++
+Difference between function overloading and function overriding in C++
+Typeid operator in C++
+String_view in C++
+Anonymous objects in C++
+Cerr in C++
+Make_shared in C++
+Rethrowing an Exception in C++
+Trigraphs in C++
+Cin.ignore() function in C++
+Difference between function overloading and function overriding in C++
+Typeid operator in C++
+String_view in C++
+Anonymous objects in C++
+abdul bari c++
+Conversion Constructor in C++
+Find Leap Year in C++
+How to Access Vector Elements in C++
+Static cast in C++
+Symbol Table in C++
+tellp() function in C++
+Matrix addition in C++
+Visibility Modes in C++
+C++ Initializer List
+Diffie-Hellmam Algorithm in C++
+Wide Character in C++
+Bitwise Operators in C++
+How Many Indicators are Available in C++
+iota() in C++
+Tellg() Function in C++
+Coroutines in C++
+Isdigit() function in C++
+isupper() function in C++
+npos in C++
+seekg() function in C++
+Trie Data Structure in C++
+Difference between C++ and JavaScript
+CStudio in C++
+Dosbox C++
+DOSBox Turbo C++
+Object Creation in C++
+Bisection method in C++
+Cin.get() in C++
+Edmonds Karp Algorithm in C++
+Include guards in C++
+Weak Pointer in C++
+Apriori Algorithm Implementation in C++
+Babylonian Method to find Square Root in C++
+Concentric Rectangular Pattern in C++
+Inbuilt functions in C++
+Pointer to an object in C++
+Private Destructor in C++
+Unary Operator Overloading in C++
+Unique_ptr in C++
+Call By Value in C++
+Climits in C++
+Command line arguments in C++
+Conversion operator in C++
+How to create a game engine in C++
+Static Polymorphism in C++
+Character Set in C++
+Output operator in C++
+Object Pointer in C++
+Odd or Even Number Programs in C++
+Operator Overloading in C++ Using Friend Function
+Ostream in C++
+Kadane's Algorithm in C++
+Kruskal's Algorithm in C++
+Quick Sort Algorithm in C++
+Abstract factory design pattern in C++
+Access Class Members in C++
+Adjacency List in C++
+Make_pair in C++
+Multiple Catch Statements in C++
+Thread pool in C++
+KMP Algorithm in C++
+Abstract data types in C++
+Bubble Sort in C++
+DDA line drawing algorithm in C++
+Setf() in C++
+Sieve of eratosthnes in C++
+Banker's Algorithm in C++
+Bellman-Ford Algorithm in C++
+Bubble Sort Algorithm in C++
+Quick Sort Implementation in C++
+Sorting Algorithms in C++
+Calloc in C++
+Multiplication Table in C++
+Print the corner elements and their sum in a 2-D matrix in C++
+Special Operators in C++
+Prim's Algorithm in C++
+C++ Program to display factors of a number
+Call by the reference in C++
+Fstream in C++
+How to Create a Singleton Class in C++
+Knapsack Problem in C++
+Merge Sort Pseudocode C++
+Objective C vs C++
+Pointer Hackerrank solution in C++
+Reinterpret_cast in c++
+Tree Implementation in C++
+Custom sort string in C++
+Stack functions in C++
+Thread Synchronization in C++
+Leaders in an array in C++
+How to implement Min Heap in C++
+C++ program to divide a string into N equal parts
+Celebrity Problem in C++
+Best C++ game engine for beginners
+Maximum circular subarray sum in C++
+Print unique rows in a given Binary matrix in C++
+Mutable keywords in C++
+Move all zeroes to end of array in C++
+Menu-driven program in C++
+Reversal algorithm for Array rotation in C++
+Sort elements by frequency in C++
+Stable Marriage Problem in C++
+Boyer Moore Algorithm for Pattern Searching in C++
+C++ program for run Length Encoding and Decoding
+C++ Program to find if a character is a Vowel or Consonant
+C++ Program to find the number of Islands using DFS
+Clamp in C++
+Diameter of binary tree in C++
+Foldable binary tree in C++
+Lexicographic rank of a String in C++
+Merge overlapping Intervals in C++
+Override keyword in C++
+Search in a row-wise and column-wise sorted matrix in C++
+Set insertion and deletion in C++
+std::thread detach in C++
+Tug of war in C++
+Merge Sort Algorithm in C++
+Variadic Templates in C++
+Tree isomorphism problem in C++
+Thread Safe Queue in C++
+Stock span problem in C++
+std::tie in C++
+Std::back_inserter in C++
+Std::allocator() in C++
+QuickSort on Singly Linked List in C++
+Pancake sorting in C++
+Nested Namespace in C++
+Largest Rectangular Area in Histogram using Segment Tree in C++
+C++ async await
+C++ Program for Counting Inversions in an Array
+Hamilton Cycle Detection in C++
+Insertion in Splay Tree in C++
+kruskal's algorithm in C++
+Maximum product subarray in C++
+Print all interleavings of given two strings in C++
+Aho-Corasick Algorithm for Pattern Searching in C++
+An In-Place Algorithm for String Transformation in C++
+C++ program for product array puzzle
+C++ Program to Demonstrate Usage of bind1st Binder
+C++ Program to Find Determinant of a Matrix
+Call by address in C++
+Chrono in C++
+Count Smaller Elements on Right Side in C++
+Equilibrium index of an array in C++
+flock() function in C++
+Power set algorithm in C++
+Stack smashing detected in C++
+The Great Tree List Recursion Problem in C++
+Timer implementation in C++
+Tower of Hanoi Algorithm in C++
+Linear Search Algorithm in C++
+The Fastest Sorting Algorithm in C++
+Boundary traversal of binary tree in C++
+Box Stacking Problem in C++
+C++ flat_map
+C++ Program to Find Factorial of a Number using Iteration
+C++ Program To Find Normal and Trace of a Matrix
+C++ Program to Represent Linear Equations in Matrix Form
+C++ Program to Swap Rows of Matrix
+C++ Program to Toggle Cases in a String
+cuckoo hashing in C++
+Draw a circle without floating point arithmetic in C++
+Find a sorted subsequence of size 3 in linear time in C++
+Finding a Peak Element in an Array in C++
+forward_list::splice_after() in C++
+Global constant in C++
+ios::rdstate() Function in C++
+K-Dimensional tree in C++
+One time pad algorithm in C++
+Print All Permutations in Sorted (Lexicographic) Order in C++
+std::stod, std::stof, std::stold in C++
+std::stof in C++
+std::stol function in C++
+std::stoll() Function in C++
+String::npos in C++
+Insertion Sort
+Needleman-Wunsch Algorithm
+Binary GCD Algorithm in C++
+C++ Program to Check if a Matrix is Orthogonal or Not
+C++ Program to Find Fibonacci Numbers using Matrix Exponentiation
+C++ Program to perform message encoding using matrix multiplication
+C++ Unordered_Mutimap
+Deque::front() and deque::back() in C++
+Difference between std::set vs std::vector in C++
+forward_list merge() in C++
+forward_list::unique() in C++
+How to convert std::string to lpcwstr in C++
+How to get the value of Pi in C++
+Maximum size square sub-matrix with all 1s in C++
+multimap get_allocator() function in C++
+Neural network in C++
+Rotate bits of a number in C++
+Sparse array in C++
+Std::allocator_arg in C++
+std::string::append vs std::string::push_back() vs Operator += in C++
+std::Chrono::Time_point in C++
+Std::nullopt in C++
+Strspn() Function in C++
+unordered_multimap rehash() function in C++
+Why (non-const) global variables are evil in C++
+'asm' Declaration in C++
+Block Swap Algorithm for Array Rotation in C++
+C++ thread_local
+DFA-based division in C++
+Difference between std::quick_exit and std::abort in C++
+Flattening a Linked List in C++
+forward_list::reverse() in C++
+ios::setstate() function in C++
+Is_open Function in C++
+mbsrtowcs() Function in C/C++
+std::array::crbegin in C++
+wmemmove() function in C++
+AES Algorithm in C++
+C++ Dictionaries
+C++ Program for Double to String Conversion
+C++ Program to Perform Mathematical Operation on Valarray Elements
+Create Bingo Game Using C++
+Difference between Friend Function and Virtual Function in C++
+C++ - Difference between Functors and Functions
+feholdexcept() in C++
+iswgraph() in C/C++
+out of range exception C++
+strcoll() in C++
+beta(), betaf() and betal() functions in C++ STL
+cshift() function for valarray in C++
+Difference Between deque::assign and deque::empty in C++
+Difference between header files stdio.h and stdlib.h
+Difference between std::set::lower_bound and std::lower_bound in C++
+Difference between std::swap and std::vector::swap
+How to Square a Number in C++
+is_polymorphic template in C++
+is_trivial in C++
+iswblank() function in C/C++
+match_results empty() in C++ STL
+match_results prefix() and suffix() in C++
+multimap::count() in C++
+ratio_less_equal() function in C++
+smatch max_size() function in C++ STL
+sqrtl function in C++
+std::unary_negate() in C++
+std::numeric_limits::max() and std::numeric_limits::min() in C++
+std::string::crbegin() and std::string::crend() in C++
+towctrans() function in C++
+Uniform Initialization in C++
+unordered_multimap max_load_factor() function in C++
+Use of explicit keyword in C++
+wcrtomb() function in C/C++
+wcstoimax() and wcstoumax() function in C/C++
+3-way comparison operator (Space Ship Operator) in C++ 20
+Algorithmic Trading with C++
+Alternating split of a given Singly Linked List in C++
+Applications of C++
+auto_ptr in C++
+Benefits of OOPs
+C++ Program For Octal To Decimal Conversion
+Difference between array::fill() and array::swap() in C++
+Expected Unqualified Id Error in C++
+fesetround() and fegetround() in C++ and their application
+Inbuilt function for calculating LCM in C++
+Iswspace() Function in C/C++
+Minimum Spanning Tree using Kruskal's Algorithm in C++
+Negate function in C++ STL
+Nested Try Blocks in C++
+Rint (), Rintf (), and Rintl () functions in C++
+Sequence and Associative Containers in C++
+std::get_temporary_buffer in C++
+std::integer_sequence in C++ 14
+Std::regex_iterator function in C++
+Strxfrm() Function in C/C++
+vswprintf() function in C/C++
+Wcscoll() Function in C++
+wcsncpy() function in C++
+wctob() function in C++
+Array Type Manipulation in C++
+Associative arrays in C++
+atexit() function in C++
+btowc() function in C/C++
+C++ program for Sentinel Linear Search
+C++ Program to Perform LU Decomposition of Any Matrix
+Calculating the area of an ellipse in C++
+Composite Design Pattern in C++
+conj() function in C++
+Difference between Tokens, Identifiers, and Keywords in C++
+Differences between the inline function and the normal function in C++
+Edmonds Karp Algorithm in C++
+Fallthrough in C++
+fegetexceptflag() function in C/C++
+forward_list::emplace_front() in C++
+Hiding of all overloading methods with the same name in the base class in C++
+How does Duff's Device work in C++
+Input and output Redirection in C++
+Ios bad() function in C++
+Iterator Invalidation in C++
+mbrlen() function in C/C++
+mbrtoc32() in C/C++
+ratio_greater() function in C++
+Rules for Operator overloading in C++
+std::adjacent_difference in C++
+std::future in C++
+strpbrk() Function in C++
+Babylonian Square Root Algorithm in C++
+The OFFSETOF() macro in C++
+Top 10 most used inbuilt C++ functions for Competitive Programming
+Trailing Return Type in C++ 11
+C++ Program for Iterative Quick Sort
+Exception::what() in C++
+C++ Program to Demonstrate use of Formatting Flags on Float Output
+C++ program to handle the checked exceptions
+Convert Scientific Notation to Decimal form in C++
+Difference between C++ and Ruby
+is_pod function in C++
+Manacher's Algorithm in c++
+Maximizing Vessels with Unique Element Sizes in C++
+Minimum Spanning Tree using Kruskal's Algorithm in C++
+std::is_trivially_assignable in C++
+std::tuple_element() and std::tuple_size() in C++
+stop_token Header in C++20
+StringStream in C++ for Decimal to Hexadecimal and Hexadecimal to Decimal
+strtod() function in C/C++
+ungetc() function in C++
+Unordered_multimap bucket_size() function in C++
+unordered_multimap key_eq function in C++
+Unsigned int in C++
+Variable Shadowing in C++
+Difference between cerr and clog in C++
+How to Assign Infinity to a Number in C++
+Long Data Type C++
+mbsinit() Function in C/C++
+multimap key_comp() in C++
+Observer_ptr in C++
+Queue using stack in C++
+std::subtract_with_carry_engine in C++
+unordered_multiset emplace_hint() function in C++ STL
+Why C++ is Best for Competitive Programming
+boost::algorithm::one_of_equal() in C++ library
+C++ Program to Implement Park-Miller Random Number Generation Algorithm
+Character Arithmetic in C and C++
+Converting ternary expression to Binary Tree using Stack in C++
+Difference between Forward List and List in C++
+Difference between list::emplace_front() and list::emplace_back() in C++
+Difference between std:wstring and std:string in C++
+Find the original number by flipping K unique bits in C++
+fma() Function in C++
+is_rvalue_reference Template in C++
+Nesbitt's Inequality in C++
+The Rule of Five in C++
+unordered_multimap load_factor() function in C++
+C++ Program For Selecting A Random Node From A Singly Linked List
+Comparison between Heap and Tree in C++
+Detect and Remove Loop in a Linked List in C++
+Difference between C++ and Go Languages
+Difference between std::set::upper_bound and std::upper_bound in C++
+Different Ways to Generate Permutations of an Array in C++
+How to Split a String by Multiple Delimiters in C++
+How to take space-separated input in C++
+static_assert in C++
+Absolute difference between set and unset bit count in N in C++
+Balls Rolling in the Maze in C++
+Basic C++ Commands
+Binary Heap in C++
+C++ Compiler Support
+C++ Program to calculate the Bitonicity of an Array
+Clone a Linked List with next and Random Pointer in C++
+Count of substrings with the frequency of at most one character as Odd in C++
+Difference between cout and std::cout in C++
+How to Validate Image File Extension using Regular Expression in C++
+Queue of Pairs in C++ STL with Examples
+Search by value in a Map in C++
+Determine winner of game by converting two consecutive 1s to 0s in C++
+Find the winner by incrementing co-ordinates till Euclidean distance <= D in C++
+How to Access a Local Variable from a Different Function in C++
+Karatsuba algorithm for fast multiplication using the Divide and Conquer algorithm in C++
+Longest Common Subsequence with no Repeating Character in C++
+Minimum Increments to reach the given MEX in C++
+Minimum number of key presses to type the given string in C++
+Queries for Sum of Bitwise AND of all Subarrays in a Range in C++
+Basic_istream::peek() method in C++
+C++ Program to Implement Fermat's Little Theorem
+Cryptarithmetic Puzzle in C++
+Customizing termination behavior for uncaught exceptions in C++
+Difference between fill() and fill_n() functions in C++ STL
+Dinic's algorithm in C++
+Fitting Shelves Problem in C++
+How to Set, Clear, and Toggle a Single Bit in C++
+Lookup Tables in C++
+Numbers of Operations to reduce Kth element to 0 in C++
+Valloc() function in C++
+bernoulli_distribution() function in C++
+Different ways to print elements of vector in C++
+Elo Rating Algorithm in C++
+Execution Policy of STL Algorithms in Modern C++
+Feclearexcept in C++
+Find the maximum width of a binary tree with null values in C++
+Find the n-th Element from Stern's Diatomic Series in C++
+How to Create a Stack of User-Defined Data Type in C++
+Munmap_chunk invalid pointer in C++
+Std::mt19937 class in C++
+Stein's Algorithm to find GCD in C++
+Write a C++ program to implement the Bloom filter data structure
+Xor_eq in C++
+C++ Program to Implement Modular Exponentiation algorithm
+C++ Program to concatenate two strings using Operator Overloading
+Program to convert ASCII to Unicode in C++
+C/C++ Program for Triangular Matchstick Number
+C++ Program for Number of local extrema in an array
+C++ Program to Find Decimal Equivalent of Binary Linked List
+C++ Program to Implement Bitap Algorithm for String Matching
+C++ Program to Implement Coppersmith Freivald's Algorithm
+C++ Program to Implement Interpolation Search Algorithm
+C++ Program to Implement Sieve of Atkin to Generate Prime Numbers Between Given Range
+C++ Program to Perform a Letter Frequency Attack on a Monoalphabetic Substitution Cipher
+C++ Program to Perform Baillie-PSW Primality Test
+C++ Program to Show Runtime Exceptions
+Program for Centered Icosahedral Number in C++
+Write a C++ program to implement open addressing in a hash table
+C++ Program to count distinct regular bracket sequences, which are not N periodic
+C++ Program for Generating Lyndon Words of Length n
+C++ STL Stack
+C++ Stack
+stack emplace() function
+stack empty() function
+stack pop() function
+stack push() function
+stack size() function
+stack top() function
+C++ STL Bitset
+C++ Bitset
+bitset all() function
+bitset any() function
+bitset count() function
+bitset flip() function
+bitset none() function
+bitset operator[]
+bitset reset() function
+bitset set() function
+bitset size() function
+bitset test() function
+bitset to_string() function
+bitset to_ullong() function
+bitset to_ulong() function
+C++ STL Deque
+C++ Deque
+Deque assign() function
+Deque emplace() function
+Deque emplace_back() function
+Deque emplace_front() function
+Deque insert() function
+Deque push_back() function
+Deque push_front() function
+Deque pop_back() function
+Deque pop_front() function
+Deque swap() function
+Deque clear() function
+Deque empty() function
+Deque erase() function
+Deque max_size() function
+Deque resize() function
+Deque shrink_to_fit() function
+Deque size() function
+Deque at() function
+Deque operator[]() function
+Deque operator=() function
+Deque back() function
+Deque begin() function
+Deque cbegin() function
+Deque end() function
+Deque cend() function
+Deque rbegin() function
+Deque crbegin() function
+Deque rend() function
+Deque crend() function
+C++ STL List
+C++ List
+List insert() function
+List push_back() function
+List push_front() function
+List pop_back() function
+List pop_front() function
+List empty() function
+List size() function
+List max_size() function
+List front() function
+List back() function
+List swap() function
+List reverse() function
+List sort() function
+List merge() function
+List splice() function
+List unique() function
+List resize() function
+List assign() function
+List emplace() function
+List emplace_back() function
+List emplace_front() function
+C++ STL Map
+map at() function
+map begin() function
+map cbegin() function
+map cend() function
+map crbegin() function
+map crend() function
+map empty() function
+map end() function
+map max_size() function
+map operator[]
+map rbegin() function
+map rend() function
+map size() function
+map clear() function
+map emplace() function
+map emplace_hint() function
+map erase() function
+map find() function
+map insert() function
+map operator=()
+map swap() function
+C++ STL Math
+math cos() function
+math sin() function
+math tan() function
+math acos() function
+math asin() function
+math atan() function
+math atan2() function
+math cosh() function
+math sinh() function
+math tanh() function
+math acosh() function
+math asinh() function
+math atanh() function
+math exp() function
+math frexp() function
+math Idexp() function
+math log() function
+math log10() function
+math modf() function
+math exp2() function
+math expm1() function
+math log1p() function
+math log2() function
+math logb() function
+math scalbn() function
+math scalbln() function
+math ilogb() function
+math copysign() function
+math nextafter() function
+math nexttoward() function
+math fdim() function
+math fmax() function
+math fmin() function
+math pow() function
+math sqrt() function
+math cbrt() function
+math hypot() function
+math ceil() function
+math floor() function
+math round() function
+math lround() function
+math llround() function
+math fmod() function
+math trunc() function
+math rint() function
+math lrint() function
+math llrint() function
+math nearbyint() function
+math remainder() function
+math remquo() function
+math fabs() function
+math abs() function
+math fma() function
+math fpclassify() function
+math isfinite() function
+math isinf() function
+math isnan() function
+math isnormal() function
+math signbit() function
+math isgreater() function
+math isgreaterequal() function
+math less() function
+math islessequal() function
+math islessgreater() function
+math isunordered() function
+math erf() function
+math erfc() function
+math tgamma() function
+math lgamma() function
+C++ STL priority_queue
+C++ priority_queue
+priority_queue emplace() function
+priority_queue empty() function
+priority_queue pop() function
+priority_queue push() function
+priority_queue size() function
+priority_queue swap() function
+priority_queue top() function
+C++ STL Queue
+C++ Queue
+queue back() function
+queue emplace() function
+queue empty() function
+queue front() function
+queue pop() function
+queue push() function
+queue size() function
+C++ STL Multiset
+C++ multiset
+multiset constructor
+multiset destructor
+multiset begin() function
+multiset end() function
+multiset operator=
+multiset rbegin() function
+multiset rend() function
+multiset cbegin() function
+multiset cend() function
+multiset max_size() function
+multiset size() function
+multiset crbegin() function
+multiset crend() function
+multiset empty() function
+multiset insert() function
+multiset clear() function
+multiset emplace() function
+multiset erase() function
+multiset swap() function
+multiset emplace_hint() function
+multiset find() function
+multiset key_comp() function
+multiset value_comp() function
+multiset count() function
+multiset equal_range() function
+multiset lower_bound() function
+multiset upper_bound() function
+multiset get_allocator() function
+multiset operator==
+multiset operator!=
+multiset operator<
+multiset operator<=
+multiset operator>
+multiset operator>=
+multiset swap() function
+C++ STL Multimap
+C++ Multimap
+multimap crbegin() function
+multimap crend() function
+multimap begin() function
+multimap cbegin() function
+multimap cend() function
+multimap end() function
+multimap rbegin() function
+multimap rend() function
+multimap clear() function
+multimap emplace() function
+multimap empty() function
+multimap erase() function
+multimap insert() function
+multimap swap() function
+multimap equal_range() function
+multimap operator==
+multimap operator!=
+C++ multimap operator <() function
+C++ multimap operator <=() function
+C++ multimap operator>() function
+C++ multimap operator >=() function
+multimap swap() function
+C++ STL Set
+C++ Set
+set constructor
+set destructor
+set operator=() function
+set begin() function
+set cbegin() function
+set end() function
+set cend() function
+set rbegin() function
+set rend() function
+set crbegin() function
+set crend() function
+set empty() function
+set Size() function
+set max_size() function
+set insert() function
+set erase() function
+set Swap() function
+set clear() function
+set emplace() function
+set emplace_hint() function
+set key_comp() function
+set value_comp() function
+set find() function
+set count() function
+set lower_bound() function
+set upper_bound() function
+set equal_range() function
+set get_allocator() function
+set operator==
+set operator!=
+set operator<
+set operator<=
+set operator>
+set operator>=
+set swap() function
+C++ STD Strings
+string compare() function
+string length() function
+string swap() function
+string size() function
+string resize() function
+string replace() function
+string append() function
+string at() function
+string find() function
+string find_first_of() function
+string find_first_not_of() function
+string find_last_of() function
+string find_last_not_of() function
+string insert() function
+string max_size() function
+string push_back() function
+string pop_back() function
+sstring assign() function
+string copy() function
+string back() function
+string begin() function
+string capacity() function
+string cbegin() function
+string cend() function
+string clear() function
+string crbegin() function
+string data() function
+string empty() function
+string erase() function
+string front() function
+string operator+=()
+string operator=()
+string operator[]()
+string rfind() function
+string end() function
+string rend() function
+string shrink_to_fit() function
+string c_str() function
+string crend() function
+string rbegin() function
+string reserve() function
+C++ STL Vector
+Vector at() function
+Vector back() function
+Vector front() function
+Vector swap() function
+Vector push_back() function
+Vector pop_back() function
+Vector empty() function
+Vector insert() function
+Vector erase() function
+Vector resize() function
+Vector clear() function
+Vector size() function
+Vector capacity() function
+Vector assign() function
+Vector operator=() function
+Vector operator[]() function
+Vector end() function
+Vector emplace() function
+Vector emplace_back() function
+Vector rend() function
+Vector rbegin() function
+Vector begin() function
+Vector max_size() function
+Vector cend() function
+Vector cbegin() function
+Vector crbegin() function
+Vector crend() function
+Vector data() function
+Vector shrink_to_fit() function
+C++ Manipulator
+C++ Manipulator noskipws function
+C++ Manipulator right Function
+C++ STL Algorithms
+C++ Algorithm max() Function
+C++ Algorithm next_permutation () Function
+algorithm adjacent_find() function
+algorithm any_of() function
+algorithm copy() function
+algorithm copy_if() function
+algorithm count() function
+algorithm count_if() function
+algorithm equal() function
+algorithm find() function
+algorithm find_end() function
+algorithm find_first_of() function
+algorithm find_if() function
+algorithm find_if_not() function
+algorithm for_each() function
+algorithm move() function
+algorithm all_of() function
+algorithm copy_backward() function
+algorithm copy_n() function
+algorithm search() function
+algorithm is_permutation() function
+algorithm mismatch() function
+algorithm move_backward() function
+algorithm none_of() function
+algorithm search_n() function
+algorithm swap() function
+algorithm fill() function
+algorithm iter_swap() function
+algorithm replace_copy_if() function
+algorithm replace_copy() function
+algorithm replace_if() function
+algorithm replace() function
+algorithm swap_ranges() function
+algorithm transform() function
+algorithm fill_n() function
+algorithm generate_n() function
+algorithm generate() function
+algorithm remove() function
+algorithm is_partitioned() function
+algorithm random_shuffle() function
+algorithm remove_copy_if() function
+algorithm remove_copy() function
+algorithm partition_copy() function
+algorithm partition_point() function
+algorithm partition() function
+algorithm remove_if() function
+algorithm reverse_copy() function
+algorithm reverse() function
+algorithm rotate_copy() function
+algorithm rotate() function
+algorithm shuffle() function
+algorithm stable_partition() function
+algorithm unique_copy() function
+algorithm unique() function
+algorithm is_sorted_until() function
+algorithm is_sorted() function
+algorithm lower_bound() function
+algorithm nth_element() function
+algorithm partial_sort_copy() function
+algorithm partial_sort() function
+algorithm sort() function
+algorithm stable_sort() function
+algorithm binary_search() function
+algorithm equal_range() function
+algorithm includes() function
+algorithm inplace_merge() function
+algorithm merge() function
+algorithm set_union() function
+algorithm upper_bound() function
+Thread hardware_concurrency() Function in C++
+C++ Algorithm
+C++ Iterators
+C++ Iterators
+C++ Bidirectional Iterator
+C++ Forward Iterator
+C++ Input Iterator
+C++ Output Iterator
+C++ Misc
+C++ vs C#
+C++ Overloading
+C++ int to string
+C++ vs Python
+How to Initialize Vector in C++?
+Structure vs Class in C++
+Virtual Destructor in C++
+Constructor vs Destructor in C++
+Bit manipulation C++
+What is a reference variable
+Snake Code in C++
+Virtual function vs Pure virtual function in C++
+How to Split strings in C++
+Range-based for loop in C++
+std::tmpnam in C++
+How to Traverse a List with const_iterator in C++
+Type Conversion in C++
+std::variant in C++ 17
+Implement Rand10() using Rand7() in C++
+LCM of two numbers in C++
+std::weibull_distribution in C++
+Kasai's Algorithm in C++
+Convert string to integer in C++
+Stella Octangula Number in C++
+Meeting Rooms - Check if a person can attend all meetings in C++
+Implementing Forward Iterator in BST
+Strand Sort algorithm in C++
+Minimum flips required to generate continuous substrings of 0's and 1's in C++
+Comparator in C++
+Swapping of subranges from different containers in C++
+Negative_binomial_distribution in C++
+Return from void functions in C++
+The Maze in C++
+Std::atomic_thread_fence in C++
+Anti Clockwise spiral traversal of a Binary Tree in C++
+To-Do List in C++
+std::bad_alloc in C++
+Application of pointers in C++
+Two way Linear Search Algorithm in C++
+std::filesystem::hard_link_count in C++
+Argument Coercion in C/C++
+Ways to Initialize a Set in C++
+std::filesystem::perm_options in C++
+Avoid Bugs Using Modern C++
+What are Forward declarations in C++
+Std::packaged_task class in C++
+basic_istream--unget() in C++
+What are the New Features Introduced in C++23
+std::strong_ordering in C++
+Bookshop Management System using File Handling in C++
+boost::algorithm::none_of_equal() in C++ library
+strerror_s() in C++
+Difference between Shuffle and Random_shuffle in C++
+Check for Possible Bipartition in C++
+What is type deduction in C++11
+Different versions of C++
+Closest Pair of Points in C++
+Minimum Cost to Connect Sticks in C++
+FIFO Push Relabel Algorithm in C++
+Consteval specifier in C++
+std::not_fn function in C++
+Fleury's Algorithm for printing Eulerian Path or Circuit in C++
+Convert a Binary String to another String by Flipping Prefixes a Minimum Number of Times in C++
+std::this_thread::sleep_until() function in C++
+Ford Fulkerson Algorithm in C++
+Convert Singly Linked List to XOR Linked List in C++
+Stirling Numbers in C++
+How to Implement Reverse DNS Look Up Cache In C++
+C++ Program for Priority Scheduling
+Template Method Pattern in C++
+Interesting facts about C++
+Data Races in C++
+Trampoline in C++
+Interesting facts about data-types and modifiers in C/C++
+Design Hit Counter in C++
+Juggling algorithm for Array Rotation in C++
+Multimap size() function in C++
+Difference Between DWORD and Unsigned Int in C++
+Minimum Number of Steps to Make Two Strings Anagram in C++
+Precision of Floating Point Numbers in C++ (floor(), ceil(), trunc(), round() and setprecision())
+Difference between Function Overloading and Function Templates
+Russian Peasant Multiplication Algorithm in C++
+Transforming Arrays with Repeated Steps and Modulo Operations in C++
+Different levels of exception safety guarantees in C++
+Sleep Sort algorithm in C++
+Trie of all Suffixes in C++
+Distinct Subsequences in C++
+State Design Pattern in C++
+Using Range in C++ Switch Case
+Domino and Tromino Tiling in C++
+2Sum in C++
+c32rtomb() function in C/C++
+Find Buildings with an Ocean View in C++
+Difference between C++ and Julia
+Cartesian Tree Sorting in C++
+Find Exclusive Time of Functions in C++
+Difference between C++ and COBOL
+charconv Header File in C++17
+Find Maximum Profit for Products within Budget in C++
+Difference between C++ and Kotlin
+Condition Variables in C++ Multithreading
+Find Minimum moves to make X = Y by adding or subtracting numbers starting from 1 in C++
+Difference between C++ and Object Pascal
+Convex Hull Algorithm in C++
+Find Smallest Common Region in C++
+Difference between C++ and TCL
+C++17 Features and Enhancements
+Finite and Infinite Recursion in C++
+Difference between Strategy and State Patterns in C++
+C++ Compiler
+Frugal Number in C++
+Difference between Template Specialization and Overloading in C++
+CSV file management using C++
+Helper Functions in C++ Classes
+Difference between Templates and Inheritance in C++
+Detect Cycle in Graph using DSU in C++
+Implementation of a Hypergraph in C++
+Dungeon Game in C++
+Difference between Base class and Derived class in C++
+Incidence Matrix in C++
+Find the Town Judge in C++
+Difference Between C Structures and C++ Structures
+Jump Pointer algorithm in C++
+FizzBuzz Problem in C++
+Difference between DART and C++
+Lambda Capture of *this in C++17
+Pair Sum Closest to Target in Unsorted Array in C++
+Difference between exit() and break in C/C++
+Legendre's Conjecture: Concept, Algorithm, Implementation in C++
+How to write your own STL container in C++
+Difference between Preprocessor Directives and Function Templates in C++
+Lexical Analyzer in C++
+4 Sum - Find a quadruplet with closest sum in C++
+Move to Front Algorithm in C++
+Magical Patterns in C++
+Course Schedule IV in C++
+Angular Sweep Algorithm in C++
+Markov Chains in C++
+Difference between a Static Queue and a Singly Linked List in C++
+Asteroid Collision in C++
+Maximum Bipartite Matching problem in C++
+Difference between Atomic Flags and Atomic Booleans in C++
+Bead Sort (Gravity Sort) algorithm in C++
+Number of n-digit stepping numbers in C++
+Difference between Binary Compatibility and Source Compatibility in C++
+Bell Numbers in C++
+Patience Sort in C++
+Difference between Delete and Delete[] in C++
+Bertrand's Postulate in C++
+Populating Next Right Pointers in Each Node in C++
+Difference between Lazy Evaluation and Eager Evaluation in C++
+Bessel's Interpolation in C++
+pthread_cond_broadcast() method in C++
+Difference between MVC architecture and MVVM architecture in C++
+Bogosort algorithm in C++
+Reflection in C++
+Difference between Memory Pooling and Dynamic Allocation in C++
+Cache oblivious algorithm in C++
+Reverse Prefix of Word in C++
+Difference between std::atomic and Volatile in C++
+Card flipping game in C++
+Rock-paper-scissor game in C++
+Difference between std::next and std::advance in C++
+Cartesian Tree in C++
+Rule of Zero in C++
+Difference between Observer and Mediator Pattern in C++
+Centered Tetrahedral Number in C++
+Serial Port Connection in C++
+Difference between STL Algorithms and Custom Algorithms
+Chalkboard XOR Game in C++
+Set Cover Problem in C++
+Gilbert-Johnson-Keerthi (GJK) Algorithm in C++
+Check if a given number is pronic in C++
+Smarandache-Wellin Sequence in C++
+Half-Plane Intersection in C++
+Check if the given Morse Code is Valid in C++
+std::aligned_union in C++
+Scapegoat Trees in C++
+Continuous Tree in C++
+Std::atomic_ref in C++
+std::enable_shared_from_this() function in C++
+Cooley-Tukey FFT algorithm in C++
+std::chi_squared_distribution in C++
+std::ranges::lazy_split function in C++
+Counting cross lines in an array in C++
+std::chrono::nonexistent_local_time in C++
+std::to_underlying function in C++
+C++ Alternative
+std::counting_semaphore, std::binary_semaphore in C++
+std::tuple_cat() function in C++
+C++ code to count local extrema of given array
+std::countr_zero in C++
+Fractal Sort in C++
+C++ code to find an index where this is a hash collision
+std::cyl_neumann in C++
+Hypercube Sort in C++
+C++ Program for Centered Nonagonal Number
+std::destroy_at in C++
+Lattice Reduction Algorithm in C++
+C++ Program for dot product and cross product of two Vectors
+std::experimental::is_simd, std::experimental::is_simd_mask in C++
+Rotating Calipers in C++
+C++ program to construct graph with certain conditions
+std::hermite, std::hermitef, std::hermitel in C++
+std::chrono::steady_clock in C++
+C++ Program to find a matrix with marked Asterisks Region
+std::is_standard_layout in C++
+std::common_type T1, T2 ::type function in C++
+C++ program to find the winner of a unique building game
+std::knuth_b in C++
+std::integral_constant in C++
+Delaunay Triangulation in C++
+std::launder in C++
+Std::is_base_of Base,Derived ::value in C++
+Demlo number (Square of 11...1) in C++
+std::logic_error in C++
+std::mem_fun_ref in C++
+Diagonally dominant matrix in C++
+Std::pmr::monotonic_buffer_resource in C++
+Std::views::zip function in C++
+Difference Between Array-Based Queue and List-Based Queue
+std::pmr::synchronized_pool_resource in C++
+Stone Game in C++
+Difference between Containership and Inheritance in C++
+std::ptr_fun function in C++
+Blossom Algorithm in C++
+Difference between long int and long long int in C/C++
+std::ranges::in_found_result in C++
+Deducing_this function in C++
+Difference between null strings and empty strings in C++
+Std::regex_search in C++
+Difference between SFINAE and Concepts in C++
+Difference between Queue and Deque in C++
+std::remove_extent in C++
+Difference between std::thread and OpenMP in C++
+Difference between Relational Operator (==) and std::string::compare() in C++
+std::remove_reference in C++
+Difference between Union data type and Variant in C++
+Difference between tellg and tellp in C++
+std::remove_volatile in C++
+Difference between Virtual function and Inline function in C++
+Different Ways to Initialize an unordered_set in C++
+Std::saturate_cast function in C++
+Find Eventual Safe States in C++
+dlsym() function in C++
+std::source_location in C++
+Gold Mine Problem in C++
+DSatur Algorithm for Graph Colouring in C++
+std::start_lifetime_as, std::start_lifetime_as_array function in C++
+Gomory-Hu Tree Construction in C++
+Dudeney Numbers in C++
+std::strided_slice function in C++
+How do you find the maximum rectangular Area in a histogram using a stack in C++?
+Egg dropping Puzzle in C++
+std::student_t_distribution in C++
+Interesting or Fun Facts about Fibonacci Sequence in C++
+Emirp numbers in C++
+std::text_encoding function in C++
+Pack Indexing in C++
+Encoding a Sentence into Pig Latin in C++
+Std::transform_inclusive_scan in C++
+std::is_scoped_enum_v function in C++
+Euler's Four Square Identity in C++
+std::uniform_real_distribution min() method in C++
+std::polar function in C++
+Exception Handling and Object Destruction in C++
+The Skyline Problem in C++
+std::ranges::fold_left_first_with_iter and std::ranges::fold_left_first_with_iter_result in C++
+Exponential Search Algorithm in C++
+Toeplitz Matrix in C++
+std::ranlux48_base function in C++
+Finding Square Root under Modulo p using Shanks Tonelli Algorithm in C++
+Tutte's theorem in C++
+std::remove_cvref function in C++
+Finding the Nth Fortunate Number in C++
+UTF-8 to Wide Char Conversion in C++ STL
+std::views::drop in C++
+Find Minimum Number of Frogs Croaking in C++
+wcspbrk() function in C++
+Std::wclog() function in C++
+Find Pivot in Rotated Sorted Array in C++
+Why Assignment Operator Overloading Must Return Reference in C++
+Tag dispatch in C++
+Find the maximum distance between two points in the coordinate plane using Rotating Caliper's Method in C++
+Why can't we declare a std::vector AbstractClass in C++
+What is a monad in C++?
+Find the pell number using C++
+Alien Dictionary in C++
+Wilson's Theorem in C++
+Find the size of the largest '+' formed by all ones in a binary matrix in C++
+Cache-friendly code in C++
+Yen's K-shortest path algorithm in C++
+Find the toggle bits of a number except the first and last bits in C++
+Catalan Numbers in C++
+2-SAT Problem in C++
+Flip Equivalent Binary Trees in C++
+Command Design Pattern in C++
+Bron-Kerbosch Algorithm in C++
+Flipped Matrix Prequel in C++
+Dense Graphs in C++
+Chordal Graph Recognition in C++
+Flyweight pattern in C++
+Design a parking lot system in C++
+Coin piles in C++
+Friends Pairing Problem in C++
+Difference between C++ and Ada
+Dancing Links Algorithm (DLX) in C++
+Generate Random Double Numbers in C++
+Difference between C++ and Erlang
+Difference between Concepts and Type Traits in C++
+Greedy Algorithm for Egyptian Fraction in C++
+Difference between C++ and F#
+Elimination Game in C++
+Hierholzer's Algorithm in C++
+Difference between C++ and Haskell
+Game of Life algorithm in C++
+Hoax number in C++
+Difference between C++ and Prolog
+How to Find Symmetric Difference of Two Multimaps in C++
+How to Capture std::vector in Lambda Function in C++
+Difference between C++ and R
+Jewels and Stones in C++
+How to Implement Custom Hash Functions for User-Defined Types in std::unordered_map in C++
+Difference between C++ and Verilog
+Nim 21 Game in C++
+How to wrap a Python object in C/C++?
+Difference between Debug and Release Builds in C++
+Program to find first N Iccanobif Numbers in C++
+How to Write a Desktop Program in C++ Using Win32 and COM APIs
+Difference between #include iostream and #include stdio.h
+Reconstruct Itinerary in C++
+Jaccard Similarity Coefficient in C++
+Difference between Lambdas and Function Pointers in C++
+rewinddir() function in C++
+Jarvis March Algorithm in C++
+Difference between Profiling and Benchmarking in C++
+Std::cin.fail() method in C++
+Long Data Type in C++
+Difference Between RAII and Garbage Collection in C++
+std::filesystem::space_info in C++
+Longest Non-Increasing Subsequence in a Binary String in C++
+Difference between std::lock_guard and std::unique_lock in C++
+Wiggle Subsequence in C++
+Manber's Algorithm in C++
+Difference between Template and Polymorphism in C++
+Zero-Sum Game Strategy in C++
+McCreight's Algorithm in C++
+Difference between C++ and Eiffel
+MEX Subarray Count in C++
+Difference between C++ and Lua
+Minimize Count of Unequal Elements at Corresponding Indices between given Arrays in C++
+Employee Free Time Problem in C++
+Mirror of N-ary Tree in C++
+exit(1) in C++
+Modular Multiplicative Inverse in C++
+Fast Marching Method in C++
+Number of substrings with equal character frequencies and fixed distance in C++
+Find Redundant Connections in Graph in C++
+Odious Number in C++
+Heavy-Light Decomposition in C++
+Pearson Correlation Coefficient in C++
+H-Index II in C++
+Pentatope Number in C++
+House Robber in C++
+Pernicious Number in C++
+How to Convert wstring to double in C++
+Pigeonhole Sort algorithm in C++
+How to Fix bits/stdc++.h File not Found in MacOS
+Polybius Square Cipher in C++
+How to resolve build errors due to Circular Dependency amongst classes in C++
+Print bracket numbers in C++
+pythagorean quadruple in C++
+Ramanujan-Nagell Conjecture in C++
+Reasons for a C++ Program Crash
+Refactorable number in C++
+Reservoir Sampling algorithm in C++
+Reverse of Stack in C++
+Secant Method in C++
+Sentence Screen Fitting in C++
+Shaker Sort in C++
+Shannon-Fano Decoding in C++
+Shift 2D Grid in C++
+Skip List in C++
+Solovay Strassen method of primality test in C++
+Squirrel simulation in C++
+Std::bind1st and std::bind2nd in C++
+std::filesystem::is_regular_file() in C++
+std::inner_product in C++
+std::lerp in C++
+std::memory_order enum in C++
+std::midpoint in C++
+std::nothrow in C++
+std::scoped_lock in C++
+std::to_address in C++
+std::transform_reduce in C++
+std::uninitialized_fill in C++
+std::uninitialized_value_construct in C++
+Stepping Numbers in C++
+STL Ropes in C++
+Stooge sort algorithm in C++
+Stormer Numbers in C++
+Strassen's algorithm in C++
+strcat() Function in C++
+Subnet Calculator in C++
+Substitution Failure Is Not An Error (SFINAE) in C++
+Sweep Line Algorithms in C++
+Tarjan's Algorithm to find Strongly Connected Components in C++
+Toggle the First and Last Bits of a Number in C++
+Trapping rain water in C++
+Undulating Numbers in C++
+Validate localhost API request processed by POSTMAN using Regular Expression in C++
+Vector::operator= and vector::operator[ ] in C++ STL
+Visitor design pattern in C++
+Vizing's Theorem in C++
+What is the use of the placement new operator in C++
+Woodall Number in C++
+Word Squares in C++
+Binomial Random Variables in C++
+Cholesky Decomposition in C++
+Curiously Recurring Template Pattern (CRTP) in C++
+Custom Jumble Word Game in C++
+cyl_bessel_k in C++
+Different Ways to Convert Vector to Array in C++ STL
+Disarium Number in C++
+Entringer Number in C++
+Equidigital Numbers in C++
+Find the maximum Manhattan distance between a distinct pair from N coordinates in C++
+Find the Pentagonal Pyramidal Number using C++
+Golomb Sequence in C++
+How to Convert an Enum to a String in C++
+is_fundamental Template in C++
+Kill Process in C++
+Largest Component Size in a Graph Formed by Connecting Non-Co-Prime Nodes in C++
+Moser-de Bruijn Sequence in C++
+Motzkin number in C++
+Punctuators in C++
+Total Area of two Overlapping Rectangles in C++
+Total hamming distance in C++
+Traits in C++
+8 puzzle Problem Using Branch and Bound in C++
+Add and Remove Edge in Adjacency Matrix representation of a Graph in C++
+Alloca() function in C++
+BK Tree in C++
+Burst Sort algorithm in C++
+Count-Min Sketch in C++
+DEFLATE Compression Algorithm in C++
+D'Esopo-Pape Algorithm: Single Source Shortest Path in C++
+Different ways to use Const with Reference to a Pointer in C++
+Erase All Elements Satisfying Given Condition From unordered_multiset in C++
+Find Minkowski Distance in C++
+Find Pattern in Infinite Binary Stream I in C++
+Find the closest Numbers from a List of Unsorted Integers in C++
+Find the Longest Turbulent Subarray in C++
+Find the nth Hermite number in C++
+Fusion tree in C++
+H-Index in C++
+House Robber II in C++
+How to Call a Virtual Function from a Derived Class in C++
+How to Handle SIGABRT Signal in C++
+How to represent the Deck of Cards using an array in C++
+How to use typename Keyword in C++
+Lamport's Bakery Algorithm in C++
+Matching the Alphanumerical Pattern in Matrix I in C++
+Memento Pattern in C++
+Munchhausen Number in C++
+Negative Infinity in C++
+Number of ordered pairs such that Ai and Aj = 0 in C++
+Overloading of function-call operator in C++
+Overview of the C++ Language Binding in the ODMG Standard
+Painting Fence Algorithm in C++
+Particle Swarm Optimization in C++
+Rearrange Distant Barcodes in C++
+Reverse the string whenever digit is encountered in C++
+Shortest Path to Get Food in Matrix in C++
+Sophie Germain Prime number in C++
+std::assoc_laguerre method in C++
+std::basic_filebuf::seekoff in C++
+std::basic_ios::copyfmt in C++
+std::basic_istream::sentry in C++
+std::basic_streambuf::sputbackc in C++
+std::codecvt in C++
+std::codecvt::out and do_out in C++
+std::codecvt_utf8 in C++
+std::ctype::widen and do_widen in C++
+std::declval in C++
+std::defer_lock_t, std::try_to_lock_t, and std::adopt_look_t in C++
+std::exponential_distribution in C++
+std::has_facet in C++
+std::has_single_bit in C++
+std::ios_base::pword in C++
+std::ios_base::register_callback() function in C++
+std::is_destructible in C++
+std::is_nothrow_destructible in C++
+std::is_trivially_destructible in C++
+std::money_put function in C++
+Std::move_only_function in C++
+Std::nanf method in C++
+std::numpunct_byname in C+
+std::piecewise_construct in C++
+std::piecewise_construct_t in C++
+std::piecewise_linear_distribution in C++
+std::quoted in C++
+std::reference_wrapper in C++
+std::regex_replace in C++
+std::rethrow_if_nested in C++
+std::return_temporary_buffer in C++
+next →
+Tutorial
+Compiler
+Programs
+OOPs
+STL
+Interview Questions
+C++ Tutorial
+26 Apr 2025
+|
+4 min read
+C++ tutorial provides basic and advanced concepts of C++. Our C++ tutorial is designed for beginners and professionals.
+C++ is an object-oriented programming language. It is an extension to
+C programming
+.
+Our C++ tutorial includes all topics of C++ such as first example, control statements, objects and classes,
+inheritance
+,
+constructor
+, destructor, this, static, polymorphism, abstraction, abstract class, interface, namespace, encapsulation, arrays, strings, exception handling, File IO, etc.
+What is C++
+C++ is a general purpose, case-sensitive, free-form programming language that supports object-oriented, procedural and generic programming.
+C++ is a middle-level language, as it encapsulates both high and low level language features.
+C++ Program
+In this tutorial, all C++ programs are given with C++ compiler so that you can easily change the C++ program code.
+#include <iostream>
+using namespace std;
+int main() {
+    cout << "Hello, World!" << endl;
+    return 0;
+}
+Compile and Run C++ Program
+Object-Oriented Programming (OOPs)
+C++ supports the object-oriented programming, the four major pillar of object-oriented programming (
+OOPs
+) used in C++ are:
+Inheritance
+Polymorphism
+Encapsulation
+Abstraction
+C++ Standard Libraries
+Standard C++ programming is divided into three important parts:
+The core library includes the data types, variables and literals, etc.
+The standard library includes the set of functions manipulating strings, files, etc.
+The Standard Template Library (STL) includes the set of methods manipulating a data structure.
+Usage of C++
+By the help of C++ programming language, we can develop different types of secured and robust applications:
+Window application
+Client-Server application
+Device drivers
+Embedded firmware etc
+C++ Basics
+C++ Tutorial
+What is C++
+C vs C++
+C++ History
+C++ Features
+C++ Installation
+C++ Program
+C++ cout, cin, endl
+C++ Variable
+C++ Data types
+C++ Keywords
+C++ Operators
+C++ Control Statement
+C++ if-else
+C++ switch
+C++ For Loop
+C++ While Loop
+C++ Do-While Loop
+C++ Break Statement
+C++ Continue Statement
+C++ Goto Statement
+C++ Comments
+C++ Functions
+C++ Functions
+Call by value & reference in C++
+Actual Parameter and Formal Parameter in C++
+Default Arguments in C++
+Inline Function in C++
+Difference between the inline function and the normal function in C++
+C++ Recursion
+C++ Storage Classes
+C++ Arrays
+C++ Arrays
+C++ Array to Function
+C++ Multidimensional Arrays
+C++ Jagged Array
+Add Two Arrays in C++
+Associative Arrays in C++
+Array Type Manipulation in C++
+C++ Pointers
+C++ Pointers
+Application of pointers in C++
+sizeof() operator in C++
+C++ Array of Pointers
+C++ Void Pointer
+C++ Object Pointer
+C++ Function Pointer
+C++ Smart Pointer
+C++ References
+Reference vs Pointer
+Function Pointer in C++
+C++ Memory Management
+malloc() vs new in C++
+free vs delete in C++
+C++ Structures
+C++ Structures
+C Structures vs C++ Structures
+C++ Structure vs Class
+C++ Object Class
+OOPs Concepts in C++
+C++ Classes and Objects
+Member Function in C++
+Constructor in C++
+C++ Destructor
+C++ this Pointer
+C++ static
+C++ Enumeration
+C++ Friend Function
+C++ Inheritance
+C++ Inheritance
+C++ Aggregation
+C++ Polymorphism
+C++ Polymorphism
+C++ Overloading
+C++ Overriding
+C++ Virtual Function
+Virtual function vs Pure virtual function in C++
+C++ Abstraction
+C++ Interfaces
+C++ Data Abstraction
+C++ Namespaces
+C++ Namespaces
+C++ Templates
+C++ Templates
+C++ Strings
+C++ Strings
+C++ Exceptions
+C++ Exception Handling
+C++ try/catch
+C++ User-Defined
+C++ File & Stream
+C++ File & Stream
+C++ Programs
+C++Programs
+Fibonacci Series
+Prime Number
+Palindrome Number
+Factorial
+Armstrong Number
+Sum of digits
+Reverse Number
+Swap Number
+Matrix Multiplication
+Decimal to Binary
+Number in Characters
+Alphabet Triangle
+Number Triangle
+Fibonacci Triangle
+C++ STL Tutorial
+C++ STL Algorithm
+C++ List
+C++ Set
+C++ Map
+C++ priority_queue
+C++ Stack
+C++ Queue
+C++ multiset
+C++ Bitset
+C++ Deque
+C++ Vector
+C++ STD Strings
+string compare() function
+string length() function
+string swap() function
+string substr() function
+string size() function
+string resize() function
+string replace() function
+string append() function
+string at() function
+string find() function
+string find_first_of() function
+string find_first_not_of() function
+string find_last_of() function
+string find_last_not_of() function
+string insert() function
+string max_size() function
+string push_back() function
+string pop_back() function
+sstring assign() function
+string copy() function
+string back() function
+string begin() function
+string capacity() function
+string cbegin() function
+string cend() function
+string clear() function
+string crbegin() function
+string data() function
+string empty() function
+string erase() function
+string front() function
+string operator+=()
+string operator=()
+string operator[]()
+string rfind() function
+string end() function
+string rend() function
+string shrink_to_fit() function
+string c_str() function
+string crend() function
+string rbegin() function
+string reserve() function
+string get_allocator() function
+Interview Questions
+Interview Questions
+Prerequisite
+Before learning C++, you must have the basic knowledge of C.
+Audience
+Our C++ tutorial is designed to help beginners and professionals.
+Problem
+We assure that you will not find any problem in this C++ tutorial. But if there is any mistake, please post the problem in contact form.
+Next Topic
+Difference-between-c-and-cpp
+next →
+Related Posts
+C++ Expression
+C++ expression consists of operators, constants, and variables, which are arranged according to the rules of the language. It can also contain function calls, which return values. An expression can consist of one or more operands and zero or more operators to compute a value....
+11 min read
+C++ History
+History of C++ language is interesting to know. Here we are going to discuss brief history of C++ language. C++ maintains its position as one of the most prominent programming languages through its eminent features which include efficiency and robust power delivery along with flexible capabilities....
+5 min read
+C++ Installation
+Turbo C++ - Download &amp; Installation There are many compilers available for C++. You need to download any one. Here, we are going to use Turbo C++. It will work for both C and C++. To install the Turbo C++ software, you need to follow following...
+2 min read
+C++ Variable
+Variables are the fundamental building blocks of data manipulation and storage in programming, which acts as dynamic containers for data in the C++ programming language. A variable is more than just a memory label. It is a named storage location of data in memory. It...
+8 min read
+C++ Basic Input and Output
+&nbsp;(cin, cout, cerr, clog) C++ I/O operation uses the stream concept. The series of bytes or flow of data is referred to as a stream, which can either be input or output. It accelerates performance in the programs. Output Operations: If bytes are transferred from main memory...
+10 min read
+C++ Features
+C++ is a widely used programming language. The C++ programming language brings together low-level system programming traits and high-level abstraction features. C++ functions as a flexible programming language because it builds upon C language features to deliver object-oriented alongside functional and generic programming functionalities. The language...
+5 min read
+C++ Operators
+In C++, operators are special symbols that are used to perform operations on variables and values on operands. Operators are essential concepts of any programming language. There can be several operations, including arithmetic, value assignment, bitwise, and logical computations. Basic Example: Let us take a basic example...
+12 min read
+Difference between C and C++
+What is C? C is a structural or procedural oriented programming language which is machine-independent and extensively used in various applications. C is the basic programming language that can be used to develop from the operating systems (like Windows) to complex programs like Oracle database, Git, Python...
+4 min read
+C++ Program
+Before starting the abcd of C++ language, you need to learn how to write, compile and run the first C++ program. To write the first C++ program, open the C++ console and write the following code: #include &lt;iostream.h&gt; #include&lt;conio.h&gt; void main() { clrscr(); cout &lt;&lt; "Welcome...
+1 min read
+C++ #include iostream
+What is #include &lt;iostream&gt; in C++? To perform any input and output operations in C++, we need to use iostream header files. Without an &lt;iostream&gt; header file, we cannot take input from the user or print any output. Syntax of &lt;iostream&gt; header file: #include &lt;iostream.h&gt; #include &quot;iostream.h&quot; There are...
+4 min read
+Subscribe to Tpoint Tech
+We request you to subscribe our newsletter for upcoming updates.
+Subscribe
+Learn Important Tutorial
+Python
+Java
+Javascript
+HTML
+Database
+PHP
+C++
+React
+B.Tech / MCA
+DBMS
+Data Structures
+DAA
+Operating System
+Computer Network
+Compiler Design
+Computer Organization
+Discrete Mathematics
+Ethical Hacking
+Computer Graphics
+Web Technology
+Software Engineering
+Cyber Security
+Automata
+C Programming
+C++
+Java
+.Net
+Python
+Programs
+Control System
+Data Warehouse
+Preparation
+Aptitude
+Reasoning
+Verbal Ability
+Interview Questions
+Company Questions
+We provides tutorials and interview questions of all technology like java tutorial, android, java frameworks
+Contact info
+G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India
+hr@tpointtech.com
++91-9599086977
+Follow us
+Tutorials
+Java
+Data Structures
+C Programming
+C++ Tutorial
+C# Tutorial
+PHP Tutorial
+HTML Tutorial
+JavaScript Tutorial
+jQuery Tutorial
+Spring Tutorial
+Interview Questions
+Microsoft
+Amazon
+Adobe
+Intuit
+Accenture
+Cognizant
+Capgemini
+Wipro
+Tcs
+Infosys
+Online Compiler
+C
+R
+C++
+Php
+Java
+Html
+Swift
+Python
+JavaScript
+TypeScript
+Latest Post
+|
+Tutorials List
+|
+Privacy Policy
+© Copyright 2011 - 2025 TpointTech.com. All Rights Reserved.

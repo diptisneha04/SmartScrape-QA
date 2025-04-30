@@ -1,0 +1,265 @@
+¶
+If you're using a recent version of Debian or Ubuntu Linux, you can
+install Beautiful Soup with the system package manager:
+$apt-getinstallpython3-bs4
+$apt-getinstallpython3-bs4
+$
+apt
+get
+install
+python3
+bs4
+Beautiful Soup 4 is published through PyPi, so if you can't install it
+with the system packager, you can install it witheasy_installorpip. The package name isbeautifulsoup4. Make sure you use the
+right version ofpiporeasy_installfor your Python version
+(these may be namedpip3andeasy_install3respectively).
+easy_install
+easy_install
+pip
+pip
+beautifulsoup4
+beautifulsoup4
+pip
+pip
+easy_install
+easy_install
+pip3
+pip3
+easy_install3
+easy_install3
+$easy_installbeautifulsoup4
+$easy_installbeautifulsoup4
+$
+easy_install
+beautifulsoup4
+$pipinstallbeautifulsoup4
+$pipinstallbeautifulsoup4
+$
+pip
+install
+beautifulsoup4
+(TheBeautifulSouppackage isnotwhat you want. That's
+the previous major release,Beautiful Soup 3. Lots of software uses
+BS3, so it's still available, but if you're writing new code you
+should installbeautifulsoup4.)
+BeautifulSoup
+BeautifulSoup
+not
+Beautiful Soup 3
+beautifulsoup4
+beautifulsoup4
+If you don't haveeasy_installorpipinstalled, you candownload the Beautiful Soup 4 source tarballand
+install it withsetup.py.
+easy_install
+easy_install
+pip
+pip
+download the Beautiful Soup 4 source tarball
+setup.py
+setup.py
+$pythonsetup.pyinstall
+$pythonsetup.pyinstall
+$
+python
+setup.py
+install
+If all else fails, the license for Beautiful Soup allows you to
+package the entire library with your application. You can download the
+tarball, copy itsbs4directory into your application's codebase,
+and use Beautiful Soup without installing it at all.
+bs4
+bs4
+I use Python 3.10 to develop Beautiful Soup, but it should work with
+other recent versions.
+Installing a parser¶Beautiful Soup supports the HTML parser included in Python's standard
+library, but it also supports a number of third-party Python parsers.
+One is thelxml parser. Depending on your setup,
+you might install lxml with one of these commands:$apt-getinstallpython-lxml$easy_installlxml$pipinstalllxmlAnother alternative is the pure-Pythonhtml5lib parser, which parses HTML the way a
+web browser does. Depending on your setup, you might install html5lib
+with one of these commands:$apt-getinstallpython3-html5lib$pipinstallhtml5libThis table summarizes the advantages and disadvantages of each parser library:ParserTypical usageAdvantagesDisadvantagesPython's html.parserBeautifulSoup(markup,"html.parser")Batteries includedDecent speedNot as fast as lxml,
+less lenient than
+html5lib.lxml's HTML parserBeautifulSoup(markup,"lxml")Very fastExternal C dependencylxml's XML parserBeautifulSoup(markup,"lxml-xml")BeautifulSoup(markup,"xml")Very fastThe only currently supported
+XML parserExternal C dependencyhtml5libBeautifulSoup(markup,"html5lib")Extremely lenientParses pages the same way a
+web browser doesCreates valid HTML5Very slowExternal Python
+dependencyIf you can, I recommend you install and use lxml for speed.Note that if a document is invalid, different parsers will generate
+different Beautiful Soup trees for it. SeeDifferences
+between parsersfor details.
+
+Installing a parser¶
+¶
+Beautiful Soup supports the HTML parser included in Python's standard
+library, but it also supports a number of third-party Python parsers.
+One is thelxml parser. Depending on your setup,
+you might install lxml with one of these commands:
+lxml parser
+$apt-getinstallpython-lxml
+$apt-getinstallpython-lxml
+$
+apt
+get
+install
+python
+lxml
+$easy_installlxml
+$easy_installlxml
+$
+easy_install
+lxml
+$pipinstalllxml
+$pipinstalllxml
+$
+pip
+install
+lxml
+Another alternative is the pure-Pythonhtml5lib parser, which parses HTML the way a
+web browser does. Depending on your setup, you might install html5lib
+with one of these commands:
+html5lib parser
+$apt-getinstallpython3-html5lib
+$apt-getinstallpython3-html5lib
+$
+apt
+get
+install
+python3
+html5lib
+$pipinstallhtml5lib
+$pipinstallhtml5lib
+$
+pip
+install
+html5lib
+This table summarizes the advantages and disadvantages of each parser library:
+ParserTypical usageAdvantagesDisadvantagesPython's html.parserBeautifulSoup(markup,"html.parser")Batteries includedDecent speedNot as fast as lxml,
+less lenient than
+html5lib.lxml's HTML parserBeautifulSoup(markup,"lxml")Very fastExternal C dependencylxml's XML parserBeautifulSoup(markup,"lxml-xml")BeautifulSoup(markup,"xml")Very fastThe only currently supported
+XML parserExternal C dependencyhtml5libBeautifulSoup(markup,"html5lib")Extremely lenientParses pages the same way a
+web browser doesCreates valid HTML5Very slowExternal Python
+dependency
+ParserTypical usageAdvantagesDisadvantagesPython's html.parserBeautifulSoup(markup,"html.parser")Batteries includedDecent speedNot as fast as lxml,
+less lenient than
+html5lib.lxml's HTML parserBeautifulSoup(markup,"lxml")Very fastExternal C dependencylxml's XML parserBeautifulSoup(markup,"lxml-xml")BeautifulSoup(markup,"xml")Very fastThe only currently supported
+XML parserExternal C dependencyhtml5libBeautifulSoup(markup,"html5lib")Extremely lenientParses pages the same way a
+web browser doesCreates valid HTML5Very slowExternal Python
+dependency
+ParserTypical usageAdvantagesDisadvantages
+Parser
+Parser
+Typical usage
+Typical usage
+Advantages
+Advantages
+Disadvantages
+Disadvantages
+Python's html.parserBeautifulSoup(markup,"html.parser")Batteries includedDecent speedNot as fast as lxml,
+less lenient than
+html5lib.
+Python's html.parser
+Python's html.parser
+BeautifulSoup(markup,"html.parser")
+BeautifulSoup(markup,"html.parser")
+BeautifulSoup(markup,"html.parser")
+BeautifulSoup(markup,
+"html.parser")
+Batteries includedDecent speed
+Batteries includedDecent speed
+Batteries included
+Batteries included
+Decent speed
+Decent speed
+Not as fast as lxml,
+less lenient than
+html5lib.
+Not as fast as lxml,
+less lenient than
+html5lib.
+Not as fast as lxml,
+less lenient than
+html5lib.
+Not as fast as lxml,
+less lenient than
+html5lib.
+lxml's HTML parserBeautifulSoup(markup,"lxml")Very fastExternal C dependency
+lxml's HTML parser
+lxml's HTML parser
+BeautifulSoup(markup,"lxml")
+BeautifulSoup(markup,"lxml")
+BeautifulSoup(markup,"lxml")
+BeautifulSoup(markup,
+"lxml")
+Very fast
+Very fast
+Very fast
+Very fast
+External C dependency
+External C dependency
+External C dependency
+External C dependency
+lxml's XML parserBeautifulSoup(markup,"lxml-xml")BeautifulSoup(markup,"xml")Very fastThe only currently supported
+XML parserExternal C dependency
+lxml's XML parser
+lxml's XML parser
+BeautifulSoup(markup,"lxml-xml")BeautifulSoup(markup,"xml")
+BeautifulSoup(markup,"lxml-xml")BeautifulSoup(markup,"xml")
+BeautifulSoup(markup,"lxml-xml")
+BeautifulSoup(markup,
+"lxml-xml")
+BeautifulSoup(markup,"xml")
+BeautifulSoup(markup,
+"xml")
+Very fastThe only currently supported
+XML parser
+Very fastThe only currently supported
+XML parser
+Very fast
+Very fast
+The only currently supported
+XML parser
+The only currently supported
+XML parser
+External C dependency
+External C dependency
+External C dependency
+External C dependency
+html5libBeautifulSoup(markup,"html5lib")Extremely lenientParses pages the same way a
+web browser doesCreates valid HTML5Very slowExternal Python
+dependency
+html5lib
+html5lib
+BeautifulSoup(markup,"html5lib")
+BeautifulSoup(markup,"html5lib")
+BeautifulSoup(markup,"html5lib")
+BeautifulSoup(markup,
+"html5lib")
+Extremely lenientParses pages the same way a
+web browser doesCreates valid HTML5
+Extremely lenientParses pages the same way a
+web browser doesCreates valid HTML5
+Extremely lenient
+Extremely lenient
+Parses pages the same way a
+web browser does
+Parses pages the same way a
+web browser does
+Creates valid HTML5
+Creates valid HTML5
+Very slowExternal Python
+dependency
+Very slowExternal Python
+dependency
+Very slow
+Very slow
+External Python
+dependency
+External Python
+dependency
+If you can, I recommend you install and use lxml for speed.
+Note that if a document is invalid, different parsers will generate
+different Beautiful Soup trees for it. SeeDifferences
+between parsersfor details.
+Differences
+between parsers
+Making the soup¶To parse a document, pass it into theBeautifulSoupconstructor. You can pass in a string or an open filehandle:frombs4importBeautifulSoupwithopen("index.html")asfp:soup=BeautifulSoup(fp,'html.parser')soup=BeautifulSoup("<html>a web page</html>",'html.parser')First, the document is converted to Unicode, and HTML entities are
+converted to Unicode characters:print(BeautifulSoup("<html><head></head><body>Sacr&eacute; bleu!</body></html>","html.parser"))# <html><head></head><body>Sacré bleu!</body></html>Beautiful Soup then parses the document using the best available
+parser. It will use an HTML parser unless you specifically tell it to
+use an XML parser. (SeeParsing XML.)

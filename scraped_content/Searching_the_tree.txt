@@ -1,0 +1,79 @@
+¶
+Beautiful Soup defines a lot of methods for searching the parse tree,
+but they're all very similar. I'm going to spend a lot of time explaining
+the two most popular methods:find()andfind_all(). The other
+methods take almost exactly the same arguments, so I'll just cover
+them briefly.
+find()
+find()
+find_all()
+find_all()
+Once again, I'll be using the "three sisters" document as an example:
+html_doc="""<html><head><title>The Dormouse's story</title></head><body><p class="title"><b>The Dormouse's story</b></p><p class="story">Once upon a time there were three little sisters; and their names were<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;and they lived at the bottom of a well.</p><p class="story">...</p>"""frombs4importBeautifulSoupsoup=BeautifulSoup(html_doc,'html.parser')
+html_doc="""<html><head><title>The Dormouse's story</title></head><body><p class="title"><b>The Dormouse's story</b></p><p class="story">Once upon a time there were three little sisters; and their names were<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;and they lived at the bottom of a well.</p><p class="story">...</p>"""frombs4importBeautifulSoupsoup=BeautifulSoup(html_doc,'html.parser')
+html_doc="""<html><head><title>The Dormouse's story</title></head><body><p class="title"><b>The Dormouse's story</b></p><p class="story">Once upon a time there were three little sisters; and their names were<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;and they lived at the bottom of a well.</p><p class="story">...</p>"""frombs4importBeautifulSoupsoup=BeautifulSoup(html_doc,'html.parser')
+
+html_doc
+=
+"""
+<html><head><title>The Dormouse's story</title></head>
+<body>
+<p class="title"><b>The Dormouse's story</b></p>
+<p class="story">Once upon a time there were three little sisters; and their names were
+<a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
+<a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+<a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+and they lived at the bottom of a well.</p>
+<p class="story">...</p>
+"""
+from
+bs4
+import
+BeautifulSoup
+soup
+=
+BeautifulSoup
+(
+html_doc
+,
+'html.parser'
+)
+By passing in a filter to a method likefind_all(), you can
+zoom in on the parts of the document you're interested in.
+find_all()
+find_all()
+Kinds of filters¶Before talking in detail aboutfind_all()and similar methods, I
+want to show examples of different filters you can pass into these
+methods. These filters show up again and again, throughout the
+search API. You can use them to filter based on a tag's name,
+on its attributes, on the text of a string, or on some combination of
+these.A string¶The simplest filter is a string. Pass a string to a search method and
+Beautiful Soup will perform a tag-name match against that exact string.
+This code finds all the <b> tags in the document:soup.find_all('b')# [<b>The Dormouse's story</b>]If you pass in a byte string, Beautiful Soup will assume the string is
+encoded as UTF-8. You can avoid this by passing in a Unicode string instead.A regular expression¶If you pass in a regular expression object, Beautiful Soup will filter
+against that regular expression using itssearch()method. This code
+finds all the tags whose names start with the letter "b"; in this
+case, the <body> tag and the <b> tag:importrefortaginsoup.find_all(re.compile("^b")):print(tag.name)# body# bThis code finds all the tags whose names contain the letter 't':fortaginsoup.find_all(re.compile("t")):print(tag.name)# html# titleTrue¶The valueTruematches every tag it can. This code findsallthe tags in the document, but none of the text strings:fortaginsoup.find_all(True):print(tag.name)# html# head# title# body# p# b# p# a# a# a# pA function¶If none of the other matches work for you, define a function that
+takes an element as its only argument. The function should returnTrueif the argument matches, andFalseotherwise.Here's a function that returnsTrueif a tag defines the "class"
+attribute but doesn't define the "id" attribute:defhas_class_but_no_id(tag):returntag.has_attr('class')andnottag.has_attr('id')Pass this function intofind_all()and you'll pick up all the <p>
+tags:soup.find_all(has_class_but_no_id)# [<p class="title"><b>The Dormouse's story</b></p>,#  <p class="story">Once upon a time there were…bottom of a well.</p>,#  <p class="story">...</p>]This function picks up only the <p> tags. It doesn't pick up the <a>
+tags, because those tags define both "class" and "id". It doesn't pick
+up tags like <html> and <title>, because those tags don't define
+"class".The function can be as complicated as you need it to be. Here's a
+function that returnsTrueif a tag is surrounded by string
+objects:frombs4importNavigableStringdefsurrounded_by_strings(tag):return(isinstance(tag.next_element,NavigableString)andisinstance(tag.previous_element,NavigableString))fortaginsoup.find_all(surrounded_by_strings):print(tag.name)# body# p# a# a# a# pA list¶If you pass in a list, Beautiful Soup will look for a match againstanystring, regular expression, or function in that list. This
+code finds all the <a> tagsandall the <b> tags:soup.find_all(["a","b"])# [<b>The Dormouse's story</b>,#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>,#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>]Now we're ready to look at the search methods in detail.
+Kinds of filters¶
+¶
+Before talking in detail aboutfind_all()and similar methods, I
+want to show examples of different filters you can pass into these
+methods. These filters show up again and again, throughout the
+search API. You can use them to filter based on a tag's name,
+on its attributes, on the text of a string, or on some combination of
+these.
+find_all()
+find_all()
+A string¶The simplest filter is a string. Pass a string to a search method and
+Beautiful Soup will perform a tag-name match against that exact string.
+This code finds all the <b> tags in the document:soup.find_all('b')# [<b>The Dormouse's story</b>]If you pass in a byte string, Beautiful Soup will assume the string is
+encoded as UTF-8. You can avoid this by passing in a Unicode string instead.

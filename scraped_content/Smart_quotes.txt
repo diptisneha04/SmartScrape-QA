@@ -1,0 +1,97 @@
+¶
+You can use Unicode, Dammit to convert Microsoft smart quotes to HTML or XML
+entities:
+markup=b"<p>I just\x93love\x94Microsoft Word\x92s smart quotes</p>"UnicodeDammit(markup,["windows-1252"],smart_quotes_to="html").unicode_markup# '<p>I just &ldquo;love&rdquo; Microsoft Word&rsquo;s smart quotes</p>'UnicodeDammit(markup,["windows-1252"],smart_quotes_to="xml").unicode_markup# '<p>I just &#x201C;love&#x201D; Microsoft Word&#x2019;s smart quotes</p>'
+markup=b"<p>I just\x93love\x94Microsoft Word\x92s smart quotes</p>"UnicodeDammit(markup,["windows-1252"],smart_quotes_to="html").unicode_markup# '<p>I just &ldquo;love&rdquo; Microsoft Word&rsquo;s smart quotes</p>'UnicodeDammit(markup,["windows-1252"],smart_quotes_to="xml").unicode_markup# '<p>I just &#x201C;love&#x201D; Microsoft Word&#x2019;s smart quotes</p>'
+markup=b"<p>I just\x93love\x94Microsoft Word\x92s smart quotes</p>"UnicodeDammit(markup,["windows-1252"],smart_quotes_to="html").unicode_markup# '<p>I just &ldquo;love&rdquo; Microsoft Word&rsquo;s smart quotes</p>'UnicodeDammit(markup,["windows-1252"],smart_quotes_to="xml").unicode_markup# '<p>I just &#x201C;love&#x201D; Microsoft Word&#x2019;s smart quotes</p>'
+
+markup
+=
+b
+"<p>I just
+\x93
+love
+\x94
+Microsoft Word
+\x92
+s smart quotes</p>"
+UnicodeDammit
+(
+markup
+,
+[
+"windows-1252"
+],
+smart_quotes_to
+=
+"html"
+)
+.
+unicode_markup
+# '<p>I just &ldquo;love&rdquo; Microsoft Word&rsquo;s smart quotes</p>'
+UnicodeDammit
+(
+markup
+,
+[
+"windows-1252"
+],
+smart_quotes_to
+=
+"xml"
+)
+.
+unicode_markup
+# '<p>I just &#x201C;love&#x201D; Microsoft Word&#x2019;s smart quotes</p>'
+You can also convert Microsoft smart quotes to ASCII quotes:
+UnicodeDammit(markup,["windows-1252"],smart_quotes_to="ascii").unicode_markup# '<p>I just "love" Microsoft Word\'s smart quotes</p>'
+UnicodeDammit(markup,["windows-1252"],smart_quotes_to="ascii").unicode_markup# '<p>I just "love" Microsoft Word\'s smart quotes</p>'
+UnicodeDammit(markup,["windows-1252"],smart_quotes_to="ascii").unicode_markup# '<p>I just "love" Microsoft Word\'s smart quotes</p>'
+
+UnicodeDammit
+(
+markup
+,
+[
+"windows-1252"
+],
+smart_quotes_to
+=
+"ascii"
+)
+.
+unicode_markup
+# '<p>I just "love" Microsoft Word\'s smart quotes</p>'
+Hopefully you'll find this feature useful, but Beautiful Soup doesn't
+use it. Beautiful Soup prefers the default behavior, which is to
+convert Microsoft smart quotes to Unicode characters along with
+everything else:
+UnicodeDammit(markup,["windows-1252"]).unicode_markup# '<p>I just “love” Microsoft Word’s smart quotes</p>'
+UnicodeDammit(markup,["windows-1252"]).unicode_markup# '<p>I just “love” Microsoft Word’s smart quotes</p>'
+UnicodeDammit(markup,["windows-1252"]).unicode_markup# '<p>I just “love” Microsoft Word’s smart quotes</p>'
+
+UnicodeDammit
+(
+markup
+,
+[
+"windows-1252"
+])
+.
+unicode_markup
+# '<p>I just “love” Microsoft Word’s smart quotes</p>'
+Inconsistent encodings¶Sometimes a document is mostly in UTF-8, but contains Windows-1252
+characters such as (again) Microsoft smart quotes. This can happen
+when a website includes data from multiple sources. You can useUnicodeDammit.detwingle()to turn such a document into pure
+UTF-8. Here's a simple example:snowmen=(u"\N{SNOWMAN}"*3)quote=(u"\N{LEFT DOUBLE QUOTATION MARK}I like snowmen!\N{RIGHT DOUBLE QUOTATION MARK}")doc=snowmen.encode("utf8")+quote.encode("windows_1252")This document is a mess. The snowmen are in UTF-8 and the quotes are
+in Windows-1252. You can display the snowmen or the quotes, but not
+both:print(doc)# ☃☃☃�I like snowmen!�print(doc.decode("windows-1252"))# â˜ƒâ˜ƒâ˜ƒ“I like snowmen!”Decoding the document as UTF-8 raises aUnicodeDecodeError, and
+decoding it as Windows-1252 gives you gibberish. Fortunately,UnicodeDammit.detwingle()will convert the string to pure UTF-8,
+allowing you to decode it to Unicode and display the snowmen and quote
+marks simultaneously:new_doc=UnicodeDammit.detwingle(doc)print(new_doc.decode("utf8"))# ☃☃☃“I like snowmen!”UnicodeDammit.detwingle()only knows how to handle Windows-1252
+embedded in UTF-8 (or vice versa, I suppose), but this is the most
+common case.Note that you must know to callUnicodeDammit.detwingle()on your
+data before passing it intoBeautifulSoupor theUnicodeDammitconstructor. Beautiful Soup assumes that a document has a single
+encoding, whatever it might be. If you pass it a document that
+contains both UTF-8 and Windows-1252, it's likely to think the whole
+document is Windows-1252, and the document will come out looking likeâ˜ƒâ˜ƒâ˜ƒ“Ilikesnowmen!”.UnicodeDammit.detwingle()is new in Beautiful Soup 4.1.0.

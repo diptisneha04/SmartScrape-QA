@@ -1,0 +1,1411 @@
+Data Structures and Algorithms (DSA) Tutorial - Tpoint Tech
+Tutorials
+×
+Python
+Python Tutorial
+Django Tutorial
+Numpy Tutorial
+Pandas Tutorial
+Tkinter Tutorial
+Pytorch Tutorial
+Flask Tutorial
+OpenCV Tutorial
+Java
+Java Tutorial
+Servlet Tutorial
+JSP Tutorial
+Spring Boot Tutorial
+Spring Framework Tutorial
+Hibernate Tutorial
+JavaFX Tutorial
+Java Web Services Tutorial
+.Net Framework
+.Net Framework Tutorial
+C# Tutorial
+ASP.Net Tutorial
+ADO.Net Tutorial
+WPF Tutorial
+AI, ML and Data Science
+Artificial Intelligence Tutorial
+Machine Learning Tutorial
+Data Science Tutorial
+Deep Learning Tutorial
+TensorFlow Tutorial
+Artificial Neural Network Tutorial
+Matplotlib Tutorial
+Python Scipy Tutorial
+Cloud Technology
+Cloud Computing Tutorial
+AWS Tutorial
+Microsoft Azure Tutorial
+Salesforce Tutorial
+GCP Tutorial
+B.Tech and MCA
+DBMS Tutorial
+Data Structures Tutorial
+Operating System Tutorial
+Computer Network Tutorial
+DAA Tutorial
+Computer Organization Tutorial
+Software Engineering Tutorial
+Data Mining Tutorial
+Web Technology
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+Jquery Tutorial
+Angular 8 Tutorial
+React Tutorial
+React Native Tutorial
+Node.js Tutorial
+PHP
+PHP Tutorial
+MySQL Tutorial
+Laravel Tutorial
+WordPress Tutorial
+CodeIgniter Tutorial
+Software Testing
+Software Testing Tutorial
+Selenium Tutorial
+JIRA Tutorial
+JMeter Tutorial
+Postman Tutorial
+TestNG Tutorial
+SoapUI Tutorial
+Cucumber Tutorial
+Interview
+×
+Technical Interview
+Python Interview Questions
+Java Interview Questions
+.Net Interview Questions
+C++ Interview Questions
+React Interview Questions
+Node.js Interview Questions
+Angular Interview Questions
+SQL Interview Questions
+HR Interview Questions
+Java Interview
+Spring Boot Interview Questions
+Spring Interview Questions
+Hibernate Interview Questions
+JDBC Interview Questions
+Servlet Interview Questions
+Maven Interview Questions
+Jenkins Interview Questions
+Python
+Django Interview Questions
+Pandas Interview Questions
+Express.js Interview Questions
+Python Coding Interview Questions
+Python Interview Questions for 5 Years
+Web Interview
+HTML Interview Questions
+CSS Interview Questions
+JavaScript Interview Questions
+Jquery Interview Questions
+PHP Interview Questions
+Laravel Interview Questions
+AJAX Interview Questions
+Front-End Developer Interview Questions
+jQuery Interview Questions
+Database Interview
+DBMS Interview Questions
+SQL Interview Questions
+PL/SQL Interview Questions
+Oracle Interview Questions
+MySQL Interview Questions
+MongoDB Interview Questions
+Redis Interview Questions
+B.Tech / MCA
+DBMS Interview Questions
+Operating System Interview Questions
+OOPs Interview Questions
+DSA Interview Questions
+Computer Networks Interview Questions
+Important Interview
+C Interview Questions
+Power BI Interview Questions
+C# Interview Questions
+Excel Interview Questions
+C# Interview Questions
+Machine Learning Interview Questions
+AWS Interview Questions
+Microservices Interview Questions
+MySQL Interview Questions
+Software Testing Interview
+Manual Testing Interview Questions
+Selenium Interview Questions
+API Testing Interview Questions
+ETL Testing Interview Questions
+Mobile Testing Interview Questions
+Company Interviews
+IBM Interview Questions
+Adobe Interview Questions
+Microsoft Interview Questions
+Amazon Interview Questions
+TCS Interview Questions
+Wipro Interview Questions
+Accenture Interview Questions
+Compiler
+×
+Online Compilers
+Python Online Compiler
+Java Online Compiler
+PHP Online Compiler
+C Online Compiler
+C++ Online Compiler
+HTML Online Compiler
+JavaScript Online Compiler
+TypeScript Online Compiler
+R Online Compiler
+Swift Online Compiler
+Kotlin Online Compiler
+Go Online Compiler
+C# Online Compiler
+Perl Online Compiler
+Groovy Online Compiler
+HTML, CSS & JavaScript Online Editor
+Multiple Choice Questions
+Python MCQ
+Java MCQ
+PHP MCQ
+C Programming MCQ
+C++ MCQ
+HTML mcq
+JavaScript MCQ
+SQL MCQ
+Operating System MCQ
+Computer Fundamental MCQ
+Computer Network MCQ
+DBMS MCQ
+Data Structure MCQ
+Software Engineering MCQ
+Cloud Computing MCQ
+Artificial Intelligence MCQ
+Python
+Java
+JavaScript
+SQL
+C
+C++
+HTML
+CSS
+React
+Node.js
+Spring Boot
+C#
+PHP
+MySQL
+MongoDB
+AI
+ML
+DSA
+DBMS
+OS
+Aptitude
+Reasoning
+DS Tutorial
+Data Structures and Algorithms (DSA)
+What is Data Structure?
+What is an Algorithm?
+Asymptotic Notation
+Pointer in Data Structure
+Abstract Data Type (ADT) in Data Structure
+DS Array
+Array in Data Structure
+Multidimensional Array
+Sparse Matrix
+DS Linked List
+Linked List in Data Structure
+Types of Linked List
+Singly Linked List
+Doubly Linked List
+Circular Linked List
+Circular Doubly Linked List
+DS Stack
+Stack in Data Structure
+Implementation of Stack using Array
+Implementation of Stack using Linked List
+Application of Stack in Data Structure
+DS Queue
+Queue in Data Structure
+Types of Queues
+Implementation of Queue using Array
+Implementation of Queue using Linked List
+Circular Queue
+Priority Queue
+Double Ended Queue
+Application of Queue in Data Structure
+DS Tree
+Tree (Data Structure)
+Binary Tree
+Binary Search Tree
+AVL Tree
+B Tree
+B+ Tree
+Red-black tree
+AA tree in data structure
+DS Graph
+Graph (Data Structure)
+Graph Representation in Data Structure
+Breadth First Search Algorithm
+Depth First Search Algorithm
+Minimum Spanning Tree
+Prim's Algorithm
+Kruskal's Algorithm
+Types of Graph in Data Structure
+DS Searching
+Linear Search
+Binary Search
+DS Sorting
+Sorting Algorithms
+Bubble Sort
+Insertion Sort
+Selection Sort
+Quick Sort
+Merge Sort
+Heap Sort
+Radix Sort
+Counting Sort
+Shell Sort
+Bucket Sort
+Time Complexity of Sorting Algorithms
+Hashing & Heap
+Hashing in Data Structure
+Hash Functions in Data Structure
+Hash Table in Data Structure
+Heap Data Structure
+Binomial Heap
+Fibonacci Heap
+Differences
+Difference between Linear and Non-Linear Data Structure
+Difference between Array and Linked List
+Difference between Stack and Queue
+Difference between Linear Queue and Circular Queue
+Difference between Linear Search and Binary Search
+Difference between Singly Linked List and Doubly Linked List
+Difference between Binary Tree and Binary Search Tree
+Difference between Tree and Graph
+Difference between Binary Search tree and AVL Tree
+Red Black Tree vs AVL tree
+Difference between B Tree and B+ Tree
+Quick Sort vs Merge Sort
+Difference between BFS and DFS
+Difference between Stack and Heap
+Difference between Bubble Sort and Selection Sort
+Difference between Stack and Array
+Difference between Full Binary Tree and Complete Binary Tree
+Difference between B-Tree and Binary Tree
+Difference between Primitive and Non-Primitive Data Structure
+Difference between Data Type and Data Structure
+Difference between Array-Based Queues and List-Based Queues
+Binary Tree
+Pre-order Traversal
+In-order Traversal
+Post-order Traversal
+Binary Search Tree
+Searching in BST
+Insertion in BST
+Deletion in BST
+AVL Tree
+Insertion in AVL Tree
+a)LL Rotation
+b)LR Rotation
+c)RL Rotation
+d)RR Rotation
+Deletion in AVL Tree
+AVL Tree
+Singly Linked List
+Insertion at beginning
+Insertion at end
+Insertion after specified node
+Deletion at beginning
+Deletion at end
+Deletion after specified node
+Traversing
+Searching
+Doubly Linked List
+Insertion at beginning
+Insertion at end
+Insertion after specified node
+Deletion at beginning
+Deletion at end
+Deletion of node having given data
+Traversing
+Searching
+Circular Linked List
+Insertion at beginning
+Insertion at end
+Deletion at beginning
+Deletion at the end
+Circular Linked List
+Circular Linked List Random Insert
+Circular Doubly List
+Insertion at beginning
+Insertion at end
+Deletion at beginning
+Deletion at the end
+DS MCQ
+Data Structure MCQ
+Advanced DS MCQ
+Find Anagrams in a linked list
+Misc
+Trie Data Structure
+Splay Tree
+Fundamental of the DS
+Stack Pop Operation
+Structure in Data Structure
+Preorder Traversal
+Skip list in Data Structure
+Comb Sort
+Tree Traversal
+Cocktail Sort
+Implementation of Queue using Stacks
+Circular Queue Deletion
+Bitonic Sort
+Implementation of Stack using Queue
+Circular Queue Insertion
+Cycle Sort
+Tim Sort
+Postorder Traversal
+Detect loop in a Linked list
+Inorder Traversal
+Convert Infix to Postfix notation
+Convert infix to prefix notation
+Conversion of Prefix to Postfix expression
+Conversion of Postfix to Prefix expression
+Remove the loop in a Linked List
+Implement two stacks in an array
+Reverse a stack using recursion
+Detect cycle in a directed graph
+Optimal Binary Search Tree
+Priority Queue using Linked list
+Balanced Binary Search Tree
+Boundary Traversal of Binary tree
+Diagonal Traversal of Binary Tree
+Vertical Traversal of a Binary tree
+Graph Algorithms
+Dictionary Data Structure
+Structured Data and Unstructured Data
+List Data Structure
+Types of Tree in Data Structure
+Disjoint set data structure
+Dynamic Data Structure
+Complete Binary Tree
+Threaded Binary Tree
+Diameter of Binary Tree
+Height of Binary Tree
+Inorder Tree Traversal without Stack
+Enumeration of Binary Trees
+Maximum Width of a Binary Tree
+Primitive Data Type
+Semi-Structured Data
+Advance Data Structures
+Sort an Array of 0's, 1's, and 2's
+Stock Span Problem
+Implementation of Deque by Circular Array
+Rotate Operation in Linked List
+Subarray with given sum
+Self-organizing List
+Unrolled Linked List
+Types of Sparse Matrices
+Application of Linked List
+Topological Sorting
+Ternary Search Tree
+Stock Span Problem
+Treap Data Structure
+Quicksort on Doubly Linked List
+Inversion count
+Expression tree in DS
+Garbage Collection in DS
+Merge Sort on Doubly Linked List
+Sort Stack using Recursion
+LIFO Approach in data structure
+Big O Notation in DS
+Binary Tree Traversal in DS
+Queue Operations in DS
+What is a Non-Linear Data Structure
+FIFO Approach in data structure
+What are connected graphs in data structure
+Which Python data structure is immutable
+Which data structure is used by map
+What is iteration in data structure
+What are linear search and binary search in data structure
+Hash Table vs STL Map
+Recaman's Sequence
+Maximum area rectangle created by selecting four sides from an array
+Maximum number of distinct nodes in a root-to-leaf path
+Hashing - Open Addressing for Collision Handling
+Introduction to Hashing
+Separate chaining for Collision Handling
+Check if a given array contains duplicate elements within k distance from each other
+Given an array A[] and a number x, check for pair in A[] with sum as x (aka Two Sum)
+Find number of Employees Under every Manager
+Union and Intersection of two Linked Lists
+Kth Largest element in an array
+Sort an almost-sorted, k-sorted or nearly-sorted array
+Find whether an array is subset of another array
+Print a Binary Tree in Vertical Order
+Tournament Tree (Winner Tree)
+Lazy Propagation in Segment Tree
+Segment Tree - Range Minimum Query
+Segment Tree - Sum of given Range
+2-3 Trees (Search, Insertion, and Deletion)
+Print kth least significant bit of a number
+Add two numbers represented by linked lists
+Adding one to the number represented as array of digits
+Find precedence characters form a given sorted dictionary
+Check if any anagram of a string is palindrome or not
+Minimum Insertions to form a Palindrome
+Allocate Minimum Number of Pages
+Assembly Line Scheduling
+Breadth First Search or BFS for a Graph
+Find an element in array such that sum of the left array is equal to the sum of the right array
+Bridges in a Graph
+Bubble Sort in JavaScript
+Burn the Binary tree from the Target node
+Lowest Common Ancestor in a Binary Search Tree
+Types of Hash Functions in C
+Implement Dynamic Deque using Templates Class and a Circular Array
+Iterative Depth First Traversal of Graph
+Linked List Data Structure in C++ With Illustration
+Reverse a Linked List in Groups of Given Size
+Reverse Alternate K nodes in a Singly Linked List
+When should I use a List vs a LinkedList
+Why is deleting in a Singly Linked List O(1)
+Construct Full Binary Tree using its Preorder Traversal and Preorder Traversal of its Mirror Tree
+Find Relative Complement of two Sorted Arrays
+Handshaking Lemma and Interesting Tree Properties -DSA
+How to Efficiently Implement kStacks in a Single Array
+Write C Functions that Modify Head Pointer of a Linked List
+Introduction to Ant Colony Optimization
+What is Array
+The practical Byzantine Fault Tolerance (pBFT)
+Line Graph
+Symmetric Binary Tree
+AVL Tree Advantages
+AVL Tree Time Complexity
+Merge Two Binary Trees
+Stack Operations in Data Structure
+Self-Balancing Binary Search Trees
+Sliding Window Maximum (Maximum of all Subarrays of size K)
+AVL Trees Operations
+Limitations of Stack in Data Structures
+Representation of stack in data structure
+Advantages of Threaded Binary Tree
+Serialize and Deserialize a Binary Tree
+Application of Binary Tree
+AVL Tree Applications
+B Tree Visualization
+Properties of AVL Trees
+Push and Pop Operation in Stack in Data Structure
+Binary Search Tree Implementation
+Find Maximum Sum by Replacing the Subarray in Given Range
+Find The Number N, Where (N+X) Divisible By Y And (N-Y) Divisible By X
+Find Values of P and Q Satisfying the Equation N = P^2.Q
+What is the Balance Factor of AVL Tree
+AVL Tree Implementation in Golang
+Concatenation of two Linked Lists in O(1) time
+Find Minimum Area of Rectangle Formed from Given Shuffled Coordinates
+Find the Length of Maximum Path in Given Matrix for Each Index
+How to Parse an Array of Objects in C++ Using RapidJson
+Largest BST in Binary Tree
+How to Print String Literal and Qstring With Qdebug in C++
+Properties of Binary Tree
+Right View of Binary Tree
+Strict Binary Tree
+Difference between Comb Sort and Shell Sort
+Full Binary Tree
+Left View of a Binary Tree
+Level order Traversal in a Binary Tree
+Lowest Common Ancestor of a Binary Tree
+Top View of a Binary Tree
+Types of Binary Trees
+B Tree Insertion
+Evaluation of a Postfix notation
+B+ Tree Insertion
+Bottom View of a Binary Tree
+AVL Tree Program in C
+B Tree Applications
+B Tree Properties
+How to Search, Insert, and Delete in an Unsorted Array
+Count Non-Leaf Nodes in a Binary Tree
+Get the Level of a Given Key in a Binary Tree
+Double Ended Priority Queue
+B+ Tree Deletion
+B+ Tree Insertion
+Checking for the Mirror Images in the Binary Trees
+Count Non-Leaf Nodes in a Binary Tree
+Get a Parent Binary Tree
+Get All Descendants of the Binary Tree Element
+Get the Level of a Given Key in a Binary Tree
+Flatten Binary Tree to Linked List
+Formula to Find a Level of the Node in a Binary Tree
+Substring with Maximum Number of Vowels of Given Length (k)
+Flatten Binary Tree to Sorted Linked List
+Floor and Ceiling in Binary Search Tree
+Find Level in a Binary Tree with Max Sum
+Find kth Smallest Element in a Binary Search Tree
+Find Next Greater Element in Binary Tree
+Primitive Data Structure
+Find if Binary Tree Satisfies Balanced Height Property
+Find the Largest Perfect Binary Tree in a Given Tree
+Find Immediate Parents of Two Nodes in a Binary Tree
+Applications, Advantages and Disadvantages of Circular Doubly linked List
+Sorting Techniques in Data Structures
+Find Clockwise Array in Binary Search Tree
+Find Duplicate Subtrees in Binary Tree
+Find the Index of the Number Using a Binary Tree
+Find the In-Order Successor of a Node in a Binary Tree
+Reversing a Queue
+Different Types of Stack Operations
+Time Complexity in Data Structure
+Arrays are best Data Structure
+Dynamic memory allocation in Data Structure
+Application of Data Structure
+Applications of Tree in Data Structure
+How to Check if a Binary Number is Divisible by 3
+Stock Buy and Sell Problem
+Find Minimum in Rotated Sorted Array
+Interpolation Search vs. Binary Search
+Boggle (find all possible words in a board of characters)
+Difference Between Prim's and Kruskal's algorithm
+Interpolation Search
+Quick Sort Using Hoare's Partition
+Longest common substring
+Longest Repeated Substring
+Substring Check
+Clone a Binary Tree with Random Pointers
+How to efficiently implement k stacks in a single array
+Kasai's algorithm for construction of LCP array from Suffix array
+Strassen's Matrix Multiplication
+suffix array introduction
+Suffix Array nLogn Algorithm
+Suffix tree introduction
+Binary indexed tree
+Given a n x n square matrix, find the sum of all sub-squares of size k x k
+Inplace MxN size matrix transpose
+longest palindrome substring
+Maximum Size Square Sub-matrix with all 1s
+Maximum Sum Rectangle in a 2D Matrix
+Printing All Elements in Sorted Order from Row and Column Wise Sorted Matrix
+Arraylist vs linked list
+Diameter of an N-ary Tree
+Generic Trees (N-ary Trees)
+Level Order Traversal of N-ary Tree
+Mirror of n-ary Tree
+Serialize and Deserialize an N-ary Tree
+Sum of all elements of N-ary Tree
+The Great Tree-List Recursion Problem
+Two dimensional Binary Indexed Tree or Fenwick Tree
+Binary Indexed Tree Range Updates and Point Queries
+Binary Indexed Tree Range Updates and Range Queries
+Closest greater or same value on left side for every element in array
+Construct an array from its pair-sum array
+Equilibrium index of an array
+Fermat's Factorization Method in Java
+Find a triplet that sum to a given value in an array
+Find k numbers with most occurrences in the given array
+Find maximum value of Sum(i*arr[i]) with only rotations on given array allowed
+Handshaking Lemma and Interesting Tree Properties
+Implementation of Dynamic Segment Trees with Poly Hash Tables
+Majority Element
+Maximum equilibrium sum in an array
+Maximum profit by buying and selling a share at most twice
+Median in a stream of integers (running integers)
+Merge Sort Tree for Range Order Statistics
+Merge two sorted arrays with O(1) extra space
+Minimum increment by k operations to make all elements equal
+Minimum number of jumps to reach end
+MO's Algorithm
+Search in a row-wise and column-wise sorted matrix
+Smallest subarray with sum greater than a given value
+Sparse Table
+Square Root (Sqrt) Decomposition Algorithm
+Two Pointers Technique
+Compressed segment trees and merging sets in O(N*logN)
+Intersection of Linked List
+Intersection Point in Y shaped linked list
+Make Array Zero By Subtracting Equal Amounts In Java
+Maximum Sum Pair with Equal Highest Digits
+Minimum Possible value of |ai + aj - k| for given array and k
+Tango Tree Data Structure
+Check if two arrays are equal or not
+Construct BST from its given level order traversal
+Elements to be added so that all elements of a range are present in the array
+Find Missing Elements in Range
+K-th Largest Sum Contiguous Subarray
+Minimum number of subsets with distinct elements
+Minimum product of k integers in an array of positive integers
+The non-overlapping sum of two sets
+Palindrome substring queries
+Recaman's Sequence
+The sum of Elements Between k1th and k2th smallest elements
+Print Matrix in a Snake Pattern
+An Interesting Method to Generate Binary Numbers from 1 to n
+Bottom View of a Binary Tree
+Circular List Application
+Deleting a Node in a Linked List
+Diameter of a Binary Tree
+Find distance between two nodes of a Binary Search Tree
+Inorder Tree Traversal without Recursion
+Inorder Tree Traversal without recursion and stack!
+Maximum product of indexes of next greater on left and right
+Print Left View of a Binary Tree
+Remove all leaf nodes from the binary search tree
+Sort a stack using a temporary stack
+Split a Circular List into 2 Halves
+Check given array of size n can represent BST of n levels or not
+Construct a linked list from 2D matrix
+In place, convert BST into a Min-Heap
+Polish and Reverse Polish Notation
+Suffix Trees in data structure
+Weight Balanced Binary Tree
+Transform a BST to greater sum tree
+Vertical order traversal of Binary Tree using Map
+Application of heap tree
+Construct a linked list from 2D matrix
+Define Abstract Data Type in Data Structure
+Detect and Remove Loop in a Linked List
+Difference Between a Tree and a Forest in Data Structures
+Difference between bubble sort and merge sort
+Difference between merge sort and quick sort
+Explain double ended queue in detail
+Find the median from running data stream
+Flattening a Linked List
+Generate All Subarrays
+Heap memory vs. stack memory
+Huffman encoding
+Huffman Tree in Data Structure
+Implementation of Graph in JavaScript
+K-D Tree in Data Structures
+Knapsack Problem in Data Structure
+Largest Sum Contiguous Subarray (Kadane's Algorithm)
+Multiway Trees in Data Structures
+Optimal binary search tree in data structure
+polynomial addition in data structure
+Postfix deferred queue
+Properties of tree in data structure
+Recurrence Relation of Merge Sort
+Recursive Bubble Sort
+RSS linked list
+Search in a Rotated Sorted Array
+Sort an array of 0s, 1s and 2s | Dutch National Flag problem
+Assign directions to edges so that the directed graph remains acyclic
+Dependency Graph
+Diameter of an N-ary tree
+Height of n-ary tree if parent array is given
+Introduction to Heavy Light Decomposition
+LCA in a binary tree using RMQ
+Number of Siblings of a given node in n-arr tree
+Number of ways to traverse an N-arr
+XOR Linked List - A Memory Efficient Doubly Linked List
+Callback Queue
+Inorder Predecessor and Successor in a Binary Search Tree
+What is Internal Sorting
+Block Swap Algorithm for Array Rotation in Python
+CHECK FOR BALANCED BRACKETS IN AN EXPRESSION (WELL FORMEDNESS)
+Count pairs from two BSTs whose sum is equal to given value x
+Counting Inversions Problem in Data Structure
+Differences between Insertion Sort and Selection Sort
+LEFTIST TREE / LEFTIST HEAP
+Find if there is a triplet in a balanced bst that adds to zero
+Find the Maximum English Letter Present in Both Lowercase and Uppercase
+K-way Merge Sort
+Perfect Binary Trees
+Reverse Sort
+Scapegoat Trees
+Stack Organisation
+Time Complexity of using heap
+Two-way merge sort
+Validity of a given Tic-Tac-Toe board configuration
+Weighted Prefix Search
+Binary Tree to CDLL
+Check if a Binary Tree is a Subtree of Another Binary Tree
+Check if the Given String of Words can be Formed from Words Present in the Dictionary
+Count sort vs bucket sort
+FIFO vs LIFO approach in Programming
+If you are given two traversal sequences, can you construct the binary tree
+Linked List Deletion (Deleting a key at a given position)
+Mastering Bracket Problems for Competitive Programming
+Merge Overlapping Intervals
+MIRROR OF MATRIX ACROSS DIAGONAL
+Pair of strings having longest common prefix of maximum length in given array
+Print all Possible Combinations of Words from the Dictionary using Trie
+Segment Tree (Range Maximum Query with Node Update)
+Tree Vertex Splitting in data structure
+Why is Binary Heap Preferred over BST for Priority Queue
+Arrange Consonants and Vowels in a linked list
+Copy a linked list with next and arbit pointer
+Kahn's Algorithm vs DFS Approach: A Comparative Analysis
+Minimum flip required to make Binary Matrix symmetric
+Sorted insert for circular linked list
+C++ Program for Arranging Single Linked List in Alternate Odd and Even Nodes Order
+Reservoir sampling in C++
+0/1 Knapsack using Least Cost Branch and Bound
+Merge K Sorted Linked Lists using Min Heap
+Number of elements greater than K in the range L to R using Fenwick Tree (Offline queries)
+Detect Cycle in Graph using DSU
+Merkle Tree and Hash Chain Data Structures with a difference
+Create a matrix with alternating rectangles of O and X
+Find the first non-repeating character from a stream of characters
+Find the first circular tour that visits all petrol pumps
+Find the tasks completed by soldiers based on their ranks
+K-th Largest Sum Contiguous Subarray
+Numbsubarrayer of elements less than or equal to a given number in a given
+Queries to add, remove and return the difference of maximum and minimum
+Time Complexity of building a heap
+Build linear type suffix
+Count of Valid Splits in a String
+Delete all occurrences of a given key in a linked list
+Design a data structure that supports insert, delete, search and getRandom in constant time
+Find the largest subarray with 0 sum
+Free Tree in Data Structures
+How to insert Strings into an AVL Tree
+Longest Consecutive Subsequence
+Merge two binary Max Heaps
+Secure Message Encoding
+Sort an almost sorted array
+Tree of Space - Locking and Unlocking N-Ary Tree
+Triply Linked list
+COUNT OF ZEROES
+Design a Chess Game
+Design a data structure that supports insert, delete, search and getRandom in constant time
+Design and Implement Special Stack Data Structure
+Enhancing Password Strength
+Enumeration of Binary Tree
+Eulerian and Hamiltonian path
+Fair Array Removal Indices
+Find the Absolute Difference between the Right View Sum of two Binary Trees
+Find the number of colored nodes according to given queries in a full Binary Tree
+Finding Minimum Steps in Special Binary Tree
+Finding the Largest Multiple of Three
+Flatten a binary tree into linked list
+General Tree (Each node can have arbitrary number of children) Level Order Traversal
+Generating the Maximum Number from Two Arrays
+Hashing and its Applications
+Islands in a graph using BFS
+Iterative Letter Combinations of a Phone Number
+K-way Merge Sort
+Maximize Total Score
+PERMUTED ROWS IN A MATRIX
+Remove extra edge from a BST
+Van Emde Boas Tree
+Which Minimum Spanning Tree Algorithm is better
+Ackermann Function
+BINARY TO SYMMETRIX
+INPLACE MATRIX TRANSPOSE
+Print all words matching a pattern in CamelCase Notation Dictionary
+Reduce the string by removing K consecutive identical characters
+Subtraction in Linked List
+TRANSITIONS OF MATRIX
+Blending vs Stacking
+Bloom Filters
+Count Array Pairs Divisible by k
+Counting Beautiful Numbers in a Specified Range
+Find the Closest Palindrome
+Minimizing water collection distance in javaT village
+Minimum Array Length After Pair Removals
+Nth even Fibonacci Sequence
+Persistent Data Structure
+Queue for Competitive Programming
+Recursively remove all adjacent duplicates
+Remove the letter to equalize the frequency
+Chocolate Distribution Problem
+Find out the person who got the ticket last problem in queue
+Product Array Puzzle
+MCQs on backtracking
+Design a data structure that supports insert, delete, search, and getRandom in constant time
+Assign directions to edges so that the directed graph remains acyclic
+Print the frequency of each character in Alphabetical order
+Check if a queue can be sorted into another queue using a stack
+Auto-complete feature using Trie
+Connect nodes at same level
+Construct Tree from Given Inorder and Preorder Traversals
+Decimal Equivalent of Binary Linked List
+How do you implement Stack using Priority Queue or Heap
+Introduction to Monotonic Stacks
+Minimum Initial Points to Reach Destination
+Print Ancestors of a given node in Binary Tree
+Priority Queue using Doubly Linked List
+Shortest distance between two cells in a matrix or grid
+Sort an Array in Wave Form
+Burn the binary tree starting from the target node
+Check for possible paths in the 2D Matrix
+Find Triplets with zero-sum
+Print a Given Matrix in Spiral form
+Alien Dictionary problem in dsa
+Array Pair Sum Divisibility Problem
+DIFFERENCE BETWEEN GREEDY AND DIVIDE AND CONQUER
+How do you check if a given array represents a heap
+LINKED LIST REVERSE
+MAXIMUM SIZE RECTANGLE
+Priority queue of pairs in C++ with ordering by first and second element
+Reversing Individual Words and Unveiling the Secrets of Histograms
+Sliding SubArray Beauty
+Two Pointer Technique
+UGLY NUMBERS IN DSA
+Check for Balanced Brackets in an expression
+Largest Number After Digit Swaps By Parity
+Minimize Deviation In Array
+Print a given matrix in spiral form
+Print unique rows in a given Boolean matrix
+Restrictive Candy Crush
+Search in a row wise and column wise sorted matrix
+SIP Stack
+Stacked Bar Chart
+Search Query Auto Complete
+Applications of the greedy algorithm
+Applications, Advantages and Disadvantages of Arrays
+Applications, Advantages and Disadvantages of Queue
+Applications, Advantages and Disadvantages of Stacks
+Floor and Ceil from a BST
+India Stack
+Next Higher Palindromic Numbers using the Same Set of Digits
+QuickSort on Singly Linked List
+Reverse a Number using Stacks
+Serialize and Deserialize an N-ary Tree
+Stack Pointer
+What is a K-connected Graph
+Append K Integers with Minimal Sum Problem
+Circular Linked Lists Introduction and Application
+Detect cycle in an undirected graph in C++
+Detect Cycle in Graph using DSU
+Find the maximum number of marked indices problem
+Generalized Suffix Tree
+Interval Tree
+Maximum Number of Tasks Assignment Problem
+Merge K Sorted Lists
+Triplet sum closest to given number
+Apply Operations To Maximize Frequency Score
+Difference between malloc and realloc
+Merge Sort on Singly Linked Lists
+Minimum Number Of Frogs Croaking
+Total Distance Travelled
+X Of A Kind In A Deck Of Cards
+Applications, Advantages and Disadvantages of Linked List
+Balls rolling in the maze
+Destroy Sequential Targets
+Difference Between Push and Pop in Stack
+Dynamic Programming (DP) on Grids
+Find all good strings problem in Data Structure
+Find Itinerary from a given list of tickets
+Height of n-ary tree if parent array is given
+Maximum Deletions on a String
+Reversal algorithm for Array rotation
+Reverse Pairs Problem in Data Structure
+String Hashing using the Polynomial Rolling Hash Function
+The Great Tree-List Recursion Problem
+Trapping of rainwater problem in Data Structure
+What Does Big O(N^2) Complexity Mean
+How to handle duplicates in Binary Search Tree
+Optimal cell in matrix to collect maximum coins
+Maximizing Chocolates in Grid using 2 robots
+Create a matrix with alternating rectangles of O and X
+Interleave the first half of the queue with the second half
+The sum of all elements between k1'th and k2'th smallest elements
+Binary Indexed Tree Range Updates and Point Queries
+Burn the binary tree starting from the target node
+Check Matrix Transformation by Flipping Sub-Matrices along the Principal or Anti-Diagonal
+DFS for an n-ary Tree(Acyclic Graph) Represented as an Adjacency List
+Difference Between Counting Sort and Bucket Sort
+Internal Data Structures and Time Complexity Table of All the C++ STL Containers
+K Centres Problem (Greedy Approximate Algorithm)
+Left Rotation and Right Rotation of a String
+Merge Two Sorted Linked Lists
+Move all Zeroes to End of Array
+Number of flips to make binary string alternate
+Program to Reveal the Positions in Minesweeper
+Tarjan's Algorithm to Find Strongly Connected Components
+Difference between big o and big theta and big omega notations
+Binary Exponentiation
+A Boolean Matrix Problem
+Applications, Advantages and Disadvantages of Trie
+Autocomplete feature using Trie
+Binary Search Tree vs Ternary Search Tree
+Cartesian tree from inorder traversal
+Check if a binary tree is subtree of another binary tree
+Check whether the two Binary Search Trees are Identical or Not
+Chinese Postman or Route Inspection problem
+Construct a linked list from a 2D Matrix
+Count Non-Path Triplets in a Tree
+Difference between Min Heap and Max Heap
+Find a pair with given sum in a Balanced BST
+Hopcroft-Karp Algorithm for Maximum Matching
+Inorder predecessor and successor for a given key in BST
+Josephus circle using circular linked list
+Karger's algorithm for Minimum Cut
+Longest subarray with only one value greater than k
+Maximum coins such that root to leaf path sum is positive
+Print Binary Tree in 2-Dimensions
+Program to cyclically rotate an array by one
+Remove BST keys outside the given range C language
+Remove BST keys outside the given range in Java language
+Shannon-Fano Algorithm for Data Compression
+Sort a linked list of 0s, 1s and 2s
+Sorting Big Integers
+Sort the array of strings according to alphabetical order defined by another string
+Total Number of Possible Binary Search Trees with n Keys
+WORD LADDER
+Cuckoo Hashing - Worst case O(1) Lookup
+Cyclically rotate an array by one problem in DSA
+Design a stack that supports getMin() in O(1) time and O(1) extra space
+Different Operation on Matrix Data Structure using Python
+Generalised Fibonacci numbers
+How does Floyd's slow and fast pointers approach work
+How do you know if an array is bitonic
+How to create a mergeable stack
+Median in a stream of integers (running integers)
+Merge two BSTs with limited extra space
+Minimum Swap Required to Convert Binary Tree to Binary Search Tree
+Palindromic Tree
+Print 1 To N Without Loop
+Program for mean and median of an unsorted array
+Pythagorean Triplet Hashing Problem
+Rat in a Maze problem in data structure
+Sort numbers stored on different machines
+Succinct Encoding of Binary Tree
+Union By Rank and Path Compression in Union-Find Algorithm
+What's the relationship between a heap and the heap
+Efficiently compute sums of diagonals of a matrix
+Find Maximum Non-decreasing Array Length
+Friends pairing problem
+K array heap application
+Kth Ancestor in a Tree
+Leaves to Dynamic Link Library (DLL)
+Left View Of a Tree
+Maximum XOR
+Merge Without Extra Space problem in DSA
+Morris traversal for Postorder
+Move the First Fibonacci Number to the end of a Linked List
+Next palindrome
+Program to Validate an IPv4 Address
+Sparse Set
+Stack Permutations (Check if an array is stack permutation of other)
+Sum Of Distances
+Add all Greater Values to Every Node in a given Binary Search Tree
+Boruvka's algorithm for Minimum Spanning Tree
+Burkhard Keller Tree ( BK Tree )
+Check whether a given graph is Bipartite or not
+Connect n ropes with minimum cost
+Find maximum difference between nearest left and right smaller elements
+Leaf nodes from Preorder of a Binary Search Tree
+Longest Valid Word with All Prefixes
+Minimum Insertions to Form a Palindrome with Permutations Allowed
+Minimum Number of Platforms Required for a Railway/Bus Station Problem
+Number of Palindromic paths in a matrix in Data Structure
+Partitioning a linked list around a given value and If we don't care about making the elements of the list stable
+Print next greater number of Q queries
+Proof that vertex cover is NP-complete
+Stock buy and sell problem in DSA
+When building a Heap, is the structure of the Heap unique
+Applications, Advantages and Disadvantages of Sorting Algorithms
+Applications of Matrix Data Structure
+Array Implementation of Queue in c++
+Check if the given string is K-periodic
+Comparison between Heap and Tree
+Count Increasing Quadruplets
+C++ Program to find the length of the maximum non-decreasing subsegment
+Difference between internal sorting and external sorting
+Difference between Tree edge and Back edge in a graph in the Data Structure
+Find regions with most common region size in a given Boolean matrix in C++
+K Inverse Pairs Array
+Memory efficient doubly linked list
+Number of Great Partitions
+Number of Ways to Reach a Position after Exactly K Steps
+Partition to K Equal Sum Subsets
+Patricia Trie in data structure
+Print all distinct characters of a string
+Reorder Routes to Make All Paths Lead to the City Zero in C++
+Shortest path in a Binary Maze
+Sort the given Matrix
+Super Egg Drop Problem in DSA
+Top Data Structures That Every Programmer Must Know
+Visit Array Positions to Maximize Score
+What is Logarithmic Time Complexity
+Complex Data Structures
+next →
+Data Structures and Algorithms (DSA) Tutorial
+21 Apr 2025
+|
+10 min read
+Data Structures and Algorithms (DSA) tutorial provides basic and advanced concepts of Data Structure. Our Data Structure tutorial is designed for beginners and professionals.
+Data Structure is a way to store and organize data so that it can be used efficiently.
+Our Data Structure tutorial includes all topics of Data Structure such as Array, Pointer, Structure, Linked List, Stack, Queue, Graph, Searching, Sorting, Programs, etc.
+What are Data Structures?
+The data structure name indicates itself that organizing the data in memory. There are many ways of organizing the data in the memory as we have already seen one of the data structures, i.e., array in C language. Array is a collection of memory elements in which data is stored sequentially, i.e., one after another. In other words, we can say that array stores the elements in a continuous manner. This organization of data is done with the help of an array of data structures. There are also other ways to organize the data in memory. Let's see the different types of data structures.
+The data structure is not any programming language like C, C++, java, etc. It is a set of algorithms that we can use in any programming language to structure the data in the memory.
+To structure the data in memory, 'n' number of algorithms were proposed, and all these algorithms are known as Abstract data types. These abstract data types are the set of rules.
+Types of Data Structures
+There are two types of data structures:
+Primitive data structure
+Non-primitive data structure
+Primitive Data structure
+The primitive data structures are primitive data types. The int, char, float, double, and pointer are the primitive data structures that can hold a single value.
+Non-Primitive Data structure
+The non-primitive data structure is divided into two types:
+Linear data structure
+Non-linear data structure
+Linear Data Structure
+The arrangement of data in a sequential manner is known as a linear data structure. The data structures used for this purpose are Arrays, Linked list, Stacks, and Queues. In these data structures, one element is connected to only one another element in a linear form.
+Non-linear Data Structure
+When one element is connected to the 'n' number of elements known as a non-linear data structure. The best example is trees and graphs. In this case, the elements are arranged in a random manner.
+We will discuss the above data structures in brief in the coming topics. Now, we will see the common operations that we can perform on these data structures.
+Data Structure Operations
+The major or the common operations that can be performed on the data structures are:
+Searching:
+We can search for any element in a data structure.
+Sorting:
+We can sort the elements of a data structure either in an ascending or descending order.
+Insertion:
+We can also insert the new element in a data structure.
+Updation:
+We can also update the element, i.e., we can replace the element with another element.
+Deletion:
+We can also perform the delete operation to remove the element from the data structure.
+Which Data Structure?
+A data structure is a way of organizing the data so that it can be used efficiently. Here, we have used the word efficiently, which in terms of both the space and time. For example, a stack is an ADT (Abstract data type) which uses either arrays or linked list data structure for the implementation. Therefore, we conclude that we require some data structure to implement a particular ADT.
+An ADT tells
+what
+is to be done and data structure tells
+how
+it is to be done. In other words, we can say that ADT gives us the blueprint while data structure provides the implementation part. Now the question arises: how can one get to know which data structure to be used for a particular ADT?.
+As the different data structures can be implemented in a particular ADT, but the different implementations are compared for time and space. For example, the Stack ADT can be implemented by both Arrays and linked list. Suppose the array is providing time efficiency while the linked list is providing space efficiency, so the one which is the best suited for the current user's requirements will be selected.
+Advantages of Data structures
+The following are the advantages of a data structure:
+Efficiency:
+If the choice of a data structure for implementing a particular ADT is proper, it makes the program very efficient in terms of time and space.
+Reusability:
+The data structure provides reusability means that multiple client programs can use the data structure.
+Abstraction:
+The data structure specified by an ADT also provides the level of abstraction. The client cannot see the internal working of the data structure, so it does not have to worry about the implementation part. The client can only see the interface.
+Data Structure Basics
+DS Tutorial
+DS Introduction
+DS Algorithm
+Ds Asymptotic Analysis
+DS Pointer
+DS Structure
+Data Structure Arrays
+Array
+2D Array
+Data Structure Linked List
+Linked List
+Insertion in Linked List at beginning
+Insertion in Linked List at end
+Insertion in Linked List after specified node
+Deletion in Linked List at beginning
+Deletion in Linked List at end
+Deletion in Linked List after specified node
+Traversing in Linked List
+Searching in Linked List
+Doubly Linked List
+Insertion in Doubly Linked List at beginning
+Insertion in Doubly Linked List at end
+Insertion in Doubly Linked List after specified node
+Deletion in Doubly Linked List at beginning
+Deletion in Doubly Linked List at end
+Deletion in Doubly Linked List after the specified node
+Traversing in Doubly Linked List
+Searching in Doubly Linked List
+Circular Linked List
+Insertion in Circular Linked List at beginning
+Insertion in Circular Linked List at end
+Deletion in Circular Linked List at beginning
+Deletion in Circular Linked List at the end
+Traversing in Circular Linked List
+Searching in Circular Linked List
+Circular Doubly Linked List
+Insertion in Circular Doubly Linked List at beginning
+Insertion in Circular Doubly Linked List at end
+Deletion in Circular Doubly Linked List at beginning
+Deletion in Circular Doubly Linked List at the end
+Data Structure Stack
+DS Stack
+Array Implementation
+Linked List Implementation
+Data Structure Queue
+DS Queue
+Array Implementation
+Linked List Implementation
+Circular Queue
+Data Structure Tree
+Tree
+Binary Tree
+Pre-order Traversal
+In-order Traversal
+Post-order Traversal
+Binary Search Tree
+Searching in BST
+Insertion in BST
+Deletion in BST
+AVL Tree
+Insertion in AVL Tree
+LL Rotation
+LR Rotation
+RL Rotation
+RR Rotation
+Deletion in AVL Tree
+B Tree
+B+ Tree
+Red Black Tree
+DS Graph
+DS Graph
+Graph Implementation
+BFS Algorithm
+DFS Algorithm
+Spanning Tree
+Prim's Algorithm
+Kruskal's Algorithm
+DS Searching
+Linear Search
+Binary Search
+DS Sorting
+Bubble Sort
+Bucket Sort
+Comb Sort
+Counting Sort
+Heap Sort
+Insertion Sort
+Merge Sort
+Quick Sort
+Radix Sort
+Selection Sort
+Shell Sort
+Bitonic Sort
+Cocktail Sort
+Cycle Sort
+Tim Sort
+Interview Questions
+DS Interview Questions
+Singly Linked List Programs
+Program to create and display a singly linked list
+Program to create a singly linked list of n nodes and count the number of nodes
+Program to create a singly linked list of n nodes and display it in reverse order
+Program to delete a new node from the beginning of the singly linked list
+Program to delete a new node from the middle of the singly linked list
+Program to delete a node from the end of the singly linked list
+Program to determine whether a singly linked list is the palindrome
+Program to find the maximum and minimum value node from a singly linked list
+Program to insert a new node at the middle of the singly linked list
+Program to insert a new node at the beginning of the singly linked list
+Program to insert a new node at the end of the singly linked list
+Program to remove duplicate elements from a singly linked list
+Program to search an element in a singly linked list
+Program to sort the elements of the singly linked list
+Program to swap nodes in a singly linked list without swapping data
+Program to swap the last element of the singly linked list from the first one
+Doubly Linked List Programs
+Program to Convert a Given Binary Tree to Doubly Linked List
+Program to Create a Doubly Linked List From a Ternary Tree
+Program to Create a Doubly Linked List of N Nodes and Count the Number of Nodes
+Program to Create a Doubly Linked List of N Nodes and Display it in Reverse Order
+Program to Create and Display a Doubly Linked List
+Program to Delete a New Node From the Beginning of the Doubly Linked List
+Program to Delete a New Node From the End of the Doubly Linked List
+Program to Delete a New Node From the Middle of the Doubly Linked List
+Program to Find the Maximum and Minimum Value Node From a Doubly Linked List
+Program to Insert a New Node at the Beginning of the Doubly Linked List
+Program to Insert a New Node at the End of Doubly Linked List
+Program to Insert a New Node at the Middle of Doubly Linked List
+Program to Remove Duplicate Elements From a Doubly Linked List
+Program to Rotate Doubly Linked List by N Nodes
+Program to Search an Element in a Doubly Linked List
+Program to Sort the Elements of the Doubly Linked List
+Circular Linked List Programs
+Program to Create a Circular Linked List of N Nodes and Count the Number of Nodes
+Program to Create a Circular Linked List of N Nodes and Display it in Reverse Order
+Program to Create and Display a Circular Linked List
+Program to Delete a New Node From the Beginning of the Circular Linked List
+Program to Delete a New Node From the End of the Circular Linked List
+Program to Delete a New Node From the Middle of the Circular Linked List
+Program to Find the Maximum and Minimum Value Node From a Circular Linked List
+Program to Insert a New Node at the Beginning of the Circular Linked List
+Program to Insert a New Node at the End of the Circular Linked List
+Program to Insert a New Node at the Middle of the Circular Linked List
+Program to Remove Duplicate Elements From a Circular Linked List
+Program to Search an Element in a Circular Linked List
+Program to Sort the Elements of the Circular Linked List
+Tree Programs
+Program to Calculate the Difference Between the Sum of the Odd Level and Even Level Nodes of a Binary Tree
+Program to Construct a Binary Search Tree and Perform Deletion and Inorder Traversal
+Program to Convert Binary Tree to Binary Search Tree
+Program to Determine Whether all Leaves are at Same Level
+Program to Determine Whether two Trees are Identical
+Program to Find Maximum Width of a Binary Tree
+Program to Find the Largest Element in a Binary Tree
+Program to Find the Maximum Depth or Height of a Tree
+Program to Find the Nodes Which are at the Maximum Distance in a Binary Tree
+Program to Find the Smallest Element in a Binary Tree
+Program to Find the Sum of all the Nodes of a Binary Tree
+Program to Find the Total Number of Possible Binary Search Trees with N Keys
+Program to Implement Binary Tree using the Linked List
+Program to Search a Node in a Binary Tree
+Prerequisite
+Before learning Data Structure, you must have the basic knowledge of C.
+Audience
+Our Data Structure tutorial is designed to help beginners and professionals.
+Problem
+We assure that you will not find any problem in this Data Structure tutorial. But if there is any mistake, please post it in the contact form.
+MCQ Exercise on Data Structures
+Question No: 1
+Which of the following explanations is genuine around abstract data types (ADTs)?
+ADTs are specific to certain programming languages.
+ADTs define the implementation details of data structures.
+ADTs provide a set of rules for data structure operations.
+ADTs are physical data structures in memory.
+Show Answer
+Workspace
+Answer: C
+Explanation:
+ADTs characterize the operations that can be performed on a information structure and the rules for these operations, without indicating the execution subtle elements.
+Question No: 2
+Which of the following could be a highlight of a static data structure?
+Memory size can be changed during runtime.
+Memory size is allocated at compile time.
+Elements can be inserted and deleted dynamically.
+Suitable for implementing dynamic data types.
+Show Answer
+Workspace
+Answer: B
+Explanation:
+Static data structures have their size fixed at compile time, meaning the memory allocation does not change during runtime.
+Question No: 3
+Which of the following data structures would be most reasonable for executing a Stack ADT in the event that time efficiency may be a need?
+Array
+Linked List
+Graph
+Tree
+Show Answer
+Workspace
+Answer: A
+Explanation:
+Arrays provide faster access times compared to linked lists because of their contiguous memory allocation, making them more time-efficient for stack operations.
+Question No: 4
+Which of the following correctly differentiates between the terms 'ADT' and 'data structure'?
+ADT specifies what operations can be performed, while data structure specifies how those operations are implemented.
+ADT is a type of data structure.
+ADT is language-specific, while data structure is language-agnostic.
+Data structure provides an interface, while ADT provides implementation details.
+Show Answer
+Workspace
+Answer: A
+Explanation:
+ADTs describe the operations and rules for a data structure, while the actual data structure provides the implementation of those operations.
+Question No: 5
+In which scenario would a dynamic data structure be preferred over a static data structure?
+When memory allocation needs to be fixed at compile time.
+When the data size and structure are known and constant.
+When the data size and structure can change during runtime.
+When implementing data structures like arrays and pointers.
+Show Answer
+Workspace
+Answer: C
+Explanation:
+Dynamic data structures are adaptable and can develop or shrivel as required amid runtime, making them appropriate for scenarios where the information measure isn't known in progress or changes as often as possible.
+Next Topic
+What is Data Structure
+next →
+Related Posts
+What is Data Structure?
+Definition and Types Since the invention of computers, people have been using the term &quot;Data&quot; to refer to Computer Information, either transmitted or stored. However, there is data that exists in order types as well. Data can be numbers or texts written on a piece...
+20 min read
+What is an Algorithm?
+Definition, Characteristics &amp; Examples An algorithm is a process or a set of rules required to perform calculations or some other problem-solving operations especially by a computer. The formal definition of an algorithm is that it contains the finite set of instructions which are being...
+9 min read
+Pointer in Data Structure
+Pointers in Data Structure Pointer is used to points the address of the value stored anywhere in the computer memory. To obtain the value stored at the location is known as dereferencing the pointer. Pointer improves the performance for repetitive process such as: Traversing String Lookup Tables Control Tables Tree...
+8 min read
+Abstract Data Type (ADT) in Data Structure
+Before knowing about the abstract data type, we should know about the what is a data structure. What is data structure? A data structure is a technique of organizing the data so that the data can be utilized efficiently. There are two ways of viewing the data...
+4 min read
+Asymptotic Notation
+What is (Data Structure)? As we know that data structure is a way of organizing the data efficiently and that efficiency is measured either in terms of time or space. So, the ideal data structure is a structure that occupies the least possible time to...
+9 min read
+Subscribe to Tpoint Tech
+We request you to subscribe our newsletter for upcoming updates.
+Subscribe
+Learn Important Tutorial
+Python
+Java
+Javascript
+HTML
+Database
+PHP
+C++
+React
+B.Tech / MCA
+DBMS
+Data Structures
+DAA
+Operating System
+Computer Network
+Compiler Design
+Computer Organization
+Discrete Mathematics
+Ethical Hacking
+Computer Graphics
+Web Technology
+Software Engineering
+Cyber Security
+Automata
+C Programming
+C++
+Java
+.Net
+Python
+Programs
+Control System
+Data Warehouse
+Preparation
+Aptitude
+Reasoning
+Verbal Ability
+Interview Questions
+Company Questions
+We provides tutorials and interview questions of all technology like java tutorial, android, java frameworks
+Contact info
+G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India
+hr@tpointtech.com
++91-9599086977
+Follow us
+Tutorials
+Java
+Data Structures
+C Programming
+C++ Tutorial
+C# Tutorial
+PHP Tutorial
+HTML Tutorial
+JavaScript Tutorial
+jQuery Tutorial
+Spring Tutorial
+Interview Questions
+Microsoft
+Amazon
+Adobe
+Intuit
+Accenture
+Cognizant
+Capgemini
+Wipro
+Tcs
+Infosys
+Online Compiler
+C
+R
+C++
+Php
+Java
+Html
+Swift
+Python
+JavaScript
+TypeScript
+Latest Post
+|
+Tutorials List
+|
+Privacy Policy
+© Copyright 2011 - 2025 TpointTech.com. All Rights Reserved.

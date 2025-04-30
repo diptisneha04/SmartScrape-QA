@@ -1,0 +1,135 @@
+.next_sibling
+.next_sibling
+.previous_sibling
+.previous_sibling
+¶
+You can use.next_siblingand.previous_siblingto navigate
+between page elements that are on the same level of the parse tree:
+.next_sibling
+.next_sibling
+.previous_sibling
+.previous_sibling
+sibling_soup.b.next_sibling# <c>text2</c>sibling_soup.c.previous_sibling# <b>text1</b>
+sibling_soup.b.next_sibling# <c>text2</c>sibling_soup.c.previous_sibling# <b>text1</b>
+sibling_soup.b.next_sibling# <c>text2</c>sibling_soup.c.previous_sibling# <b>text1</b>
+
+sibling_soup
+.
+b
+.
+next_sibling
+# <c>text2</c>
+sibling_soup
+.
+c
+.
+previous_sibling
+# <b>text1</b>
+The <b> tag has a.next_sibling, but no.previous_sibling,
+because there's nothing before the <b> tagon the same level of the
+tree. For the same reason, the <c> tag has a.previous_siblingbut no.next_sibling:
+.next_sibling
+.next_sibling
+.previous_sibling
+.previous_sibling
+on the same level of the
+tree
+.previous_sibling
+.previous_sibling
+.next_sibling
+.next_sibling
+print(sibling_soup.b.previous_sibling)# Noneprint(sibling_soup.c.next_sibling)# None
+print(sibling_soup.b.previous_sibling)# Noneprint(sibling_soup.c.next_sibling)# None
+print(sibling_soup.b.previous_sibling)# Noneprint(sibling_soup.c.next_sibling)# None
+
+print
+(
+sibling_soup
+.
+b
+.
+previous_sibling
+)
+# None
+print
+(
+sibling_soup
+.
+c
+.
+next_sibling
+)
+# None
+The strings "text1" and "text2" arenotsiblings, because they don't
+have the same parent:
+not
+sibling_soup.b.string# 'text1'print(sibling_soup.b.string.next_sibling)# None
+sibling_soup.b.string# 'text1'print(sibling_soup.b.string.next_sibling)# None
+sibling_soup.b.string# 'text1'print(sibling_soup.b.string.next_sibling)# None
+
+sibling_soup
+.
+b
+.
+string
+# 'text1'
+print
+(
+sibling_soup
+.
+b
+.
+string
+.
+next_sibling
+)
+# None
+In real documents, the.next_siblingor.previous_siblingof a
+tag will usually be a string containing whitespace. Going back to the
+"three sisters" document:
+.next_sibling
+.next_sibling
+.previous_sibling
+.previous_sibling
+# <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,# <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and# <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+# <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,# <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and# <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+# <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,# <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and# <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+
+# <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
+# <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
+# <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+You might think that the.next_siblingof the first <a> tag would
+be the second <a> tag. But actually, it's a string: the comma and
+newline that separate the first <a> tag from the second:
+.next_sibling
+.next_sibling
+link=soup.alink# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>link.next_sibling# ',\n '
+link=soup.alink# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>link.next_sibling# ',\n '
+link=soup.alink# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>link.next_sibling# ',\n '
+
+link
+=
+soup
+.
+a
+link
+# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+link
+.
+next_sibling
+# ',\n '
+The second <a> tag is then the.next_siblingof the comma string:
+.next_sibling
+.next_sibling
+link.next_sibling.next_sibling# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+link.next_sibling.next_sibling# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+link.next_sibling.next_sibling# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+
+link
+.
+next_sibling
+.
+next_sibling
+# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a>
+.next_siblingsand.previous_siblings¶You can iterate over a tag's siblings with.next_siblingsor.previous_siblings:forsiblinginsoup.a.next_siblings:print(repr(sibling))# ',\n'# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a># ' and\n'# <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a># '; and they lived at the bottom of a well.'forsiblinginsoup.find(id="link3").previous_siblings:print(repr(sibling))# ' and\n'# <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a># ',\n'# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a># 'Once upon a time there were three little sisters; and their names were\n'(If the argument syntax to find tags by their attribute value is unfamiliar,
+don't worry; this is covered later inThe keyword arguments.)

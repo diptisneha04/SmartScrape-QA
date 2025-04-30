@@ -1,0 +1,799 @@
+Computer Network Tutorial - Tpoint Tech
+Tutorials
+×
+Python
+Python Tutorial
+Django Tutorial
+Numpy Tutorial
+Pandas Tutorial
+Tkinter Tutorial
+Pytorch Tutorial
+Flask Tutorial
+OpenCV Tutorial
+Java
+Java Tutorial
+Servlet Tutorial
+JSP Tutorial
+Spring Boot Tutorial
+Spring Framework Tutorial
+Hibernate Tutorial
+JavaFX Tutorial
+Java Web Services Tutorial
+.Net Framework
+.Net Framework Tutorial
+C# Tutorial
+ASP.Net Tutorial
+ADO.Net Tutorial
+WPF Tutorial
+AI, ML and Data Science
+Artificial Intelligence Tutorial
+Machine Learning Tutorial
+Data Science Tutorial
+Deep Learning Tutorial
+TensorFlow Tutorial
+Artificial Neural Network Tutorial
+Matplotlib Tutorial
+Python Scipy Tutorial
+Cloud Technology
+Cloud Computing Tutorial
+AWS Tutorial
+Microsoft Azure Tutorial
+Salesforce Tutorial
+GCP Tutorial
+B.Tech and MCA
+DBMS Tutorial
+Data Structures Tutorial
+Operating System Tutorial
+Computer Network Tutorial
+DAA Tutorial
+Computer Organization Tutorial
+Software Engineering Tutorial
+Data Mining Tutorial
+Web Technology
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+Jquery Tutorial
+Angular 8 Tutorial
+React Tutorial
+React Native Tutorial
+Node.js Tutorial
+PHP
+PHP Tutorial
+MySQL Tutorial
+Laravel Tutorial
+WordPress Tutorial
+CodeIgniter Tutorial
+Software Testing
+Software Testing Tutorial
+Selenium Tutorial
+JIRA Tutorial
+JMeter Tutorial
+Postman Tutorial
+TestNG Tutorial
+SoapUI Tutorial
+Cucumber Tutorial
+Interview
+×
+Technical Interview
+Python Interview Questions
+Java Interview Questions
+.Net Interview Questions
+C++ Interview Questions
+React Interview Questions
+Node.js Interview Questions
+Angular Interview Questions
+SQL Interview Questions
+HR Interview Questions
+Java Interview
+Spring Boot Interview Questions
+Spring Interview Questions
+Hibernate Interview Questions
+JDBC Interview Questions
+Servlet Interview Questions
+Maven Interview Questions
+Jenkins Interview Questions
+Python
+Django Interview Questions
+Pandas Interview Questions
+Express.js Interview Questions
+Python Coding Interview Questions
+Python Interview Questions for 5 Years
+Web Interview
+HTML Interview Questions
+CSS Interview Questions
+JavaScript Interview Questions
+Jquery Interview Questions
+PHP Interview Questions
+Laravel Interview Questions
+AJAX Interview Questions
+Front-End Developer Interview Questions
+jQuery Interview Questions
+Database Interview
+DBMS Interview Questions
+SQL Interview Questions
+PL/SQL Interview Questions
+Oracle Interview Questions
+MySQL Interview Questions
+MongoDB Interview Questions
+Redis Interview Questions
+B.Tech / MCA
+DBMS Interview Questions
+Operating System Interview Questions
+OOPs Interview Questions
+DSA Interview Questions
+Computer Networks Interview Questions
+Important Interview
+C Interview Questions
+Power BI Interview Questions
+C# Interview Questions
+Excel Interview Questions
+C# Interview Questions
+Machine Learning Interview Questions
+AWS Interview Questions
+Microservices Interview Questions
+MySQL Interview Questions
+Software Testing Interview
+Manual Testing Interview Questions
+Selenium Interview Questions
+API Testing Interview Questions
+ETL Testing Interview Questions
+Mobile Testing Interview Questions
+Company Interviews
+IBM Interview Questions
+Adobe Interview Questions
+Microsoft Interview Questions
+Amazon Interview Questions
+TCS Interview Questions
+Wipro Interview Questions
+Accenture Interview Questions
+Compiler
+×
+Online Compilers
+Python Online Compiler
+Java Online Compiler
+PHP Online Compiler
+C Online Compiler
+C++ Online Compiler
+HTML Online Compiler
+JavaScript Online Compiler
+TypeScript Online Compiler
+R Online Compiler
+Swift Online Compiler
+Kotlin Online Compiler
+Go Online Compiler
+C# Online Compiler
+Perl Online Compiler
+Groovy Online Compiler
+HTML, CSS & JavaScript Online Editor
+Multiple Choice Questions
+Python MCQ
+Java MCQ
+PHP MCQ
+C Programming MCQ
+C++ MCQ
+HTML mcq
+JavaScript MCQ
+SQL MCQ
+Operating System MCQ
+Computer Fundamental MCQ
+Computer Network MCQ
+DBMS MCQ
+Data Structure MCQ
+Software Engineering MCQ
+Cloud Computing MCQ
+Artificial Intelligence MCQ
+Python
+Java
+JavaScript
+SQL
+C
+C++
+HTML
+CSS
+React
+Node.js
+Spring Boot
+C#
+PHP
+MySQL
+MongoDB
+AI
+ML
+DSA
+DBMS
+OS
+Aptitude
+Reasoning
+Computer Network
+Computer Network Tutorial
+What is a Computer Network?
+Features
+Computer Network Architecture
+Computer Network Components
+Computer Network Types
+Topologies
+Transmission Modes
+Fast Ethernet
+Models
+Models
+OSI Model
+TCP/IP Model
+Physical Layer
+Digital Transmission
+Transmission Media
+Guided Media
+UnGuided Media
+Multiplexing
+Switching
+Switching Modes
+Switching Techniques
+Data Link layer
+Data Link layer
+Error Detection
+Error Correction
+Data Link Controls
+Network Layer
+Network Layer
+Network Addressing
+Routing
+Network Layer Protocols
+Routing Algorithm
+Routing Algorithm
+Distance Vector
+Link State Routing
+Transport Layer
+Transport Layer
+Transport Layer Protocols
+Application Layer
+Application Layer
+Client & Server Model
+Application Protocols
+DNS
+FTP
+Telnet
+SMTP
+SNMP
+HTTP
+Network Security
+Security
+Privacy
+Digital Signature
+PGP
+Misc
+What is Router
+OSI vs TCP/IP
+TCP vs UDP
+TCP
+TCP Port
+IPv4 vs IPv6
+ARP Packet Format
+ARP Table
+Working of ARP
+FTP Client
+FTP Commands
+FTP Server
+I2P Protocol
+Sliding Window Protocol
+SNMP
+SPI Protocol
+IP
+ARP Commands
+ARP Request
+ARP - Address Resolution Protocol
+ARP and its types
+TCP Retransmission
+CAN Protocol
+HTTP Status Codes
+HTTP vs HTTPS
+RIP Protocol
+UDP Protocol
+ICMP Protocol
+MQTT Protocol
+OSPF Protocol
+Stop & Wait Protocol
+IMAP Protocol
+POP Protocol
+CIFS
+DAS
+DIMM
+iSCSI
+NAS
+NFS
+NVMe
+SAN
+BGP
+Go-Back-N ARQ
+RJ Cable
+Connection-Oriented vs Connectionless Service
+CDMA vs GSM
+What is MAC Address
+Modem vs Router
+Switch vs Router
+USB 2.0 vs USB 3.0
+CSMA CA vs CSMA CD
+Multiple Access Protocols
+URI vs URL
+IMAP vs. POP3
+SSH Meaning
+UTP vs STP
+Status Code 400
+MIME Protocol
+IP address
+What is a proxy server and how does it work
+How to set up and use a proxy server
+What is network security
+WWW is based on which model
+Proxy Server List
+Fundamentals of Computer Networking
+IP Address Format and Table
+Bus topology vs Ring topology
+Bus topology vs Star topology
+Circuit Switching vs Packet switching
+star vs ring topology
+Router vs Bridge
+TCP Connection Termination
+Image Steganography
+Network Neutrality
+Onion Routing
+ASA features
+Relabel-to-front Algorithm
+Types of Server Virtualization in Computer Network
+Access Lists (ACL)
+Digital Subscriber Line (DSL)
+Operating system based Virtualization
+Context based Access Control (CBAC)
+Cristian's Algorithm
+Service Set Identifier (SSID) in Computer Network
+Voice over Internet Protocol (VoIP)
+Challenge Response Authentication Mechanism (CRAM)
+Extended Access List
+Li-fi vs. Wi-fi
+Reflexive Access List
+Synchronous Optical Network (SONET)
+Wifi protected access (WPA)
+Wifi Protected Setup (WPS)
+Standard Access List
+Time Access List
+What is 3D Internet
+4G Mobile Communication Technology
+Types of Wireless Transmission Media
+Best Computer Networking Courses
+Data Representation
+Network Criteria
+Classful vs Classless addressing
+Difference between BOOTP and RARP in Computer Networking
+What is AGP (Accelerated Graphics Port)
+Advantages and Disadvantages of Satellite Communication
+External IP Address
+Asynchronous Transfer Mode (ATM) in Computer Network
+Types of Authentication Protocols
+What is a CISCO Packet Tracer
+How does BOOTP work
+Subnetting in Computer Networks
+Mesh Topology Advantages and Disadvantages
+Ring Topology Advantages and Disadvantages
+Star Topology Advantages and Disadvantages
+Tree Topology Advantages and Disadvantages
+Zigbee Technology-The smart home protocol
+Network Layer in OSI Model
+Physical Layer in OSI Model
+Data Link Layer in OSI Model
+Internet explorer shortcut keys
+Network Layer Security | SSL Protocols
+Presentation Layer in OSI Model
+Session Layer in OSI Model
+SUBNET MASK
+Transport Layer Security | Secure Socket Layer (SSL) and SSL Architecture
+Functions, Advantages and Disadvantages of Network Layer
+Functions, Advantages and Disadvantages of the Physical Layer
+Types of Internet Connection
+Noisy and Noiseless Channel
+Advantages and Disadvantages of Bus Topology
+Advantages and Disadvantages of Ring Topology
+Advantages and Disadvantages of Star Topology
+Functions, Advantages and Disadvantages of Network Layer
+Protocols in Noiseless and Noisy Channel
+Advantages and Disadvantages of Mesh Topology
+Cloud Networking - Managing and Optimizing Cloud-Based Networks
+Collision Domain and Broadcast Domain
+Count to Infinity Problem in Distance Vector Routing
+Difference Between Go-Back-N and Selective Repeat Protocol
+Difference between Stop and Wait, GoBackN, and Selective Repeat
+Network Function Virtualization (NFV): transforming Network Architecture with Virtualized Functions
+Network-Layer Security | IPSec Modes
+Network-Layer Security | IPSec Protocols and Services
+Ping vs Traceroute
+Software Defined Networking (SDN): Benefits and Challenges of Network Virtualization
+Software Defined Networking (SDN) vs. Network Function Virtualization (NFV)
+Virtual Circuits vs Datagram Networks
+BlueSmack Attack in Wireless Networks
+Bluesnarfing Attack in Wireless Networks
+Direct Sequence Spread Spectrum
+Warchalking in Wireless Networks
+WEP (Wired Equivalent Privacy)
+Wireless security encryption
+Wireless Security in an Enterprise
+Quantum Networking
+Network Automation
+Difference between MSS and MTU
+What is MTU
+Mesh Networks: A decentralized and Self-Organizing Approach to Networking
+What is Autonomous System
+What is MSS
+Cyber security and Software security
+Information security and Network security
+Security Engineer and Security Architect
+Protection Methods for Network Security
+Trusted Systems in Network Security
+What are Authentication Tokens in Network security
+Cookies in Network Security
+Intruders in Network Security
+Network Security Toolkit (NST) in virtual box
+Pivoting-Moving Inside a Network
+Security Environment in Computer Networks
+Voice Biometric technique in Network Security
+Advantages and Disadvantages of Conventional Testing
+Difference between Kerberos and LDAP
+Cyber security and Information Security
+GraphQL Attacks and Security
+Application Layer in OSI Model
+Applications of Remote Sensing
+Seven Layers of IT Security
+What is Ad Hoc TCP
+What is Server Name Indication(SNI)
+Difference Between Infrastructure and Infrastructure Less Network
+Collision Avoidance in Wireless Networks
+Difference Engine and Analytical Engine
+Hotspot 2.0
+Intrusion Prevention System (IPS)
+Modes of Connection Bluetooth
+Noisy Channel protocols
+Parzen Windows density Estimation Technique
+Principle of Information System Security
+What are Bots, Botnets, and Zombies
+Windows Memory Management
+Wireless dos attack on Wifi
+Design Principles of Security in Distributed Systems
+MAC Filtering
+Principles of Network Applications
+Time-to-Live (TTL)
+What is 1000 BASE-T
+10BASE-T
+What is the difference between 802.11ac and 802.11ax
+Differentiate between Circuit Switching, Message Switching, and Packet Switching
+What is Web 3.0
+Collision Detection in CSMA/CD
+Ipv4 Header in Computer Networks
+Layered Architecture in Computer Networks
+Define URL in Computer Networks
+MAN in Computer Networks
+Routing Protocols in Computer Networks
+Flooding in Computer Network
+CRC in Computer Network
+Application of Computer Network
+Computer Network Architect
+Design Issues for the Layers of Computer Networks
+What is AMD (Advanced Micro Devices)
+Protocol in Computer Network
+Computer Network Projects
+Different Types of Routers
+Wireless Distribution System (WDS)
+Network Time Protocol
+Address Resolution Protocol (ARP) and its types in Computer Network
+Automatic Repeat ReQuest (ARQ) in Computer Networks
+Bluetooth in Computer Networks
+Circuit Switching in Computer Network
+Computer Hardware and Networking Course
+Ring Topology in a Computer Network
+Token Ring in Computer Networks
+Medium Access Control in Computer Network
+Need for Computer Network
+Repeater in Computer Network
+Computer Networking: a Top Down Approach
+What is Multiplexing in Computer Network
+Body Area Network (BAN)
+INS AND OUT OF DATA STREAMING
+Streaming stored video
+Cellular Network
+How can devices on a Network be identified
+How Does the Internet Work
+Define URL in Computer Networks
+Authentication Server
+What is Cloud Backup and How does it Work
+Communication Protocols In System Design
+Extensible Authentication Protocol (EAP)
+Role-Based Access Control (RBAC)
+Network Enumeration Tools
+Network Protocol Testing
+Windows Networking Commands
+Advantages and Disadvantages of WLAN
+Anonymous File Transfer Protocol (AFTP)
+Automatic Private IP Addressing
+What is Deep Web
+USB-C (USB Type C)
+User Authentication
+What is a vCard
+ipv4 Headers
+Difference between Token ring and Ethernet Token Ring
+Server Message Block protocol (SMB protocol)
+Session Border Controllers (SBC)
+Short Message Service Center (SMSC)
+What is a Mail Server
+What are Communication Networks
+Initialization Vector
+What is Fiber Optics
+Open Networking
+Access Ports Vs Trunk Ports
+Edge Routers
+IPTV (Internet Protocol Television)
+Wireless Internet Service Provider (WISP)
+Wireless Backhaul
+Define Protocol in Computer Network
+Virtual Network Adapter
+Virtual Routing and Forwarding
+Virtual Switches(vSwitches)
+VLAN (Virtual LAN)
+Wireless Mesh Network (WMN)
+What is Gateway in Computer Network
+Radio Access Network (RAN)
+What is File Sharing
+Passive Optical Network (PON)
+Private IP address
+Public Key Certificate
+What is Bridge in Computer Network
+Ping Sweep (ICMP Sweep)
+Print Server
+WIFI Pineapple
+Walled Garden
+Wireless ISP (wireless Internet service provider or WISP)
+Bridge vs Repeater
+Hardware Security Module (HSM)
+Public Switched Telephone Network
+Analog Telephone Adapter (ATA)
+Host Bus Adapter (HBA)
+ISCSI initiator
+Simplest Protocol
+Telecommunication Networks
+What is WPS in Wi-Fi
+What are the Most Important Email Security Protocols
+What is Data Governance and Why does it Matter
+Carrier Network
+Most Secure Network Protocol
+Network SMB
+BGP vs. EIGRP: What's the Difference
+Wireless Security: WEP, WPA, WPA2 and WPA3 differences
+Cloud Radio Access Network (C-RAN)
+Bits Per Second (bps or bit/sec)
+Blade Server
+command-and-control server (C&C server)
+UnGuided Transmission
+PPP Protocol
+BCD to Seven Segment Decoder
+Spanning Tree Protocol
+Administrative Distance (AD) and Autonomous System (AS)
+Ethernet Frame Format
+Computer Network AAA (Authentication, Authorization and Accounting)
+Integrated Services Digital Network
+Frame relay in Computer Network
+AAA (Authentication, Authorization and Accounting) configuration (locally)
+Back-off Algorithm for CSMA/CD
+Difference between Byte stuffing and Bit stuffing
+Encryption vs Digest in Cryptography
+How does Symmetric and Asymmetric Key Cryptography Works Together
+Inter-Switch Link (ISL) and IEEE 802.1Q
+Port security in Computer Network
+Program to remotely Power on a PC over the internet using the Wake-on-LAN protocol
+RFC (Request For Comment)
+SSD Caching
+TETRA(Terrestrial Trunked Radio)
+What are Zombie Cookies, and can you Block them
+What is Application Security Posture Management (ASPM)
+What is Bug Bounty Program
+What is Clampi Virus
+What is the Risk-Based Vulnerability Management
+Wireless Network Roaming and Handover Protocols
+What is the Stateless Protocol
+Mac Layer Functions and Protocol
+Advantages of Written Communication
+MCQ
+Computer Network MCQ
+Computer Network MCQ Part2
+Interview Questions
+Networking Questions
+next →
+Learn Computer Network Tutorial
+17 Mar 2025
+|
+2 min read
+Computer Network tutorial provides basic and advanced concepts of Data Communication & Networks (DCN). Our Computer Networking Tutorial is designed for beginners and professionals.
+Our Computer Network tutorial includes all topics of Computer Network such as introduction, features, types of computer network, architecture, hardware, software, internet, intranet, website, LAN, WAN, etc.
+What is Computer Network?
+A computer network is a set of devices connected through links. A node can be computer, printer, or any other device capable of sending or receiving the data. The links connecting the nodes are known as communication channels.
+Computer Network uses distributed processing in which task is divided among several computers. Instead of a single computer handling an entire task, each separate computer handles a subset." This aligns with the correct understanding of distributed processing, where multiple computers work on different parts of a task.
+Following are the advantages of Distributed processing:
+Security:
+It provides limited interaction that a user can have with the entire system. For example, a bank allows the users to access their own accounts through an ATM without allowing them to access the bank's entire database.
+Faster problem solving:
+Multiple computers can solve the problem faster than a single machine working alone.
+Security through redundancy:
+Multiple computers running the same program at the same time can provide the security through redundancy. For example, if four computers run the same program and any computer has a hardware error, then other computers can override it.
+Computer Network Basics
+Computer Network Tutorial
+Computer Network Introduction
+Computer Network Features
+Computer Network Architecture
+Computer Network Components
+Computer Network Types
+Computer Network Topologies
+Computer Network Transmission Modes
+Computer Network Models
+Computer Network Models
+OSI Model
+TCP/IP Model
+Physical Layer
+Digital Transmission
+Transmission Media
+Guided Media
+UnGuided Media
+Multiplexing
+Multiplexing Techniques
+Switching
+Switching Modes
+Switching Techniques
+Data Link Layer
+Data Link layer
+Error Detection
+Error Correction
+Data Link Controls
+Network Layer
+Network Layer
+Network Addressing
+Computer Network Routing
+Network Layer Protocols
+Routing Algorithm
+Routing Algorithm
+Distance Vector Routing Algorithm
+Link State Routing Algorithm
+Transport Layer
+Transport Layer
+Transport Layer Protocols
+Application Layer
+Application Layer
+Client and Server Model
+Application Protocols
+DNS
+FTP
+Telnet
+SMTP
+SNMP
+HTTP
+Computer Network Security
+Security
+Privacy
+Digital Signature
+PGP
+Interview Questions
+Computer Network Interview Questions
+MCQ
+Computer Network MCQ
+Prerequisite
+There is nothing specific prerequisite for learning computer network.
+Audience
+Our Computer Network Tutorial is designed to help beginners and professionals.
+Problems
+We assure that you will not find any problem in this Computer Network Tutorial. But if there is any mistake, please post the problem in contact form.
+Next Topic
+Introduction
+next →
+Related Posts
+Transmission Modes
+Transmission modes The way in which data is transmitted from one device to another device is known as transmission mode. The transmission mode is also known as the communication mode. Each communication channel has a direction associated with it, and transmission media provide the direction. Therefore, the transmission mode...
+3 min read
+Fast Ethernet
+Introduction Speed is becoming more and more important in the rapidly developing world of computers. As technology advances and network needs rise, the desire for quicker data transport has become a top goal. The is a significant advancement in networking technology designed to tackle the expanding...
+4 min read
+Computer Network Types
+A computer network is a group of computers linked to each other that enables the computer to communicate with another computer and share their resources, data, and applications. A computer network can be categorized by their size. A computer network is mainly of four types: LAN(Local Area Network) PAN(Personal...
+6 min read
+What is a Computer Network?
+Computer Network is a group of computers connected with each other through wires, optical fibres or optical links so that various devices can interact with each other through a network. The aim of the computer network is the sharing of resources among various devices. In the case...
+3 min read
+Computer Network Architecture
+is defined as the physical and logical design of the software, hardware, protocols, and media of the transmission of data. Simply we can say that how computers are organized and how tasks are allocated to the computer. The two types of network architectures are used: Peer-To-Peer...
+2 min read
+Features
+Of Computer network A list Of Computer network features is given below. Communication speed File sharing Back up and Roll back is easy Software and Hardware sharing Security Scalability Reliability Communication speed Network provides us to communicate over the network in a fast and efficient manner. For example, we can do video conferencing, email messaging,...
+2 min read
+Topologies
+What is Network Topology? Topology defines the structure of the network of how all the components are interconnected to each other. There are two types of topology: physical and logical topology. Types of Network Topology Physical topology is the geometric representation of all the nodes in a network. There...
+8 min read
+Computer Network Components
+Computer network components are the major parts which are needed to install the software. Some important network components are NIC, switch, cable, hub, router, and modem. Depending on the type of network that we need to install, some network components can also be removed. For...
+3 min read
+Subscribe to Tpoint Tech
+We request you to subscribe our newsletter for upcoming updates.
+Subscribe
+Learn Important Tutorial
+Python
+Java
+Javascript
+HTML
+Database
+PHP
+C++
+React
+B.Tech / MCA
+DBMS
+Data Structures
+DAA
+Operating System
+Computer Network
+Compiler Design
+Computer Organization
+Discrete Mathematics
+Ethical Hacking
+Computer Graphics
+Web Technology
+Software Engineering
+Cyber Security
+Automata
+C Programming
+C++
+Java
+.Net
+Python
+Programs
+Control System
+Data Warehouse
+Preparation
+Aptitude
+Reasoning
+Verbal Ability
+Interview Questions
+Company Questions
+We provides tutorials and interview questions of all technology like java tutorial, android, java frameworks
+Contact info
+G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India
+hr@tpointtech.com
++91-9599086977
+Follow us
+Tutorials
+Java
+Data Structures
+C Programming
+C++ Tutorial
+C# Tutorial
+PHP Tutorial
+HTML Tutorial
+JavaScript Tutorial
+jQuery Tutorial
+Spring Tutorial
+Interview Questions
+Microsoft
+Amazon
+Adobe
+Intuit
+Accenture
+Cognizant
+Capgemini
+Wipro
+Tcs
+Infosys
+Online Compiler
+C
+R
+C++
+Php
+Java
+Html
+Swift
+Python
+JavaScript
+TypeScript
+Latest Post
+|
+Tutorials List
+|
+Privacy Policy
+© Copyright 2011 - 2025 TpointTech.com. All Rights Reserved.

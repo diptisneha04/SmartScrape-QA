@@ -1,0 +1,95 @@
+.strings
+.strings
+stripped_strings
+stripped_strings
+¶
+If there's more than one thing inside a tag, you can still look at
+just the strings. Use the.stringsgenerator to see all descendant
+strings:
+.strings
+.strings
+forstringinsoup.strings:print(repr(string))'\n'# "The Dormouse's story"# '\n'# '\n'# "The Dormouse's story"# '\n'# 'Once upon a time there were three little sisters; and their names were\n'# 'Elsie'# ',\n'# 'Lacie'# ' and\n'# 'Tillie'# ';\nand they lived at the bottom of a well.'# '\n'# '...'# '\n'
+forstringinsoup.strings:print(repr(string))'\n'# "The Dormouse's story"# '\n'# '\n'# "The Dormouse's story"# '\n'# 'Once upon a time there were three little sisters; and their names were\n'# 'Elsie'# ',\n'# 'Lacie'# ' and\n'# 'Tillie'# ';\nand they lived at the bottom of a well.'# '\n'# '...'# '\n'
+forstringinsoup.strings:print(repr(string))'\n'# "The Dormouse's story"# '\n'# '\n'# "The Dormouse's story"# '\n'# 'Once upon a time there were three little sisters; and their names were\n'# 'Elsie'# ',\n'# 'Lacie'# ' and\n'# 'Tillie'# ';\nand they lived at the bottom of a well.'# '\n'# '...'# '\n'
+
+for
+string
+in
+soup
+.
+strings
+:
+print
+(
+repr
+(
+string
+))
+'
+\n
+'
+# "The Dormouse's story"
+# '\n'
+# '\n'
+# "The Dormouse's story"
+# '\n'
+# 'Once upon a time there were three little sisters; and their names were\n'
+# 'Elsie'
+# ',\n'
+# 'Lacie'
+# ' and\n'
+# 'Tillie'
+# ';\nand they lived at the bottom of a well.'
+# '\n'
+# '...'
+# '\n'
+Newlines and spaces that separate tags are also strings. You can remove extra
+whitespace by using the.stripped_stringsgenerator instead:
+.stripped_strings
+.stripped_strings
+forstringinsoup.stripped_strings:print(repr(string))# "The Dormouse's story"# "The Dormouse's story"# 'Once upon a time there were three little sisters; and their names were'# 'Elsie'# ','# 'Lacie'# 'and'# 'Tillie'# ';\n and they lived at the bottom of a well.'# '...'
+forstringinsoup.stripped_strings:print(repr(string))# "The Dormouse's story"# "The Dormouse's story"# 'Once upon a time there were three little sisters; and their names were'# 'Elsie'# ','# 'Lacie'# 'and'# 'Tillie'# ';\n and they lived at the bottom of a well.'# '...'
+forstringinsoup.stripped_strings:print(repr(string))# "The Dormouse's story"# "The Dormouse's story"# 'Once upon a time there were three little sisters; and their names were'# 'Elsie'# ','# 'Lacie'# 'and'# 'Tillie'# ';\n and they lived at the bottom of a well.'# '...'
+
+for
+string
+in
+soup
+.
+stripped_strings
+:
+print
+(
+repr
+(
+string
+))
+# "The Dormouse's story"
+# "The Dormouse's story"
+# 'Once upon a time there were three little sisters; and their names were'
+# 'Elsie'
+# ','
+# 'Lacie'
+# 'and'
+# 'Tillie'
+# ';\n and they lived at the bottom of a well.'
+# '...'
+Here, strings consisting entirely of whitespace are ignored, and
+whitespace at the beginning and end of strings is removed.
+Going up¶Continuing the "family tree" analogy, every tag and every string has aparent: the tag that contains it..parent¶You can access an element's parent with the.parentattribute. In
+the example "three sisters" document, the <head> tag is the parent
+of the <title> tag:title_tag=soup.titletitle_tag# <title>The Dormouse's story</title>title_tag.parent# <head><title>The Dormouse's story</title></head>The title string itself has a parent: the <title> tag that contains
+it:title_tag.string.parent# <title>The Dormouse's story</title>The parent of a top-level tag like <html> is theBeautifulSoupobject
+itself:html_tag=soup.htmltype(html_tag.parent)# <class 'bs4.BeautifulSoup'>And the.parentof aBeautifulSoupobject is defined as None:print(soup.parent)# None.parents¶You can iterate over all of an element's parents with.parents. This example uses.parentsto travel from an <a> tag
+buried deep within the document, to the very top of the document:link=soup.alink# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>forparentinlink.parents:print(parent.name)# p# body# html# [document].self_and_parents¶The.self_and_parentsgenerator is a variant of.parentswhich
+gives you the entire ancestry of an element, including the element
+itself:forparentinlink.parents:print(parent.name)# link# p# body# html# [document]
+Going up¶
+¶
+Continuing the "family tree" analogy, every tag and every string has aparent: the tag that contains it.
+parent
+.parent¶You can access an element's parent with the.parentattribute. In
+the example "three sisters" document, the <head> tag is the parent
+of the <title> tag:title_tag=soup.titletitle_tag# <title>The Dormouse's story</title>title_tag.parent# <head><title>The Dormouse's story</title></head>The title string itself has a parent: the <title> tag that contains
+it:title_tag.string.parent# <title>The Dormouse's story</title>The parent of a top-level tag like <html> is theBeautifulSoupobject
+itself:html_tag=soup.htmltype(html_tag.parent)# <class 'bs4.BeautifulSoup'>And the.parentof aBeautifulSoupobject is defined as None:print(soup.parent)# None

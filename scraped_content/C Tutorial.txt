@@ -1,0 +1,1274 @@
+C Tutorial | Learn C Programming Language - Tpoint Tech
+Tutorials
+×
+Python
+Python Tutorial
+Django Tutorial
+Numpy Tutorial
+Pandas Tutorial
+Tkinter Tutorial
+Pytorch Tutorial
+Flask Tutorial
+OpenCV Tutorial
+Java
+Java Tutorial
+Servlet Tutorial
+JSP Tutorial
+Spring Boot Tutorial
+Spring Framework Tutorial
+Hibernate Tutorial
+JavaFX Tutorial
+Java Web Services Tutorial
+.Net Framework
+.Net Framework Tutorial
+C# Tutorial
+ASP.Net Tutorial
+ADO.Net Tutorial
+WPF Tutorial
+AI, ML and Data Science
+Artificial Intelligence Tutorial
+Machine Learning Tutorial
+Data Science Tutorial
+Deep Learning Tutorial
+TensorFlow Tutorial
+Artificial Neural Network Tutorial
+Matplotlib Tutorial
+Python Scipy Tutorial
+Cloud Technology
+Cloud Computing Tutorial
+AWS Tutorial
+Microsoft Azure Tutorial
+Salesforce Tutorial
+GCP Tutorial
+B.Tech and MCA
+DBMS Tutorial
+Data Structures Tutorial
+Operating System Tutorial
+Computer Network Tutorial
+DAA Tutorial
+Computer Organization Tutorial
+Software Engineering Tutorial
+Data Mining Tutorial
+Web Technology
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+Jquery Tutorial
+Angular 8 Tutorial
+React Tutorial
+React Native Tutorial
+Node.js Tutorial
+PHP
+PHP Tutorial
+MySQL Tutorial
+Laravel Tutorial
+WordPress Tutorial
+CodeIgniter Tutorial
+Software Testing
+Software Testing Tutorial
+Selenium Tutorial
+JIRA Tutorial
+JMeter Tutorial
+Postman Tutorial
+TestNG Tutorial
+SoapUI Tutorial
+Cucumber Tutorial
+Interview
+×
+Technical Interview
+Python Interview Questions
+Java Interview Questions
+.Net Interview Questions
+C++ Interview Questions
+React Interview Questions
+Node.js Interview Questions
+Angular Interview Questions
+SQL Interview Questions
+HR Interview Questions
+Java Interview
+Spring Boot Interview Questions
+Spring Interview Questions
+Hibernate Interview Questions
+JDBC Interview Questions
+Servlet Interview Questions
+Maven Interview Questions
+Jenkins Interview Questions
+Python
+Django Interview Questions
+Pandas Interview Questions
+Express.js Interview Questions
+Python Coding Interview Questions
+Python Interview Questions for 5 Years
+Web Interview
+HTML Interview Questions
+CSS Interview Questions
+JavaScript Interview Questions
+Jquery Interview Questions
+PHP Interview Questions
+Laravel Interview Questions
+AJAX Interview Questions
+Front-End Developer Interview Questions
+jQuery Interview Questions
+Database Interview
+DBMS Interview Questions
+SQL Interview Questions
+PL/SQL Interview Questions
+Oracle Interview Questions
+MySQL Interview Questions
+MongoDB Interview Questions
+Redis Interview Questions
+B.Tech / MCA
+DBMS Interview Questions
+Operating System Interview Questions
+OOPs Interview Questions
+DSA Interview Questions
+Computer Networks Interview Questions
+Important Interview
+C Interview Questions
+Power BI Interview Questions
+C# Interview Questions
+Excel Interview Questions
+C# Interview Questions
+Machine Learning Interview Questions
+AWS Interview Questions
+Microservices Interview Questions
+MySQL Interview Questions
+Software Testing Interview
+Manual Testing Interview Questions
+Selenium Interview Questions
+API Testing Interview Questions
+ETL Testing Interview Questions
+Mobile Testing Interview Questions
+Company Interviews
+IBM Interview Questions
+Adobe Interview Questions
+Microsoft Interview Questions
+Amazon Interview Questions
+TCS Interview Questions
+Wipro Interview Questions
+Accenture Interview Questions
+Compiler
+×
+Online Compilers
+Python Online Compiler
+Java Online Compiler
+PHP Online Compiler
+C Online Compiler
+C++ Online Compiler
+HTML Online Compiler
+JavaScript Online Compiler
+TypeScript Online Compiler
+R Online Compiler
+Swift Online Compiler
+Kotlin Online Compiler
+Go Online Compiler
+C# Online Compiler
+Perl Online Compiler
+Groovy Online Compiler
+HTML, CSS & JavaScript Online Editor
+Multiple Choice Questions
+Python MCQ
+Java MCQ
+PHP MCQ
+C Programming MCQ
+C++ MCQ
+HTML mcq
+JavaScript MCQ
+SQL MCQ
+Operating System MCQ
+Computer Fundamental MCQ
+Computer Network MCQ
+DBMS MCQ
+Data Structure MCQ
+Software Engineering MCQ
+Cloud Computing MCQ
+Artificial Intelligence MCQ
+Python
+Java
+JavaScript
+SQL
+C
+C++
+HTML
+CSS
+React
+Node.js
+Spring Boot
+C#
+PHP
+MySQL
+MongoDB
+AI
+ML
+DSA
+DBMS
+OS
+Aptitude
+Reasoning
+C Tutorial
+C Tutorial
+History of C
+Features of C
+How to install C
+First C Program
+Compilation Process in C
+printf scanf
+Variables in C
+Data Types in c
+Keywords in c
+C Identifiers
+C Operators
+C Comments
+C Format Specifier
+C Escape Sequence
+ASCII value in C
+Constants in C
+Literals in C
+Tokens in C
+C Boolean
+Static in C
+Programming Errors in C
+Compile time vs Runtime
+Conditional Operator in C
+Bitwise Operator in C
+2s complement in C
+C Fundamental Test
+Difference between Compiler and Interpreter
+Structure of C Program
+What is Programming Language?
+C Control Statements
+C if-else
+C switch
+if-else vs switch
+C Loops
+C do-while loop
+C while loop
+C for loop
+Nested Loops in C
+Infinite Loop in C
+C break
+C continue
+goto Statement in C
+Type Casting
+C Control Statement Test
+C Functions
+Functions in C
+Call: Value & Reference
+Recursion in c
+Storage Classes in C
+C Functions Test
+C Array
+C Arrays
+Two Dimensional Array in C | 2-D Array
+Return an Array in C
+Array to Function
+C Array Test
+C Pointers
+C Pointers
+C Pointer to Pointer
+C Pointer Arithmetic
+Dangling Pointers in C
+sizeof() operator in C
+const Pointer in C
+void pointer in C
+C Dereference Pointer
+Null Pointer in C
+C Function Pointer
+Function pointer as argument in C
+C Pointers Test
+C Dynamic Memory
+Dynamic Memory Allocation in C
+C Strings
+String in C
+C gets() & puts()
+C String Functions
+C strlen()
+C strcpy()
+C strcat()
+C strcmp()
+C strrev()
+C strlwr()
+C strupr()
+C strstr()
+C String Test
+C Math
+C Math Functions
+C Structure Union
+Structures in C
+typedef in C
+C Array of Structures
+C Nested Structure
+Structure Padding in C
+C Union
+C Structure Test
+C File Handling
+C File Handling
+C fprintf() fscanf()
+C fputc() fgetc()
+C fputs() fgets()
+C fseek()
+C rewind()
+C ftell()
+C Preprocessor
+C Preprocessor Directives
+C Macros
+C #include
+C #define
+C #undef
+C #ifdef
+C #ifndef
+C #if
+C #else
+C #error
+C #pragma
+C Preprocessor Test
+C Command Line
+Command Line Arguments
+C Programs
+Basic C Programs
+Fibonacci Series
+Prime Number
+Palindrome Number
+C program to compare the two strings
+Strings Concatenation in C
+Factorial
+Armstrong Number
+Sum of digits
+Count the number of digits in C
+Reverse Number
+Swap Number
+Print "Hello" without ;
+Assembly code in C
+C program without main
+Matrix Multiplication
+Decimal to Binary
+Number in Characters
+Alphabet Triangle
+Number Triangle
+Fibonacci Triangle
+Hexadecimal to Binary
+Hexadecimal to Decimal
+Octal to Hexadecimal in C
+Strong number in C
+Star Program in C
+itoa Function in C
+Extra Long Factorials in C
+Leap year program in C
+Perfect Number Program in C
+Variables vs Constants
+Round Robin Program in C with Output
+C Program to find the roots of quadratic equation
+Type Casting vs Type Conversion
+How to run a C program in Visual Studio Code
+Modulus Operator in C/C++
+Sum of first N natural numbers in C
+Big O Notation in C
+LCM of two numbers in C
+while loop vs do-while loop in C
+Memory Layout in C
+Balanced Parenthesis in C
+Binary to Decimal Number in C
+GCD of two numbers in C
+Getchar() function in C
+flowchart in C
+Simpson Method
+Pyramid Patterns in C
+Random Function in C
+Floyd's Triangle in C
+C Header Files
+abs() function in C
+Atoi() function in C
+Structure Pointer in C
+sprintf() in C
+Range of Int in C
+C Program to convert 24 Hour time to 12 Hour time
+What is double in C
+What is the main in C
+Calculator Program in C
+Calloc in C
+user-defined vs library function in C
+Memset C
+ASCII Table in C
+Static function in C
+Reverse a String in C
+Twin Prime Numbers in C
+strchr() function in C
+Power Function in C
+Malloc in C
+Table Program in C
+Types of Recursion in C
+Convert Uppercase to Lowercase in C
+Unary Operator in C
+Arithmetic Operator in C
+Ceil Function in C
+Relational Operator in C
+Assignment Operator in C
+Pre-increment and Post-increment Operator in C
+Pointer vs array in C
+Restrict keyword in C
+The exit() function in C
+Const Qualifier in C
+Sequence Points in C
+Anagram in C
+Increment and Decrement Operators in C
+Logical AND Operator in C
+Shift Operators in C
+Near, Far, and Huge pointers in C language
+Magic Number in C
+Remove Duplicate Elements from an Array in C
+Generic Linked list in C
+isalnum() function in C
+isalpha() function in C
+Bisection Method in C
+snprintf() function in C
+Remove an element from an array in C
+Square Root in C
+isprint() function in C
+isdigit() function in C
+isgraph() function in C
+Logical NOT (!) Operator in C
+Self-referential structure
+Break Vs. Continue in C
+For vs. While loop in C
+Abort() Function in C
+Assert in C
+Floor() Function in C
+memcmp() in C
+Find Day from Day in C without Using Function
+Find Median of 1D Array Using Functions in C
+Find Reverse of an Array in C Using Functions
+Find Occurrence of Substring in C using Function
+Find out Power without Using POW Function in C
+Exponential() in C
+Float in C
+islower() in C
+memcpy() in C
+memmove() in C
+Matrix Calculator in C
+Bank Account Management System
+Library Management System in C
+8th Sep - Calendar Application in C
+8th Sep - va_start() in C programming
+8th Sep - Ascii vs Unicode
+Student Record System in C
+Contact Management System in C
+Cricket Score Sheet in C
+C/C++ Tricky Programs
+Clearing the Input Buffer in C/C++
+In-place Conversion of Sorted DLL to Balanced BST
+Merge Two Balanced Binary Search Trees
+Responsive Images in Bootstrap with Examples
+Why can't a Priority Queue Wrap around like an Ordinary Queue
+Customer Billing System in C
+Builtin functions of GCC compiler
+Integer Promotions in C
+Bit Fields in C
+Department Management System in C
+Local Labels in C
+School Billing System in C
+Banking Account System in C using File handling
+Data Structures and Algorithms in C - Set 1
+Data Structures and Algorithms in C - Set 2
+Employee Record System in C
+Hangman Game in C
+Hospital Management System in C
+Number of even and odd numbers in a given range
+qsort() in C
+Quiz game in C
+An Array of Strings in C
+Peak element in the Array in C
+Move all negative elements to one side of an Array-C
+Reverse an Array in C
+3 way merge sort in c
+Segregate 0s and 1s in an array
+Articulation Points and Bridges
+Execution of printf with ++ Operators
+Understanding the extern Keyword in C
+Banker's Algorithm in C
+FIFO Page Replacement Algorithm in C
+Kruskal's Algorithm in C
+FCFS Program in C
+Triple DES Algorithm in C
+Window Sliding Technique in C
+Sleeping Barber Problem Solution in C
+How to Add Matrix in C
+C Program to Demonstrate fork() and pipe()
+Deadlock Prevention using Banker's Algorithm in C
+Simple Stopwatch Program in C
+Add Node to Linked List in C
+How to Add two Array in C
+Algorithm in C language
+Add Digits of Number in C
+Add Element in Array in C
+Add String in C
+Add Two Matrices in C
+Add two numbers using Pointer in C
+Order of Complexity in C
+Pattern Matching Algorithm in C
+Adaline Program in C
+Adam Number in C Program
+Adam Number or not in C Program
+Add 2 Matrix in C
+Add 2 Strings in C
+Add a Character to a String in C
+Best Compiler for C Programming
+C Program to Convert Infix to Postfix
+C Program For Printing Inverted Pyramid
+Control String in C Language
+How to Find Time Complexity of a Program in C
+Top C Projects in 2023
+Convert a Char Array into a Double in C
+Conio.h in C
+Decision-Making Statements in C
+What is Hashing in C
+Bubble Sort Program in C
+Comma Operator in C
+Control Statements in C
+ctype.h in C
+First Fit Algorithm in C
+Hello World Program in C
+Logical operator in c
+Memory leak in C
+Null character in C
+Operator precedence in C
+Putchar() function in C
+Quick Sort in C
+realloc in C
+Special operator in C
+Volatile Keyword in C
+CRC program in C
+Binary search algorithm in C
+Kruskal algorithm in C
+Transpose of Matrix in C
+Actual and Formal Parameters in C
+Bit Stuffing in C
+Difference between C and Embedded C
+Dynamic Array in C
+Jump statement in C
+Multidimensional array in C
+Priority scheduling program in C
+Pseudo code in C
+Data Structure in C
+Difference between switch statement and if-else-if ladder statement in C
+BFS Program in C
+Nested if else statement in C
+Pattern Programs in C
+SJF Scheduling program in C
+Stdlib.h in C
+User defined function in C
+How to use Pointers in C language
+What is a Storage Class in C
+What is short int in C
+Insertion Sort in C
+Queue in C
+Segmentation Fault in C
+FUNCTION PROTOTYPE IN C
+Iteration in C
+One dimensional array in C
+Overview of Structures and Unions in C
+Difference between 1D and 2D array in C
+Differences between Float and Double in C
+Fizz Buzz Program in C
+Formatted and Unformatted Input Output in C
+Garbage collection in C
+Library function in C
+Strtok() function in C
+Symbolic Constants in C
+What is Garbage Value in C
+What is size_t in C
+What is the use of "\r" in C
+Address operator in C
+BOOTHS Algorithm in C
+Character stuffing program in C
+Difference between printf() and scanf() in C
+Global Variable in C
+Lexical Analyzer in C
+Pascal Triangle in C
+Postfix Evaluation in C
+Strncmp() function in C
+Type Qualifiers in C
+Unsigned int in C
+What is Perror in C
+Difference Between Array and String in C
+Execvp() Function in C
+Explain Recursion with Example in C
+Contiguous file allocation program in C
+ENTRY CONTROL LOOP IN C
+EXIT CONTROL LOOP IN C
+Fopen() function in C
+Hollow Diamond Pattern in C
+Register Keyword in C
+Strcmpi() function in C
+Strtol() function in C
+System function in C
+Difference between parameter and arguments in C
+Execlp() function in C
+Fabs() function in C
+Recursive Descent Parser Program in C
+Difference Between exit() and return() in C
+Skill rack solution in C
+Stack overflow in C
+Static_cast in C
+Stdin and Stdout in C
+Strrchr() function in C
+Strsep() function in C
+Strcspn() function in C
+Strtoul() Function in C
+Area of Circle program in C
+Branching statements in C
+Bubble Sort in C
+C program to adding of two binary numbers
+C program to Search an Element in an Array
+Difference between Object code and Source code
+Electricity bill program in C
+RSA algorithm in C
+Singly linked list in C
+Stack in C
+Strcspn() function in C
+Strftime() in C
+Strlen() function in C
+Swap first and last digit of a number in C
+Addition program in C
+clrscr in C
+Distance Vector Routing Program in C
+Even odd programs in C
+How to Access Structure Members in C
+How to Change C Users Username in Windows 10
+Linear Search Program in C
+Symmetric Matrix in C
+fgets() function in C
+Length of array in C
+MULTITHREADING IN C
+Number pattern program in C
+Strcpy() function in C
+Best Books for C Programming
+C Program to Calculate Area and Circumference of Circle
+Character Set in C
+Array Rotation in C
+Random Access File in C
+atan2() Function in C
+Digital Clock in C Programming
+How Many IP Addresses have a class c Network
+How Many Tokens in C
+Linked error in C
+Lvalue and Rvalue in C
+Auto and Static Variable in C
+feof() function in C
+Gauss Jordan Method in C
+Gauss Seidel Method in C
+Getw() and Putw() function in C
+lseek() in C
+usleep() function in C
+First and Follow Program in C
+Interpolation Search in C
+strdup() function in C
+Generic Keyword in C
+getopt() function in C
+getpid() and getppid() function in C
+Magic Square Function in C
+Reentrant Function in C
+Return Statement in C
+Travelling Salesman Problem in C
+Double Float in C
+fseek() vs rewind() in C
+How to create your own header files in C
+Implicit type conversion in C
+Inter Function Communication in C
+kbhit() in C
+Multiline Macros in C
+Scanset in C
+Tail Recursion in C
+C program for currency denomination
+C program for secant method
+Fread() Function in C
+Hangman game program in C
+Hilbert curve program in C
+Newton Forward Interpolation in C
+Tower of Hanoi
+Vigenere Cypher Program in C
+C program to print the duplicate elements of an array
+C program to print the largest element in an array
+C program to print the smallest element in an array
+C program to left rotate the elements of an array
+C program to print all disarium numbers between 1 to 100
+C program to right rotate the elements of an array
+C Interview
+MCQ
+C language MCQ
+C language MCQ Part 2
+C Programming Language MCQ Exercise 1
+C Programming Language MCQ Exercise 2
+C Programming Language MCQ Exercise 3
+C Programming Language MCQ Exercise 4
+C programming language MCQ Exercise 5
+Matrix Multiplication in C MCQ Exercise 1
+Matrix Multiplication in C MCQ Exercise 2
+Matrix Multiplication in C MCQ Exercise 3
+Matrix Multiplication in C MCQ Exercise 4
+Reverse a String in C Exercise 1
+Reverse a String in C Exercise 2
+Reverse a string in C Exercise 3
+Reverse a String in C Exercise 4
+Reverse a String in C Exercise 5
+Bubble Sort in C MCQ Exercise 2
+Bubble Sort in C MCQ Exercise 3
+Bubble Sort in C MCQ Exercise 5
+Fibonacci Series in C MCQ Exercise-1
+Fibonacci Series in C MCQ Exercise 2
+Fibonacci series in C MCQ Exercise 3
+Fibonacci series in C MCQ Exercise 4
+Fibonacci series in C MCQ Exercise 5
+Two-Dimensional array in C MCQ Exercise 1
+Two-dimensional array in C MCQ Exercise 2
+Two-dimensional array in C MCQ Exercise 3
+Bubble Sort in C MCQ Exercise 4
+Two-dimensional array in C MCQ Exercise 4
+Two-dimensional array in C MCQ Exercise 5
+Matrix Multiplication in C MCQ Exercise 5
+Call by Value and Call by Reference in C MCQ Exercise 1
+Call by Value and Call by Reference in C MCQ Exercise 2
+Call by Value and Call by Reference in C MCQ Exercise 3
+Call by Value and Call by Reference in C MCQ Exercise 4
+Call by value and Call by reference in C MCQ Exercise 5
+Round Robin Program in C MCQ Exercise 1
+Round Robin Program in C MCQ Exercise 2
+Round Robin Program in C MCQ Exercise 3
+Star program in C MCQ Exercise 1
+Star program in C MCQ Exercise 2
+Star program in C MCQ Exercise 3
+Star program in C MCQ Exercise 4
+C Programming Test
+C Programming Test
+C Fundamental Test
+C Fundamental 2
+C Fundamental 3
+C Fundamental 4
+C Control Test
+C Control Statement 2
+C Control Statement 3
+C Control Statement 4
+C Function Test
+C Functions 2
+C Functions 3
+C Functions 4
+C Array Test
+C Array 2
+C Array 3
+C Array 4
+C Pointers Test
+C Pointers 2
+C Pointers 3
+C Pointers 4
+C String Test
+C String 2
+C String 3
+C String 4
+C Structure Test
+C Structure 2
+C Structure 3
+C Structure 4
+C Preprocessor Test
+C Preprocessor 3
+Math
+Prime Numbers List
+Composite Numbers List
+Square Numbers List
+Binary Numbers List
+Fibonacci Numbers List
+Ounces in a Cup
+Ounces in a Pound
+Ounces in a Gallon
+Ounces in a Liter
+Ounces in a Pint
+Ounces in a Quart
+Ounces in a Tablespoon
+C Misc
+C Expressions
+Data Segments
+Flow of C Program
+Classification of Programming Languages
+Enum in C
+What is getch() in C
+What is the function call in C
+typedef vs define in C
+#elif in C
+C Program for Polynomial Addition
+C Program to Calculate Income Tax
+C program to find the GCD and LCM of two numbers
+Call by address in C
+Differences between C and C#
+ftok() function in C
+How to print double quotes in C
+Left Factoring Program in C
+LL(1) Parser Program in C
+LRU Page Replacement Algorithm C
+Quadratic Probing Program in C
+Runge-kutta method in C
+Variadic Functions in C
+Linear search Algorithm in C
+Difference between pre-increment and pre-decrement in C
+Expression Evaluation using stack in C
+fclose() function in C
+How to create a histogram in C
+Monoalphabetic cipher program in C
+C Boolean Operators
+Octal Number in C
+Opendir in C
+Print 1 to 10 Numbers in C
+Print Even Numbers From 1 to 100 in C
+Solve Taylor Series for Exponential function(ex) using C
+C program to compute quotient and remainder
+C program to find normal and trace of Matrix
+Double Ended Queue in C
+Linked file allocation program in C
+Mode program in C
+Non-recursive function in C
+Print Z pattern in C
+Rail fence Cipher in C
+Sеlеction Sort in C
+Setsockopt function in C
+Single-level directory Program in C
+Counter-controlled loop in C
+Counting sort in C
+Difference between text file and binary file in C
+Delay in C
+Buffer Overflow Attack in C
+C Program to find the Parameter and Area of the Rectangle
+Indexed File Allocation Program in C
+Logical Error in C
+Modulo of Negative Numbers in C
+va_list in C
+Worst fit algorithm in C
+C program to print square patterns of numbers
+Deadlock detection program in C
+Double hashing in C
+Plus Minus hackerrank solution in C
+Difference between the malloc(), calloc(), realloc() functions in C
+Linker Error in C
+Optimal Page Replacement Algorithm in C
+Standard Deviation program in C
+C program to draw a tree
+Strtok_r in C
+Ispunct() function in C
+Find the Maximum Element in an Array that is first increasing and then decreasing in C
+C program for the hypotenuse of a right-angled triangle
+C Program to Implement Grep, Egrep and Fgrep Commands
+Chdir() in C
+Debugging in C
+Nested switch case in C
+Row major and column major program in C
+Spiral pattern in C
+Spiral Order Traversal of a Tree using Recursion in C
+Magic Square matrix in C
+C Program for Red Black Tree Insertion
+C Program to print all Non Repeated Elements in an Array
+Array Decay in C
+fcvt() in C
+Zombie and Orphan Processes in C
+Abundant number program in C
+Difference between a Script file and a Binary file in C
+nanosleep() function in C
+C Program for Sentinel Linear Search
+Difference between Constant and Literals in C
+Differences between the Internal and external static variables in C
+Program to detect tokens in C
+Tail Call Optimization in C
+asctime() and asctime_s() functions in C
+C Program to Implement Levenshtein Distance Computing Algorithm
+clocale header file in C
+Common Memory/Pointer Related bugs in C Programs
+Gety() function in C
+How to Write Your Own printf() in C
+moverel() function in C
+strpbrk() function in C
+textwidth() function in C
+pthread_getcpuclockid() function in C
+Ackermann function in C
+complex.h header file in C
+Relational Database from CSV Files in C
+Segmentation Fault (SIGSEGV) vs Bus Error (SIGBUS) in C
+Why rand() function always give the Same Value in C
+Char_bit in C
+Difference between Static and Shared libraries in C
+How to print % using printf() in C
+Scan-line Polygon Filling in C
+Sign extend a nine-bit number in C
+Strtof function in C
+C program to calculate the sum of series using a predefined Function
+C Program to Show Thread Interface and Memory Consistency Errors
+Effect of adding whitespace in the scanf() function in C
+Interesting facts about C Language
+A chain of pointers in C
+Typed Pointers in C
+Untyped pointers in C
+Callbacks in C
+Difference between Identifiers and Variables in C
+Difference between Sentinel and Counter Controlled Loop in C
+setjump() and longjump() in C
+setenv() function in C
+X-Macros in C
+# and ## Operators in C
+2048 Game in C
+Difference between a Dangling pointer and a Void pointer
+Difference between Array and Union in C
+Difference between C and Dart
+Difference between C Language and LISP Language
+Hygienic Macros in C
+pthread_cancel() in C
+pthread_self() in C
+Online Voting System in C
+Buffer in C Programming
+Chain processes vs Fan of processes using fork() function in C
+Simple Personal Diary Management System in C
+Bakhshali Approximation for computing square roots in C
+Difference between Header file and Library in C
+Popen() function in C
+Difference between Tokens and Terminals in C
+sigaction() function in C
+Squeeze Function in C
+Difference between puts() and printf() for printing a string in C
+fsetpos() (Set File Position) in C
+Difference between Static variables and Register variables in C
+A Peterson Graph Problem in C
+Jagged Array or Array of Arrays in C
+tgmath.h in C
+Difference between Static allocation and Stack allocation in C
+C Program for Two Pointer Technique
+Difference between system() and execl() call in C
+Jacobi iteration method in C
+Superperfect Number in C
+Dino Game in C
+Stern-Brocot Sequence in C
+hypot() Function in C
+Kahn's Algorithm in C
+scalbn() function in C
+copysign() Function in C
+Erfc() function in C
+Extract bits in C
+How to Create a Static Library in C
+Strfry() function in C
+iconv_close() function in C
+Sbrk() function in C
+Sine series in C
+tgamma() function in C
+Freopen() function in C
+C17 Standards
+Fileno() function in C
+nextafter() Function in C
+fdim() Function in C
+posix_spawn in C
+C Program to Traverse a Multidimensional Array
+Johnson Algorithm in C
+Kosaraju's Algorithm in C
+Mo's Algorithm in C
+Optimal Merge Pattern in C
+tss_create function in C
+When to use Enum instead of Define in C
+Bubble Sort in C MCQ Exercise 1
+next →
+Tutorial
+Compiler
+Programs
+Array
+Structure
+Interview Questions
+C Tutorial | Learn C Programming Language
+10 Apr 2025
+|
+4 min read
+C language
+Tutorial with programming approach for beginners and professionals, helps you to understand the C language tutorial easily. Our C tutorial explains each topic with programs.
+The C Language is developed by Dennis Ritchie for creating system applications that directly interact with the hardware devices such as drivers, kernels, etc.
+C programming is considered as the base for other programming languages, that is why it is known as mother language.
+C Program
+#include <stdio.h>
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+Compile and Run C Program
+A detailed description of above program is given in next chapter.
+C Programming Definition
+It can be defined by the following ways:
+Mother language
+System programming language
+Procedure-oriented programming language
+Structured programming language
+Mid-level programming language
+1) C as a mother language
+C language is considered as the mother language of all the modern programming languages because
+most of the compilers, JVMs, Kernels, etc. are written in C language
+, and most of the programming languages follow C syntax, for example, C++, Java, C#, etc.
+It provides the core concepts like the
+array
+,
+strings
+,
+functions
+,
+file handling
+, etc. that are being used in many languages like
+C++
+,
+Java
+,
+C#
+, etc.
+2) C as a system programming language
+A system programming language is used to create system software. C language is a system programming language because it
+can be used to do low-level programming (for example driver and kernel)
+. It is generally used to create hardware devices, OS, drivers, kernels, etc. For example, Linux kernel is written in C.
+It can't be used for internet programming like Java, .Net, PHP, etc.
+3) C as a procedural language
+A procedure is known as a function, method, routine, subroutine, etc. A procedural language
+specifies a series of steps for the program to solve the problem
+.
+A procedural language breaks the program into functions, data structures, etc.
+C is a procedural language. In C, variables and function prototypes must be declared before being used.
+4) C as a structured programming language
+A structured programming language is a subset of the procedural language.
+Structure means to break a program into parts or blocks
+so that it may be easy to understand.
+In the C language, we break the program into parts using functions. It makes the program easier to understand and modify.
+5) C as a mid-level programming language
+C is considered as a middle-level language because it
+supports the feature of both low-level and high-level languages
+. C language program is converted into assembly code, it supports pointer arithmetic (low-level), but it is machine independent (a feature of high-level).
+A
+Low-level language
+is specific to one machine, i.e., machine dependent. It is machine dependent, fast to run. But it is not easy to understand.
+A
+High-Level language
+is not specific to one machine, i.e., machine independent. It is easy to understand.
+C Basics
+What is C Language
+History of C
+Features of C
+How to install C
+First C Program
+Flow of C Program
+printf scanf
+Variables in C
+Data Types in c
+Keywords in c
+C Operators
+C Comments
+C Escape Sequence
+Constants in C
+C Control Statements
+C if-else
+C switch
+C Loops
+C do-while loop
+C while loop
+C for loop
+C break
+C continue
+C goto
+Type Casting
+C Functions
+What is function
+Call: Value & Reference
+Recursion in c
+Storage Classes
+C Array
+C Array
+2-D Array
+Array to Function
+C Pointers
+C Pointers
+C Pointer to Pointer
+C Pointer Arithmetic
+C Dynamic Memory
+Dynamic memory
+C Strings
+String in C
+C gets() & puts()
+C String Functions
+C strlen()
+C strcpy()
+C strcat()
+C strcmp()
+C strrev()
+C strlwr()
+C strupr()
+C strstr()
+C Math
+C Math Functions
+C Structure Union
+C Structure
+C Array of Structures
+C Nested Structure
+C Union
+C Structure Test
+C File Handling
+C File Handling
+C fprintf() fscanf()
+C fputc() fgetc()
+C fputs() fgets()
+C fseek()
+C rewind()
+C ftell()
+C Preprocessor
+C Preprocessor
+C Macros
+C #include
+C #define
+C #undef
+C #ifdef
+C #ifndef
+C #if
+C #else
+C #error
+C #pragma
+C Command Line Arguments
+Command Line Arguments in C
+C Programming Test
+C Programming Test
+C Programs
+Top 10+ C Programs
+Fibonacci Series
+Prime Number
+Palindrome Number
+Factorial
+Armstrong Number
+Sum of digits
+Reverse Number
+Swap Number
+Print "Hello" without ;
+Assembly code in C
+C program without main
+Matrix Multiplication
+Decimal to Binary
+Number in Characters
+Alphabet Triangle
+Number Triangle
+Fibonacci Triangle
+Interview Questions
+C Interview Questions
+Prerequisite
+Before learning C Programming, you must have the basic knowledge of Computer Fundamental.
+Audience
+Our C Programming tutorial is designed to help beginners and professionals.
+Problem
+We assure that you will not find any mistake in this C Language Tutorial. But if there is any mistake, please post the problem in the contact form.
+Next Topic
+History of C
+next →
+Related Posts
+ASCII value in C
+What is ASCII code? The full form of ASCII is the American Standard Code for information interchange. It is a character encoding scheme used for electronics communication. Each character or a special character is represented by some ASCII code, and each ascii code occupies 7 bits in...
+3 min read
+C Comments
+Comments in C Comments in C language are used to provide information about lines of code. It is widely used for documenting code. There are 2 types of comments in the C language. Single Line Comments Multi-Line Comments Single Line Comments Single line comments are represented by double slash \\....
+1 min read
+Constants in C
+In programming languages like C, constants are essential because they give you a mechanism to store unchanging values that hold true throughout the course of the program. These numbers may be used for several things, such as creating mathematical constants or giving variables set values....
+5 min read
+Structure of C Program
+Structure of&nbsp;C Program The structure of a C program means the specific structure to start the programming in the C language. Without a proper structure, it becomes difficult to analyze the problem and the solution. It also gives us a reference to write more complex programs. Let's...
+9 min read
+Keywords in c
+Keywords in C Keywords in C are reserved words that have predefined meanings and are part of the C language syntax. These keywords cannot be used as variable names, function names, or any other identifiers within the program except for their intended purpose. They are used...
+10 min read
+History of C
+Language language is interesting to know. Here we are going to discuss a brief history of the c language. C programming language was developed in 1972 by Dennis Ritchie at bell laboratories of AT&amp;T (American Telephone &amp; Telegraph), located in the U.S.A. Dennis Ritchie is known...
+1 min read
+Static in C
+Static is a keyword used in C programming language. It can be used with both variables and functions, i.e., we can declare a static variable and static function as well. An ordinary variable is limited to the scope in which it is defined, while the scope...
+5 min read
+Data Types in c
+Data Types in C A data type specifies the type of data that a variable can store such as integer, floating, character, etc. There are the following data types in C language. Types Data Types Basic Data Type int, char, float, double Derived Data Type array, pointer, structure, union Enumeration Data Type enum Void Data Type void Basic...
+9 min read
+Literals in C
+What are literals? Literals are the constant values assigned to the constant variables. We can say that the literals represent the fixed values that cannot be modified. It also contains memory but does not have references as variables. For example, const int =10; is a constant integer...
+4 min read
+Conditional Operator in C
+The conditional operator is also known as a ternary operator. The conditional statements are the decision-making statements which depends upon the output of the expression. It is represented by two symbols, i.e., '?' and ':'. As conditional operator works on three operands, so it is also known...
+3 min read
+Subscribe to Tpoint Tech
+We request you to subscribe our newsletter for upcoming updates.
+Subscribe
+Learn Important Tutorial
+Python
+Java
+Javascript
+HTML
+Database
+PHP
+C++
+React
+B.Tech / MCA
+DBMS
+Data Structures
+DAA
+Operating System
+Computer Network
+Compiler Design
+Computer Organization
+Discrete Mathematics
+Ethical Hacking
+Computer Graphics
+Web Technology
+Software Engineering
+Cyber Security
+Automata
+C Programming
+C++
+Java
+.Net
+Python
+Programs
+Control System
+Data Warehouse
+Preparation
+Aptitude
+Reasoning
+Verbal Ability
+Interview Questions
+Company Questions
+We provides tutorials and interview questions of all technology like java tutorial, android, java frameworks
+Contact info
+G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India
+hr@tpointtech.com
++91-9599086977
+Follow us
+Tutorials
+Java
+Data Structures
+C Programming
+C++ Tutorial
+C# Tutorial
+PHP Tutorial
+HTML Tutorial
+JavaScript Tutorial
+jQuery Tutorial
+Spring Tutorial
+Interview Questions
+Microsoft
+Amazon
+Adobe
+Intuit
+Accenture
+Cognizant
+Capgemini
+Wipro
+Tcs
+Infosys
+Online Compiler
+C
+R
+C++
+Php
+Java
+Html
+Swift
+Python
+JavaScript
+TypeScript
+Latest Post
+|
+Tutorials List
+|
+Privacy Policy
+© Copyright 2011 - 2025 TpointTech.com. All Rights Reserved.

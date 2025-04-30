@@ -1,0 +1,1165 @@
+.NET Framework Tutorial - Tpoint Tech
+Tutorials
+×
+Python
+Python Tutorial
+Django Tutorial
+Numpy Tutorial
+Pandas Tutorial
+Tkinter Tutorial
+Pytorch Tutorial
+Flask Tutorial
+OpenCV Tutorial
+Java
+Java Tutorial
+Servlet Tutorial
+JSP Tutorial
+Spring Boot Tutorial
+Spring Framework Tutorial
+Hibernate Tutorial
+JavaFX Tutorial
+Java Web Services Tutorial
+.Net Framework
+.Net Framework Tutorial
+C# Tutorial
+ASP.Net Tutorial
+ADO.Net Tutorial
+WPF Tutorial
+AI, ML and Data Science
+Artificial Intelligence Tutorial
+Machine Learning Tutorial
+Data Science Tutorial
+Deep Learning Tutorial
+TensorFlow Tutorial
+Artificial Neural Network Tutorial
+Matplotlib Tutorial
+Python Scipy Tutorial
+Cloud Technology
+Cloud Computing Tutorial
+AWS Tutorial
+Microsoft Azure Tutorial
+Salesforce Tutorial
+GCP Tutorial
+B.Tech and MCA
+DBMS Tutorial
+Data Structures Tutorial
+Operating System Tutorial
+Computer Network Tutorial
+DAA Tutorial
+Computer Organization Tutorial
+Software Engineering Tutorial
+Data Mining Tutorial
+Web Technology
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+Jquery Tutorial
+Angular 8 Tutorial
+React Tutorial
+React Native Tutorial
+Node.js Tutorial
+PHP
+PHP Tutorial
+MySQL Tutorial
+Laravel Tutorial
+WordPress Tutorial
+CodeIgniter Tutorial
+Software Testing
+Software Testing Tutorial
+Selenium Tutorial
+JIRA Tutorial
+JMeter Tutorial
+Postman Tutorial
+TestNG Tutorial
+SoapUI Tutorial
+Cucumber Tutorial
+Interview
+×
+Technical Interview
+Python Interview Questions
+Java Interview Questions
+.Net Interview Questions
+C++ Interview Questions
+React Interview Questions
+Node.js Interview Questions
+Angular Interview Questions
+SQL Interview Questions
+HR Interview Questions
+Java Interview
+Spring Boot Interview Questions
+Spring Interview Questions
+Hibernate Interview Questions
+JDBC Interview Questions
+Servlet Interview Questions
+Maven Interview Questions
+Jenkins Interview Questions
+Python
+Django Interview Questions
+Pandas Interview Questions
+Express.js Interview Questions
+Python Coding Interview Questions
+Python Interview Questions for 5 Years
+Web Interview
+HTML Interview Questions
+CSS Interview Questions
+JavaScript Interview Questions
+Jquery Interview Questions
+PHP Interview Questions
+Laravel Interview Questions
+AJAX Interview Questions
+Front-End Developer Interview Questions
+jQuery Interview Questions
+Database Interview
+DBMS Interview Questions
+SQL Interview Questions
+PL/SQL Interview Questions
+Oracle Interview Questions
+MySQL Interview Questions
+MongoDB Interview Questions
+Redis Interview Questions
+B.Tech / MCA
+DBMS Interview Questions
+Operating System Interview Questions
+OOPs Interview Questions
+DSA Interview Questions
+Computer Networks Interview Questions
+Important Interview
+C Interview Questions
+Power BI Interview Questions
+C# Interview Questions
+Excel Interview Questions
+C# Interview Questions
+Machine Learning Interview Questions
+AWS Interview Questions
+Microservices Interview Questions
+MySQL Interview Questions
+Software Testing Interview
+Manual Testing Interview Questions
+Selenium Interview Questions
+API Testing Interview Questions
+ETL Testing Interview Questions
+Mobile Testing Interview Questions
+Company Interviews
+IBM Interview Questions
+Adobe Interview Questions
+Microsoft Interview Questions
+Amazon Interview Questions
+TCS Interview Questions
+Wipro Interview Questions
+Accenture Interview Questions
+Compiler
+×
+Online Compilers
+Python Online Compiler
+Java Online Compiler
+PHP Online Compiler
+C Online Compiler
+C++ Online Compiler
+HTML Online Compiler
+JavaScript Online Compiler
+TypeScript Online Compiler
+R Online Compiler
+Swift Online Compiler
+Kotlin Online Compiler
+Go Online Compiler
+C# Online Compiler
+Perl Online Compiler
+Groovy Online Compiler
+HTML, CSS & JavaScript Online Editor
+Multiple Choice Questions
+Python MCQ
+Java MCQ
+PHP MCQ
+C Programming MCQ
+C++ MCQ
+HTML mcq
+JavaScript MCQ
+SQL MCQ
+Operating System MCQ
+Computer Fundamental MCQ
+Computer Network MCQ
+DBMS MCQ
+Data Structure MCQ
+Software Engineering MCQ
+Cloud Computing MCQ
+Artificial Intelligence MCQ
+Python
+Java
+JavaScript
+SQL
+C
+C++
+HTML
+CSS
+React
+Node.js
+Spring Boot
+C#
+PHP
+MySQL
+MongoDB
+AI
+ML
+DSA
+DBMS
+OS
+Aptitude
+Reasoning
+.Net Framework
+.NET Framework
+CLR
+FCL
+Managed code and Unmanaged code in .NET
+C# Tutorial
+C# Tutorial | C Sharp Programming for Beginners
+Java vs C#
+C# History
+C# Features
+C# Example
+C# Variables
+C# Data Types
+C# Operators
+C# Keywords
+C# Control Statement
+C# if-else
+C# switch
+C# For Loop
+C# While Loop
+C# Do-While Loop
+C# Break
+C# Continue
+C# Goto
+C# Comments
+C# Function
+C# Function
+C# Call By Value
+C# Call By Reference
+C# Out Parameter
+C# Arrays
+C# Arrays
+C# Array to Function
+C# Multidimensional Array
+C# Jagged Arrays
+C# Params
+C# Array class
+C# Command Line Args
+C# Object Class
+C# Object and Class
+C# Constructor
+C# Destructor
+C# this
+C# static
+C# static class
+C# static constructor
+C# Structs
+C# Enum
+C# Properties
+C# Properties
+C# Inheritance
+C# Inheritance
+C# Aggregation
+C# Polymorphism
+C# Member Overloading
+C# Method Overriding
+C# Base
+Polymorphism in C#
+C# Sealed
+C# Abstraction
+Abstract class in C#
+C# Interface
+C# Namespace
+C# Namespaces
+C# Access Modifiers
+C# Encapsulation
+C# Strings
+C# Strings
+C# Exception Handling
+C# Exception Handling
+C# try/catch
+C# finally
+C# Custom Exception
+C# checked unchecked
+C# SystemException
+C# File IO
+C# FileStream
+C# StreamWriter
+C# StreamReader
+C# TextWriter
+C# TextReader
+C# BinaryWriter
+C# BinaryReader
+C# StringWriter
+C# StringReader
+C# FileInfo
+C# DirectoryInfo
+C# Serialization
+C# Deserialization
+C# System.IO
+C# Collections
+C# Collections
+C# List<T>
+C# HashSet<T>
+C# SortedSet<T>
+C# Stack<T>
+C# Queue<T>
+C# LinkedList<T>
+C# Dictionary<K,V>
+C# SortedDictionary<K,V>
+C# SortedList<K,V>
+C# Generics
+C# Generics
+C# Delegates
+C# Delegates
+C# Reflection
+C# Reflection
+Anonymous Function
+Anonymous Function
+C# Multithreading
+C# Multithreading
+C# Thread Life Cycle
+C# Thread class
+C# Main Thread
+C# Thread Example
+C# Thread Sleep
+C# Thread Abort
+C# Thread Join
+C# Thread Name
+C# ThreadPriority
+C# Synchronization
+C# Synchronization
+C# Advanced Topics
+Design Patterns in C#
+Dependency Injection in C#
+C# 2.0
+Partial types
+Iterators
+Nullable types
+Delegate Covariance
+Delegate inference
+Static classes
+C# 3.0
+Anonymous types
+Extension methods
+Query expression
+Partial method
+Implicitly typed local variables
+Object and collection initializers
+Auto-Implemented properties
+C# 4.0
+Dynamic binding
+Named and optional arguments
+C# 5.0
+Asynchronous methods
+Caller info attributes
+C# 6.0
+Using static directive
+Exception filters
+Await in catch/finally blocks
+Auto property initializers
+Default values for getter-only properties
+Expression-bodied members
+Null propagator
+String interpolation
+Nameof operator
+Dictionary initializer
+C# 7.0
+Pattern matching
+Tuples
+Deconstruction
+Local functions
+Digit separator
+Binary literals
+Ref returns and locals
+Expression bodied constructors and finalizers
+Expression bodied getters and setters
+Out variables
+C# 7.1
+Async main
+Default expressions
+C# Programs
+C# Programs
+Fibonacci Series
+Prime Number
+Palindrome Number
+Factorial
+Armstrong Number
+Sum of digits
+C# Program to Reverse Number
+Swap Number
+Decimal to Binary
+Number in Characters
+Alphabet Triangle
+Number Triangle
+Fibonacci Triangle
+C# Interview Questions
+C# Interview Questions
+C# Misc
+Events in C#
+Regular Expression in C#
+DateTime in C#
+Type Casting in C#
+ListBox Control in C#
+C# ReadLine() Method
+C# Operator Overloading
+3-tier architecture in c#
+C# Custom Attribute
+C# Game Development
+C# Rename File
+C# Validate Email
+C# WebClient
+C# XML Parser
+Parse JSON in C#
+Priority Queue C#
+RestClient C#
+Shadowing in C#
+Task vs Thread C#
+Unmanaged Code in C#
+C# Socket Programming
+C# Unit Test Framework
+Convert DataTable to List in C#
+Escape Sequence in C#
+NHibernate C#
+'any' in C#
+Advanced C#
+AES Encryption C#
+What is DLL in C#
+GridView C#
+HTML Encode C#
+HTML to PDF C#
+MSDN C#
+NET Architecture in C#
+C# Books for Beginners
+ORM C#
+SignalR in C#
+throw vs throw ex C#
+C# Marshal
+C# Regex Tester
+Clean Architecture C#
+Tutlane C#
+Type of Assembly in C#
+Unity Container C#
+Fiddle C#
+MSMQ C#
+RabbitMQ C#
+ResX File C#
+What is ienumerable in C#
+Difference between readonly and Constant in C#
+How to Call Stored Procedure in C#
+Boxing and Unboxing in C#
+Singleton Design pattern in C#
+Convert double to int in C#
+Difference between struct and class in C#
+Error logging in C#
+Throw Keyword in C#
+Custom controls in C#
+Foreach loop in C#
+Volatile Keyword in C#
+Private constructor in C#
+IEnumerable vs IQueryable in C#
+StringCollection Class in C#
+Liskov Substitution Principle in C#
+Stack.Pop() Method in C#
+Byte.MaxValue Field in C#
+Char.TryParse () Method in C#
+SByte Struct Fields in C#
+Shallow Copy and Deep Copy in C#
+Type.FindMembers() Method in C#
+Char.Equals () Method in C#
+Char.IsHighSurrogate(String, Int32) Method in C#
+Char.IsSeparator () Method in C#
+Char.IsWhiteSpace() Method in C#
+DateTimeOffset.FromUnixTimeMilliseconds() Method in C#
+Decimal.ToInt32() Method in C#
+Difference between Properties and Indexers in C#
+Difference between SortedList and SortedDictionary in C#
+Difference between Static Constructors and Non-Static Constructors in C#
+Double.IsInfinity() Method in C#
+Double.IsNaN() Method in C#
+File.AppendAllLines(String, IEnumerable String, Encoding) Method in C#
+File.GetLastWriteTimeUtc() method in C#
+IndexOfAny() Method in C#
+List.TrimExcess Method in C#
+Object.MemberwiseClone() in C#
+Queue.Synchronized() in C#
+Random.NextDouble() Method in C#
+ValueTuple Struct in C#
+C# Program to Demonstrate the IList Interface
+C# Program to Demonstrate the Use of FullName Property
+Char.IsPunctuation() Method in C#
+Char.IsSurrogate(String, Int32) Method in C#
+CharEnumerator.GetHashCode() Method in C#
+CharEnumerator.ToString() Method in C#
+Char.ToLowerInvariant(Char) Method in C#
+Console.SetIn() Method in C#
+Difference between delegates and interfaces in C#
+Difference between JavaScript and C#
+How to create 7-Tuple or Septuple in C#
+How to implement is functionality without using is keyword in C#
+Index Constructor in C#
+Math.BigMul() Method in C#
+Single.IsFinite() Method in C#
+Array.BinarySearch(Array, Int32, Int32, Object) Method with examples in C#
+Byte.MinValue Field in C#
+Char.ConvertFromUtf32(Int32) Method in C#
+Console.TreatControlCAsInput Property in C#
+Convert.ToSByte(String, IFormatProvider) Method in C#
+Decimal.GetHashCode Method in C#
+Difference between Is and As operator keyword in C#
+File.GetAttributes() Method in C#
+Getting an enumerator for the entire ArrayList in C#
+Multicast delegates in C#
+Null-Coalescing Operator in C#
+Single.GetTypeCode Method in C#
+Single.IsPositiveInfinity() Method in C#
+Stack.Clear Method in C#
+Uri.IsBaseOf(Uri) Method in C#
+C# Program that Demonstrates Exception Handling for Invalid TypeCasting in UnBoxing
+C# Program to Check a Specified Class is a Sealed Class or not
+C# Program to Demonstrate the Use of CanRead Property
+C# Program to Demonstrate the Use of FailFast() Method of Environment Class
+CharEnumerator.Reset() Method in C#
+Decimal.FromOACurrency() Method in C#
+Dictionary.Count Property in C#
+Difference between C# and ASP.NET
+Difference between Method Overriding and Method Hiding in C#
+Different Ways to Take Input and Print a Float Value in C#
+file.setLastAccessTime() Method in C#
+Finding the index of the first element of the specified sequence in C#
+Gets or Sets the element at the specified index in the List C#
+How to compare two ValueTuple in C#
+How to get First Element of the ValueTuple in C#
+Math.IEEERemainder() Method in C#
+Object.ReferenceEquals() Method in C#
+OrderedDictionary.Item[Object] Property in C#
+File.SetCreationTime() Method in C#
+sbyte Keyword in C#
+Type.GetDefaultMembers() Method in C#
+Type.IsAssignableFrom(Type) Method in C#
+Uri.EscapeDataString(String) Method in C#
+Uri.Fragment Property in C#
+Uri.IsHexEncoding() Method in C#
+Array.ConstrainedCopy() Method in C#
+Array.TrueForAll() Method in C#
+Buffer.BlockCopy(Array, Int32, Array, Int32, Int32) Method in C#
+Check if the BitArray is read-only in C#
+Decimal.Compare() Method in C#
+Decimal.Floor() Method in C#
+Decimal.ToSByte() Method in C#
+Default Interface Methods in C#
+Difference between Python and C#
+Explain and contrast value types and reference types in C#
+Type.GetInterfaces() Method in C#
+Type.GetMembers() Method in C#
+Type.GetNestedType() Method in C#
+Yield keywords in C#
+Char.IsLetterOrDigit() Method in C#
+Char.ToUpperInvariant(Char) Method in C#
+Get the minimum value in the SortedSet in C#
+HashSet<T>.ExceptWith(IEnumerable<T>) method in C#
+Single.IsNaN() Method in C#
+Single.IsNegativeInfinity() Method in C#
+StringBuilder.EnsureCapacity() Method in C#
+Thread.CurrentThread Property in C#
+Type.GetEnumUnderlyingType() Method in C#
+Type.GetTypeHandle() Method in C#
+Rand.next() method in C#
+C# Program to Demonstrate the Use of the CreateSubdirectory Method
+Camel case in C#
+Console.SetWindowPosition() Method in C#
+Difference between Console.Read and Console.ReadLine in C#
+Difference between Hashtable and Dictionary in C#
+Difference between Ref and Out keywords in C#
+Difference between Static class and Singleton instance in C#
+Difference between Var and Dynamic in C#
+Different ways to sort an array in Descending Order in C#
+Double.IsFinite() Method in C#
+File.SetLastWriteTimeUtc() Method in C#
+GetTypeFromCLSID() method in C#
+GetTypeFromProgID() method in C#
+How to Combine Two Arrays without Duplicate values in C#
+How to compare Enum values in C#
+How to remove all characters from StringBuilder in C#
+How to use multiple catch clauses in C#
+IDumpable Interface in C#
+Boolean.GetTypeCode() Method in C#
+C# Program to Demonstrate the Use of the Method as a Condition in the LINQ
+Console.CursorVisible in C#
+Console.ForegroundColor Property in C#
+Difference between Multi-Dimensional array and a Jagged Array in C#
+Hashtable.ContainsKey(Object) Method in C#
+How to get Synchronize access to the ListDictionary in C#
+How to Sort Object Array by Specific Property in C#
+How to write retry logic in C#
+Interesting Facts about C#
+SortedList.IndexOfValue(Object) Method in C#
+C# program to reverse words in a given string
+CancellationToken in C#
+Difference between a lambda expression and a delegate in C#
+Different ways to access namespace in C#
+JsonConvert.DeserializeObject() in C#
+Math.Round Method() in C#
+Methodinfo.invoke() in C#
+Task.FromResult() method in C#
+Thread pool in C#
+TimeSpan.FromDays() method in C#
+TimeSpan.FromTicks() Method in C#
+Void Keyword in C#
+Encrypt and Decrypt Using Rijndael Key in C#
+Enumerable.Where() method in C#
+Interface reference in C#
+Queue.Contains() Method in C#
+Queue.Enqueue() Method in C#
+Single.IsInfinity() Method in C#
+SortedDictionary.Clear() Method in C#
+SortedDictionary.Keys Property in C#
+Stack.CopyTo() Method in C#
+Task Parallel Library (TPL) in C#
+Type.GetCustomAttributes() method in C#
+Type.GetField() Method in C#
+Type.issubclassof() function in C#
+Uri.DnsSafeHost Property in C#
+Uri.ReferenceEquals() Method in C#
+Real-Time Examples of Factory Design Patterns in C#
+Exception.StackTrace() in C#
+HybridDictionary Class in C#
+Optimization Tips for C# Code
+Single.CompareTo() Method in C#
+Stack contains() method in C#
+Difference between Initialization and Instantiation in C#
+Differences between the Sealed class and Static class in C#
+Directory.Exists() in C#
+How to use Namespace Alias Qualifier in C#
+SortedList.Clone() Method in C#
+Stack<T>.TrimExcess Method in C#
+Type.GetArrayRank() Method in C#
+Uri.IsWellFormedOriginalString() method in C#
+ValueTuple in C#
+Abstract Factory Design Pattern in C#
+Array.AsReadOnly(T[]) Method in C#
+Decimal.GetBits() Method in C#
+Difference between String Literal and String Object in C#
+HybridDictionary.Contains(Object) method in C#
+ICollection.IsSynchronized Property in C#
+Inherit Documentation in C#
+Is Operator Keyword in C#
+Predicate Delegate in C#
+StringBuilder.Chars[] Property in C#
+Type.GetTypeFromHandle() Method in C#
+Type.FindInterfaces() Method in C#
+ulong keyword in C#
+Console.SetWindowSize() Method in C#
+Difference between Func delegate and Action delegate in C#
+Difference between System-level Exception and Application-level Exception in C#
+SortedList ContainsKey() Method in C#
+Facade Design Pattern in C# with Examples
+Structural Design Patterns in C#
+C# Program for Producing a Filtered Sequence of Elements that Contain Only One Property of Given Data
+TimeSpan.Subtract() Method in C#
+Immutable in C#
+ASP.NET Tutorial
+ASP.NET Tutorial (50+)
+ADO.NET Tutorial
+ADO.NET Tutorial (10+)
+C# Web Service
+Web Services in C#
+C# String Functions
+String Clone()
+String Compare()
+String CompareOrdinal()
+String CompareTo()
+String Concat()
+String Contains()
+String Copy()
+String CopyTo()
+String EndsWith()
+String Equals()
+String Format()
+String GetEnumerator()
+String GetHashCode()
+String GetType()
+String GetTypeCode()
+String IndexOf()
+String Insert()
+String Intern()
+String IsInterned()
+String IsNormalized()
+String Normalize()
+String IsNullOrEmpty()
+IsNullOrWhiteSpace()
+String Join()
+String LastIndexOf()
+String LastIndexOfAny()
+String PadLeft()
+String PadRight()
+String Remove()
+String Replace()
+String Split()
+String StartsWith()
+String SubString()
+String ToCharArray()
+String ToLower()
+String ToLowerInvariant()
+String ToString()
+String ToUpper()
+String ToUpperInvariant()
+String Trim()
+String TrimEnd()
+String TrimStart()
+C# New Features
+next →
+.NET Framework
+26 Apr 2025
+|
+6 min read
+.NET is a framework to develop software applications. It is designed and developed by Microsoft and the first beta version released in 2000.
+It is used to develop applications for web, Windows, phone. Moreover, it provides a broad range of functionalities and support.
+This framework contains a large number of class libraries known as Framework Class Library (FCL). The software programs written in .NET are executed in the execution environment, which is called CLR (Common Language Runtime). These are the core and essential parts of the .NET framework.
+This framework provides various services like memory management, networking, security, memory management, and type-safety.
+The .Net Framework supports more than 60 programming languages such as C#, F#, VB.NET, J#, VC++, JScript.NET, APL, COBOL, Perl, Oberon, ML, Pascal, Eiffel, Smalltalk, Python, Cobra, ADA, etc.
+Following is the .NET framework Stack that shows the modules and components of the Framework.
+The .NET Framework is composed of four main components:
+Common Language Runtime (CLR)
+Framework Class Library (FCL),
+Core Languages (WinForms, ASP.NET, and ADO.NET), and
+Other Modules (WCF, WPF, WF, Card Space, LINQ, Entity Framework, Parallel LINQ, Task Parallel Library, etc.)
+CLR (Common Language Runtime)
+It is a program execution engine that loads and executes the program. It converts the program into native code. It acts as an interface between the framework and operating system. It does exception handling, memory management, and garbage collection. Moreover, it provides security, type-safety, interoperability, and portablility. A list of CLR components are given below:
+FCL (Framework Class Library)
+It is a standard library that is a collection of thousands of classes and used to build an application. The BCL (Base Class Library) is the core of the FCL and provides basic functionalities.
+WinForms
+Windows Forms is a smart client technology for the .NET Framework, a set of managed libraries that simplify common application tasks such as reading and writing to the file system.
+ASP.NET
+ASP.NET is a web framework designed and developed by Microsoft. It is used to develop websites, web applications, and web services. It provides a fantastic integration of HTML, CSS, and JavaScript. It was first released in January 2002.
+ADO.NET
+ADO.NET is a module of .Net Framework, which is used to establish a connection between application and data sources. Data sources can be such as SQL Server and XML. ADO .NET consists of classes that can be used to connect, retrieve, insert, and delete data.
+WPF (Windows Presentation Foundation)
+Windows Presentation Foundation (WPF) is a graphical subsystem by Microsoft for rendering user interfaces in Windows-based applications. WPF, previously known as "Avalon", was initially released as part of .NET Framework 3.0 in 2006. WPF uses DirectX.
+WCF (Windows Communication Foundation)
+It is a framework for building service-oriented applications. Using WCF, you can send data as asynchronous messages from one service endpoint to another.
+WF (Workflow Foundation)
+Windows Workflow Foundation (WF) is a Microsoft technology that provides an API, an in-process workflow engine, and a rehostable designer to implement long-running processes as workflows within .NET applications.
+LINQ (Language Integrated Query)
+It is a query language, introduced in .NET 3.5 framework. It is used to make the query for data sources with C# or Visual Basics programming languages.
+Entity Framework
+It is an ORM based open source framework which is used to work with a database using .NET objects. It eliminates a lot of developers effort to handle the database. It is Microsoft's recommended technology to deal with the database.
+Parallel LINQ
+Parallel LINQ or PLINQ is a parallel implementation of LINQ to objects. It combines the simplicity and readability of LINQ and provides the power of parallel programming.
+It can improve and provide fast speed to execute the LINQ query by using all available computer capabilities.
+Apart from the above features and libraries, .NET includes other APIs and Model to improve and enhance the .NET framework.
+In 2015, Task parallel and Task parallel libraries were added. In .NET 4.5, a task-based asynchronous model was added.
+.NET Framework Index
+.Net Framework
+.NET Framework
+CLR
+FCL
+C#
+C# Tutorial
+What is C#
+C++ vs C#
+Java vs C#
+C# History
+C# Features
+C# Example
+C# Variables
+C# Data Types
+C# Operators
+C# Keywords
+C# Control Statements
+C# if-else
+C# switch
+C# For Loop
+C# While Loop
+C# Do-While Loop
+C# Break
+C# Continue
+C# Goto
+C# Comments
+C# Functions
+C# Function
+C# Call By Value
+C# Call By Reference
+C# Out Parameter
+C# Arrays
+C# Arrays
+C# Array to Function
+C# Multidimensional Array
+C# Jagged Arrays
+C# Params
+C# Array class
+C# Command Line Args
+C# Objects and Classes
+C# Object and Class
+C# Constructor
+C# Destructor
+C# this
+C# static
+C# static class
+C# static constructor
+C# Structs
+C# Enum
+C# Properties
+C# Properties
+C# Inheritance
+C# Inheritance
+C# Aggregation
+C# Polymorphism
+C# Member Overloading
+C# Method Overriding
+C# Base
+C# Polymorphism
+C# Sealed
+C# Abstraction
+C# Abstract
+C# Interface
+C# Namespace
+C# Namespaces
+C# Access Modifiers
+C# Encapsulation
+C# Strings
+C# Strings
+C# String Functions
+String Clone()
+String Compare()
+String CompareOrdinal()
+String CompareTo()
+String Concat()
+String Contains()
+String Copy()
+String CopyTo()
+String EndsWith()
+String Equals()
+String Format()
+String GetEnumerator()
+String GetHashCode()
+String GetType()
+String GetTypeCode()
+String IndexOf()
+String Insert()
+String Intern()
+String IsInterned()
+String IsNormalized()
+String Normalize()
+String IsNullOrEmpty()
+IsNullOrWhiteSpace()
+String Join()
+String LastIndexOf()
+String LastIndexOfAny()
+String PadLeft()
+String PadRight()
+String Remove()
+String Replace()
+String Split()
+String StartsWith()
+String SubString()
+String ToCharArray()
+String ToLower()
+String ToLowerInvariant()
+String ToString()
+String ToUpper()
+String ToUpperInvariant()
+String Trim()
+String TrimEnd()
+String TrimStart()
+C# Exceptions
+C# Exception Handling
+C# try/catch
+C# finally
+C# Custom Exception
+C# checked unchecked
+C# SystemException
+C# File I/O
+C# FileStream
+C# StreamWriter
+C# StreamReader
+C# TextWriter
+C# TextReader
+C# BinaryWriter
+C# BinaryReader
+C# StringWriter
+C# StringReader
+C# FileInfo
+C# DirectoryInfo
+C# Serialization
+C# Deserialization
+C# System.IO
+C# Collections
+C# Collections
+C# List<T>
+C# HashSet<T>
+C# SortedSet<T>
+C# Stack<T>
+C# Queue<T>
+C# LinkedList<T>
+C# Dictionary<K,V>
+C# SortedDictionary<K,V>
+C# SortedList<K,V>
+C# Generics
+C# Generics
+C# Delegates
+C# Delegates
+C# Reflection
+C# Reflection
+C# Anonymous Functions
+Anonymous Function
+C# Multithreading
+C# Multithreading
+C# Thread Life Cycle
+C# Thread class
+C# Main Thread
+C# Thread Example
+C# Thread Sleep
+C# Thread Abort
+C# Thread Join
+C# Thread Name
+C# ThreadPriority
+C# Synchronization
+C# Synchronization
+C# New Features
+C# New Features (40+)
+C# 2.0
+Partial types
+Iterators
+Nullable types
+Delegate Covariance
+Delegate inference
+Static classes
+Method group conversions (delegates)
+C# 3.0
+Anonymous types
+Extension methods
+Query expression
+Partial method
+Implicitly typed local variables
+Object and collection initializers
+Auto-Implemented properties
+Lambda expression
+Expression trees
+C# 4.0
+Dynamic binding
+Named and optional arguments
+Generic co and contravariance
+Embedded interop types ("NoPIA")
+C# 5.0
+Asynchronous methods
+Caller info attributes
+C# 6.0
+Using static directive
+Exception filters
+Await in catch/finally blocks
+Auto property initializers
+Default values for getter-only properties
+Expression-bodied members
+Null propagator
+String interpolation
+Nameof operator
+Dictionary initializer
+Compiler-as-a-service (Roslyn)
+C# 7.0
+Pattern matching
+Tuples
+Deconstruction
+Local functions
+Digit separator
+Binary literals
+Ref returns and locals
+Expression bodied constructors and finalizers
+Expression bodied getters and setters
+Out variables
+Generalized async return types
+C# 7.1
+Async main
+Default expressions
+C# Programs List
+C# Programs
+Fibonacci Series
+Prime Number
+Palindrome Number
+Factorial
+Armstrong Number
+Sum of digits
+Reverse Number
+Swap Number
+Decimal to Binary
+Number in Characters
+Alphabet Triangle
+Number Triangle
+Fibonacci Triangle
+C# Interview Questions
+C# Interview Questions
+ADO.NET Tutorial
+ADO.NET Tutorial
+ADO.NET Introduction
+ADO.NET Data Providers
+ADO.NET SQL Server
+ADO.NET Connection
+ADO.NET Command
+ADO.NET DataReader
+ADO.NET DataSet
+ADO.NET DataAdapter
+ADO.NET DataTables
+ADO.NET WF Example
+ADO.NET MVC Example
+ADO.NET Interview Questions
+ADO.NET Interview Questions
+ASP.NET Tutorial
+ASP .NET Tutorial
+ASP .NET Introduction
+ASP.NET Life Cycle
+ASP.NET Web Forms
+ASP.NET WF Introduction
+ASP.NET WF Features
+ASP.NET WF Project
+ASP.NET WF Example
+ASP.NET Server Controls
+ASP.NET Label
+ASP.NET TextBox
+ASP.NET Button
+ASP.NET HyperLink
+ASP.NET RadioButton
+ASP.NET Calender
+ASP.NET CheckBox
+ASP.NET LinkButton
+ASP.NET FileUpload
+Multiple FileUpload
+ASP.NET Download File
+ASP.NET Cookie
+ASP.NET Session
+ASP.NET DropDownList
+ASP.NET DataList
+ASP.NET DataGrid
+WF User Registration
+WF Events Handling
+WF Authentication
+WF Model Binding
+HTML Server Controls
+ASP.NET Validation
+CompareValidator
+RangeValidator
+RegularExpressionValidator
+RequiredFieldValidator
+ValidationSummary
+ASP.NET MVC
+ASP.NET MVC
+MVC Project
+MVC Controller
+MVC Actions
+MVC Action Selectors
+MVC Action Filters
+MVC Model
+MVC Model Binding
+MVC View
+MVC Validation
+MVC Entity Framework
+MVC Authentication
+MVC Bootstrap
+MVC Routing
+MVC Scaffolding
+MVC ViewBag
+ASP.NET Razor
+ASP.NET Razor
+Razor Code Expressions
+Razor Code Blocks
+Razor Control Structures
+Razor HTML Helpers
+Razor Partial Views
+ASP.NET Interview Questions
+ASP.NET Interview
+Next Topic
+.NET Common Language Runtime
+next →
+Related Posts
+CLR
+.NET Common Language Runtime () .NET is a runtime environment that manages and executes the code written in any .NET programming language. is the virtual machine component of the .NET framework. That language's compiler compiles the source code of applications developed using .NET compliant languages...
+5 min read
+Managed code and Unmanaged code in .NET
+With regards to. NET, oversaw code alludes to programming code written in dialects upheld by the. NET system, like C#, Visual Fundamental. NET (VB.NET), F#, and others. The Common Language Runtime (CLR), a major component, is where this code is intended to run. NET structure...
+8 min read
+FCL
+.NET Framework Class Library .NET Framework Class Library is the collection of classes, namespaces, interfaces and value types that are used for .NET applications. It contains thousands of classes that supports the following functions. Base and user-defined data types Support for exceptions handling input/output and stream operations Communications with the underlying system Access...
+2 min read
+Subscribe to Tpoint Tech
+We request you to subscribe our newsletter for upcoming updates.
+Subscribe
+Learn Important Tutorial
+Python
+Java
+Javascript
+HTML
+Database
+PHP
+C++
+React
+B.Tech / MCA
+DBMS
+Data Structures
+DAA
+Operating System
+Computer Network
+Compiler Design
+Computer Organization
+Discrete Mathematics
+Ethical Hacking
+Computer Graphics
+Web Technology
+Software Engineering
+Cyber Security
+Automata
+C Programming
+C++
+Java
+.Net
+Python
+Programs
+Control System
+Data Warehouse
+Preparation
+Aptitude
+Reasoning
+Verbal Ability
+Interview Questions
+Company Questions
+We provides tutorials and interview questions of all technology like java tutorial, android, java frameworks
+Contact info
+G-13, 2nd Floor, Sec-3, Noida, UP, 201301, India
+hr@tpointtech.com
++91-9599086977
+Follow us
+Tutorials
+Java
+Data Structures
+C Programming
+C++ Tutorial
+C# Tutorial
+PHP Tutorial
+HTML Tutorial
+JavaScript Tutorial
+jQuery Tutorial
+Spring Tutorial
+Interview Questions
+Microsoft
+Amazon
+Adobe
+Intuit
+Accenture
+Cognizant
+Capgemini
+Wipro
+Tcs
+Infosys
+Online Compiler
+C
+R
+C++
+Php
+Java
+Html
+Swift
+Python
+JavaScript
+TypeScript
+Latest Post
+|
+Tutorials List
+|
+Privacy Policy
+© Copyright 2011 - 2025 TpointTech.com. All Rights Reserved.

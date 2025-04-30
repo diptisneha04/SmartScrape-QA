@@ -1,0 +1,146 @@
+¶
+You can usecopy.copy()to create a copy of anyTagorNavigableString:
+copy.copy()
+copy.copy()
+Tag
+Tag
+Tag
+NavigableString
+NavigableString
+NavigableString
+importcopyp_copy=copy.copy(soup.p)print(p_copy)# <p>I want <b>pizza</b> and more <b>pizza</b>!</p>
+importcopyp_copy=copy.copy(soup.p)print(p_copy)# <p>I want <b>pizza</b> and more <b>pizza</b>!</p>
+importcopyp_copy=copy.copy(soup.p)print(p_copy)# <p>I want <b>pizza</b> and more <b>pizza</b>!</p>
+
+import
+copy
+p_copy
+=
+copy
+.
+copy
+(
+soup
+.
+p
+)
+print
+(
+p_copy
+)
+# <p>I want <b>pizza</b> and more <b>pizza</b>!</p>
+The copy is considered equal to the original, since it represents the
+same markup as the original, but it's not the same object:
+print(soup.p==p_copy)# Trueprint(soup.pisp_copy)# False
+print(soup.p==p_copy)# Trueprint(soup.pisp_copy)# False
+print(soup.p==p_copy)# Trueprint(soup.pisp_copy)# False
+
+print
+(
+soup
+.
+p
+==
+p_copy
+)
+# True
+print
+(
+soup
+.
+p
+is
+p_copy
+)
+# False
+The only real difference is that the copy is completely detached from
+the original Beautiful Soup object tree, just as ifextract()had
+been called on it. This is because two differentTagobjects can't occupy the same space at the same time.
+extract()
+extract()
+Tag
+Tag
+Tag
+print(p_copy.parent)# None
+print(p_copy.parent)# None
+print(p_copy.parent)# None
+print(p_copy.parent)# None
+print(p_copy.parent)# None
+
+print
+(
+p_copy
+.
+parent
+)
+# None
+You can useTag.copy_self()to create a copy of aTagwithout copying its contents.
+Tag.copy_self()
+Tag.copy_self()
+Tag
+Tag
+Tag
+original=BeautifulSoup('<a id="a_tag" class="link">the <i>link</i></a>','html.parser')print(original.a)# <a class="link" id="a_tag">the <i>link</a>print(original.a.copy_self())# <a class="link" id="a_tag"></a>
+original=BeautifulSoup('<a id="a_tag" class="link">the <i>link</i></a>','html.parser')print(original.a)# <a class="link" id="a_tag">the <i>link</a>print(original.a.copy_self())# <a class="link" id="a_tag"></a>
+original=BeautifulSoup('<a id="a_tag" class="link">the <i>link</i></a>','html.parser')print(original.a)# <a class="link" id="a_tag">the <i>link</a>print(original.a.copy_self())# <a class="link" id="a_tag"></a>
+original=BeautifulSoup('<a id="a_tag" class="link">the <i>link</i></a>','html.parser')print(original.a)# <a class="link" id="a_tag">the <i>link</a>print(original.a.copy_self())# <a class="link" id="a_tag"></a>
+original=BeautifulSoup('<a id="a_tag" class="link">the <i>link</i></a>','html.parser')print(original.a)# <a class="link" id="a_tag">the <i>link</a>print(original.a.copy_self())# <a class="link" id="a_tag"></a>
+
+original
+=
+BeautifulSoup
+(
+'<a id="a_tag" class="link">the <i>link</i></a>'
+,
+'html.parser'
+)
+print
+(
+original
+.
+a
+)
+# <a class="link" id="a_tag">the <i>link</a>
+print
+(
+original
+.
+a
+.
+copy_self
+())
+# <a class="link" id="a_tag"></a>
+(Tag.copy_self() is introduced in Beautiful Soup 4.13.0.)
+(Tag.copy_self() is introduced in Beautiful Soup 4.13.0.)
+Low-level search interface¶Almost everyone who uses Beautiful Soup to extract information from a
+document can get what they need using the methods described inSearching the tree. However, there's a lower-level interface that
+lets you define any matching behavior you want. Behind the scenes, the
+parts of the Beautiful Soup API that most people use--find_all()and the like—are actually using this low-level interface, and you
+can use it directly.(Access to the low-level search interface is a new feature in
+Beautiful Soup 4.13.0.)Custom element filtering¶classElementFilter¶TheElementFilterclass is your entry point to the
+low-level interface. To use it, define a function that takes aPageElementobject (which could be either aTagor aNavigableString). The function must
+returnTrueif the element matches your custom criteria, andFalseif it doesn't.This example function looks for content-containing tags and strings,
+but skips whitespace-only strings:frombs4importTag,NavigableStringdefnon_whitespace_element_func(tag_or_string):"""return True for:* all Tag objects* NavigableString objects that contain non-whitespace text"""return(isinstance(tag_or_string,Tag)or(isinstance(tag_or_string,NavigableString)andtag_or_string.strip()!=""))Once you have a function, pass it into theElementFilterconstructor:frombs4.filterimportElementFilternon_whitespace_filter=ElementFilter(non_whitespace_element_func)You can then use thisElementFilterobject as the first
+argument to any of theSearching the treemethods. Whatever
+criteria you defined in your function will be used instead of the
+default Beautiful Soup match logic:frombs4importBeautifulSoupsmall_doc="""<p><b>bold</b><i>italic</i>and<u>underline</u></p>"""soup=BeautifulSoup(small_doc,'html.parser')soup.find('p').find_all(non_whitespace_filter,recursive=False)# [<b>bold</b>, <i>italic</i>, '\n  and\n  ', <u>underline</u>]soup.find("b").find_next(non_whitespace_filter)# 'bold'soup.find("i").find_next_siblings(non_whitespace_filter)# ['\n  and\n  ', <u>underline</u>]Every potential match will be run through your function, and the onlyPageElementobjects returned will be the ones where your
+function returnedTrue.To summarize the function-based matching behaviors,A function passed as the first argument to a search method
+(or equivalently, using thenameargument) considers onlyTagobjects.A function passed to a search method using thestringargument
+considers onlyNavigableStringobjects.A function passed to a search method using anElementFilterobject considers bothTagandNavigableStringobjects.Custom element iteration¶ElementFilter.filter()¶By passing anElementFilterinstance into Beautiful Soup's
+tree-searching methods, you can completely customize what it means for
+Beautiful Soup to match an element as it iterates over the parse
+tree. By using theElementFilter.filter()method, you can
+also completely customize what it means for Beautiful Soup to iterate
+over the parse tree in the first place.TheElementFilter.filter()method takes a generator that yields
+a stream ofPageElementobjects. There is no restriction
+on whichPageElementobjects show up, how many times they
+show up, or in which order. Theoretically, they don't even need to be
+from the sameBeautifulSoupdocument. You can do whatever
+makes sense for you.Here's a silly example: a generator that walks randomly back and forth
+through the parse tree:importrandomdefrandom_walk(starting_location):location=starting_locationwhilelocationisnotNone:yieldlocationifrandom.random()<0.5:location=location.next_elementelse:location=location.previous_elementiflocationisNone:returnPass this generator into the exampleElementFilter.filter()and Beautiful Soup will wander randomly around the parse tree,
+applying thenon_whitespace_filterfunction to every element it finds,
+and yielding all of the matches—potentially yielding a given object
+more than once:[xforxinnon_whitespace_filter.filter(random_walk(soup.b))]# [<b>bold</b>, 'bold', <b>bold</b>, <p><b>bold</b>...][xforxinnon_whitespace_filter.filter(random_walk(soup.b))]# [<b>bold</b>, <b>bold</b>, 'bold', <i>italic</i>, <i>italic</i>, ...](Note that unlike the other code examples in this documentation, this
+example can give different results every time you run it, thanks
+to the random element. It's very unlikely, but this function could
+wander around the parse tree forever andnevercomplete.)

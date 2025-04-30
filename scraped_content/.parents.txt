@@ -1,0 +1,40 @@
+.parents
+.parents
+¶
+You can iterate over all of an element's parents with.parents. This example uses.parentsto travel from an <a> tag
+buried deep within the document, to the very top of the document:
+.parents
+.parents
+.parents
+.parents
+link=soup.alink# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>forparentinlink.parents:print(parent.name)# p# body# html# [document]
+link=soup.alink# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>forparentinlink.parents:print(parent.name)# p# body# html# [document]
+link=soup.alink# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>forparentinlink.parents:print(parent.name)# p# body# html# [document]
+
+link
+=
+soup
+.
+a
+link
+# <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>
+for
+parent
+in
+link
+.
+parents
+:
+print
+(
+parent
+.
+name
+)
+# p
+# body
+# html
+# [document]
+.self_and_parents¶The.self_and_parentsgenerator is a variant of.parentswhich
+gives you the entire ancestry of an element, including the element
+itself:forparentinlink.parents:print(parent.name)# link# p# body# html# [document]

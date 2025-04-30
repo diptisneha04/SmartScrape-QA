@@ -1,0 +1,71 @@
+¶
+Beautiful Soup defines a fewNavigableStringsubclasses to
+contain strings found inside specific HTML tags. This makes it easier
+to pick out the main body of the page, by ignoring strings that
+probably represent programming directives found within the
+page.(These classes are new in Beautiful Soup 4.9.0, and the
+html5lib parser doesn't use them.)
+NavigableString
+NavigableString
+NavigableString
+(These classes are new in Beautiful Soup 4.9.0, and the
+html5lib parser doesn't use them.)
+classStylesheet¶
+classStylesheet¶
+class
+class
+
+Stylesheet
+Stylesheet
+¶
+
+ANavigableStringsubclass that represents embedded CSS
+stylesheets; that is, any strings found inside a<style>tag
+during document parsing.
+NavigableString
+NavigableString
+NavigableString
+<style>
+<style>
+classScript¶
+classScript¶
+class
+class
+
+Script
+Script
+¶
+
+ANavigableStringsubclass that represents embedded
+Javascript; that is, any strings found inside a<script>tag
+during document parsing.
+NavigableString
+NavigableString
+NavigableString
+<script>
+<script>
+classTemplate¶
+classTemplate¶
+class
+class
+
+Template
+Template
+¶
+
+ANavigableStringsubclass that represents embedded HTML
+templates; that is, any strings found inside a<template>tag during
+document parsing.
+NavigableString
+NavigableString
+NavigableString
+<template>
+<template>
+For XML documents¶Beautiful Soup defines someNavigableStringclasses for
+holding special types of strings that can be found in XML
+documents. LikeComment, these classes are subclasses ofNavigableStringthat add something extra to the string on
+output.classDeclaration¶ANavigableStringsubclass representing thedeclarationat the beginning of
+an XML document.classDoctype¶ANavigableStringsubclass representing thedocument type
+declarationwhich may
+be found near the beginning of an XML document.classCData¶ANavigableStringsubclass that represents aCData section.classProcessingInstruction¶ANavigableStringsubclass that represents the contents
+of anXML processing instruction.

@@ -1,0 +1,61 @@
+¶
+
+Beautiful Soupis a
+Python library for pulling data out of HTML and XML files. It works
+with your favorite parser to provide idiomatic ways of navigating,
+searching, and modifying the parse tree. It commonly saves programmers
+hours or days of work.
+Beautiful Soup
+These instructions illustrate all major features of Beautiful Soup 4,
+with examples. I show you what the library is good for, how it works,
+how to use it, how to make it do what you want, and what to do when it
+violates your expectations.
+This document covers Beautiful Soup version 4.13.3. The examples in
+this documentation were written for Python 3.8.
+You might be looking for the documentation forBeautiful Soup 3.
+If so, you should know that Beautiful Soup 3 is no longer being
+developed and that all support for it was dropped on December
+31, 2020. If you want to learn about the differences between Beautiful
+Soup 3 and Beautiful Soup 4, seePorting code to BS4.
+Beautiful Soup 3
+Porting code to BS4
+This documentation has been translated into other languages by
+Beautiful Soup users:
+这篇文档当然还有中文版.このページは日本語で利用できます(外部リンク)이 문서는 한국어 번역도 가능합니다.Este documento também está disponível em Português do Brasil.Este documento también está disponible en una traducción al español.Эта документация доступна на русском языке.
+这篇文档当然还有中文版.
+这篇文档当然还有中文版.
+这篇文档当然还有中文版.
+このページは日本語で利用できます(外部リンク)
+このページは日本語で利用できます(外部リンク)
+外部リンク
+이 문서는 한국어 번역도 가능합니다.
+이 문서는 한국어 번역도 가능합니다.
+이 문서는 한국어 번역도 가능합니다.
+Este documento também está disponível em Português do Brasil.
+Este documento também está disponível em Português do Brasil.
+Este documento também está disponível em Português do Brasil.
+Este documento también está disponible en una traducción al español.
+Este documento también está disponible en una traducción al español.
+Este documento también está disponible en una traducción al español.
+Эта документация доступна на русском языке.
+Эта документация доступна на русском языке.
+Эта документация доступна на русском языке.
+Getting help¶If you have questions about Beautiful Soup, or run into problems,send mail to the discussion group. If
+your problem involves parsing an HTML document, be sure to mentionwhat the diagnose() function saysabout
+that document.When reporting an error in this documentation, please mention which
+translation you're reading.API documentation¶This document is written like an instruction manual, but you can also readtraditional API documentationgenerated from the Beautiful Soup source code. If you want details
+about Beautiful Soup's internals, or a feature not covered in this
+document, try the API documentation.
+Getting help¶
+¶
+If you have questions about Beautiful Soup, or run into problems,send mail to the discussion group. If
+your problem involves parsing an HTML document, be sure to mentionwhat the diagnose() function saysabout
+that document.
+send mail to the discussion group
+what the diagnose() function says
+what the diagnose() function says
+When reporting an error in this documentation, please mention which
+translation you're reading.
+API documentation¶This document is written like an instruction manual, but you can also readtraditional API documentationgenerated from the Beautiful Soup source code. If you want details
+about Beautiful Soup's internals, or a feature not covered in this
+document, try the API documentation.

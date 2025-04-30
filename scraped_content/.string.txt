@@ -1,0 +1,61 @@
+.string
+.string
+¶
+If a tag has only one child, and that child is aNavigableString,
+the child is made available as.string:
+NavigableString
+NavigableString
+NavigableString
+.string
+.string
+title_tag.string# 'The Dormouse's story'
+title_tag.string# 'The Dormouse's story'
+title_tag.string# 'The Dormouse's story'
+
+title_tag
+.
+string
+# 'The Dormouse's story'
+If a tag's only child is another tag, andthattag has a.string, then the parent tag is considered to have the same.stringas its child:
+that
+.string
+.string
+.string
+.string
+head_tag.contents# [<title>The Dormouse's story</title>]head_tag.string# 'The Dormouse's story'
+head_tag.contents# [<title>The Dormouse's story</title>]head_tag.string# 'The Dormouse's story'
+head_tag.contents# [<title>The Dormouse's story</title>]head_tag.string# 'The Dormouse's story'
+
+head_tag
+.
+contents
+# [<title>The Dormouse's story</title>]
+head_tag
+.
+string
+# 'The Dormouse's story'
+If a tag contains more than one thing, then it's not clear what.stringshould refer to, so.stringis defined to beNone:
+.string
+.string
+.string
+.string
+None
+None
+print(soup.html.string)# None
+print(soup.html.string)# None
+print(soup.html.string)# None
+
+print
+(
+soup
+.
+html
+.
+string
+)
+# None
+.stringsandstripped_strings¶If there's more than one thing inside a tag, you can still look at
+just the strings. Use the.stringsgenerator to see all descendant
+strings:forstringinsoup.strings:print(repr(string))'\n'# "The Dormouse's story"# '\n'# '\n'# "The Dormouse's story"# '\n'# 'Once upon a time there were three little sisters; and their names were\n'# 'Elsie'# ',\n'# 'Lacie'# ' and\n'# 'Tillie'# ';\nand they lived at the bottom of a well.'# '\n'# '...'# '\n'Newlines and spaces that separate tags are also strings. You can remove extra
+whitespace by using the.stripped_stringsgenerator instead:forstringinsoup.stripped_strings:print(repr(string))# "The Dormouse's story"# "The Dormouse's story"# 'Once upon a time there were three little sisters; and their names were'# 'Elsie'# ','# 'Lacie'# 'and'# 'Tillie'# ';\n and they lived at the bottom of a well.'# '...'Here, strings consisting entirely of whitespace are ignored, and
+whitespace at the beginning and end of strings is removed.

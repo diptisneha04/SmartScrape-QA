@@ -1,0 +1,118 @@
+¶
+If you need more sophisticated control over your output, you can
+instantiate one of Beautiful Soup's formatter classes and pass that
+object in asformatter.
+formatter
+formatter
+classHTMLFormatter¶
+classHTMLFormatter¶
+class
+class
+
+HTMLFormatter
+HTMLFormatter
+¶
+
+Used to customize the formatting rules for HTML documents.
+Here's a formatter that converts strings to uppercase, whether they
+occur in a string object or an attribute value:
+frombs4.formatterimportHTMLFormatterdefuppercase(str):returnstr.upper()formatter=HTMLFormatter(uppercase)print(soup.prettify(formatter=formatter))# <p>#  IL A DIT <<SACRÉ BLEU!>># </p>print(link_soup.a.prettify(formatter=formatter))# <a href="HTTP://EXAMPLE.COM/?FOO=VAL1&BAR=VAL2">#  A LINK# </a>
+frombs4.formatterimportHTMLFormatterdefuppercase(str):returnstr.upper()formatter=HTMLFormatter(uppercase)print(soup.prettify(formatter=formatter))# <p>#  IL A DIT <<SACRÉ BLEU!>># </p>print(link_soup.a.prettify(formatter=formatter))# <a href="HTTP://EXAMPLE.COM/?FOO=VAL1&BAR=VAL2">#  A LINK# </a>
+frombs4.formatterimportHTMLFormatterdefuppercase(str):returnstr.upper()formatter=HTMLFormatter(uppercase)print(soup.prettify(formatter=formatter))# <p>#  IL A DIT <<SACRÉ BLEU!>># </p>print(link_soup.a.prettify(formatter=formatter))# <a href="HTTP://EXAMPLE.COM/?FOO=VAL1&BAR=VAL2">#  A LINK# </a>
+
+from
+bs4.formatter
+import
+HTMLFormatter
+def
+uppercase
+(
+str
+):
+return
+str
+.
+upper
+()
+formatter
+=
+HTMLFormatter
+(
+uppercase
+)
+print
+(
+soup
+.
+prettify
+(
+formatter
+=
+formatter
+))
+# <p>
+#  IL A DIT <<SACRÉ BLEU!>>
+# </p>
+print
+(
+link_soup
+.
+a
+.
+prettify
+(
+formatter
+=
+formatter
+))
+# <a href="HTTP://EXAMPLE.COM/?FOO=VAL1&BAR=VAL2">
+#  A LINK
+# </a>
+Here's a formatter that increases the indentation width when pretty-printing:
+formatter=HTMLFormatter(indent=8)print(link_soup.a.prettify(formatter=formatter))# <a href="http://example.com/?foo=val1&bar=val2">#         A link# </a>
+formatter=HTMLFormatter(indent=8)print(link_soup.a.prettify(formatter=formatter))# <a href="http://example.com/?foo=val1&bar=val2">#         A link# </a>
+formatter=HTMLFormatter(indent=8)print(link_soup.a.prettify(formatter=formatter))# <a href="http://example.com/?foo=val1&bar=val2">#         A link# </a>
+
+formatter
+=
+HTMLFormatter
+(
+indent
+=
+8
+)
+print
+(
+link_soup
+.
+a
+.
+prettify
+(
+formatter
+=
+formatter
+))
+# <a href="http://example.com/?foo=val1&bar=val2">
+#         A link
+# </a>
+classXMLFormatter¶
+classXMLFormatter¶
+class
+class
+
+XMLFormatter
+XMLFormatter
+¶
+
+Used to customize the formatting rules for XML documents.
+Writing your own formatter¶SubclassingHTMLFormatterorXMLFormatterwill
+give you even more control over the output. For example, Beautiful
+Soup sorts the attributes in every tag by default:attr_soup=BeautifulSoup(b'<p z="1" m="2" a="3"></p>','html.parser')print(attr_soup.p.encode())# <p a="3" m="2" z="1"></p>To turn this off, you can subclass theFormatter.attributes()method, which controls which attributes are output and in what
+order. This implementation also filters out the attribute called "m"
+whenever it appears:classUnsortedAttributes(HTMLFormatter):defattributes(self,tag):fork,vintag.attrs.items():ifk=='m':continueyieldk,vprint(attr_soup.p.encode(formatter=UnsortedAttributes()))# <p z="1" a="3"></p>One last caveat: if you create aCDataobject, the text inside
+that object is always presentedexactly as it appears, with no
+formatting. Beautiful Soup will call your entity substitution
+function, just in case you've written a custom function that counts
+all the strings in the document or something, but it will ignore the
+return value:frombs4.elementimportCDatasoup=BeautifulSoup("<a></a>",'html.parser')soup.a.string=CData("one < three")print(soup.a.prettify(formatter="html"))# <a>#  <![CDATA[one < three]]># </a>

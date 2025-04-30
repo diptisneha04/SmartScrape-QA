@@ -1,0 +1,12 @@
+¶
+Some of the generators used to yieldNoneafter they were done, and
+then stop. That was a bug. Now the generators just stop.
+None
+None
+XML¶There is no longer aBeautifulStoneSoupclass for parsing XML. To
+parse XML you pass in "xml" as the second argument to theBeautifulSoupconstructor. For the same reason, theBeautifulSoupconstructor no longer recognizes theisHTMLargument.Beautiful Soup's handling of empty-element XML tags has been
+improved. Previously when you parsed XML you had to explicitly say
+which tags were considered empty-element tags. TheselfClosingTagsargument to the constructor is no longer recognized. Instead,
+Beautiful Soup considers any empty tag to be an empty-element tag. If
+you add a child to an empty-element tag, it stops being an
+empty-element tag.

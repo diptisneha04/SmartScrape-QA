@@ -1,0 +1,72 @@
+.descendants
+.descendants
+¶
+The.contentsand.childrenattributes consider only a tag'sdirectchildren. For instance, the <head> tag has a single direct
+child—the <title> tag:
+.contents
+.contents
+.children
+.children
+direct
+head_tag.contents# [<title>The Dormouse's story</title>]
+head_tag.contents# [<title>The Dormouse's story</title>]
+head_tag.contents# [<title>The Dormouse's story</title>]
+
+head_tag
+.
+contents
+# [<title>The Dormouse's story</title>]
+But the <title> tag itself has a child: the string "The Dormouse's
+story". There's a sense in which that string is also a child of the
+<head> tag. The.descendantsattribute lets you iterate overallof a tag's children, recursively: its direct children, the children of
+its direct children, and so on:
+.descendants
+.descendants
+all
+forchildinhead_tag.descendants:print(child)# <title>The Dormouse's story</title># The Dormouse's story
+forchildinhead_tag.descendants:print(child)# <title>The Dormouse's story</title># The Dormouse's story
+forchildinhead_tag.descendants:print(child)# <title>The Dormouse's story</title># The Dormouse's story
+
+for
+child
+in
+head_tag
+.
+descendants
+:
+print
+(
+child
+)
+# <title>The Dormouse's story</title>
+# The Dormouse's story
+The <head> tag has only one child, but it has two descendants: the
+<title> tag and the <title> tag's child. TheBeautifulSoupobject
+only has one direct child (the <html> tag), but it has a whole lot of
+descendants:
+BeautifulSoup
+BeautifulSoup
+len(list(soup.children))# 1len(list(soup.descendants))# 26
+len(list(soup.children))# 1len(list(soup.descendants))# 26
+len(list(soup.children))# 1len(list(soup.descendants))# 26
+
+len
+(
+list
+(
+soup
+.
+children
+))
+# 1
+len
+(
+list
+(
+soup
+.
+descendants
+))
+# 26
+.string¶If a tag has only one child, and that child is aNavigableString,
+the child is made available as.string:title_tag.string# 'The Dormouse's story'If a tag's only child is another tag, andthattag has a.string, then the parent tag is considered to have the same.stringas its child:head_tag.contents# [<title>The Dormouse's story</title>]head_tag.string# 'The Dormouse's story'If a tag contains more than one thing, then it's not clear what.stringshould refer to, so.stringis defined to beNone:print(soup.html.string)# None

@@ -1,0 +1,148 @@
+¶
+Soup Sieve offers a substantial API beyond theselect()andselect_one()methods, and you can access most of that API through
+the.cssattribute ofTagorBeautifulSoup. What follows
+is just a list of the supported methods; seethe Soup Sieve
+documentationfor full
+documentation.
+select()
+select()
+select_one()
+select_one()
+.css
+.css
+Tag
+Tag
+Tag
+BeautifulSoup
+BeautifulSoup
+the Soup Sieve
+documentation
+Theiselect()method works the same asselect(), but it
+returns a generator instead of a list:
+iselect()
+iselect()
+select()
+select()
+[tag['id']fortaginsoup.css.iselect(".sister")]# ['link1', 'link2', 'link3']
+[tag['id']fortaginsoup.css.iselect(".sister")]# ['link1', 'link2', 'link3']
+[tag['id']fortaginsoup.css.iselect(".sister")]# ['link1', 'link2', 'link3']
+
+[
+tag
+[
+'id'
+]
+for
+tag
+in
+soup
+.
+css
+.
+iselect
+(
+".sister"
+)]
+# ['link1', 'link2', 'link3']
+Theclosest()method returns the nearest parent of a givenTagthat matches a CSS selector, similar to Beautiful Soup'sfind_parent()method:
+closest()
+closest()
+Tag
+Tag
+Tag
+find_parent()
+find_parent()
+elsie=soup.css.select_one(".sister")elsie.css.closest("p.story")# <p class="story">Once upon a time there were three little sisters; and their names were#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;#  and they lived at the bottom of a well.</p>
+elsie=soup.css.select_one(".sister")elsie.css.closest("p.story")# <p class="story">Once upon a time there were three little sisters; and their names were#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;#  and they lived at the bottom of a well.</p>
+elsie=soup.css.select_one(".sister")elsie.css.closest("p.story")# <p class="story">Once upon a time there were three little sisters; and their names were#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;#  and they lived at the bottom of a well.</p>
+
+elsie
+=
+soup
+.
+css
+.
+select_one
+(
+".sister"
+)
+elsie
+.
+css
+.
+closest
+(
+"p.story"
+)
+# <p class="story">Once upon a time there were three little sisters; and their names were
+#  <a class="sister" href="http://example.com/elsie" id="link1">Elsie</a>,
+#  <a class="sister" href="http://example.com/lacie" id="link2">Lacie</a> and
+#  <a class="sister" href="http://example.com/tillie" id="link3">Tillie</a>;
+#  and they lived at the bottom of a well.</p>
+Thematch()method returns a Boolean depending on whether or not a
+specificTagmatches a selector:
+match()
+match()
+Tag
+Tag
+Tag
+# elsie.css.match("#link1")True# elsie.css.match("#link2")False
+# elsie.css.match("#link1")True# elsie.css.match("#link2")False
+# elsie.css.match("#link1")True# elsie.css.match("#link2")False
+
+# elsie.css.match("#link1")
+True
+# elsie.css.match("#link2")
+False
+Thefilter()method returns the subset of a tag's direct children
+that match a selector:
+filter()
+filter()
+[tag.stringfortaginsoup.find('p','story').css.filter('a')]# ['Elsie', 'Lacie', 'Tillie']
+[tag.stringfortaginsoup.find('p','story').css.filter('a')]# ['Elsie', 'Lacie', 'Tillie']
+[tag.stringfortaginsoup.find('p','story').css.filter('a')]# ['Elsie', 'Lacie', 'Tillie']
+
+[
+tag
+.
+string
+for
+tag
+in
+soup
+.
+find
+(
+'p'
+,
+'story'
+)
+.
+css
+.
+filter
+(
+'a'
+)]
+# ['Elsie', 'Lacie', 'Tillie']
+Theescape()method escapes CSS identifiers that would otherwise
+be invalid:
+escape()
+escape()
+soup.css.escape("1-strange-identifier")# '\\31 -strange-identifier'
+soup.css.escape("1-strange-identifier")# '\\31 -strange-identifier'
+soup.css.escape("1-strange-identifier")# '\\31 -strange-identifier'
+
+soup
+.
+css
+.
+escape
+(
+"1-strange-identifier"
+)
+# '\\31 -strange-identifier'
+Namespaces in CSS selectors¶If you've parsed XML that defines namespaces, you can use them in CSS
+selectors.:frombs4importBeautifulSoupxml="""<tag xmlns:ns1="http://namespace1/" xmlns:ns2="http://namespace2/"><ns1:child>I'm in namespace 1</ns1:child><ns2:child>I'm in namespace 2</ns2:child></tag> """namespace_soup=BeautifulSoup(xml,"xml")namespace_soup.css.select("child")# [<ns1:child>I'm in namespace 1</ns1:child>, <ns2:child>I'm in namespace 2</ns2:child>]namespace_soup.css.select("ns1|child")# [<ns1:child>I'm in namespace 1</ns1:child>]Beautiful Soup tries to use namespace prefixes that make sense based
+on what it saw while parsing the document, but you can always provide
+your own dictionary of abbreviations:namespaces=dict(first="http://namespace1/",second="http://namespace2/")namespace_soup.css.select("second|child",namespaces=namespaces)# [<ns1:child>I'm in namespace 2</ns1:child>]

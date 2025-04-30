@@ -1,0 +1,80 @@
+¶
+If you've parsed XML that defines namespaces, you can use them in CSS
+selectors.:
+frombs4importBeautifulSoupxml="""<tag xmlns:ns1="http://namespace1/" xmlns:ns2="http://namespace2/"><ns1:child>I'm in namespace 1</ns1:child><ns2:child>I'm in namespace 2</ns2:child></tag> """namespace_soup=BeautifulSoup(xml,"xml")namespace_soup.css.select("child")# [<ns1:child>I'm in namespace 1</ns1:child>, <ns2:child>I'm in namespace 2</ns2:child>]namespace_soup.css.select("ns1|child")# [<ns1:child>I'm in namespace 1</ns1:child>]
+frombs4importBeautifulSoupxml="""<tag xmlns:ns1="http://namespace1/" xmlns:ns2="http://namespace2/"><ns1:child>I'm in namespace 1</ns1:child><ns2:child>I'm in namespace 2</ns2:child></tag> """namespace_soup=BeautifulSoup(xml,"xml")namespace_soup.css.select("child")# [<ns1:child>I'm in namespace 1</ns1:child>, <ns2:child>I'm in namespace 2</ns2:child>]namespace_soup.css.select("ns1|child")# [<ns1:child>I'm in namespace 1</ns1:child>]
+frombs4importBeautifulSoupxml="""<tag xmlns:ns1="http://namespace1/" xmlns:ns2="http://namespace2/"><ns1:child>I'm in namespace 1</ns1:child><ns2:child>I'm in namespace 2</ns2:child></tag> """namespace_soup=BeautifulSoup(xml,"xml")namespace_soup.css.select("child")# [<ns1:child>I'm in namespace 1</ns1:child>, <ns2:child>I'm in namespace 2</ns2:child>]namespace_soup.css.select("ns1|child")# [<ns1:child>I'm in namespace 1</ns1:child>]
+
+from
+bs4
+import
+BeautifulSoup
+xml
+=
+"""<tag xmlns:ns1="http://namespace1/" xmlns:ns2="http://namespace2/">
+<ns1:child>I'm in namespace 1</ns1:child>
+<ns2:child>I'm in namespace 2</ns2:child>
+</tag> """
+namespace_soup
+=
+BeautifulSoup
+(
+xml
+,
+"xml"
+)
+namespace_soup
+.
+css
+.
+select
+(
+"child"
+)
+# [<ns1:child>I'm in namespace 1</ns1:child>, <ns2:child>I'm in namespace 2</ns2:child>]
+namespace_soup
+.
+css
+.
+select
+(
+"ns1|child"
+)
+# [<ns1:child>I'm in namespace 1</ns1:child>]
+Beautiful Soup tries to use namespace prefixes that make sense based
+on what it saw while parsing the document, but you can always provide
+your own dictionary of abbreviations:
+namespaces=dict(first="http://namespace1/",second="http://namespace2/")namespace_soup.css.select("second|child",namespaces=namespaces)# [<ns1:child>I'm in namespace 2</ns1:child>]
+namespaces=dict(first="http://namespace1/",second="http://namespace2/")namespace_soup.css.select("second|child",namespaces=namespaces)# [<ns1:child>I'm in namespace 2</ns1:child>]
+namespaces=dict(first="http://namespace1/",second="http://namespace2/")namespace_soup.css.select("second|child",namespaces=namespaces)# [<ns1:child>I'm in namespace 2</ns1:child>]
+
+namespaces
+=
+dict
+(
+first
+=
+"http://namespace1/"
+,
+second
+=
+"http://namespace2/"
+)
+namespace_soup
+.
+css
+.
+select
+(
+"second|child"
+,
+namespaces
+=
+namespaces
+)
+# [<ns1:child>I'm in namespace 2</ns1:child>]
+History of CSS selector support¶The.cssproperty was added in Beautiful Soup 4.12.0. Prior to this,
+only the.select()and.select_one()convenience methods were
+supported.The Soup Sieve integration was added in Beautiful Soup 4.7.0. Earlier
+versions had the.select()method, but only the most commonly-used
+CSS selectors were supported.

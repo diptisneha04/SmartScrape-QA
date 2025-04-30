@@ -1,0 +1,42 @@
+¶
+An incoming HTML or XML entity is always converted into the
+corresponding Unicode character. Beautiful Soup 3 had a number of
+overlapping ways of dealing with entities, which have been
+removed. TheBeautifulSoupconstructor no longer recognizes thesmartQuotesToorconvertEntitiesarguments. (Unicode,
+Dammitstill hassmart_quotes_to, but its default is now to turn
+smart quotes into Unicode.) The constantsHTML_ENTITIES,XML_ENTITIES, andXHTML_ENTITIEShave been removed, since they
+configure a feature (transforming some but not all entities into
+Unicode characters) that no longer exists.
+BeautifulSoup
+BeautifulSoup
+smartQuotesTo
+smartQuotesTo
+convertEntities
+convertEntities
+Unicode,
+Dammit
+smart_quotes_to
+smart_quotes_to
+HTML_ENTITIES
+HTML_ENTITIES
+XML_ENTITIES
+XML_ENTITIES
+XHTML_ENTITIES
+XHTML_ENTITIES
+If you want to turn Unicode characters back into HTML entities on
+output, rather than turning them into UTF-8 characters, you need to
+use anoutput formatter.
+output formatter
+output formatter
+Miscellaneous¶Tag.stringnow operates recursively. If tag A
+contains a single tag B and nothing else, then A.string is the same as
+B.string. (Previously, it was None.)Multi-valued attributeslikeclasshave lists of strings as
+their values, not simple strings. This may affect the way you search by CSS
+class.Tagobjects now implement the__hash__method, such that twoTagobjects are considered equal if they generate the same
+markup. This may change your script's behavior if you putTagobjects into a dictionary or set.If you pass one of thefind*methods bothstringanda tag-specific argument likename, Beautiful Soup will
+search for tags that match your tag-specific criteria and whoseTag.stringmatches yourstringvalue. It willnotfind the strings themselves. Previously,
+Beautiful Soup ignored the tag-specific arguments and looked for
+strings.TheBeautifulSoupconstructor no longer recognizes themarkupMassageargument. It's now the parser's responsibility to
+handle markup correctly.The rarely-used alternate parser classes likeICantBelieveItsBeautifulSoupandBeautifulSOAPhave been
+removed. It's now the parser's decision how to handle ambiguous
+markup.Theprettify()method now returns a Unicode string, not a bytestring.

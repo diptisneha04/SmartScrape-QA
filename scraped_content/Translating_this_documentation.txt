@@ -1,0 +1,78 @@
+¶
+New translations of the Beautiful Soup documentation are greatly
+appreciated. Translations should be licensed under the MIT license,
+just like Beautiful Soup and its English documentation are.
+There are two ways of getting your translation into the main code base
+and onto the Beautiful Soup website:
+Create a branch of the Beautiful Soup repository, add your
+translation, and propose a merge with the main branch, the same
+as you would do with a proposed change to the source code.Send a message to the Beautiful Soup discussion group with a link to
+your translation, or attach your translation to the message.
+Create a branch of the Beautiful Soup repository, add your
+translation, and propose a merge with the main branch, the same
+as you would do with a proposed change to the source code.
+Create a branch of the Beautiful Soup repository, add your
+translation, and propose a merge with the main branch, the same
+as you would do with a proposed change to the source code.
+Send a message to the Beautiful Soup discussion group with a link to
+your translation, or attach your translation to the message.
+Send a message to the Beautiful Soup discussion group with a link to
+your translation, or attach your translation to the message.
+Use the Chinese or Brazilian Portuguese translations as your model. In
+particular, please translate the source filedoc/index.rst,
+rather than the HTML version of the documentation. This makes it
+possible to publish the documentation in a variety of formats, not
+just HTML.
+doc/index.rst
+doc/index.rst
+Beautiful Soup 3¶Beautiful Soup 3 is the previous release series, and is no longer
+supported. Development of Beautiful Soup 3 stopped in 2012, and the
+package was completely discontinued in 2021. There's no reason to
+install it unless you're trying to get very old software to work, but
+it's published through PyPi asBeautifulSoup:$pipinstallBeautifulSoupYou can also downloada tarball of the final release, 3.2.2.If you ranpipinstallbeautifulsouporpipinstallBeautifulSoup, but your code doesn't work, you installed Beautiful
+Soup 3 by mistake. You need to runpipinstallbeautifulsoup4.The documentation for Beautiful Soup 3 is archived online.Porting code to BS4¶Most code written against Beautiful Soup 3 will work against Beautiful
+Soup 4 with one simple change. All you should have to do is change the
+package name fromBeautifulSouptobs4. So this:fromBeautifulSoupimportBeautifulSoupbecomes this:frombs4importBeautifulSoupIf you get theImportError"No module named BeautifulSoup", your
+problem is that you're trying to run Beautiful Soup 3 code, but you
+only have Beautiful Soup 4 installed.If you get theImportError"No module named bs4", your problem
+is that you're trying to run Beautiful Soup 4 code, but you only
+have Beautiful Soup 3 installed.Although BS4 is mostly backward-compatible with BS3, most of its
+methods have been deprecated and given new names forPEP 8 compliance. There are numerous other
+renames and changes, and a few of them break backward compatibility.Here's what you'll need to know to convert your BS3 code and habits to BS4:You need a parser¶Beautiful Soup 3 used Python'sSGMLParser, a module that was
+deprecated and removed in Python 3.0. Beautiful Soup 4 useshtml.parserby default, but you can plug in lxml or html5lib and
+use that instead. SeeInstalling a parserfor a comparison.Sincehtml.parseris not the same parser asSGMLParser, you
+may find that Beautiful Soup 4 gives you a different parse tree than
+Beautiful Soup 3 for the same markup. If you swap outhtml.parserfor lxml or html5lib, you may find that the parse tree changes yet
+again. If this happens, you'll need to update your scraping code to
+process the new tree.Property names¶I renamed three attributes to avoid using words that have special
+meaning to Python. Unlike my changes to method names (which you'll see
+in the form of deprecation warnings), these changesdid not
+preserve backwards compatibility.If you used these attributes in
+BS3, your code will break in BS4 until you change them.UnicodeDammit.unicode->UnicodeDammit.unicode_markupTag.next->Tag.next_elementTag.previous->Tag.previous_elementGenerators¶Some of the generators used to yieldNoneafter they were done, and
+then stop. That was a bug. Now the generators just stop.XML¶There is no longer aBeautifulStoneSoupclass for parsing XML. To
+parse XML you pass in "xml" as the second argument to theBeautifulSoupconstructor. For the same reason, theBeautifulSoupconstructor no longer recognizes theisHTMLargument.Beautiful Soup's handling of empty-element XML tags has been
+improved. Previously when you parsed XML you had to explicitly say
+which tags were considered empty-element tags. TheselfClosingTagsargument to the constructor is no longer recognized. Instead,
+Beautiful Soup considers any empty tag to be an empty-element tag. If
+you add a child to an empty-element tag, it stops being an
+empty-element tag.Entities¶An incoming HTML or XML entity is always converted into the
+corresponding Unicode character. Beautiful Soup 3 had a number of
+overlapping ways of dealing with entities, which have been
+removed. TheBeautifulSoupconstructor no longer recognizes thesmartQuotesToorconvertEntitiesarguments. (Unicode,
+Dammitstill hassmart_quotes_to, but its default is now to turn
+smart quotes into Unicode.) The constantsHTML_ENTITIES,XML_ENTITIES, andXHTML_ENTITIEShave been removed, since they
+configure a feature (transforming some but not all entities into
+Unicode characters) that no longer exists.If you want to turn Unicode characters back into HTML entities on
+output, rather than turning them into UTF-8 characters, you need to
+use anoutput formatter.Miscellaneous¶Tag.stringnow operates recursively. If tag A
+contains a single tag B and nothing else, then A.string is the same as
+B.string. (Previously, it was None.)Multi-valued attributeslikeclasshave lists of strings as
+their values, not simple strings. This may affect the way you search by CSS
+class.Tagobjects now implement the__hash__method, such that twoTagobjects are considered equal if they generate the same
+markup. This may change your script's behavior if you putTagobjects into a dictionary or set.If you pass one of thefind*methods bothstringanda tag-specific argument likename, Beautiful Soup will
+search for tags that match your tag-specific criteria and whoseTag.stringmatches yourstringvalue. It willnotfind the strings themselves. Previously,
+Beautiful Soup ignored the tag-specific arguments and looked for
+strings.TheBeautifulSoupconstructor no longer recognizes themarkupMassageargument. It's now the parser's responsibility to
+handle markup correctly.The rarely-used alternate parser classes likeICantBelieveItsBeautifulSoupandBeautifulSOAPhave been
+removed. It's now the parser's decision how to handle ambiguous
+markup.Theprettify()method now returns a Unicode string, not a bytestring.

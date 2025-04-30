@@ -1,0 +1,60 @@
+¶
+Tag.stringnow operates recursively. If tag A
+contains a single tag B and nothing else, then A.string is the same as
+B.string. (Previously, it was None.)
+Tag.string
+Tag.string
+Multi-valued attributeslikeclasshave lists of strings as
+their values, not simple strings. This may affect the way you search by CSS
+class.
+Multi-valued attributes
+class
+class
+Tagobjects now implement the__hash__method, such that twoTagobjects are considered equal if they generate the same
+markup. This may change your script's behavior if you putTagobjects into a dictionary or set.
+Tag
+Tag
+Tag
+__hash__
+__hash__
+Tag
+Tag
+Tag
+Tag
+Tag
+Tag
+If you pass one of thefind*methods bothstringanda tag-specific argument likename, Beautiful Soup will
+search for tags that match your tag-specific criteria and whoseTag.stringmatches yourstringvalue. It willnotfind the strings themselves. Previously,
+Beautiful Soup ignored the tag-specific arguments and looked for
+strings.
+find*
+find*
+string
+string
+and
+name
+name
+Tag.string
+Tag.string
+string
+string
+not
+TheBeautifulSoupconstructor no longer recognizes themarkupMassageargument. It's now the parser's responsibility to
+handle markup correctly.
+BeautifulSoup
+BeautifulSoup
+markupMassage
+markupMassage
+The rarely-used alternate parser classes likeICantBelieveItsBeautifulSoupandBeautifulSOAPhave been
+removed. It's now the parser's decision how to handle ambiguous
+markup.
+ICantBelieveItsBeautifulSoup
+ICantBelieveItsBeautifulSoup
+BeautifulSOAP
+BeautifulSOAP
+Theprettify()method now returns a Unicode string, not a bytestring.
+prettify()
+prettify()
+Table of ContentsBeautiful Soup DocumentationGetting helpAPI documentationQuick StartInstalling Beautiful SoupInstalling a parserMaking the soupKinds of objectsTagTag.nameTag.attrsNavigableStringSpecial stringsCommentFor HTML documentsStylesheetScriptTemplateFor XML documentsDeclarationDoctypeCDataProcessingInstructionNavigating the treeGoing downNavigating using tag names.contentsand.children.descendants.string.stringsandstripped_stringsGoing up.parent.parents.self_and_parentsGoing sideways.next_siblingand.previous_sibling.next_siblingsand.previous_siblingsGoing back and forth.next_elementand.previous_element.next_elementsand.previous_elementsSearching the treeKinds of filtersA stringA regular expressionTrueA functionA listfind_all()ThenameargumentThe keyword argumentsSearching by CSS classThestringargumentThelimitargumentTherecursiveargumentCalling a tag is like callingfind_all()find()find_parents()andfind_parent()find_next_siblings()andfind_next_sibling()find_previous_siblings()andfind_previous_sibling()find_all_next()andfind_next()find_all_previous()andfind_previous()CSS selectors through the.csspropertyAdvanced Soup Sieve featuresNamespaces in CSS selectorsHistory of CSS selector supportModifying the treeChanging tag names and attributesModifying.stringappend()extend()NavigableString()and.new_tag()insert()insert_before()andinsert_after()clear()extract()decompose()replace_with()wrap()unwrap()smooth()OutputPretty-printingNon-pretty printingOutput formattersFormatter objectsHTMLFormatterXMLFormatterWriting your own formatterget_text()Specifying the parser to useDifferences between parsersEncodingsOutput encodingUnicode, DammitSmart quotesInconsistent encodingsLine numbersComparing objects for equalityCopying Beautiful Soup objectsLow-level search interfaceCustom element filteringElementFilterCustom element iterationElementFilter.filter()Advanced parser customizationParsing only part of a documentSoupStrainerCustomizing multi-valued attributesHandling duplicate attributesInstantiating custom subclassesTroubleshootingdiagnose()Errors when parsing a documentVersion mismatch problemsParsing XMLOther parser problemsMiscellaneousImproving PerformanceTranslating this documentationBeautiful Soup 3Porting code to BS4You need a parserProperty namesGeneratorsXMLEntitiesMiscellaneousQuick search
+Table of ContentsBeautiful Soup DocumentationGetting helpAPI documentationQuick StartInstalling Beautiful SoupInstalling a parserMaking the soupKinds of objectsTagTag.nameTag.attrsNavigableStringSpecial stringsCommentFor HTML documentsStylesheetScriptTemplateFor XML documentsDeclarationDoctypeCDataProcessingInstructionNavigating the treeGoing downNavigating using tag names.contentsand.children.descendants.string.stringsandstripped_stringsGoing up.parent.parents.self_and_parentsGoing sideways.next_siblingand.previous_sibling.next_siblingsand.previous_siblingsGoing back and forth.next_elementand.previous_element.next_elementsand.previous_elementsSearching the treeKinds of filtersA stringA regular expressionTrueA functionA listfind_all()ThenameargumentThe keyword argumentsSearching by CSS classThestringargumentThelimitargumentTherecursiveargumentCalling a tag is like callingfind_all()find()find_parents()andfind_parent()find_next_siblings()andfind_next_sibling()find_previous_siblings()andfind_previous_sibling()find_all_next()andfind_next()find_all_previous()andfind_previous()CSS selectors through the.csspropertyAdvanced Soup Sieve featuresNamespaces in CSS selectorsHistory of CSS selector supportModifying the treeChanging tag names and attributesModifying.stringappend()extend()NavigableString()and.new_tag()insert()insert_before()andinsert_after()clear()extract()decompose()replace_with()wrap()unwrap()smooth()OutputPretty-printingNon-pretty printingOutput formattersFormatter objectsHTMLFormatterXMLFormatterWriting your own formatterget_text()Specifying the parser to useDifferences between parsersEncodingsOutput encodingUnicode, DammitSmart quotesInconsistent encodingsLine numbersComparing objects for equalityCopying Beautiful Soup objectsLow-level search interfaceCustom element filteringElementFilterCustom element iterationElementFilter.filter()Advanced parser customizationParsing only part of a documentSoupStrainerCustomizing multi-valued attributesHandling duplicate attributesInstantiating custom subclassesTroubleshootingdiagnose()Errors when parsing a documentVersion mismatch problemsParsing XMLOther parser problemsMiscellaneousImproving PerformanceTranslating this documentationBeautiful Soup 3Porting code to BS4You need a parserProperty namesGeneratorsXMLEntitiesMiscellaneousQuick search
+Table of ContentsBeautiful Soup DocumentationGetting helpAPI documentationQuick StartInstalling Beautiful SoupInstalling a parserMaking the soupKinds of objectsTagTag.nameTag.attrsNavigableStringSpecial stringsCommentFor HTML documentsStylesheetScriptTemplateFor XML documentsDeclarationDoctypeCDataProcessingInstructionNavigating the treeGoing downNavigating using tag names.contentsand.children.descendants.string.stringsandstripped_stringsGoing up.parent.parents.self_and_parentsGoing sideways.next_siblingand.previous_sibling.next_siblingsand.previous_siblingsGoing back and forth.next_elementand.previous_element.next_elementsand.previous_elementsSearching the treeKinds of filtersA stringA regular expressionTrueA functionA listfind_all()ThenameargumentThe keyword argumentsSearching by CSS classThestringargumentThelimitargumentTherecursiveargumentCalling a tag is like callingfind_all()find()find_parents()andfind_parent()find_next_siblings()andfind_next_sibling()find_previous_siblings()andfind_previous_sibling()find_all_next()andfind_next()find_all_previous()andfind_previous()CSS selectors through the.csspropertyAdvanced Soup Sieve featuresNamespaces in CSS selectorsHistory of CSS selector supportModifying the treeChanging tag names and attributesModifying.stringappend()extend()NavigableString()and.new_tag()insert()insert_before()andinsert_after()clear()extract()decompose()replace_with()wrap()unwrap()smooth()OutputPretty-printingNon-pretty printingOutput formattersFormatter objectsHTMLFormatterXMLFormatterWriting your own formatterget_text()Specifying the parser to useDifferences between parsersEncodingsOutput encodingUnicode, DammitSmart quotesInconsistent encodingsLine numbersComparing objects for equalityCopying Beautiful Soup objectsLow-level search interfaceCustom element filteringElementFilterCustom element iterationElementFilter.filter()Advanced parser customizationParsing only part of a documentSoupStrainerCustomizing multi-valued attributesHandling duplicate attributesInstantiating custom subclassesTroubleshootingdiagnose()Errors when parsing a documentVersion mismatch problemsParsing XMLOther parser problemsMiscellaneousImproving PerformanceTranslating this documentationBeautiful Soup 3Porting code to BS4You need a parserProperty namesGeneratorsXMLEntitiesMiscellaneous
