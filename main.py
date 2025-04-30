@@ -233,11 +233,11 @@ def get_quesans_chain():
 
     chain = RetrievalQA.from_chain_type(
         llm=llm,
-        chain_type="stuff",  # Changed to 'stuff' for direct context usage
+        chain_type="stuff",  
         retriever=retriever,
         input_key="query",
         return_source_documents=True,
-        chain_type_kwargs={"prompt": PROMPT}  # Updated to use 'prompt' instead of 'question_prompt'
+        chain_type_kwargs={"prompt": PROMPT}  
     )
     return chain
 
@@ -252,7 +252,7 @@ def timed_chain_query(chain, query):
     print(f"\n Query took {end - start:.2f} seconds.")
 
     # Log retrieved documents for debugging
-    print("\n📥 Retrieved Document Chunks:")
+    print("\n Retrieved Document Chunks:")
     source_docs = result.get('source_documents', [])
     if not source_docs:
         print("No documents retrieved.")
@@ -260,7 +260,7 @@ def timed_chain_query(chain, query):
         print(f"\n--- Retrieved Doc #{i+1} ---")
         print("Title:", doc.metadata.get('title'))
         print("Source URL:", doc.metadata.get('source'))
-        print("Content Preview:\n", doc.page_content[:500], "...\n")
+        #print("Content Preview:\n", doc.page_content[:500], "...\n")
 
     return result
 
