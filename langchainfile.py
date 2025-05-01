@@ -72,6 +72,7 @@ def get_quesans_chain():
 
 
     
+
 if __name__ == "__main__":
     #create_vector_db()
     chain= get_quesans_chain()
