@@ -503,8 +503,8 @@ st.markdown("""
 # Main layout
 st.markdown('''
 <div class="main-header">
-    <h1>SmartScrape QA</h1>
-    <p>Ask questions about your data and get intelligent, accurate answers powered by AI</p>
+    <h2>SmartScrape QA</h2>
+    <p>Technical Answer Retrieval Systeml</p>
 </div>
 ''', unsafe_allow_html=True)
 
